@@ -1,0 +1,1533 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<meta name="referrer" content="always">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="format-detection" content="telephone=no,address=no,email=no">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,user-scalable=no, viewport-fit=cover">
+<!-- No cache -->
+<meta http-equiv="Expires" content="-1">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache; no-store; no-save">
+<meta name="theme-color" content="#f64a3e"><!-- 테마 색상코드 -->
+<!-- Summary -->
+<meta property="og:title" content="SHINSEGAE">
+<meta property="og:description" content="SHINSEGAE">
+<title>SHINSEGAE</title>
+<link rel="stylesheet" type="text/css" href="../../assets/css/normalize.css" />
+<link rel="stylesheet" type="text/css" href="../../assets/css/common.css" />
+<link rel="stylesheet" type="text/css" href="../../assets/css/content.css" />
+<link rel="stylesheet" type="text/css" href="../../assets/css/jquery-ui.css" />
+<link rel="stylesheet" type="text/css" href="../../assets/css/swiper.css" />
+<script src="../../assets/js/jquery-1.11.3.min.js"></script>
+<style>
+:root {
+	--theme-color-1: #f64a3e; /*테마 색상코드*/
+}
+</style>
+</head>
+<body>
+<div id="layout">
+
+<!-- 메인팝업 -->
+<div class="main_popup layer_form fixed_layer" style=";">
+	<div class="popup_box">
+		<div class="popup_cnt">
+			<div class="popup_slide">
+				<div class="popup_item">
+					<a href="#"><img src="../../assets/images/dummy/prd_thum_wh1.png" alt=""></a>
+				</div>
+			</div>
+		</div>
+		<div class="popup_btn">
+			<a href="javascript:;" class="btn_today">오늘 하루 그만보기</a>
+			<a href="javascript:;" class="btn_close" onclick="layerHide('main_popup');">닫기</a>
+		</div>
+		<a href="javascript:;" class="popup_close" onclick="layerHide('main_popup');">팝업 닫기</a>
+	</div>
+</div>
+
+<script>
+	$(document).ready(function(){
+		//$('.main_popup').show();
+		//$('.popup_slide').slick('refresh');
+		//$('html,body').css('overflow-y' , 'hidden');
+	});
+</script>
+<!-- //메인팝업 -->
+
+
+	<!-- header -->
+	<div id="header">
+		<div id="" class="inner">
+			<div id="" class="container">
+				<div class="hd_menu">
+					<button type="button" class="menu_btn" onclick="layerShow('menu_ly');menuShow()">메뉴 오픈</button>
+					
+					<!-- 메뉴 레이어 -->
+					<div class="menu_ly full_popup layer_form fixed_layer" style="display:none;">
+						<div id="" class="layer_box inner">
+							<div id="" class="layer_cnt">
+								<div class="mnl_top has_link">  <!-- 마이메뉴 배송조회 고객센터 알림 box가 있을때 (has_link) -->
+									<div id="" class="mnl_lg">
+										<!-- 로그인 전 -->
+										<!-- <a href="#" class="mnl_login">로그인해주세요</a> -->
+										<!-- //로그인 전 -->
+										<!-- 로그인 후 -->
+										<span class="name"><strong>홍길동</strong>님 환영합니다</span>
+										<!-- //로그인 후 -->
+									</div>
+
+									<ul class="links">
+										<li><a href="#" class="my">마이메뉴</a></li>
+										<li><a href="#" class="delivery">배송조회</a></li>
+										<li><a href="#" class="cs">고객센터</a></li>
+										<li><a href="#" class="alarm">알림</a></li>
+									</ul>
+								</div>
+
+								<hr class="devide_line"/>
+								<div class="mnl_cate tap_closest">
+									<div id="" class="tap_btn_form">
+										<div id="" class="">
+											<a href="javascript:;" class="tap_btn active" data-rel="mnl_cate1">상품</a>
+											<a href="javascript:;" class="tap_btn" data-rel="mnl_cate2">포인트</a>
+										</div>
+									</div>
+									<div class="tap_cnt_form">
+										<div class="tap_item tap_box mnl_cate1">
+											<ul class="cate_list">
+												<li><a href="javascript:;" class="btn">MRO</a><!-- 하위메뉴 있음 -->
+													<ul>
+														<li><a href="#">MRO 전체보기</a></li>
+														<li><a href="#">사은품</a></li>
+														<li><a href="#">생활/주방/가구/건강</a></li>
+														<li><a href="#">의류/잡화</a></li>
+													</ul>
+												</li>
+												<li><a href="javascript:;" class="btn">가전/IT</a>
+													<ul>
+														<li><a href="#">가전/IT</a></li>
+														<li><a href="#">사은품</a></li>
+														<li><a href="#">생활/주방/가구/건강</a></li>
+														<li><a href="#">의류/잡화</a></li>
+													</ul>
+												</li>
+												<li><a href="javascript:;" class="btn">카테고리명1</a>
+													<ul>
+														<li><a href="#">가전/IT</a></li>
+														<li><a href="#">사은품</a></li>
+														<li><a href="#">생활/주방/가구/건강</a></li>
+														<li><a href="#">의류/잡화</a></li>
+													</ul>
+												</li>
+												<li><a href="javascript:;" class="btn">카테고리명1</a>
+													<ul>
+														<li><a href="#">가전/IT</a></li>
+														<li><a href="#">사은품</a></li>
+														<li><a href="#">생활/주방/가구/건강</a></li>
+														<li><a href="#">의류/잡화</a></li>
+													</ul>
+												</li>
+												<li><a href="#">카테고리명1</a></li><!-- 하위메뉴 없음 -->
+											</ul>
+											<script>
+												$('.cate_list .btn').click(function(){
+													if($(this).hasClass('active')){
+														$(this).removeClass('active');
+														$(this).next('ul').slideToggle();
+													}else{
+														$('.cate_list .btn').removeClass('active');
+														$('.cate_list ul').slideUp();
+														$(this).addClass('active');
+														$(this).next('ul').slideDown();
+													}
+												});
+											</script>
+										</div>
+										<div class="tap_item tap_box mnl_cate2" style="display:none;">
+											<a href="javascript:;" class="cate_item">10,000 ~ 20,000</a>
+											<a href="javascript:;" class="cate_item">100,000원 미만</a>
+										</div>
+									</div>
+								</div>
+
+								<!-- 로그인 후 -->
+								<hr class="devide_line"/>
+								<div id="" class="box">
+									<div class="mnl_mem">
+										<a href="javascript:;">로그아웃</a>
+										<a href="javascript:;">설정</a>
+									</div>
+								</div>
+								<!-- //로그인 후 -->
+								<div class="lc_btn">
+									<div id="" class="inner">
+										<a href="javascript:;" class="mnl_code">쇼핑몰 코드 인증</a>
+									</div>
+								</div>
+								<a href="javascript:;" class="lc_mhome">홈으로</a>
+								<a href="javascript:;" onclick="menuHide()" class="lc_type3">팝업닫기</a>
+							</div>
+						</div>
+
+					</div>
+					<!-- //메뉴 레이어 -->
+				</div>
+				<h1 class="hd_logo"><span><a href="#"><img src="../../assets/images/common/logo.png" alt="SHINSEGAE" style="height:15px;"></a></span></h1>
+				<div class="hd_link">
+					<a href="javascript:;" class="link cart"><span class="count theme_bg">1</span><span class="txt">장바구니</span></a>
+					<a href="javascript:;" class="link alarm"><span class="count theme_bg">1</span><span class="txt">알림</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //header -->
+	
+	<!-- content -->
+	<div class="main_content">
+		<div class="tm_info container">
+			<!-- 로그인 전 -->
+			<!-- <a href="#" class="tm_login">로그인해주세요</a> -->
+			<!-- //로그인 전 -->
+			<div class="tm_welcome"><strong>홍길동</strong><span>님 환영합니다</span></div>
+			<div class="tm_point clearfix">
+				<span class="point_now">0<strong>원</strong></span>
+				<span class="point_dap">(당월 소멸 P : 1,000,000P)</span>
+			</div>
+			<!-- //로그인 후 -->
+		</div>
+
+		<div class="main_visual">
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"><a href="javascript:;"><img src="../../assets/images/dummy/main_visual.png" alt=""></a></div>
+					<div class="swiper-slide"><a href="javascript:;"><img src="../../assets/images/dummy/main_visual.png" alt=""></a></div>
+					<div class="swiper-slide"><a href="javascript:;"><img src="../../assets/images/dummy/main_visual.png" alt=""></a></div>
+					<div class="swiper-slide"><a href="javascript:;"><img src="../../assets/images/dummy/main_visual.png" alt=""></a></div>
+				</div>
+				<!-- Add Pagination -->
+				<div class="swiper-pagination"></div>
+				<a href="javascript:;" class="mv_pause">일시정지</a>
+				<a href="javascript:;" class="mv_play">재생</a>
+				<a href="javascript:;" class="mv_all" onclick="layerShow('mv_all_layer');">전체보기</a>
+			</div>
+			
+			<!-- 메인배너 전체보기 -->
+			<div class="mv_all_layer layer_form fixed_layer" style="display:none;">
+				<div class="layer_box">
+					<div class="layer_cnt">
+						<h2>전체보기</h2>
+						<ul class="mvall_banner">
+							<li><a href="javascript:;"><img src="../../assets/images/dummy/main_visual.png" alt=""></a></li>
+							<li><a href="javascript:;"><img src="../../assets/images/dummy/main_visual.png" alt=""></a></li>
+							<li><a href="javascript:;"><img src="../../assets/images/dummy/main_visual.png" alt=""></a></li>
+							<li><a href="javascript:;"><img src="../../assets/images/dummy/main_visual.png" alt=""></a></li>
+							<li><a href="javascript:;"><img src="../../assets/images/dummy/main_visual.png" alt=""></a></li>
+							<li><a href="javascript:;"><img src="../../assets/images/dummy/main_visual.png" alt=""></a></li>
+							<li><a href="javascript:;"><img src="../../assets/images/dummy/main_visual.png" alt=""></a></li>
+							<li><a href="javascript:;"><img src="../../assets/images/dummy/main_visual.png" alt=""></a></li>
+						</ul>
+					</div>
+					<a href="javascript:;" class="lc_type3" onclick="layerHide('mv_all_layer')">닫기</a>
+				</div>
+				<span class="blank"></span>
+				<span class="layer_bg dim" onclick="layerHide('mv_all_layer')"></span>
+			</div>
+		</div>
+
+		<div class="mi_section">
+			<div id="" class="container">
+				<div class="mbw_cnt">
+					<div class="il_scroll">
+						<div class="swiper-container">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="item_type1">
+										<a href="#" class="thum" style="background-image:url('../../assets/images/dummy/prd_thum_w1.png');"></a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="item_type1">
+										<a href="#" class="thum" style="background-image:url('../../assets/images/dummy/prd_thum_w1.png');"></a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="item_type1">
+										<a href="#" class="thum" style="background-image:url('../../assets/images/dummy/prd_thum_w1.png');"></a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="item_type1">
+										<a href="#" class="thum" style="background-image:url('../../assets/images/dummy/prd_thum_w1.png');"></a>
+									</div>
+								</div>
+							</div>
+							<!-- Add Pagination -->
+							<div class="swiper-pagination"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="mi_section">
+			<div id="" class="container">
+				<h3 class="ms_title">메인 기획전</h3>
+			</div>
+			<div class="mbw_cnt">
+				<div id="" class="il_taps">
+					<div id="" class="il_tcate type1">
+						<div class="tcate_item"><span>주방&가전</span></div>
+						<div class="tcate_item"><span>백팩&캐리어</span></div>
+						<div class="tcate_item"><span>2020설 gift</span></div>
+						<div class="tcate_item"><span>카테고리명1</span></div>
+						<div class="tcate_item"><span>카테고리명2</span></div>
+						<div class="tcate_item"><span>카테고리명3</span></div>
+						<div class="tcate_item"><span>카테고리명4</span></div>
+					</div>
+					<div class="il_tcnt">
+						<div class="tcnt_item">
+							<div id="" class="it2_box">
+								<div class="item_type2">
+									<div class="thum over1" style="background-image:url('../../assets/images/dummy/prd_thum_wh1.png');">
+										<span class="over_time">10/07 09:00</span>
+										<span class="over_tit">판매종료</span>
+									</div>
+									<div id="" class="it_cnt">
+										<div class="it_action clearfix"><!-- 관심상품 장바구니 둘다 없을경우 it_action  div를 회색선 구분선 안나오게 통으로 날려달랍니다.-->
+											<a href="javascript:;" class="at heart active">관심상품</a>
+											<a href="javascript:;" class="at cart">장바구니</a>
+										</div>
+										<a href="#" class="subject"><span class="cate">신한TOPS</span> 수입 주방 용품 모음전수입 주방 용품 모음전수입 주방 용품 모음전수입 주방 용품 모음전수입 주방 용품 모음전</a>
+										<span class="price_ori">50,000원</span>
+										<span class="price_sale">50,000원</span>
+									</div>
+								</div>
+
+								<div class="item_type2">
+									<div class="thum over2" style="background-image:url('../../assets/images/dummy/prd_thum_wh4.png');">
+										<span class="over_time">10/07 09:00</span>
+										<span class="over_tit">오픈예정</span>
+									</div>
+									<div id="" class="it_cnt">
+										<div class="it_action clearfix">
+											<a href="javascript:;" class="at heart">관심상품</a>
+											<a href="javascript:;" class="at cart">장바구니</a>
+										</div>
+										<a href="#" class="subject"><span class="cate">신한TOPS</span> 수입 주방 용품 모음전</a>
+										<span class="price_ori">50,000원</span>
+										<span class="price_sale">50,000원</span>
+									</div>
+								</div>
+
+								<div class="item_type2">
+									<a href="#" class="thum" style="background-image:url('../../assets/images/dummy/prd_thum_wh1.png');"></a>
+									<div id="" class="it_cnt">
+										<div class="it_action clearfix">
+											<a href="javascript:;" class="at heart">관심상품</a>
+											<a href="javascript:;" class="at cart">장바구니</a>
+										</div>
+										<a href="#" class="subject"><span class="cate">신한TOPS</span> 수입 주방 용품 모음전</a>
+										<span class="price_ori">50,000원</span>
+										<span class="price_sale">50,000원</span>
+									</div>
+								</div>
+
+								<div class="item_type2">
+									<a href="#" class="thum" style="background-image:url('../../assets/images/dummy/prd_thum_wh2.png');"></a>
+									<div id="" class="it_cnt">
+										<div class="it_action clearfix">
+											<a href="javascript:;" class="at heart">관심상품</a>
+											<a href="javascript:;" class="at cart">장바구니</a>
+										</div>
+										<a href="#" class="subject"><span class="cate">신한TOPS</span> 수입 주방 용품 모음전</a>
+										<span class="price_ori">50,000원</span>
+										<span class="price_sale">50,000원</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tcnt_item">
+							<div id="" class="it2_box">
+								<div class="item_type2">
+									<a href="#" class="thum" style="background-image:url('../../assets/images/dummy/prd_thum_wh1.png');"></a>
+									<div id="" class="it_cnt">
+										<div class="it_action clearfix">
+											<a href="javascript:;" class="at heart">관심상품</a>
+											<a href="javascript:;" class="at cart">장바구니</a>
+										</div>
+										<a href="#" class="subject"><span class="cate">신한TOPS</span> 수입 주방 용품 모음전</a>
+										<span class="price_ori">50,000원</span>
+										<span class="price_sale">50,000원</span>
+									</div>
+								</div>
+
+								<div class="item_type2">
+									<a href="#" class="thum" style="background-image:url('../../assets/images/dummy/prd_thum_wh2.png');"></a>
+									<div id="" class="it_cnt">
+										<div class="it_action clearfix">
+											<a href="javascript:;" class="at heart">관심상품</a>
+											<a href="javascript:;" class="at cart">장바구니</a>
+										</div>
+										<a href="#" class="subject"><span class="cate">신한TOPS</span> 수입 주방 용품 모음전</a>
+										<span class="price_ori">50,000원</span>
+										<span class="price_sale">50,000원</span>
+									</div>
+								</div>
+
+								<div class="item_type2">
+									<a href="#" class="thum" style="background-image:url('../../assets/images/dummy/prd_thum_wh3.png');"></a>
+									<div id="" class="it_cnt">
+										<div class="it_action clearfix">
+											<a href="javascript:;" class="at heart">관심상품</a>
+											<a href="javascript:;" class="at cart">장바구니</a>
+										</div>
+										<a href="#" class="subject"><span class="cate">신한TOPS</span> 수입 주방 용품 모음전</a>
+										<span class="price_ori">50,000원</span>
+										<span class="price_sale">50,000원</span>
+									</div>
+								</div>
+
+								<div class="item_type2">
+									<a href="#" class="thum" style="background-image:url('../../assets/images/dummy/prd_thum_wh4.png');"></a>
+									<div id="" class="it_cnt">
+										<div class="it_action clearfix">
+											<a href="javascript:;" class="at heart">관심상품</a>
+											<a href="javascript:;" class="at cart">장바구니</a>
+										</div>
+										<a href="#" class="subject"><span class="cate">신한TOPS</span> 수입 주방 용품 모음전</a>
+										<span class="price_ori">50,000원</span>
+										<span class="price_sale">50,000원</span>
+									</div>
+								</div>
+
+								<div class="item_type2">
+									<a href="#" class="thum" style="background-image:url('../../assets/images/dummy/prd_thum_wh1.png');"></a>
+									<div id="" class="it_cnt">
+										<div class="it_action clearfix">
+											<a href="javascript:;" class="at heart">관심상품</a>
+											<a href="javascript:;" class="at cart">장바구니</a>
+										</div>
+										<a href="#" class="subject"><span class="cate">신한TOPS</span> 수입 주방 용품 모음전</a>
+										<span class="price_ori">50,000원</span>
+										<span class="price_sale">50,000원</span>
+									</div>
+								</div>
+
+								<div class="item_type2">
+									<a href="#" class="thum" style="background-image:url('../../assets/images/dummy/prd_thum_wh2.png');"></a>
+									<div id="" class="it_cnt">
+										<div class="it_action clearfix">
+											<a href="javascript:;" class="at heart">관심상품</a>
+											<a href="javascript:;" class="at cart">장바구니</a>
+										</div>
+										<a href="#" class="subject"><span class="cate">신한TOPS</span> 수입 주방 용품 모음전</a>
+										<span class="price_ori">50,000원</span>
+										<span class="price_sale">50,000원</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tcnt_item">
+							<div id="" class="it2_box">
+								<div class="item_type2">
+									<a href="#" class="thum" style="background-image:url('../../assets/images/dummy/prd_thum_wh1.png');"></a>
+									<div id="" class="it_cnt">
+										<div class="it_action clearfix">
+											<a href="javascript:;" class="at heart">관심상품</a>
+											<a href="javascript:;" class="at cart">장바구니</a>
+										</div>
+										<a href="#" class="subject"><span class="cate">신한TOPS</span> 수입 주방 용품 모음전</a>
+										<span class="price_ori">50,000원</span>
+										<span class="price_sale">50,000원</span>
+									</div>
+								</div>
+
+								<div class="item_type2">
+									<a href="#" class="thum" style="background-image:url('../../assets/images/dummy/prd_thum_wh2.png');"></a>
+									<div id="" class="it_cnt">
+										<div class="it_action clearfix">
+											<a href="javascript:;" class="at heart">관심상품</a>
+											<a href="javascript:;" class="at cart">장바구니</a>
+										</div>
+										<a href="#" class="subject"><span class="cate">신한TOPS</span> 수입 주방 용품 모음전</a>
+										<span class="price_ori">50,000원</span>
+										<span class="price_sale">50,000원</span>
+									</div>
+								</div>
+
+								<div class="item_type2">
+									<a href="#" class="thum" style="background-image:url('../../assets/images/dummy/prd_thum_wh3.png');"></a>
+									<div id="" class="it_cnt">
+										<div class="it_action clearfix">
+											<a href="javascript:;" class="at heart">관심상품</a>
+											<a href="javascript:;" class="at cart">장바구니</a>
+										</div>
+										<a href="#" class="subject"><span class="cate">신한TOPS</span> 수입 주방 용품 모음전</a>
+										<span class="price_ori">50,000원</span>
+										<span class="price_sale">50,000원</span>
+									</div>
+								</div>
+
+								<div class="item_type2">
+									<a href="#" class="thum" style="background-image:url('../../assets/images/dummy/prd_thum_wh4.png');"></a>
+									<div id="" class="it_cnt">
+										<div class="it_action clearfix">
+											<a href="javascript:;" class="at heart">관심상품</a>
+											<a href="javascript:;" class="at cart">장바구니</a>
+										</div>
+										<a href="#" class="subject"><span class="cate">신한TOPS</span> 수입 주방 용품 모음전</a>
+										<span class="price_ori">50,000원</span>
+										<span class="price_sale">50,000원</span>
+									</div>
+								</div>
+
+								<div class="item_type2">
+									<a href="#" class="thum" style="background-image:url('../../assets/images/dummy/prd_thum_wh1.png');"></a>
+									<div id="" class="it_cnt">
+										<div class="it_action clearfix">
+											<a href="javascript:;" class="at heart">관심상품</a>
+											<a href="javascript:;" class="at cart">장바구니</a>
+										</div>
+										<a href="#" class="subject"><span class="cate">신한TOPS</span> 수입 주방 용품 모음전</a>
+										<span class="price_ori">50,000원</span>
+										<span class="price_sale">50,000원</span>
+									</div>
+								</div>
+
+								<div class="item_type2">
+									<a href="#" class="thum" style="background-image:url('../../assets/images/dummy/prd_thum_wh2.png');"></a>
+									<div id="" class="it_cnt">
+										<div class="it_action clearfix">
+											<a href="javascript:;" class="at heart">관심상품</a>
+											<a href="javascript:;" class="at cart">장바구니</a>
+										</div>
+										<a href="#" class="subject"><span class="cate">신한TOPS</span> 수입 주방 용품 모음전</a>
+										<span class="price_ori">50,000원</span>
+										<span class="price_sale">50,000원</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tcnt_item">
+							<div id="" class="it2_box">
+								<div class="item_type2">
+									<a href="#" class="thum" style="background-image:url('../../assets/images/dummy/prd_thum_wh1.png');"></a>
+									<div id="" class="it_cnt">
+										<div class="it_action clearfix">
+											<a href="javascript:;" class="at heart">관심상품</a>
+											<a href="javascript:;" class="at cart">장바구니</a>
+										</div>
+										<a href="#" class="subject"><span class="cate">신한TOPS</span> 수입 주방 용품 모음전</a>
+										<span class="price_ori">50,000원</span>
+										<span class="price_sale">50,000원</span>
+									</div>
+								</div>
+
+								<div class="item_type2">
+									<a href="#" class="thum" style="background-image:url('../../assets/images/dummy/prd_thum_wh2.png');"></a>
+									<div id="" class="it_cnt">
+										<div class="it_action clearfix">
+											<a href="javascript:;" class="at heart">관심상품</a>
+											<a href="javascript:;" class="at cart">장바구니</a>
+										</div>
+										<a href="#" class="subject"><span class="cate">신한TOPS</span> 수입 주방 용품 모음전</a>
+										<span class="price_ori">50,000원</span>
+										<span class="price_sale">50,000원</span>
+									</div>
+								</div>
+
+								<div class="item_type2">
+									<a href="#" class="thum" style="background-image:url('../../assets/images/dummy/prd_thum_wh3.png');"></a>
+									<div id="" class="it_cnt">
+										<div class="it_action clearfix">
+											<a href="javascript:;" class="at heart">관심상품</a>
+											<a href="javascript:;" class="at cart">장바구니</a>
+										</div>
+										<a href="#" class="subject"><span class="cate">신한TOPS</span> 수입 주방 용품 모음전</a>
+										<span class="price_ori">50,000원</span>
+										<span class="price_sale">50,000원</span>
+									</div>
+								</div>
+
+								<div class="item_type2">
+									<a href="#" class="thum" style="background-image:url('../../assets/images/dummy/prd_thum_wh4.png');"></a>
+									<div id="" class="it_cnt">
+										<div class="it_action clearfix">
+											<a href="javascript:;" class="at heart">관심상품</a>
+											<a href="javascript:;" class="at cart">장바구니</a>
+										</div>
+										<a href="#" class="subject"><span class="cate">신한TOPS</span> 수입 주방 용품 모음전</a>
+										<span class="price_ori">50,000원</span>
+										<span class="price_sale">50,000원</span>
+									</div>
+								</div>
+
+								<div class="item_type2">
+									<a href="#" class="thum" style="background-image:url('../../assets/images/dummy/prd_thum_wh1.png');"></a>
+									<div id="" class="it_cnt">
+										<div class="it_action clearfix">
+											<a href="javascript:;" class="at heart">관심상품</a>
+											<a href="javascript:;" class="at cart">장바구니</a>
+										</div>
+										<a href="#" class="subject"><span class="cate">신한TOPS</span> 수입 주방 용품 모음전</a>
+										<span class="price_ori">50,000원</span>
+										<span class="price_sale">50,000원</span>
+									</div>
+								</div>
+
+								<div class="item_type2">
+									<a href="#" class="thum" style="background-image:url('../../assets/images/dummy/prd_thum_wh2.png');"></a>
+									<div id="" class="it_cnt">
+										<div class="it_action clearfix">
+											<a href="javascript:;" class="at heart">관심상품</a>
+											<a href="javascript:;" class="at cart">장바구니</a>
+										</div>
+										<a href="#" class="subject"><span class="cate">신한TOPS</span> 수입 주방 용품 모음전</a>
+										<span class="price_ori">50,000원</span>
+										<span class="price_sale">50,000원</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tcnt_item">
+							<div id="" class="it2_box">
+								<div class="item_type2">
+									<a href="#" class="thum" style="background-image:url('../../assets/images/dummy/prd_thum_wh1.png');"></a>
+									<div id="" class="it_cnt">
+										<div class="it_action clearfix">
+											<a href="javascript:;" class="at heart">관심상품</a>
+											<a href="javascript:;" class="at cart">장바구니</a>
+										</div>
+										<a href="#" class="subject"><span class="cate">신한TOPS</span> 수입 주방 용품 모음전</a>
+										<span class="price_ori">50,000원</span>
+										<span class="price_sale">50,000원</span>
+									</div>
+								</div>
+
+								<div class="item_type2">
+									<a href="#" class="thum" style="background-image:url('../../assets/images/dummy/prd_thum_wh2.png');"></a>
+									<div id="" class="it_cnt">
+										<div class="it_action clearfix">
+											<a href="javascript:;" class="at heart">관심상품</a>
+											<a href="javascript:;" class="at cart">장바구니</a>
+										</div>
+										<a href="#" class="subject"><span class="cate">신한TOPS</span> 수입 주방 용품 모음전</a>
+										<span class="price_ori">50,000원</span>
+										<span class="price_sale">50,000원</span>
+									</div>
+								</div>
+
+								<div class="item_type2">
+									<a href="#" class="thum" style="background-image:url('../../assets/images/dummy/prd_thum_wh3.png');"></a>
+									<div id="" class="it_cnt">
+										<div class="it_action clearfix">
+											<a href="javascript:;" class="at heart">관심상품</a>
+											<a href="javascript:;" class="at cart">장바구니</a>
+										</div>
+										<a href="#" class="subject"><span class="cate">신한TOPS</span> 수입 주방 용품 모음전</a>
+										<span class="price_ori">50,000원</span>
+										<span class="price_sale">50,000원</span>
+									</div>
+								</div>
+
+								<div class="item_type2">
+									<a href="#" class="thum" style="background-image:url('../../assets/images/dummy/prd_thum_wh4.png');"></a>
+									<div id="" class="it_cnt">
+										<div class="it_action clearfix">
+											<a href="javascript:;" class="at heart">관심상품</a>
+											<a href="javascript:;" class="at cart">장바구니</a>
+										</div>
+										<a href="#" class="subject"><span class="cate">신한TOPS</span> 수입 주방 용품 모음전</a>
+										<span class="price_ori">50,000원</span>
+										<span class="price_sale">50,000원</span>
+									</div>
+								</div>
+
+								<div class="item_type2">
+									<a href="#" class="thum" style="background-image:url('../../assets/images/dummy/prd_thum_wh1.png');"></a>
+									<div id="" class="it_cnt">
+										<div class="it_action clearfix">
+											<a href="javascript:;" class="at heart">관심상품</a>
+											<a href="javascript:;" class="at cart">장바구니</a>
+										</div>
+										<a href="#" class="subject"><span class="cate">신한TOPS</span> 수입 주방 용품 모음전</a>
+										<span class="price_ori">50,000원</span>
+										<span class="price_sale">50,000원</span>
+									</div>
+								</div>
+
+								<div class="item_type2">
+									<a href="#" class="thum" style="background-image:url('../../assets/images/dummy/prd_thum_wh2.png');"></a>
+									<div id="" class="it_cnt">
+										<div class="it_action clearfix">
+											<a href="javascript:;" class="at heart">관심상품</a>
+											<a href="javascript:;" class="at cart">장바구니</a>
+										</div>
+										<a href="#" class="subject"><span class="cate">신한TOPS</span> 수입 주방 용품 모음전</a>
+										<span class="price_ori">50,000원</span>
+										<span class="price_sale">50,000원</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tcnt_item">
+							<div id="" class="it2_box">
+								<div class="item_type2">
+									<a href="#" class="thum" style="background-image:url('../../assets/images/dummy/prd_thum_wh1.png');"></a>
+									<div id="" class="it_cnt">
+										<div class="it_action clearfix">
+											<a href="javascript:;" class="at heart">관심상품</a>
+											<a href="javascript:;" class="at cart">장바구니</a>
+										</div>
+										<a href="#" class="subject"><span class="cate">신한TOPS</span> 수입 주방 용품 모음전</a>
+										<span class="price_ori">50,000원</span>
+										<span class="price_sale">50,000원</span>
+									</div>
+								</div>
+
+								<div class="item_type2">
+									<a href="#" class="thum" style="background-image:url('../../assets/images/dummy/prd_thum_wh2.png');"></a>
+									<div id="" class="it_cnt">
+										<div class="it_action clearfix">
+											<a href="javascript:;" class="at heart">관심상품</a>
+											<a href="javascript:;" class="at cart">장바구니</a>
+										</div>
+										<a href="#" class="subject"><span class="cate">신한TOPS</span> 수입 주방 용품 모음전</a>
+										<span class="price_ori">50,000원</span>
+										<span class="price_sale">50,000원</span>
+									</div>
+								</div>
+
+								<div class="item_type2">
+									<a href="#" class="thum" style="background-image:url('../../assets/images/dummy/prd_thum_wh3.png');"></a>
+									<div id="" class="it_cnt">
+										<div class="it_action clearfix">
+											<a href="javascript:;" class="at heart">관심상품</a>
+											<a href="javascript:;" class="at cart">장바구니</a>
+										</div>
+										<a href="#" class="subject"><span class="cate">신한TOPS</span> 수입 주방 용품 모음전</a>
+										<span class="price_ori">50,000원</span>
+										<span class="price_sale">50,000원</span>
+									</div>
+								</div>
+
+								<div class="item_type2">
+									<a href="#" class="thum" style="background-image:url('../../assets/images/dummy/prd_thum_wh4.png');"></a>
+									<div id="" class="it_cnt">
+										<div class="it_action clearfix">
+											<a href="javascript:;" class="at heart">관심상품</a>
+											<a href="javascript:;" class="at cart">장바구니</a>
+										</div>
+										<a href="#" class="subject"><span class="cate">신한TOPS</span> 수입 주방 용품 모음전</a>
+										<span class="price_ori">50,000원</span>
+										<span class="price_sale">50,000원</span>
+									</div>
+								</div>
+
+								<div class="item_type2">
+									<a href="#" class="thum" style="background-image:url('../../assets/images/dummy/prd_thum_wh1.png');"></a>
+									<div id="" class="it_cnt">
+										<div class="it_action clearfix">
+											<a href="javascript:;" class="at heart">관심상품</a>
+											<a href="javascript:;" class="at cart">장바구니</a>
+										</div>
+										<a href="#" class="subject"><span class="cate">신한TOPS</span> 수입 주방 용품 모음전</a>
+										<span class="price_ori">50,000원</span>
+										<span class="price_sale">50,000원</span>
+									</div>
+								</div>
+
+								<div class="item_type2">
+									<a href="#" class="thum" style="background-image:url('../../assets/images/dummy/prd_thum_wh2.png');"></a>
+									<div id="" class="it_cnt">
+										<div class="it_action clearfix">
+											<a href="javascript:;" class="at heart">관심상품</a>
+											<a href="javascript:;" class="at cart">장바구니</a>
+										</div>
+										<a href="#" class="subject"><span class="cate">신한TOPS</span> 수입 주방 용품 모음전</a>
+										<span class="price_ori">50,000원</span>
+										<span class="price_sale">50,000원</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tcnt_item">
+							<div id="" class="it2_box">
+								<div class="item_type2">
+									<a href="#" class="thum" style="background-image:url('../../assets/images/dummy/prd_thum_wh1.png');"></a>
+									<div id="" class="it_cnt">
+										<div class="it_action clearfix">
+											<a href="javascript:;" class="at heart">관심상품</a>
+											<a href="javascript:;" class="at cart">장바구니</a>
+										</div>
+										<a href="#" class="subject"><span class="cate">신한TOPS</span> 수입 주방 용품 모음전</a>
+										<span class="price_ori">50,000원</span>
+										<span class="price_sale">50,000원</span>
+									</div>
+								</div>
+
+								<div class="item_type2">
+									<a href="#" class="thum" style="background-image:url('../../assets/images/dummy/prd_thum_wh2.png');"></a>
+									<div id="" class="it_cnt">
+										<div class="it_action clearfix">
+											<a href="javascript:;" class="at heart">관심상품</a>
+											<a href="javascript:;" class="at cart">장바구니</a>
+										</div>
+										<a href="#" class="subject"><span class="cate">신한TOPS</span> 수입 주방 용품 모음전</a>
+										<span class="price_ori">50,000원</span>
+										<span class="price_sale">50,000원</span>
+									</div>
+								</div>
+
+								<div class="item_type2">
+									<a href="#" class="thum" style="background-image:url('../../assets/images/dummy/prd_thum_wh3.png');"></a>
+									<div id="" class="it_cnt">
+										<div class="it_action clearfix">
+											<a href="javascript:;" class="at heart">관심상품</a>
+											<a href="javascript:;" class="at cart">장바구니</a>
+										</div>
+										<a href="#" class="subject"><span class="cate">신한TOPS</span> 수입 주방 용품 모음전</a>
+										<span class="price_ori">50,000원</span>
+										<span class="price_sale">50,000원</span>
+									</div>
+								</div>
+
+								<div class="item_type2">
+									<a href="#" class="thum" style="background-image:url('../../assets/images/dummy/prd_thum_wh4.png');"></a>
+									<div id="" class="it_cnt">
+										<div class="it_action clearfix">
+											<a href="javascript:;" class="at heart">관심상품</a>
+											<a href="javascript:;" class="at cart">장바구니</a>
+										</div>
+										<a href="#" class="subject"><span class="cate">신한TOPS</span> 수입 주방 용품 모음전</a>
+										<span class="price_ori">50,000원</span>
+										<span class="price_sale">50,000원</span>
+									</div>
+								</div>
+
+								<div class="item_type2">
+									<a href="#" class="thum" style="background-image:url('../../assets/images/dummy/prd_thum_wh1.png');"></a>
+									<div id="" class="it_cnt">
+										<div class="it_action clearfix">
+											<a href="javascript:;" class="at heart">관심상품</a>
+											<a href="javascript:;" class="at cart">장바구니</a>
+										</div>
+										<a href="#" class="subject"><span class="cate">신한TOPS</span> 수입 주방 용품 모음전</a>
+										<span class="price_ori">50,000원</span>
+										<span class="price_sale">50,000원</span>
+									</div>
+								</div>
+
+								<div class="item_type2">
+									<a href="#" class="thum" style="background-image:url('../../assets/images/dummy/prd_thum_wh2.png');"></a>
+									<div id="" class="it_cnt">
+										<div class="it_action clearfix">
+											<a href="javascript:;" class="at heart">관심상품</a>
+											<a href="javascript:;" class="at cart">장바구니</a>
+										</div>
+										<a href="#" class="subject"><span class="cate">신한TOPS</span> 수입 주방 용품 모음전</a>
+										<span class="price_ori">50,000원</span>
+										<span class="price_sale">50,000원</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="mi_section">
+			<div id="" class="container">
+				<h3 class="ms_title">GOOD PRICE</h3>
+			</div>
+			<div class="mbw_cnt">
+				<div id="" class="it5_box">
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="item_type2">
+									<div class="thum over1" style="background-image:url('../../assets/images/dummy/prd_thum_wh1.png');">
+										<span class="over_time">10/07 09:00</span>
+										<span class="over_tit">판매종료</span>
+									</div>
+									<div id="" class="it_cnt">
+										<div class="it_action clearfix">
+											<a href="javascript:;" class="at heart active">관심상품</a>
+											<a href="javascript:;" class="at cart">장바구니</a>
+										</div>
+										<a href="#" class="subject"><span class="cate">신한TOPS</span> 수입 주방 용품 모음전수입 주방 용품 모음전수입 주방 용품 모음전수입 주방 용품 모음전수입 주방 용품 모음전</a>
+										<span class="price_ori">50,000원</span>
+										<span class="price_sale">50,000원</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-slide">
+								<div class="item_type2">
+									<div class="thum over2" style="background-image:url('../../assets/images/dummy/prd_thum_wh4.png');">
+										<span class="over_time">10/07 09:00</span>
+										<span class="over_tit">오픈예정</span>
+									</div>
+									<div id="" class="it_cnt">
+										<div class="it_action clearfix">
+											<a href="javascript:;" class="at heart active">관심상품</a>
+											<a href="javascript:;" class="at cart">장바구니</a>
+										</div>
+										<a href="#" class="subject"><span class="cate">신한TOPS</span> 수입 주방 용품 모음전</a>
+										<span class="price_ori">50,000원</span>
+										<span class="price_sale">50,000원</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-slide">
+								<div class="item_type2">
+									<a href="#" class="thum" style="background-image:url('../../assets/images/dummy/prd_thum_wh1.png');"></a>
+									<div id="" class="it_cnt">
+										<div class="it_action clearfix">
+											<a href="javascript:;" class="at heart active">관심상품</a>
+											<a href="javascript:;" class="at cart">장바구니</a>
+										</div>
+										<a href="#" class="subject"><span class="cate">신한TOPS</span> 수입 주방 용품 모음전</a>
+										<span class="price_ori">50,000원</span>
+										<span class="price_sale">50,000원</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-slide">
+								<div class="item_type2">
+									<a href="#" class="thum" style="background-image:url('../../assets/images/dummy/prd_thum_wh1.png');"></a>
+									<div id="" class="it_cnt">
+										<div class="it_action clearfix">
+											<a href="javascript:;" class="at heart active">관심상품</a>
+											<a href="javascript:;" class="at cart">장바구니</a>
+										</div>
+										<a href="#" class="subject"><span class="cate">신한TOPS</span> 수입 주방 용품 모음전</a>
+										<span class="price_ori">50,000원</span>
+										<span class="price_sale">50,000원</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="mi_section">
+			<div id="" class="container">
+				<h3 class="ms_title">이달의 신규상품</h3>
+			</div>
+			<ul class="it4_box">
+				<li>
+					<div class="item_type4">
+						<a href="#" class="thum" style="background-image:url('../../assets/images/dummy/prd_thum_wh1.png');"></a>
+						<div id="" class="it_cnt">
+							<a href="#" class="subject">[살로몬] 스키헬멧 에스레이스 S RACE JR키헬멧 에스레이스 S RACE JR키헬멧 에스레이스 S RACE JR에스레이스 S RACE JR키헬멧 에스레이스 S RACE JR키헬멧 에스레이스 S RACE JR에스레이스 S RACE JR키헬멧 에스레이스 S RACE JR키헬멧 에스레이스 S RACE JR</a>
+							<span class="price_ori">50,000원</span>
+							<span class="price_sale">50,000원</span>
+							<div class="it_action clearfix">
+								<a href="javascript:;" class="at cart">장바구니</a>
+								<a href="javascript:;" class="at heart active">관심상품</a>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="item_type4">
+						<a href="#" class="thum" style="background-image:url('../../assets/images/dummy/prd_thum_wh2.png');"></a>
+						<div id="" class="it_cnt">
+							<a href="#" class="subject">[살로몬] 스키헬멧 에스레이스 S RACE JR키헬멧 에스레이스 S RACE JR키헬멧 에스레이스 S RACE JR</a>
+							<span class="price_ori">50,000원</span>
+							<span class="price_sale">50,000원</span>
+							<div class="it_action clearfix">
+								<a href="javascript:;" class="at cart">장바구니</a>
+								<a href="javascript:;" class="at heart active">관심상품</a>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="item_type4">
+						<a href="#" class="thum" style="background-image:url('../../assets/images/dummy/prd_thum_wh3.png');"></a>
+						<div id="" class="it_cnt">
+							<a href="#" class="subject"><span class="cate">신한TOPS</span> 수입 주방 용품 모음전</a>
+							<span class="price_ori">50,000원</span>
+							<span class="price_sale">50,000원</span>
+							<div class="it_action clearfix">
+								<a href="javascript:;" class="at cart">장바구니</a>
+								<a href="javascript:;" class="at heart active">관심상품</a>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="item_type4">
+						<a href="#" class="thum" style="background-image:url('../../assets/images/dummy/prd_thum_wh4.png');"></a>
+						<div id="" class="it_cnt">
+							<a href="#" class="subject"><span class="cate">신한TOPS</span> 수입 주방 용품 모음전</a>
+							<span class="price_ori">50,000원</span>
+							<span class="price_sale">50,000원</span>
+							<div class="it_action clearfix">
+								<a href="javascript:;" class="at cart">장바구니</a>
+								<a href="javascript:;" class="at heart active">관심상품</a>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+			<div class="list_more">
+				<a href="javascript:;" class="btn"><span>더보기</span></a>
+			</div>
+		</div>
+
+		<div class="mi_section">
+			<div id="" class="container">
+				<h3 class="ms_title">BEST CHOICE</h3>
+			</div>
+			<div class="it2_box">
+				<div class="item_type2">
+					<a href="#" class="thum" style="background-image:url('../../assets/images/dummy/prd_thum_wh1.png');"></a>
+					<div id="" class="it_cnt">
+						<div class="it_action clearfix">
+							<a href="javascript:;" class="at heart active">관심상품</a>
+							<a href="javascript:;" class="at cart">장바구니</a>
+						</div>
+						<a href="#" class="subject"><span class="cate">신한TOPS</span> 수입 주방 용품 모음전수입 주방 용품 모음전수입 주방 용품 모음전수입 주방 용품 모음전수입 주방 용품 모음전수입 주방 용품 모음전</a>
+						<span class="price_ori">50,000원</span>
+						<span class="price_sale">50,000원</span>
+					</div>
+				</div>
+
+				<div class="item_type2">
+					<a href="#" class="thum" style="background-image:url('../../assets/images/dummy/prd_thum_wh4.png');"></a>
+					<div id="" class="it_cnt">
+						<div class="it_action clearfix">
+							<a href="javascript:;" class="at heart">관심상품</a>
+							<a href="javascript:;" class="at cart">장바구니</a>
+						</div>
+						<a href="#" class="subject"><span class="cate">신한TOPS</span> 수입 주방 용품 모음전</a>
+						<span class="price_ori">50,000원</span>
+						<span class="price_sale">50,000원</span>
+					</div>
+				</div>
+
+				<div class="item_type2">
+					<a href="#" class="thum" style="background-image:url('../../assets/images/dummy/prd_thum_wh1.png');"></a>
+					<div id="" class="it_cnt">
+						<div class="it_action clearfix">
+							<a href="javascript:;" class="at heart">관심상품</a>
+							<a href="javascript:;" class="at cart">장바구니</a>
+						</div>
+						<a href="#" class="subject"><span class="cate">신한TOPS</span> 수입 주방 용품 모음전</a>
+						<span class="price_ori">50,000원</span>
+						<span class="price_sale">50,000원</span>
+					</div>
+				</div>
+
+				<div class="item_type2">
+					<a href="#" class="thum" style="background-image:url('../../assets/images/dummy/prd_thum_wh2.png');"></a>
+					<div id="" class="it_cnt">
+						<div class="it_action clearfix">
+							<a href="javascript:;" class="at heart">관심상품</a>
+							<a href="javascript:;" class="at cart">장바구니</a>
+						</div>
+						<a href="#" class="subject"><span class="cate">신한TOPS</span> 수입 주방 용품 모음전</a>
+						<span class="price_ori">50,000원</span>
+						<span class="price_sale">50,000원</span>
+					</div>
+				</div>
+
+				<div class="item_type2">
+					<a href="#" class="thum" style="background-image:url('../../assets/images/dummy/prd_thum_wh1.png');"></a>
+					<div id="" class="it_cnt">
+						<div class="it_action clearfix">
+							<a href="javascript:;" class="at heart">관심상품</a>
+							<a href="javascript:;" class="at cart">장바구니</a>
+						</div>
+						<a href="#" class="subject"><span class="cate">신한TOPS</span> 수입 주방 용품 모음전</a>
+						<span class="price_ori">50,000원</span>
+						<span class="price_sale">50,000원</span>
+					</div>
+				</div>
+
+				<div class="item_type2">
+					<a href="#" class="thum" style="background-image:url('../../assets/images/dummy/prd_thum_wh2.png');"></a>
+					<div id="" class="it_cnt">
+						<div class="it_action clearfix">
+							<a href="javascript:;" class="at heart">관심상품</a>
+							<a href="javascript:;" class="at cart">장바구니</a>
+						</div>
+						<a href="#" class="subject"><span class="cate">신한TOPS</span> 수입 주방 용품 모음전</a>
+						<span class="price_ori">50,000원</span>
+						<span class="price_sale">50,000원</span>
+					</div>
+				</div>
+			</div>
+			<div class="list_more">
+				<a href="javascript:;" class="btn"><span>더보기</span></a>
+			</div>
+		</div>
+
+		<div class="mi_section">
+			<div id="" class="container">
+				<h3 class="ms_title">대표상품</h3>
+			</div>
+			<ul class="it4_box">
+				<li>
+					<div class="item_type4">
+						<a href="#" class="thum" style="background-image:url('../../assets/images/dummy/prd_thum_wh1.png');"></a>
+						<div id="" class="it_cnt">
+							<a href="#" class="subject">[살로몬] 스키헬멧 에스레이스 S RACE JR키헬멧 에스레이스 S RACE JR키헬멧 에스레이스 S RACE JR</a>
+							<span class="price_ori">50,000원</span>
+							<span class="price_sale">50,000원</span>
+							<div class="it_action clearfix">
+								<a href="javascript:;" class="at cart">장바구니</a>
+								<a href="javascript:;" class="at heart active">관심상품</a>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="item_type4">
+						<a href="#" class="thum" style="background-image:url('../../assets/images/dummy/prd_thum_wh2.png');"></a>
+						<div id="" class="it_cnt">
+							<a href="#" class="subject">[살로몬] 스키헬멧 에스레이스 S RACE JR키헬멧 에스레이스 S RACE JR키헬멧 에스레이스 S RACE JR</a>
+							<span class="price_ori">50,000원</span>
+							<span class="price_sale">50,000원</span>
+							<div class="it_action clearfix">
+								<a href="javascript:;" class="at cart">장바구니</a>
+								<a href="javascript:;" class="at heart active">관심상품</a>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="item_type4">
+						<a href="#" class="thum" style="background-image:url('../../assets/images/dummy/prd_thum_wh3.png');"></a>
+						<div id="" class="it_cnt">
+							<a href="#" class="subject"><span class="cate">신한TOPS</span> 수입 주방 용품 모음전</a>
+							<span class="price_ori">50,000원</span>
+							<span class="price_sale">50,000원</span>
+							<div class="it_action clearfix">
+								<a href="javascript:;" class="at cart">장바구니</a>
+								<a href="javascript:;" class="at heart active">관심상품</a>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="item_type4">
+						<a href="#" class="thum" style="background-image:url('../../assets/images/dummy/prd_thum_wh4.png');"></a>
+						<div id="" class="it_cnt">
+							<a href="#" class="subject"><span class="cate">신한TOPS</span> 수입 주방 용품 모음전</a>
+							<span class="price_ori">50,000원</span>
+							<span class="price_sale">50,000원</span>
+							<div class="it_action clearfix">
+								<a href="javascript:;" class="at cart">장바구니</a>
+								<a href="javascript:;" class="at heart active">관심상품</a>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+
+		<div class="mi_section">
+			<div id="" class="container">
+				<h3 class="ms_title">대표상품</h3>
+			</div>
+			<ul class="it6_box">
+				<li>
+					<div class="item_type3">
+						<a href="#" class="thum" style="background-image:url('../../assets/images/dummy/prd_thum_wh1.png');"></a>
+						<div id="" class="it_cnt">
+							<div id="" class="it3_inner">
+								<a href="#" class="subject"><span class="cate">신한TOPS</span> 수입 주방 용품 모음전수입 주방 용품 모음전수입 주방 용품 모음전수입 주방 용품 모음전수입 주방 용품 모음전 주방 용품 모음전수입 주방 용품 모음전수입 주방 용품 모음전수입 주방 용품 모음전수입 주방 용품 모음전</a>
+								<div id="" class="it3_bt clearfix">
+									<span class="price_sale">50,000원</span>
+									<span class="price_ori">50,000원</span>
+									<div class="it_action clearfix">
+										<a href="javascript:;" class="at heart active">관심상품</a>
+										<a href="javascript:;" class="at cart">장바구니</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="item_type3">
+						<a href="#" class="thum" style="background-image:url('../../assets/images/dummy/prd_thum_wh2.png');"></a>
+						<div id="" class="it_cnt">
+							<div id="" class="it3_inner">
+								<a href="#" class="subject"><span class="cate">신한TOPS</span> 수입 주방 용품 모음전</a>
+								<div id="" class="it3_bt clearfix">
+									<span class="price_sale">50,000원</span>
+									<span class="price_ori">50,000원</span>
+									<div class="it_action clearfix">
+										<a href="javascript:;" class="at heart active">관심상품</a>
+										<a href="javascript:;" class="at cart">장바구니</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="item_type3">
+						<a href="#" class="thum" style="background-image:url('../../assets/images/dummy/prd_thum_wh3.png');"></a>
+						<div id="" class="it_cnt">
+							<div id="" class="it3_inner">
+								<a href="#" class="subject"><span class="cate">신한TOPS</span> 수입 주방 용품 모음전</a>
+								<div id="" class="it3_bt clearfix">
+									<span class="price_sale">50,000원</span>
+									<span class="price_ori">50,000원</span>
+									<div class="it_action clearfix">
+										<a href="javascript:;" class="at heart active">관심상품</a>
+										<a href="javascript:;" class="at cart">장바구니</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="item_type3">
+						<a href="#" class="thum" style="background-image:url('../../assets/images/dummy/prd_thum_wh4.png');"></a>
+						<div id="" class="it_cnt">
+							<div id="" class="it3_inner">
+								<a href="#" class="subject"><span class="cate">신한TOPS</span> 수입 주방 용품 모음전</a>
+								<div id="" class="it3_bt clearfix">
+									<span class="price_sale">50,000원</span>
+									<span class="price_ori">50,000원</span>
+									<div class="it_action clearfix">
+										<a href="javascript:;" class="at heart active">관심상품</a>
+										<a href="javascript:;" class="at cart">장바구니</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="item_type3">
+						<a href="#" class="thum" style="background-image:url('../../assets/images/dummy/prd_thum_wh1.png');"></a>
+						<div id="" class="it_cnt">
+							<div id="" class="it3_inner">
+								<a href="#" class="subject"><span class="cate">신한TOPS</span> 수입 주방 용품 모음전</a>
+								<div id="" class="it3_bt clearfix">
+									<span class="price_sale">50,000원</span>
+									<span class="price_ori">50,000원</span>
+									<div class="it_action clearfix">
+										<a href="javascript:;" class="at heart active">관심상품</a>
+										<a href="javascript:;" class="at cart">장바구니</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="item_type3">
+						<a href="#" class="thum" style="background-image:url('../../assets/images/dummy/prd_thum_wh2.png');"></a>
+						<div id="" class="it_cnt">
+							<div id="" class="it3_inner">
+								<a href="#" class="subject"><span class="cate">신한TOPS</span> 수입 주방 용품 모음전</a>
+								<div id="" class="it3_bt clearfix">
+									<span class="price_sale">50,000원</span>
+									<span class="price_ori">50,000원</span>
+									<div class="it_action clearfix">
+										<a href="javascript:;" class="at heart active">관심상품</a>
+										<a href="javascript:;" class="at cart">장바구니</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+
+		
+	</div>
+	<!-- //content -->
+
+	<!-- fixed nav -->
+	<div class="fixed_nav mn">
+		<div class="inner">
+			<ul class="fx_nav">
+				<li><a href="#" class="home active theme_color">홈</a></li>
+				<li><a href="#" class="delivery">배송조회</a></li>
+				<li><a href="#" class="search">상품검색</a></li>
+				<li><a href="#" class="mymenu">마이메뉴</a></li>
+				<li><a href="javascript:;" class="lastest" onclick="lastestShow();">최근본상품</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- //fixed nav -->
+
+	<!-- footer -->
+	<div id="footer">
+		<div id="" class="container">
+			<div class="ft_link clearfix">
+				<ul>
+					<li><a href="#">이용약관</a></li>
+					<li><a href="#">개인정보취급방침</a></li>
+					<li><a href="#">이메일무단수집거부</a></li>
+				</ul>
+			</div>
+			<div class="ft_info">
+				<span class="fi_company">㈜ 신세계</span>
+				<hr>
+				<div class="fi_item">
+					<span>서울시 서초구 신반포로 194 고속버스터미널 신관</span>
+					<span>대표이사 : 차정호</span>
+					<span>개인정보관리책임자 : 김종수 팀장</span>
+					<span>사업자등록번호 : 201-81-32195</span>
+				</div>
+				<hr>
+				<div class="ft_cs">
+					<strong class="tit">고객만족센터</strong>
+					<div class="fi_cs_cnt">
+						<span>운영시간 평일 10:00 ~ 17:00</span>
+						<span>Tel. 02-3406-6909</span>
+						<span>Fax. 02-3479-1090</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //footer -->
+</div><!-- //layout -->
+
+
+<!-- 최근본상품 레이어 -->
+<div class="lastest_goods">
+	<div class="inner">
+		<strong class="lgl_title">최근 본 상품정보</strong>
+		<div class="lgl_list">
+			<ul class="list">
+				<li>
+					<div class="item_type5">
+						<a href="#" class="thum" style="background-image:url('../../assets/images/dummy/prd_thum_wh2.png');"></a>
+						<div id="" class="it_cnt">
+							<a href="#" class="subject"><span class="cate">신한TOPS</span> 수입 주방 용품 모음전수입 주방 용품 모음전수입 주방 용품 모음전수입 주방 용품 모음전수입 주방 용품 모음전</a>
+							<span class="price_ori">50,000원</span>
+							<span class="price_sale">50,000원</span>
+						</div>
+						<div class="it_action clearfix">
+							<a href="javascript:;" class="at cart"><span class="sound_only">장바구니</span></a>
+							<a href="javascript:;" class="at heart active"><span class="sound_only">관심상품</span></a>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="item_type5">
+						<a href="#" class="thum" style="background-image:url('../../assets/images/dummy/prd_thum_wh2.png');"></a>
+						<div id="" class="it_cnt">
+							<a href="#" class="subject"><span class="cate">신한TOPS</span> 수입 주방 용품 모음전</a>
+							<span class="price_ori">50,000원</span>
+							<span class="price_sale">50,000원</span>
+						</div>
+						<div class="it_action clearfix">
+							<a href="javascript:;" class="at cart one"><span class="sound_only">장바구니</span></a>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="item_type5">
+						<a href="#" class="thum" style="background-image:url('../../assets/images/dummy/prd_thum_wh2.png');"></a>
+						<div id="" class="it_cnt">
+							<a href="#" class="subject"><span class="cate">신한TOPS</span> 수입 주방 용품 모음전수입 주방 용품 모음전수입 주방 용품 모음전수입 주방 용품 모음전수입 주방 용품 모음전</a>
+							<span class="price_ori">50,000원</span>
+							<span class="price_sale">50,000원</span>
+						</div>
+						<div class="it_action clearfix">
+							<a href="javascript:;" class="at heart one active"><span class="sound_only">관심상품</span></a>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="item_type5">
+						<a href="#" class="thum" style="background-image:url('../../assets/images/dummy/prd_thum_wh2.png');"></a>
+						<div id="" class="it_cnt">
+							<a href="#" class="subject"><span class="cate">신한TOPS</span> 수입 주방 용품 모음전</a>
+							<span class="price_ori">50,000원</span>
+							<span class="price_sale">50,000원</span>
+						</div>
+						<div class="it_action clearfix">
+							<a href="javascript:;" class="at cart"><span class="sound_only">장바구니</span></a>
+							<a href="javascript:;" class="at heart"><span class="sound_only">관심상품</span></a>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="item_type5">
+						<a href="#" class="thum" style="background-image:url('../../assets/images/dummy/prd_thum_wh2.png');"></a>
+						<div id="" class="it_cnt">
+							<a href="#" class="subject"><span class="cate">신한TOPS</span> 수입 주방 용품 모음전수입 주방 용품 모음전수입 주방 용품 모음전수입 주방 용품 모음전수입 주방 용품 모음전</a>
+							<span class="price_ori">50,000원</span>
+							<span class="price_sale">50,000원</span>
+						</div>
+						<div class="it_action clearfix">
+							<a href="javascript:;" class="at cart"><span class="sound_only">장바구니</span></a>
+							<a href="javascript:;" class="at heart active"><span class="sound_only">관심상품</span></a>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="item_type5">
+						<a href="#" class="thum" style="background-image:url('../../assets/images/dummy/prd_thum_wh2.png');"></a>
+						<div id="" class="it_cnt">
+							<a href="#" class="subject"><span class="cate">신한TOPS</span> 수입 주방 용품 모음전</a>
+							<span class="price_ori">50,000원</span>
+							<span class="price_sale">50,000원</span>
+						</div>
+						<div class="it_action clearfix">
+							<a href="javascript:;" class="at cart"><span class="sound_only">장바구니</span></a>
+							<a href="javascript:;" class="at heart"><span class="sound_only">관심상품</span></a>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="item_type5">
+						<a href="#" class="thum" style="background-image:url('../../assets/images/dummy/prd_thum_wh2.png');"></a>
+						<div id="" class="it_cnt">
+							<a href="#" class="subject"><span class="cate">신한TOPS</span> 수입 주방 용품 모음전수입 주방 용품 모음전수입 주방 용품 모음전수입 주방 용품 모음전수입 주방 용품 모음전</a>
+							<span class="price_ori">50,000원</span>
+							<span class="price_sale">50,000원</span>
+						</div>
+						<div class="it_action clearfix">
+							<a href="javascript:;" class="at cart"><span class="sound_only">장바구니</span></a>
+							<a href="javascript:;" class="at heart active"><span class="sound_only">관심상품</span></a>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="item_type5">
+						<a href="#" class="thum" style="background-image:url('../../assets/images/dummy/prd_thum_wh2.png');"></a>
+						<div id="" class="it_cnt">
+							<a href="#" class="subject"><span class="cate">신한TOPS</span> 수입 주방 용품 모음전</a>
+							<span class="price_ori">50,000원</span>
+							<span class="price_sale">50,000원</span>
+						</div>
+						<div class="it_action clearfix">
+							<a href="javascript:;" class="at cart"><span class="sound_only">장바구니</span></a>
+							<a href="javascript:;" class="at heart"><span class="sound_only">관심상품</span></a>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="item_type5">
+						<a href="#" class="thum" style="background-image:url('../../assets/images/dummy/prd_thum_wh2.png');"></a>
+						<div id="" class="it_cnt">
+							<a href="#" class="subject"><span class="cate">신한TOPS</span> 수입 주방 용품 모음전수입 주방 용품 모음전수입 주방 용품 모음전수입 주방 용품 모음전수입 주방 용품 모음전</a>
+							<span class="price_ori">50,000원</span>
+							<span class="price_sale">50,000원</span>
+						</div>
+						<div class="it_action clearfix">
+							<a href="javascript:;" class="at cart"><span class="sound_only">장바구니</span></a>
+							<a href="javascript:;" class="at heart active"><span class="sound_only">관심상품</span></a>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="item_type5">
+						<a href="#" class="thum" style="background-image:url('../../assets/images/dummy/prd_thum_wh2.png');"></a>
+						<div id="" class="it_cnt">
+							<a href="#" class="subject"><span class="cate">신한TOPS</span> 수입 주방 용품 모음전</a>
+							<span class="price_ori">50,000원</span>
+							<span class="price_sale">50,000원</span>
+						</div>
+						<div class="it_action clearfix">
+							<a href="javascript:;" class="at cart"><span class="sound_only">장바구니</span></a>
+							<a href="javascript:;" class="at heart"><span class="sound_only">관심상품</span></a>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<a href="javascript:;" class="lastest_bg" onclick="lastestHide();">최근 본 상품정보 닫기</a>
+<!-- //최근본상품 레이어 -->
+
+<script src="../../assets/js/jquery-ui.min.js"></script>
+<script src="../../assets/js/slick.js"></script>
+<script src="../../assets/js/swiper.js"></script>
+<script src="../../assets/js/common.js"></script>
+<script>
+//메인팝업
+$('.popup_slide').slick({
+  arrows: false,
+  dots: true,
+  adaptiveHeight:true
+});
+
+var swiper2 = new Swiper('.main_visual .swiper-container', {
+	dots:true,
+	pagination: {
+		el: '.main_visual .swiper-pagination',
+		type: 'fraction',
+	},
+	autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+	observer: true,
+    observeParents: true,
+});
+$(".main_visual .mv_pause").click(function(){
+	swiper2.autoplay.stop();
+	$(".main_visual .mv_pause").hide()
+	$(".main_visual .mv_play").show()
+});
+$(".main_visual .mv_play").click(function(){
+	swiper2.autoplay.start();
+	$(".main_visual .mv_pause").show()
+	$(".main_visual .mv_play").hide()
+});
+
+var swiper = new Swiper('.il_scroll .swiper-container', {
+  spaceBetween: 8,
+  pagination: {
+	el: '.il_scroll .swiper-pagination',
+	type: 'progressbar',
+  }
+});
+
+$('.il_tcnt').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  infinite: false,
+  adaptiveHeight:true,
+  asNavFor: '.il_tcate'
+});
+$('.il_tcate').slick({
+  //slidesToShow: 4,
+  arrows: false,
+  swipeToSlide: true,
+  asNavFor: '.il_tcnt',
+  variableWidth: true,
+  outerEdgeLimit: true,
+  infinite: false,
+  focusOnSelect: true
+})
+
+
+
+var swiper3 = new Swiper('.it5_box .swiper-container', {
+  slidesPerView:  'auto',
+  freeMode: true,
+});
+</script>
+</body>
+</html>

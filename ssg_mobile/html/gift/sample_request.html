@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<meta name="referrer" content="always">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="format-detection" content="telephone=no,address=no,email=no">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+<!-- No cache -->
+<meta http-equiv="Expires" content="-1">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache; no-store; no-save">
+<!-- Summary -->
+<meta property="og:title" content="SHINSEGAE">
+<meta property="og:description" content="SHINSEGAE">
+<title>SHINSEGAE</title>
+<link rel="stylesheet" type="text/css" href="../../assets/css/normalize.css" />
+<link rel="stylesheet" type="text/css" href="../../assets/css/common.css" />
+<link rel="stylesheet" type="text/css" href="../../assets/css/content.css" />
+<link rel="stylesheet" type="text/css" href="../../assets/css/jquery-ui.css" />
+<link rel="stylesheet" type="text/css" href="../../assets/css/swiper.css" />
+<script src="../../assets/js/jquery-1.11.3.min.js"></script>
+<style>
+:root {
+	--theme-color-1: #f64a3e; /*테마 색상코드*/
+}
+</style>
+</head>
+<body>
+<div id="layout">
+
+	<!-- header -->
+	<div id="header">
+		<div id="" class="inner">
+			<div id="" class="container">
+				<div class="hd_menu">
+					<button type="button" class="menu_btn">메뉴 오픈</button>
+				</div>
+				<h1 class="hd_title">샘플요청</h1>
+				<div class="hd_link">
+					<a href="javascript:;" class="link cart"><span class="count theme_bg">1</span><span class="txt">장바구니</span></a>
+					<a href="javascript:;" class="link alarm"><span class="count theme_bg">1</span><span class="txt">알림</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //header -->
+	
+	<!-- content -->
+	<div class="sub_content pb">
+		
+		<div class="date_set clearfix bdb0">
+			<span class="date">2020.01.01 ~ 2020.01.01 <strong>(3개월)</strong></span>
+			<a href="javascript:;" class="date_btn" onclick="layerShow('date_popup')">조회설정</a>
+		</div>
+
+		<!-- 주문있을때 -->
+		<div class="cart_list label_control">
+			<form method="post" action="">
+				<div class="list_all clearfix">
+					<label class="design_check type1 all"><input type="checkbox"> 전체선택</label>	
+					<a href="javascript:;" class="btn_underline">선택삭제</a>
+				</div>
+
+				<ul class="list">
+					<li>
+						<div class="pri_cnt">
+							<label class="design_check type1 single"><input type="checkbox"></label>
+							<div class="pri_info clearfix">
+								<span class="thum" style="background-image:url('../../assets/images/dummy/prd_thum_wh1.png');"></span>
+								<div class="cnt">
+									<span class="subject">[다이슨] 다이슨 슈퍼소닉 드라이기 / HD-01</span>
+									<span class="option">타입: 블랙 / M사이즈</span>
+								</div>
+							</div>
+						</div>
+						<div class="sample_info">
+							<div id="" class="tbody">
+								<div class="row">
+									<div class="tit">요청일자</div>
+									<div class="cnt">2020-05-12</div>
+								</div>
+								<div class="row">
+									<div class="tit">관리자승인</div>
+									<div class="cnt">-</div>
+								</div>
+								<div class="row">
+									<div class="tit">샘플발송일</div>
+									<div class="cnt">-</div>
+								</div>
+							</div>
+							<div class="tfoot">
+								<div class="row">
+									<div class="tit">샘플입고일</div>
+									<div class="cnt"><a href="javascript:;" class="sp_btn">입고확인</a></div>
+								</div>
+							</div>
+						</div>
+						<a href="javascript:;" class="btn_remove">삭제</a>
+					</li>
+					<li>
+						<div class="pri_cnt">
+							<label class="design_check type1 single"><input type="checkbox"></label>
+							<div class="pri_info clearfix">
+								<span class="thum" style="background-image:url('../../assets/images/dummy/prd_thum_wh1.png');"></span>
+								<div class="cnt">
+									<span class="subject">[다이슨] 다이슨 슈퍼소닉 드라이기 / HD-01</span>
+									<span class="option">타입: 블랙 / M사이즈</span>
+								</div>
+							</div>
+						</div>
+						<div class="sample_info">
+							<div id="" class="tbody">
+								<div class="row">
+									<div class="tit">요청일자</div>
+									<div class="cnt">2020-05-12</div>
+								</div>
+								<div class="row">
+									<div class="tit">관리자승인</div>
+									<div class="cnt">-</div>
+								</div>
+								<div class="row">
+									<div class="tit">샘플발송일</div>
+									<div class="cnt">-</div>
+								</div>
+							</div>
+							<div class="tfoot">
+								<div class="row">
+									<div class="tit">샘플입고일</div>
+									<div class="cnt">2020-05-12</div>
+								</div>
+							</div>
+						</div>
+						<a href="javascript:;" class="btn_remove">삭제</a>
+					</li>
+				</ul>
+			</form>
+		</div>
+		
+		<hr class="devide_line"/>
+
+		<div id="" class="box">
+			<div id="" class="page_nav">
+				<a href="" class="pg_start">처음</a>
+				<a href="" class="pg_prev">이전</a>
+				<a href="" class="pg_page">1<span class="sound_only">페이지</span></a>
+				<span class="sound_only">열린</span><strong class="pg_current">2</strong><span class="sound_only">페이지</span>
+				<a href="" class="pg_page">3<span class="sound_only">페이지</span></a>
+				<a href="" class="pg_page">4<span class="sound_only">페이지</span></a>
+				<a href="" class="pg_page">5<span class="sound_only">페이지</span></a>
+				<a href="" class="pg_next">다음</a>
+				<a href="" class="pg_end">맨끝</a>
+			</div>
+		</div>
+		<!-- //주문있을때 -->
+		<!-- 주문없을때 -->
+		<div class="lc_empty">최근 3개월 내 샘플요청 내역이 없습니다</div>
+		<!-- //주문없을때 -->
+		
+	</div>
+	<!-- //content -->
+
+</div><!-- //layout -->
+
+<!-- 조회설정 -->
+<div class="date_popup sel_popup layer_form fixed_layer" style="display:none;">
+	<div class="layer_box">
+		<div class="layer_cnt">
+			<div class="sel_title"><span class="time_date">조회기간 2020.01.01 ~ 2020.01.01 <strong>(3개월)</strong></span></div>
+			<div class="sel_list">
+				<ul class="list active_control">
+					<li class="active"><a href="javascript:;"><span>3개월</span></a></li>
+					<li><a href="javascript:;"><span>6개월</span></a></li>
+					<li><a href="javascript:;"><span>9개월</span></a></li>
+					<li><a href="javascript:;"><span>12개월</span></a></li>
+				</ul>
+			</div>
+		</div>
+		<a href="javascript:;" onclick="layerHide('date_popup')" class="lc_type1">팝업닫기</a>
+	</div>
+	<span class="layer_bg dim"></span>
+</div>
+<!-- //조회설정 -->
+
+<script src="../../assets/js/jquery-ui.min.js"></script>
+<script src="../../assets/js/slick.js"></script>
+<script src="../../assets/js/swiper.js"></script>
+<script src="../../assets/js/common.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+
+@font-face {
+  font-family: "NanumSquareRound";
+  font-style: normal;
+  font-weight: 400;
+  src: local("fontsNanumSquareRoundR"), /* computer */
+    url("../fontsNanumSquareRoundR.eot"), /* IE9 Compat Modes */
+    url("../fontsNanumSquareRoundR.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fontsNanumSquareRoundR.woff2") format("woff2"), /* Modern Browsers */    
+    url("../fontsNanumSquareRoundR.woff") format("woff"), /* Modern Browsers */
+    url("../fontsNanumSquareRoundR.ttf") format("truetype"); /* Safari, Android, iOS */
+}
+@font-face {
+  font-family: "NanumSquareRound";
+  font-style: normal;
+  font-weight: 800;
+  src: local("NanumSquareRoundEB"), /* computer */
+    url("../fontsNanumSquareRoundEB.eot"), /* IE9 Compat Modes */
+    url("../fontsNanumSquareRoundEB.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fontsNanumSquareRoundEB.woff2") format("woff2"), /* Modern Browsers */
+    url("../fontsNanumSquareRoundEB.woff") format("woff"), /* Modern Browsers */
+    url("../fontsNanumSquareRoundEB.ttf") format("truetype"); /* Safari, Android, iOS */
+}

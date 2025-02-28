@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<meta name="referrer" content="always">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="format-detection" content="telephone=no,address=no,email=no">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+<!-- No cache -->
+<meta http-equiv="Expires" content="-1">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache; no-store; no-save">
+<!-- Summary -->
+<meta property="og:title" content="SHINSEGAE">
+<meta property="og:description" content="SHINSEGAE">
+<title>SHINSEGAE</title>
+<link rel="stylesheet" type="text/css" href="../../assets/css/normalize.css" />
+<link rel="stylesheet" type="text/css" href="../../assets/css/common.css" />
+<link rel="stylesheet" type="text/css" href="../../assets/css/content.css" />
+<link rel="stylesheet" type="text/css" href="../../assets/css/jquery-ui.css" />
+<link rel="stylesheet" type="text/css" href="../../assets/css/swiper.css" />
+<script src="../../assets/js/jquery-1.11.3.min.js"></script>
+<style>
+:root {
+	--theme-color-1: #f64a3e; /*테마 색상코드*/
+}
+</style>
+</head>
+<body>
+<div id="layout" class="grey">
+
+	<!-- header -->
+	<div id="header">
+		<div id="" class="inner">
+			<div id="" class="container">
+				<div class="hd_menu">
+					<button type="button" class="menu_btn">메뉴 오픈</button>
+				</div>
+				<h1 class="hd_title">장바구니</h1>
+				<div class="hd_link">
+					<a href="javascript:;" class="link cart"><span class="count theme_bg">1</span><span class="txt">장바구니</span></a>
+					<a href="javascript:;" class="link alarm"><span class="count theme_bg">1</span><span class="txt">알림</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //header -->
+	
+	<!-- content -->
+	<div class="sub_content pb">
+
+		<div class="cart_list label_control">
+			<form method="post" action="">
+				<div class="list_all clearfix">
+					<label class="design_check type1 all"><input type="checkbox"> 전체선택</label>	
+					<a href="javascript:;" class="btn_underline">선택삭제</a>
+				</div>
+
+				<ul class="list">
+					<li>
+						<div class="pri_cnt">
+							<label class="design_check type1 single"><input type="checkbox"></label>
+							<div class="pri_info clearfix">
+								<span class="thum" style="background-image:url('../../assets/images/dummy/prd_thum_wh1.png');"></span>
+								<div class="cnt">
+									<span class="subject">[다이슨] 다이슨 슈퍼소닉 드라이기 / HD-01</span>
+									<span class="option">타입: 블랙 / M사이즈</span>
+								</div>
+							</div>
+						</div>
+						<div class="pri_ft float clearfix">
+							<div class="left"><a href="javascript:;" class="btn_underline bold" onclick="layerShow('option_popup')">옵션변경</a></div>
+							<div class="right"><span class="price">45,000원</span></div>
+						</div>
+						<a href="javascript:;" class="btn_remove">삭제</a>
+					</li>
+					<li>
+						<div class="pri_cnt">
+							<label class="design_check type1 single"><input type="checkbox"></label>
+							<div class="pri_info clearfix">
+								<span class="thum" style="background-image:url('../../assets/images/dummy/prd_thum_wh1.png');"></span>
+								<div class="cnt">
+									<span class="subject">[다이슨] 다이슨 슈퍼소닉 드라이기 / HD-01</span>
+									<span class="option">타입: 블랙 / M사이즈</span>
+								</div>
+							</div>
+						</div>
+						<div class="pri_ft float clearfix">
+							<div class="left">
+								<div class="option_lot clearfix">
+									<button type="button" class="lot_btn minus">감소</button>
+									<span class="lot_cnt">1</span>
+									<button type="button" class="lot_btn plus">증가</button>
+								</div>
+							</div>
+							<div class="right"><span class="price">45,000원</span></div>
+						</div>
+						<a href="javascript:;" class="btn_remove">삭제</a>
+					</li>
+				</ul>
+
+				<div class="order_total">
+					<div class="row">
+						<div class="tit">상품금액</div>
+						<div class="cnt">45,000원</div>
+					</div>
+					<div class="row">
+						<div class="tit">배송비</div>
+						<div class="cnt">0원</div>
+					</div>
+					<div class="row total">
+						<div class="tit theme_color">총 결제금액</div>
+						<div class="cnt theme_color">45,000원</div>
+					</div>
+				</div>
+				
+				<div class="lc_empty">상품문의 내역이 없습니다</div>
+
+				<!-- fixed nav -->
+				<div class="fixed_nav">
+					<div class="inner">
+						<a href="javascript:;" class="btn xl submit theme_bg">구매하기</a>
+					</div>
+				</div>
+				<!-- //fixed nav -->
+			</form>
+		</div>
+		
+		<!-- 옵션변경 레이어 -->
+		<div class="option_popup sel_popup layer_form fixed_layer" style="display:none;">
+			<div class="layer_box">
+				<div class="layer_cnt grey clearfix">
+					<div class="option_ly container">
+						<div class="price">45,000원</div>
+						<div class="option_sel">
+							<div class="os_item">
+								<button type="button" class="os_toggle">옵션명</button>
+								<div class="options">
+									<ul>
+										<li><a href="javascript:;" class="active">선택없음</a></li>
+										<li><a href="javascript:;" >옵션1</a></li>
+										<li><a href="javascript:;">옵션2</a></li>
+										<li><a href="javascript:;" class="soldout">옵션3</a></li>
+										<li><a href="javascript:;">옵션4</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="os_item">
+								<button type="button" class="os_toggle">옵션명</button>
+								<div class="options">
+									<ul>
+										<li><a href="javascript:;">옵션1</a></li>
+										<li><a href="javascript:;">옵션2</a></li>
+										<li><a href="javascript:;">옵션3</a></li>
+										<li><a href="javascript:;">옵션4</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="container">
+						<div class="pri_option mgt15">
+							<div class="item clearfix">
+								<span class="option">타입: 블랙 / M사이즈</span>
+								<div id="" class="float clearfix">
+									<div class="option_lot left clearfix">
+										<button type="button" class="lot_btn minus">감소</button>
+										<span class="lot_cnt">1</span>
+										<button type="button" class="lot_btn plus">증가</button>
+									</div>
+									<div class="right">
+										<div class="price">45,000원</div>
+									</div>
+								</div>
+								<a href="javascript:;" class="btn_remove">삭제</a>
+							</div>
+						</div>
+
+						<div class="oly_total">
+							합계 <strong>45,000원</strong>
+						</div>
+					</div>
+
+					<div class="lc_btn">
+						<a href="javascript:;" class="submit theme_bg" onclick="layerHide('gosi_popup')">변경</a>
+					</div>
+				</div>
+				<a href="javascript:;" onclick="layerHide('option_popup')" class="lc_type1">팝업닫기</a>
+			</div>
+			<span class="layer_bg dim"></span>
+		</div>
+		<!-- //옵션변경 레이어 -->
+
+	</div>
+	<!-- //content -->
+
+</div><!-- //layout -->
+
+<script src="../../assets/js/jquery-ui.min.js"></script>
+<script src="../../assets/js/slick.js"></script>
+<script src="../../assets/js/swiper.js"></script>
+<script src="../../assets/js/common.js"></script>
+<script>
+//옵션 선택
+$(document).on('click', ".os_toggle", function() {
+	if($(this).hasClass('active')){
+		$(this).removeClass('active');
+		$(this).next('.options').hide();
+	}else{
+		$(this).addClass('active');
+		$(this).next('.options').show();
+	}
+});
+
+$(document).on('click', ".option_sel .options a", function() {
+	var optionName = $(this).text();
+	if($(this).hasClass('soldout')){
+		return false;
+	}
+	$(this).closest('ul').find('a').removeClass('active');
+	$(this).addClass('active');
+	$(this).closest('.options').hide();
+	$(this).closest('.os_item').find('.os_toggle').removeClass('active');
+	$(this).closest('.os_item').find('.os_toggle').text(optionName);
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<meta name="referrer" content="always">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="format-detection" content="telephone=no,address=no,email=no">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+<!-- No cache -->
+<meta http-equiv="Expires" content="-1">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache; no-store; no-save">
+<!-- Summary -->
+<meta property="og:title" content="SHINSEGAE">
+<meta property="og:description" content="SHINSEGAE">
+<title>SHINSEGAE</title>
+<link rel="stylesheet" type="text/css" href="../../assets/css/normalize.css" />
+<link rel="stylesheet" type="text/css" href="../../assets/css/common.css" />
+<link rel="stylesheet" type="text/css" href="../../assets/css/content.css" />
+<link rel="stylesheet" type="text/css" href="../../assets/css/jquery-ui.css" />
+<link rel="stylesheet" type="text/css" href="../../assets/css/swiper.css" />
+<script src="../../assets/js/jquery-1.11.3.min.js"></script>
+<style>
+:root {
+	--theme-color-1: #f64a3e; /*테마 색상코드*/
+}
+</style>
+</head>
+<body>
+<div id="layout" class="grey">
+
+	<!-- header -->
+	<div class="hd_bg">
+		<div id="" class="inner theme_bg clearfix">
+			<h1>로그인</h1>
+			<a href="javascript:;" class="home">홈으로</a>
+		</div>
+	</div>
+	<!-- //header -->
+	
+	<!-- content -->
+	<div class="sub_content">
+		<div class="login_b">
+			<div class="login_form">
+				<div class="lf_logo"><img src="../../assets/images/common/logo.png" alt="SHINSEGAE" style="height:30px;"></div>
+
+				<div class="login_title">
+					<span class="company">신세계</span>
+					<h2>2020 설 명절 GIFT</h2>
+					<p>언제나 고객만족을 위해 최선을 다하도록 노력하겠습니다.</p>
+				</div>
+				<div class="login_area">
+					<form method="post" action="">
+						<div class="form_type1">
+							<div class="item ip_group clear_box">
+								<input type="text" class="ico id" placeholder="아이디">
+							</div>
+							<div class="item ip_group clear_box">
+								<input type="text" class="ico pw" placeholder="비밀번호">
+							</div>
+						</div>
+						<div class="btn_box mgt15">
+							<a href="javascript:;" class="btn xl submit radius theme_bg">로그인</a>
+						</div>
+					</form>
+				</div>
+				<div id="" class="login_mem_link mgt20">
+					<a href="javascript:;">아이디 찾기</a><a href="javascript:;">비밀번호 찾기</a><a href="javascript:;">회원가입</a>
+				</div>
+				<a href="javascript:;" class="btn lg dark radius mgt15"><span class="arrow_right_inline white">인증샷 올리기</span></a>
+				<a href="javascript:;" class="btn lg white gline radius mgt15"><span class="arrow_right_inline">쇼핑몰 <span class="theme_color">코드입력</span></span></a>
+				<a href="javascript:;" class="btn lg grey radius mgt7"><span class="arrow_right_inline">기업체 구매상담</span></a>
+			</div>
+
+			<div id="" class="container mgt15">
+				<div class="caution_box">
+					<strong class="caution_title">사이트 이용문의</strong> 
+					<ul class="bld_list mgt5">
+						<li>※ 사이트 이용문의 : 02-3406-0000</li>
+						<li>※ 아이디/비밀번호는 사번으로 접속하시면 됩니다.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //content -->
+
+	<!-- fixed nav -->
+	<div class="fixed_nav">
+		<div class="inner">
+			<div class="fn_btn">
+				<button type="button" class="btn_banner" onclick="fbanner_show();"><span class="arrow_top_inline">배너 보기</span></button>
+			</div>
+		</div>
+	</div>
+	<!-- //fixed nav -->
+
+	<!-- 고정배너 --><!-- hide시 bottom_banner_layer,layer_bg : display:none      layer_box: bottom:-100% -->
+	<div class="layer_form fixed_layer bottom_banner_layer" style="display:block;">
+		<div class="layer_box" style="bottom:0;">
+			<a href="javascript:;" class="login_banner_close" onclick="fbanner_hide()">닫기</a>
+			<div class="banner_cnt">
+				<a href="javascript:;"><img src="../../assets/images/dummy/fixed_banner.png"></a>
+			</div>
+		</div>
+		<span class="layer_bg dim" style="display:block;" onclick="fbanner_hide()"></span>
+	</div>
+	<!-- //고정배너 -->
+
+</div><!-- //layout -->
+
+<script src="../../assets/js/jquer\\-ui.min.js"></script>
+<script src="../../assets/js/slick.js"></script>
+<script src="../../assets/js/swiper.js"></script>
+<script src="../../assets/js/common.js"></script>
+
+<script>
+function fbanner_show(){
+	$('.bottom_banner_layer').show();
+	$(".bottom_banner_layer .layer_box").animate({
+		bottom: "0"
+		}, 500, function() {
+	});
+  $('.bottom_banner_layer .layer_bg').fadeIn();
+}
+function fbanner_hide(){
+	$(".bottom_banner_layer .layer_box").animate({
+		bottom: "-100%"
+		}, 500, function() {
+		$('.bottom_banner_layer').hide();
+	});
+    $('.bottom_banner_layer .layer_bg').fadeOut();
+}
+
+
+//이미지 밀어서 닫음
+$('.bottom_banner_layer .layer_box a').on('touchmove', function(e){
+	fbanner_hide();
+});
+</script>
+</body>
+</html>
