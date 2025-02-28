@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<meta charset="UTF-8">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>메인상단</title>
+<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="../../css/sub.css">
+<script type="text/javascript" charset="utf-8" src="../../js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/common.js"></script>
+</head>
+<body>
+<? include("../include/header.html"); ?>
+
+<div id="container" class="container">
+	<? include("../include/snb.html"); ?>
+
+	<div class="content">
+		<div class="location">
+			<span>HOME</span>
+			<span>디자인</span>
+			<span>메인배너</span>
+			<span class="on">메인상단</span>
+		</div>
+		<div class="inner">
+			<h3 class="tit_h3">메인상단</h3>
+
+			<div class="tbl_outer">
+				<table class="tbl_view">
+					<colgroup>
+						<col style="width:100px">
+						<col>
+						<col style="width:100px">
+						<col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">고객사</th>
+							<td>
+								<select name="all1" id="all1" style="width:110px;">
+									<option value="">전체</option>
+								</select>
+								<select name="sel1" id="sel1" style="width:195px;">
+									<option value="">선택</option>
+								</select>
+							</td>
+							<th scope="row">상태</th>
+							<td>
+								<select name="all2" id="all2" style="width:110px;">
+									<option value="">전체</option>
+								</select>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div class="button_area">
+				<div class="left">
+					<button type="button" class="btn_ty3">광고등록</button>
+				</div>
+					<button type="button" class="btn_ty4">삭제</button>
+				<button type="button" class="btn_ty1">검색</button>
+			</div>
+
+			<div class="tbl_search_list">
+
+				<table class="tbl_primary">
+					<colgroup>
+						<col>
+						<col style="width:120px;">
+						<col style="width:120px;">
+						<col style="width:80px;">
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="row">이미지</th>
+							<th scope="row">게시기간</th>
+							<th scope="row">등록일자</th>
+							<th scope="row">상태</th>
+						</tr>
+					</thead>
+					<tbody class="txtc">
+						<tr>
+							<td><img src="../../images/dummy/main_banner.png" alt=""></td>
+							<td>2017-06-01 ~<br>2017-12-31</td>
+							<td>2017-06-01 <br>23:59:59</td>
+							<td>게시</td>
+						</tr>
+						<tr>
+							<td><img src="../../images/dummy/main_banner.png" alt=""></td>
+							<td>2017-06-01 ~<br>2017-12-31</td>
+							<td>2017-06-01 <br>23:59:59</td>
+							<td>게시</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div><!-- //content -->
+</div><!-- //container -->
+</div><!-- //wrap -->
+</body>
+</html>

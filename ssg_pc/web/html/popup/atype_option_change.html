@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<meta charset="UTF-8">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>옵션정보 변경</title>
+<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="../../css/atype_popup.css">
+<script type="text/javascript" charset="utf-8" src="../../js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/common.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/jquery.selectbox-0.2.js"></script>
+</head>
+<body>
+<div class="pop_outer">
+	<div class="pop_inner option_change">
+		<h1>옵션변경/추가</h1>
+
+		<table class="tbl_view">
+			<colgroup>
+				<col>
+				<col style="width:100px;">
+			</colgroup>
+			<thead>
+				<tr>
+					<th>상품정보</th>
+					<th>판매가</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="img"><span><img src="../../images/dummy/thum_cart_list.png" alt=""></span> [엘라스틴] 아보카도 허니 트린트먼트 1000ml<br> 아보카도 허니 트린트먼트 1000ml</td>
+					<td class="txtr price_big bold"><b>500,000</b>원</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<div class="color">
+			<dl>
+				<dt>색상/사이즈</dt>
+				<dd>
+					<div class="sel_ty3 w100i">
+						<select>
+							<option value="1">선택하세요.</option>
+							<option value="2">L</option>
+						</select>
+					</div>
+				</dd>
+			</dl>
+		</div>
+		<div class="option_detail">
+			<ul>
+				<li>
+					<span class="tit">레드 / M</span>
+					<div class="cart_variation">
+						<div class="clear">
+							<button type="button" class="btn_minus">-</button>
+							<input type="text" class="quantity" value="1" placeholder="1">
+							<button type="button" class="btn_plus">+</button>
+						</div>
+					</div>
+					<span class="price_big bold"><b>500,000</b>원 <button type="button" class="btn_option_del">삭제</button></span>
+				</li>
+				<li>
+					<span class="tit">레드 / M</span>
+					<div class="cart_variation">
+						<div class="clear">
+							<button type="button" class="btn_minus">-</button>
+							<input type="text" class="quantity" value="1" placeholder="1">
+							<button type="button" class="btn_plus">+</button>
+						</div>
+					</div>
+					<span class="price_big bold"><b>500,000</b>원 <button type="button" class="btn_option_del">삭제</button></span>
+				</li>
+				<li>
+					<span class="tit">레드 / M</span>
+					<div class="cart_variation">
+						<div class="clear">
+							<button type="button" class="btn_minus">-</button>
+							<input type="text" class="quantity" value="1" placeholder="1">
+							<button type="button" class="btn_plus">+</button>
+						</div>
+					</div>
+					<span class="price_big bold"><b>500,000</b>원 <button type="button" class="btn_option_del">삭제</button></span>
+				</li>
+			</ul>
+		</div>
+
+		<div class="total">
+			<span class="tit">총 결제금액</span>
+			<span class="price"><b>500,000</b>원</span>
+		</div>
+
+		<div class="btn_area txtc">
+			<button type="button" class="btn_ty2">옵션 변경</button>
+			<button type="button" class="btn_ty3" onclick="window.close()">취소</button>
+		</div>
+
+	</div>
+</div><!-- //pop_outer -->
+<script type="text/javascript">
+	$(document).ready(function() {
+		$(".sel_ty3 select").selectbox();
+	});
+</script>
+</body>
+</html>

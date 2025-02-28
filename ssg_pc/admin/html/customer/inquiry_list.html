@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<meta charset="UTF-8">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>주문리스트</title>
+<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="../../css/sub.css">
+<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script type="text/javascript" charset="utf-8" src="../../js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/common.js"></script>
+</head>
+<body>
+<? include("../include/header.html"); ?>
+
+<div id="container" class="container">
+	<? include("../include/snb.html"); ?>
+
+	<div class="content">
+		<div class="location">
+			<span>HOME</span>
+			<span>고객센터</span>
+			<span>상담문의</span>
+			<span class="on">상담하기</span>
+		</div>
+		<div class="inner clear">
+			
+			<div class="inner_aside">
+				<form method="post" action="">
+					<table class="tbl_primary txtl">
+						<colgroup>
+							<col style="width:100px">
+							<col>
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>이름</th>
+								<td><input type="text" name="text" value="" placeholder=""></td>
+							</tr>
+							<tr>
+								<th>휴대폰번호</th>
+								<td><input type="text" name="text" value="" placeholder=""></td>
+							</tr>
+						</tbody>
+					</table>
+
+					<div class="button_area clear">
+						<div class="left">
+							<button type="button" class="btn_ty2">상담</button>
+						</div>
+						<button type="button" class="btn_ty1">검색</button>
+					</div>
+
+					<div class="date_btn clear">
+						<button type="button" class="active">오늘</button>
+						<button type="button">7일</button>
+						<button type="button">15일</button>
+						<button type="button">30일</button>
+						<button type="button">90일</button>
+						<button type="button">전체</button>
+					</div>
+				</form>
+
+				<div class="as_sec">
+					<h4>고객사</h4>
+					<div class="ass_cnt">
+						<table class="tbl_primary txtl">
+							<tbody>
+								<tr>
+									<th>시크릿스토어</th>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+
+				<div class="as_sec">
+					<h4>상담내역</h4>
+					<div class="ass_cnt">
+						<table class="tbl_primary txtl">
+							<tbody>
+								<tr>
+									<th>총 상담</th>
+									<td><a href="#">10건</a></td>
+								</tr>
+								<tr>
+									<th>처리완료</th>
+									<td><a href="#">10건</a></td>
+								</tr>
+								<tr>
+									<th>미처리</th>
+									<td><a href="#">10건</a></td>
+								</tr>
+								<tr>
+									<th>문자이력 <a href="javascript:;" class="ass_btn">문자발송</a></th>
+									<td><a href="#">10건</a></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+
+				<div class="as_sec">
+					<h4>문의내역 (완료/대기)</h4>
+					<div class="ass_cnt">
+						<table class="tbl_primary txtl">
+							<tbody>
+								<tr>
+									<th>1:1문의</th>
+									<td><a href="#">10건</a> / <a href="#">10건</a></td>
+								</tr>
+								<tr>
+									<th>상품문의</th>
+									<td><a href="#">10건</a> / <a href="#">10건</a></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+
+				<table class="tbl_primary txtc mt20">
+					<thead>
+						<tr>
+							<th>주문</th>
+							<th>취소</th>
+							<th>실패</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><a href="#">10</a></td>
+							<td><a href="#">10</a></td>
+							<td><a href="#">10</a></td>
+						</tr>
+					</tbody>
+				</table>
+
+			</div>
+
+			<div class="innrt_content">
+				<div class="div_tab_ty1 click mb20">
+					<ul class="tab_tit clear">
+						<li class=""><a href="#">상담내역</a></li>
+						<li class="on"><a href="#">문의내역</a></li>
+						<li class=""><a href="#">주문정보</a></li>
+						<li class="last"><a href="#">회원정보</a></li>
+					</ul>
+				</div>
+
+				<h3 class="tit_h3">문의내역</h3>
+
+				<div class="item_box">
+					<a href="#" class="on">1:1문의</a>
+					<a href="#">상품문의</a>
+				</div>
+
+				<div class="tbl_search_list">
+					<div class="top">
+						<div class="left">* 전체 : <em>111,592</em>건 / 검색 : <em>50</em>건</div>
+						<div class="right">
+							<select name="sel9" id="sel9" style="width:120px;">
+								<option value="">20개씩 보기</option>
+							</select>
+						</div>
+					</div>
+
+					<table class="tbl_primary tr_hover">
+						<thead>
+							<tr>
+								<th scope="row">고객사</th>
+								<th scope="row">구분</th>
+								<th scope="row">상품명</th>
+								<th scope="row">제목</th>
+							</tr>
+						</thead>
+						<tbody class="txtc">
+							<tr>
+								<td>시크릿스토어</td>
+								<td>취소/환불</td>
+								<td class="txtl"><a href="#">콕스타 헤센 초고속 진공..</a></td>
+								<td>콕스타 헤센 초고속 진공..</td>
+							</tr>
+							<tr>
+								<td>시크릿스토어</td>
+								<td>취소/환불</td>
+								<td class="txtl"><a href="#">콕스타 헤센 초고속 진공..</a></td>
+								<td>콕스타 헤센 초고속 진공..</td>
+							</tr>
+							<tr>
+								<td>시크릿스토어</td>
+								<td>취소/환불</td>
+								<td class="txtl"><a href="#">콕스타 헤센 초고속 진공..</a></td>
+								<td>콕스타 헤센 초고속 진공..</td>
+							</tr>
+							<tr>
+								<td>시크릿스토어</td>
+								<td>취소/환불</td>
+								<td class="txtl"><a href="#">콕스타 헤센 초고속 진공..</a></td>
+								<td>콕스타 헤센 초고속 진공..</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="paging">
+					<a href="#none" class="first">처음페이지</a>
+					<a href="#none" class="prev">이전페이지</a>
+					<a href="#none" class="on">1</a>
+					<a href="#none" class="num">2</a>
+					<a href="#none" class="num">3</a>
+					<a href="#none" class="num">4</a>
+					<a href="#none" class="num">5</a>
+					<a href="#none" class="num">6</a>
+					<a href="#none" class="num">7</a>
+					<a href="#none" class="num">8</a>
+					<a href="#none" class="num">9</a>
+					<a href="#none" class="num">10</a>
+					<a href="#none" class="next">다음페이지</a>
+					<a href="#none" class="last">마지막페이지</a>
+				</div>
+			</div>
+		</div>
+	</div><!-- //content -->
+</div><!-- //container -->
+</div><!-- //wrap -->
+</body>
+</html>

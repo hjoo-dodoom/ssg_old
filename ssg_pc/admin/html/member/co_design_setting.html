@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<meta charset="UTF-8">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>디자인설정</title>
+<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="../../css/sub.css">
+<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script type="text/javascript" charset="utf-8" src="../../js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/common.js"></script>
+</head>
+<body>
+<? include("../include/header.html"); ?>
+
+<div id="container" class="container">
+	<? include("../include/snb.html"); ?>
+
+	<div class="content">
+		<div class="location">
+			<span>HOME</span>
+			<span>회원</span>
+			<span>고객사 관리</span>
+			<span>고객사</span>
+			<span class="on">디자인설정</span>
+		</div>
+		<div class="inner">
+			<h3 class="tit_h3">디자인설정</h3>
+			
+			<p class="tbl_tit_ty1">고객사 : 신세계, 등록상품 수 : 100개</p>
+			<div class="tbl_outer">
+				<table class="tbl_view">
+					<colgroup>
+						<col style="width:130px">
+						<col>
+						<col style="width:130px">
+						<col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">사이트구분</th>
+							<td colspan="3">
+								<select name="" id="">
+									<option value="">선택</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">로그인 타입</th>
+							<td colspan="3">
+								<p>
+									<select name="" id="">
+										<option value="">구분</option>
+									</select>
+								</p>
+								<input type="radio" name="" id=""> <label for="">본인인증 사용</label>
+								<input type="radio" name="" id=""> <label for="">본인인증 미사용</label>
+								<p>※ 로그인 시 아이디로 사용할 타입을 선택해주세요.</p>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">사이트형식</th>
+							<td colspan="3">
+								<select name="" id="">
+									<option value="">구분</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row" rowspan="2">운영기간</th>
+							<td>
+								<input type="text" class="datepicker">
+								<span class="division">~</span>
+								<input type="text" class="datepicker">
+							</td>
+							<th scope="row">배송정보 공개일</th>
+							<td>
+								<input type="text" class="datepicker">
+							</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								<p>※ 사이트 형식이 한시몰인 경우 "운영기간, 배송정보공개일"을 설정해주세요.</p>
+								<p>※ 배송정보공개일이 있는 경우 배송정보공개일 이전까지는 고객페이지에서 주문취소가 가능합니다.</p>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">카테고리 사용</th>
+							<td>
+								<input type="checkbox" name="" id=""> <label for="">포인트 카테고리</label>
+								<input type="checkbox" name="" id=""> <label for="">상품 카테고리</label>
+								<input type="checkbox" name="" id=""> <label for="">시크릿 스토어</label>
+							</td>
+							<th scope="row">기획전</th>
+							<td>
+								<input type="checkbox" name="" id=""> <label for="">메인기획전</label>
+								<input type="checkbox" name="" id=""> <label for="">특별할인코너</label>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">메인노출<br>(상/하 순으로 노출)<br/><button type="button" class="mid_btn_ty2">샘플보기</button></th>
+							<td colspan="3">
+								<input type="checkbox" name="" id=""> <label for="">GOOD PRICE (5개)</label>
+								<input type="checkbox" name="" id=""> <label for="">BEST PRICE (4개)</label>
+								<input type="checkbox" name="" id=""> <label for="">MD CHOICE (6개)</label>
+								<input type="checkbox" name="" id=""> <label for="">이달의 신규상품 (초기 3개)</label>
+								<input type="checkbox" name="" id=""> <label for="">SPECIAL SALE (8개)</label>
+								<input type="checkbox" name="" id=""> <label for="">가격대별 상품 (4개)</label>
+								<input type="checkbox" name="" id=""> <label for="">카테고리별 상품 (8개)</label>
+								<input type="checkbox" name="" id=""> <label for="">GIFT CARD (4개)</label>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">우측상단 메뉴노출</th>
+							<td colspan="3">
+								<input type="checkbox" name="" id=""> <label for="">회원정보변경</label>
+								<input type="checkbox" name="" id=""> <label for="">포인트조회</label>
+								<input type="checkbox" name="" id=""> <label for="">주문내역조회</label>
+								<input type="checkbox" name="" id=""> <label for="">고객센터</label>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">우측상단 아이콘노출</th>
+							<td colspan="3">
+								<input type="checkbox" name="" id=""> <label for="">위시리스트</label>
+								<input type="checkbox" name="" id=""> <label for="">장바구니</label>
+								<input type="checkbox" name="" id=""> <label for="">마이페이지</label>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">조직구성 사용여부</th>
+							<td>
+								<input type="radio" name="" id=""> <label for="">사용</label>
+								<input type="radio" name="" id=""> <label for="">미사용</label>
+							</td>
+							<th scope="row">기프티콘 사용여부</th>
+							<td>
+								<input type="radio" name="" id=""> <label for="">사용</label>
+								<input type="radio" name="" id=""> <label for="">미사용</label>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">필드사용 여부</th>
+							<td colspan="3">
+								<input type="checkbox" name="" id=""> <label for="">사업장</label>
+								<input type="checkbox" name="" id=""> <label for="">소속</label>
+								<input type="checkbox" name="" id=""> <label for="">부서(직급)</label>
+								<input type="checkbox" name="" id=""> <label for="">업체명</label>
+								<input type="checkbox" name="" id=""> <label for="">업체코드</label>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">퀵메뉴 노출</th>
+							<td colspan="3">
+								<input type="checkbox" name="" id=""> <label for="">좌측 퀵메뉴</label>
+								<input type="checkbox" name="" id=""> <label for="">우측 퀵메뉴</label>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">결제수단</th>
+							<td colspan="3">
+								<p>
+									<input type="checkbox" name="" id=""> <label for="">신용카드</label>
+									<input type="checkbox" name="" id=""> <label for="">실시간계좌이체</label>
+									<input type="checkbox" name="" id=""> <label for="">가상계좌</label>
+									<input type="checkbox" name="" id=""> <label for="">선주문 후 결제</label> <input type="text" name="" style="width:195px;">
+								</p>
+								<p>
+									<input type="radio" name="" id=""> <label for="">상품권 법인카드 사용</label>
+									<input type="radio" name="" id=""> <label for="">상품권 법인카드 미사용</label>
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">주문제한</th>
+							<td colspan="3">
+								주문가능횟수 : 
+								<input type="text" name="" style="width:100px;"> 
+								 ※ 주문가능횟수 “0”은 횟수제한 없음
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">주문방식</th>
+							<td colspan="3">
+								<input type="checkbox" name="" id=""> <label for="">일반</label>
+								<input type="checkbox" name="" id=""> <label for="">대량</label>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">일반결제 수단</th>
+							<td colspan="3">
+								<input type="checkbox" name="" id=""> <label for="">신용카드</label>
+								<input type="checkbox" name="" id=""> <label for="">가상계좌(사용불가)</label>
+								<input type="checkbox" name="" id=""> <label for="">실시간계좌이체</label>
+								<input type="checkbox" name="" id=""> <label for="">SSG PAY</label>
+								<input type="checkbox" name="" id=""> <label for="">급여공제</label>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">대량구매</th>
+							<td>
+								<input type="radio" name="" id=""> <label for="">Y</label>
+								<input type="radio" name="" id=""> <label for="">N</label>
+							</td>
+							<th scope="row">업체 상품수정</th>
+							<td>
+								<input type="radio" name="" id=""> <label for="">수정불가</label>
+								<input type="radio" name="" id=""> <label for="">수정가능</label>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">배송지정일 사용</th>
+							<td>
+								<input type="radio" name="" id=""> <label for="">사용</label>
+								<input type="radio" name="" id=""> <label for="">미사용</label>
+							</td>
+							<th scope="row">감사카드 사용</th>
+							<td>
+								<input type="radio" name="" id=""> <label for="">사용</label>
+								<input type="radio" name="" id=""> <label for="">미사용</label>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row" rowspan="7">포인트 사용</th>
+							<td colspan="3">
+								<p>
+									<input type="radio" name="" id=""> <label for="">포인트 사용</label>
+									<input type="radio" name="" id=""> <label for="">포인트 미사용</label>
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								<p>1. 포인트 사용 가능한 전체 한계액 : <input type="text" name="" style="width:100px;">원 이상(주문금액) </p>
+								<p>※ 사용 가능 포인트 = 주문금액 - 포인트 사용 제한 금액</p>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								<p>2. 포인트 사용 가능한 전체 한계액 : <input type="text" style="width:100px;"> % (주문금액대비) </p>
+								<p>※ 사용 가능 포인트 = (포인트 사용 제한%/100) * 주문금액</p>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								<p>
+									3. 포인트 사용 한계액 : <input type="text" style="width:100px;"> 포인트
+									<input type="checkbox" name="" id=""> <label for="">갯수별</label>
+								</p>
+								<p>※ 실결제금액 = 주문금액 - 최대 사용 포인트</p>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								기본포인트 : 
+								<input type="radio" name=""> <label for="">사용</label>
+								<input type="radio" name=""> <label for="">미사용</label>
+								/  포인트 명칭 :  <input type="text" style="width:100px;"> (명칭 있을 시 입력 예 : P포인트 -> P) 
+							</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								특별포인트 : 
+								<input type="radio" name=""> <label for="">사용</label>
+								<input type="radio" name=""> <label for="">미사용</label>
+								/  포인트 명칭 :  <input type="text" style="width:100px;"> (명칭 있을 시 입력 예 : S포인트 -> S) 
+
+							</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								소멸예정표기 : 
+								<input type="radio" name=""> <label for="">사용</label>
+								<input type="radio" name=""> <label for="">미사용</label>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">공급가 노출</th>
+							<td>
+								<input type="radio" name="" id=""> <label for="">Y</label>
+								<input type="radio" name="" id=""> <label for="">N</label>
+							</td>
+							<th scope="row">소비자가 노출</th>
+							<td>
+								<input type="radio" name="" id=""> <label for="">Y</label>
+								<input type="radio" name="" id=""> <label for="">N</label>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">인터넷가 노출</th>
+							<td>
+								<input type="radio" name="" id=""> <label for="">Y</label>
+								<input type="radio" name="" id=""> <label for="">N</label>
+							</td>
+							<th scope="row">판매가 노출</th>
+							<td>
+								<input type="radio" name="" id=""> <label for="">Y</label>
+								<input type="radio" name="" id=""> <label for="">N</label>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">부가세 별도 노출</th>
+							<td>
+								<input type="radio" name="" id=""> <label for="">Y</label>
+								<input type="radio" name="" id=""> <label for="">N</label>
+							</td>
+							<th scope="row">장바구니 가격 노출</th>
+							<td>
+								<input type="radio" name="" id=""> <label for="">Y</label>
+								<input type="radio" name="" id=""> <label for="">N</label>
+								<input type="checkbox" name="" id=""> <label for="">추가결제가능</label>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">할인 추가 설정</th>
+							<td colspan="3">
+								<input type="text" style="width:100px;"> % <span>※ -5% 입력인 경우 5%할인된 금액으로 구매, 5%인 경우 5%추가된 금액으로 구매.</span>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row" rowspan="2">배송유형</th>
+							<td colspan="3">
+								<p>
+									<input type="radio" name="" id=""> <label for="">개별배송</label>
+									<input type="radio" name="" id=""> <label for="">일괄배송</label>
+									<input type="radio" name="" id=""> <label for="">상품권만 일괄배송</label>
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="3" class="zip">
+								<p><input type="text" name="" class="txtc" style="width:90px;"> <button type="button" class="mid_btn_ty1">우편번호 찾기</button></p>
+								<p><input type="text" name="" style="width:300px;"> <input type="text" name="" style="width:195px;"></p>
+								<p>※ 일괄배송시 수취인명, 전화번호 정보는 고객사 정보의 담당자명, 담당자 연락처 정보가 입력됩니다.</p>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row" rowspan="2">사이트 로고<br>(Size : 185*45)</th>
+							<td colspan="3">
+								<input type="file">
+							</td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								<img src="../../images/common/h_logo.png" alt="로고" style="width:185px; height:45px;">
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">로그인 타입</th>
+							<td colspan="3" class="logintype">
+								<div class="clear">
+									<div>
+										<p><input type="radio" name="" id=""> <label for="">A Type</label></p>
+										<p><img src="../../images/dummy/login_atype.png" alt="A Type"></p>
+									</div>
+									<div>
+										<p><input type="radio" name="" id=""> <label for="">B Type</label></p>
+										<p><img src="../../images/dummy/login_btype.png" alt="B Type"></p>
+									</div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">로그인 B type 배너</th>
+							<td colspan="3"><input type="file" name=""></td>
+						</tr>
+						<tr>
+							<th scope="row">고객사명</th>
+							<td><input type="text" name="" class="w100" placeholder="SHINSEGAE"></td>
+							<th scope="row">사이트 타이틀</th>
+							<td><input type="text" name="" class="w100" placeholder="B2E MALL LOGIN"></td>
+						</tr>
+						<tr>
+							<th scope="row">사이트 설명</th>
+							<td colspan="3"><input type="text" name="" class="w100" placeholder="언제나 고객만족을 위해 최선을 다하도록 노력하겠습니다."></td>
+						</tr>
+						<tr>
+							<th scope="row">로그인 설명</th>
+							<td colspan="3"><textarea name="" rows="" cols="" class="w100" placeholder="·초기접속 시 아이디/비밀번호는 사번으로 접속하시면 됩니다.&#13;&#10;ex)아이디 : 사원번호/비밀번호 : 사원번호&#13;&#10;&#13;&#10;·초기 로그인 후 반드시 비밀번호를 변경하시기 바랍니다.&#13;&#10;·고객센터 : 1566-0000 / 상담시간 평일 10:00 ~ 18:00" style="min-height:180px;"></textarea></td>
+						</tr>
+						<tr>
+							<th scope="row">배송정보</th>
+							<td><input type="file" name=""></td>
+							<th scope="row">교환/반품정보</th>
+							<td><input type="file" name=""></td>
+						</tr>
+						<tr>
+							<th scope="row">사이트 도메인</th>
+							<td colspan="3">
+								<p><input type="text" name="" class="w100"></p>
+								<p>※ 2차 도메인은 담당자에게 요청해주시기 바랍니다.</p>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">사이트 홈</th>
+							<td colspan="3"><input type="text" name="" class="w100"></td>
+						</tr>
+						<tr>
+							<th scope="row">사이트 푸터</th>
+							<td colspan="3">
+								<table class="tbl_view">
+								<colgroup>
+									<col style="width:120px;"/>
+									<col/>
+								</colgroup>
+								<tbody>
+									<tr>
+										<th>회사명</th>
+										<td><input name="" style="width:195px;" type="text"></td>
+									</tr>
+									<tr>
+										<th>정보1</th>
+										<td><input name="" style="width:195px;" type="text"></td>
+									</tr>
+									<tr>
+										<th>정보2</th>
+										<td><input name="" style="width:195px;" type="text"></td>
+									</tr>
+									<tr>
+										<th>정보3</th>
+										<td><input name="" style="width:195px;" type="text"></td>
+									</tr>
+									<tr>
+										<th>정보4</th>
+										<td><input name="" style="width:195px;" type="text"></td>
+									</tr>
+									<tr>
+										<th>정보5</th>
+										<td><input name="" style="width:195px;" type="text"></td>
+									</tr>
+									<tr>
+										<th>정보6</th>
+										<td><input name="" style="width:195px;" type="text"></td>
+									</tr>
+									<tr>
+										<th>정보7</th>
+										<td><input name="" style="width:195px;" type="text"></td>
+									</tr>
+									<tr>
+										<th>정보8</th>
+										<td><input name="" style="width:195px;" type="text"></td>
+									</tr>
+									<tr>
+										<th>정보9</th>
+										<td><input name="" style="width:195px;" type="text"></td>
+									</tr>
+									<tr>
+										<th>정보10</th>
+										<td><input name="" style="width:195px;" type="text"></td>
+									</tr>
+									<tr>
+										<th>카피</th>
+										<td><input name="" style="width:195px;" type="text"></td>
+									</tr>
+								</tbody>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">사이트 푸터 로고</th>
+							<td colspan="3">
+								<img src="" alt="" />
+								<input type="file" name="">
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">CSS</th>
+							<td>
+								<select name="" id="">
+									<option value="">구분 </option>
+								</select>
+							</td>
+							<th scope="row">메인중단 베너</th>
+							<td>
+								<select name="" id="">
+									<option value="">구분 </option>
+								</select>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div class="button_area">
+				<button type="button" class="btn_ty9">확인</button>
+				<button type="button" class="btn_ty2">목록</button>
+			</div>
+		</div>
+	</div><!-- //content -->
+</div><!-- //container -->
+</div><!-- //wrap -->
+</body>
+</html>

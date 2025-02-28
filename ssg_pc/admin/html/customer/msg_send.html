@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<meta charset="UTF-8">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>메세지 보내기</title>
+<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="../../css/sub.css">
+<script type="text/javascript" charset="utf-8" src="../../js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/common.js"></script>
+</head>
+<body>
+<? include("../include/header.html"); ?>
+
+<div id="container" class="container">
+	<? include("../include/snb.html"); ?>
+
+	<div class="content">
+		<div class="location">
+			<span>HOME</span>
+			<span>고객센터</span>
+			<span>메세지관리</span>
+			<span class="on">문자발송</span>
+		</div>
+		<div class="inner">
+			<h3 class="tit_h3">메세지 보내기</h3>
+
+			<h4 class="tit_h4">메세지 등록</h4>
+			<table class="tbl_view">
+				<colgroup>
+					<col style="width:150px">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th scope="row">(*)메세지 내용</th>
+						<td class="input-group">
+							<textarea class="w100 byte_check" style="height:200px;" min-byte="80" max-byte="2000" placeholder="80 Byte  초과 시 자동으로 2,000 Byte로 전환되어 LMS로 발송됩니다
+메시지 내용을 작성 하여 발송해주세요"></textarea>
+							<p class="txtr"><span class="input-group-text text byte_len"><b>0</b> / <span>80Bytes</span></span></p>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">광고성 수신여부</th>
+						<td><label><input type="checkbox">광고성 메세지</label></td>
+					</tr>
+				</tbody>
+			</table>
+
+			<h4 class="tit_h4">발송대상</h4>
+			<table class="tbl_view">
+				<colgroup>
+					<col style="width:150px">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th scope="row">(*)수신인지정</th>
+						<td>
+							<label><input type="radio" name="reciver" value="1">직접입력</label>
+							<label><input type="radio" name="reciver" value="2">고객사별 발송</label>
+							<label><input type="radio" name="reciver" value="3">엑셀등록</label>
+
+							<script>
+								$('input[name="reciver"]').on('change', function(){
+									if(this.value=='1'){
+										$('.reciver1').show();
+										$('.reciver2,.reciver3').hide();
+									}else if(this.value=='2'){
+										$('.reciver2').show();
+										$('.reciver1,.reciver3').hide();
+									}else{
+										$('.reciver3').show();
+										$('.reciver1,.reciver2').hide();
+									}
+								});
+								$(document).ready(function(){
+									if($('input[name="reciver"]:checked').val() == '1'){
+										$('.reciver1').show();
+										$('.reciver2,.reciver3').hide();
+									}else if($('input[name="reciver"]:checked').val() == '2'){
+										$('.reciver2').show();
+										$('.reciver1,.reciver3').hide();
+									}else if($('input[name="reciver"]:checked').val() == '2'){
+										$('.reciver3').show();
+										$('.reciver1,.reciver2').hide();
+									}else{
+										$('.reciver1,.reciver2,.reciver3').hide();
+									}
+								});
+							</script>
+						</td>
+					</tr>
+					<tr class="reciver1">
+						<th scope="row" rowspan="2">발송대상</th>
+						<td>
+							<p>수신번호</p>
+							<div id="" class="mt10">
+								<input type="text" style="width:200px" maxlength="11" placeholder='"-"없이 숫자만 입력'><button type="button" class="mid_btn_ty2">+추가</button>
+							</div>
+						</td>
+					</tr>
+					<tr class="reciver1">
+						<td>
+							<div class="tbl_search_list">
+								<div class="tbl_search_list mid">
+									발송인원 총 <span class="txt_red">1건</span>
+								</div>
+
+								<table class="tbl_primary label_control">
+									<colgroup>
+										<col style="width:90px;">
+										<col>
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="row"><input type="checkbox" id="checkAll"></th>
+											<th scope="row">휴대폰번호</th>
+										</tr>
+									</thead>
+									<tbody class="txtc">
+										<tr>
+											<td><input type="checkbox"></td>
+											<td class="txtl">01012341234</td>
+										</tr>
+										<tr>
+											<td><input type="checkbox"></td>
+											<td class="txtl">01012341234</td>
+										</tr>
+										<tr>
+											<td><input type="checkbox"></td>
+											<td class="txtl">01012341234</td>
+										</tr>
+									</tbody>
+									<tfoot class="txtr">
+										<tr>
+											<td colspan="2">
+												<button type="button" class="mid_btn_ty4">선택삭제</button>
+												<button type="button" class="mid_btn_ty4">전체삭제</button>
+											</td>
+										</tr>
+									</tfoot>
+								</table>
+							</div>
+							<p class="mt10">* 최대 100명까지 등록 가능합니다</p>
+						</td>
+					</tr>
+					<tr class="reciver2">
+						<th>(*)발송대상</th>
+						<td>
+							<button type="button" class="mid_btn_ty4" onclick='window.open("../popup/pop_msg_member.html", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=100,left=100,width=1010,height=563");'>회원검색</button>
+							<p class="mt10">발송인원 총 0명</p>
+						</td>
+					</tr>
+					<tr class="reciver3">
+						<th>(*)발송대상</th>
+						<td>
+							<a href="#" class="mid_btn_ty1">샘플파일 다운로드</a>
+							<input type="file">
+							<p class="mt10">발송인원 총 0명</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<h4 class="tit_h4">발송정보</h4>
+			<table class="tbl_view">
+				<colgroup>
+					<col style="width:150px">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th scope="row">(*)발신번호</th>
+						<td>02-1234-1234</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<div class="button_area">
+				<button type="button" class="btn_ty1">발송하기</button>
+			</div>
+
+			<h4 class="tit_h4">발송안내</h4>
+			<table class="tbl_view">
+				<tbody>
+					<tr>
+						<td>수신번호는 <span class="underline">1,000건</span>까지 등록 가능하며, 중복된 수신번호는 <span class="underline">한번만 발송</span>됩니다   단, 직접입력은 100건까지 가능합니다</td>
+					</tr>
+					<tr>
+						<td>정보통신망법에 따라 <span class="underline">수신거부한 당원</span>에게 광고성 정보를 발송하거나 광고성 정보 수신동의 외에 
+						<span class="underline">별도의 동의를 받지않고</span> 야간발송(저녁 9시 ~ 다음날 8시)시, <span class="txt_red">3천만원 이하의 과태료가 부과</span>됩니다</td>
+					</tr>
+				</tbody>
+			</table>
+
+		</div>
+	</div><!-- //content -->
+</div><!-- //container -->
+</div><!-- //wrap -->
+
+<script>
+
+//문자 바이트계산
+$(document).on('propertychange change keyup paste input', '.byte_check', function () {
+   fnChkByte(this);
+});
+
+function fnChkByte(obj){
+	var str = $(obj).val();
+	var str_len = str.length;
+	var minByte = $(obj).attr('min-byte');
+	var maxByte = $(obj).attr('max-byte');
+	var chbyte = $(obj).closest('.input-group').find('.byte_len span');
+	var rbyte = 0;
+	var rlen = 0;
+	var one_char = "";
+	var str2 = "";
+
+	for(var i=0; i<str_len; i++){
+		one_char = str.charAt(i);
+		if(escape(one_char).length > 4){
+			rbyte += 2;                                         //한글2Byte
+		}else{
+			rbyte++;                                            //영문 등 나머지 1Byte
+		}
+
+		if(rbyte <= maxByte){
+			rlen = i+1;                                          //return할 문자열 갯수
+		}
+	}
+	if(rbyte > minByte){
+		if(rbyte > maxByte){
+			alert("최대 글자 수가 모두 찼습니다.");
+			str2 = str.substr(0,rlen);                                  //문자열 자르기
+			obj.value = str2;
+			fnChkByte(obj, maxByte);
+		}else{
+			$(obj).closest('.input-group').find('.byte_len b').text(rbyte);
+			chbyte.text(maxByte + 'Bytes');
+		}
+	}else{
+		$(obj).closest('.input-group').find('.byte_len b').text(rbyte);
+		chbyte.text(minByte + 'Bytes');
+	}
+}
+
+//글자수 제한있는 항목 첫 로드 시 계산
+if ($('textarea').hasClass('byte_check')){
+	$(".byte_check").each(function() {
+		fnChkByte(this);
+	});
+}
+
+</script>
+</body>
+</html>

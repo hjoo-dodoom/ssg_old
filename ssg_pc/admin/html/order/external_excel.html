@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<meta charset="UTF-8">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>외부상품대량등록</title>
+<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="../../css/sub.css">
+<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script type="text/javascript" charset="utf-8" src="../../js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/common.js"></script>
+</head>
+<body>
+<? include("../include/header.html"); ?>
+
+<div id="container" class="container">
+	<? include("../include/snb.html"); ?>
+
+	<div class="content">
+		<div class="location">
+			<span>HOME</span>
+			<span>주문 </span>
+			<span>외부몰주문목록</span>
+			<span class="on">주문대량등록</span>
+		</div>
+		<div class="inner">
+			<h3 class="tit_h3">주문대량등록</h3>
+			<table class="tbl_view">
+				<colgroup>
+					<col style="width:170px;">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th>샘플파일</th>
+						<td>
+							<p><button type="button" class="mid_btn_ty5">샘플파일 다운로드</button></p>
+						</td>
+					</tr>
+					<tr>
+						<th rowspan="2">고객사</th>
+						<td>
+							<p>고객사 선택 후 파일업로드를 진행해 주세요</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<select name="" id="">
+								<option value="">선택</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<th rowspan="3">파일업로드</th>
+						<td>
+							<p>
+								※ 업로드전 아래의 주의사항을 확인해주세요<br/><br/>
+								1. 엑셀파일은 xlsx,xls 형식만 가능합니다.<br/>
+								2. 엑셀파일 내 항목을 임의로 추가하거나 삭제하지 말아주세요<br/>
+								3. 업로드 전 문서보안 해제 상태 및 파일용량을 확인해주세요 (보안해제시 0KB 인 경우가 빈번히 발생합니다)<br/>
+								4. 업로드된 파일은 일정기간 보관 후 파기를 권장합니다
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<p><input type="file" name=""></p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label>
+								<input type="checkbox">
+								중복무시(체결번호, 주문번호, 상품코드 중복 시 해당 주문정보 업데이트 처리)
+							</label>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<div class="button_area clear">
+				<button type="button" class="btn_ty3">업로드</button>
+				<button type="button" class="btn_ty2">목록</button>
+			</div>
+
+			<h4 class="tit_h4">주문정보 목록 | 실패사유가 있으면 등록이 불가합니다</h4>
+			<table class="tbl_primary">
+				<thead>
+					<tr>
+						<th>번호</th>
+						<th>체결번호</th>
+						<th>주문번호</th>
+						<th>수취인</th>
+						<th>수취인연락처</th>
+						<th>우편번호</th>
+						<th>수취인주소1</th>
+						<th>수취인주소2</th>
+						<th>협력회사</th>
+						<th>상품코드</th>
+						<th>상품명</th>
+						<th>판매가</th>
+						<th>수량</th>
+						<th>합계</th>
+					</tr>
+				</thead>
+				<tbody class="txtc">
+					<tr>
+						<td colspan="14">주문내역을 업로드해주세요</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<h4 class="tit_h4">주문정보 목록 | 실패사유가 있으면 등록이 불가합니다</h4>
+			<div class="txtc mid_btn_ty6 mb20">*주문정보 등록에 실패하였습니다 주문건 하단의 실패사유를 참고하여 수정 후 재 업로드 해주시기 바랍니다</div>
+			<table class="tbl_primary">
+				<thead>
+					<tr>
+						<th>번호</th>
+						<th>체결번호</th>
+						<th>주문번호</th>
+						<th>수취인</th>
+						<th>수취인연락처</th>
+						<th>우편번호</th>
+						<th>수취인주소1</th>
+						<th>수취인주소2</th>
+						<th>협력회사</th>
+						<th>상품코드</th>
+						<th>상품명</th>
+						<th>판매가</th>
+						<th>수량</th>
+						<th>합계</th>
+					</tr>
+				</thead>
+				<tbody class="txtc">
+					<tr>
+						<td>1</td>
+						<td>12345</td>
+						<td>12345</td>
+						<td>홍길동</td>
+						<td>01012341234</td>
+						<td>12345</td>
+						<td>서울시 서초구 반포로</td>
+						<td>123</td>
+						<td>dodoom</td>
+						<td>AA12345</td>
+						<td>[다이슨] 다이슨 청소기</td>
+						<td>10,000</td>
+						<td>1</td>
+						<td>10,000</td>
+					</tr>
+					<tr>
+						<td colspan="14" class="text_red">실패사유: 해당 협력회사에 등록된 상품이 아닙니다</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>12345</td>
+						<td>12345</td>
+						<td>홍길동</td>
+						<td>01012341234</td>
+						<td>12345</td>
+						<td>서울시 서초구 반포로</td>
+						<td>123</td>
+						<td>dodoom</td>
+						<td>AA12345</td>
+						<td>[다이슨] 다이슨 청소기</td>
+						<td>10,000</td>
+						<td>1</td>
+						<td>10,000</td>
+					</tr>
+					<tr>
+						<td colspan="14" class="text_red">실패사유: 해당 협력회사에 등록된 상품이 아닙니다</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<th colspan="14">총 결제금액: 0원</th>
+					</tr>
+				</tfoot>
+			</table>
+
+			<h4 class="tit_h4">주문정보 목록 | 실패사유가 있으면 등록이 불가합니다</h4>
+			<div class="txtc mid_btn_ty6 btn_line_ty1 mb20">*주문정보 등록이 완료되었습니다</div>
+			<table class="tbl_primary">
+				<thead>
+					<tr>
+						<th>번호</th>
+						<th>체결번호</th>
+						<th>주문번호</th>
+						<th>수취인</th>
+						<th>수취인연락처</th>
+						<th>우편번호</th>
+						<th>수취인주소1</th>
+						<th>수취인주소2</th>
+						<th>협력회사</th>
+						<th>상품코드</th>
+						<th>상품명</th>
+						<th>판매가</th>
+						<th>수량</th>
+						<th>합계</th>
+					</tr>
+				</thead>
+				<tbody class="txtc">
+					<tr>
+						<td>1</td>
+						<td>12345</td>
+						<td>12345</td>
+						<td>홍길동</td>
+						<td>01012341234</td>
+						<td>12345</td>
+						<td>서울시 서초구 반포로</td>
+						<td>123</td>
+						<td>dodoom</td>
+						<td>AA12345</td>
+						<td>[다이슨] 다이슨 청소기</td>
+						<td>10,000</td>
+						<td>1</td>
+						<td>10,000</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>12345</td>
+						<td>12345</td>
+						<td>홍길동</td>
+						<td>01012341234</td>
+						<td>12345</td>
+						<td>서울시 서초구 반포로</td>
+						<td>123</td>
+						<td>dodoom</td>
+						<td>AA12345</td>
+						<td>[다이슨] 다이슨 청소기</td>
+						<td>10,000</td>
+						<td>1</td>
+						<td>10,000</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<th colspan="14">총 결제금액: 20,000원</th>
+					</tr>
+				</tfoot>
+			</table>
+		</div><!-- //inner -->
+	</div><!-- //content -->
+</div><!-- //container -->
+</div><!-- //wrap -->
+</body>
+</html>

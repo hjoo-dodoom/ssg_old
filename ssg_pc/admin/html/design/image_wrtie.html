@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<meta charset="UTF-8">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>이미지 수정</title>
+<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="../../css/sub.css">
+<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script type="text/javascript" charset="utf-8" src="../../js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/common.js"></script>
+</head>
+<body>
+<? include("../include/header.html"); ?>
+
+<div id="container" class="container">
+	<? include("../include/snb.html"); ?>
+
+	<div class="content">
+		<div class="location">
+			<span>HOME</span>
+			<span>디자인</span>
+			<span>이미지</span>
+			<span>이미지 목록</span>
+			<span class="on">이미지 수정</span>
+		</div>
+		<div class="inner">
+			<h3 class="tit_h3">이미지 수정</h3>
+			<table class="tbl_view">
+				<colgroup>
+					<col style="width:170px;">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th>이미지</th>
+						<td >
+							<input type="radio" name="bannerType"> <label for="">로그인배너</label>
+							<input type="radio" name="bannerType"> <label for="">롤링배너</label>
+							<input type="radio" name="bannerType"> <label for="">중단배너</label>
+							<input type="radio" name="bannerType"> <label for="">기타</label>
+						</td>
+					</tr>
+					<tr>
+						<th>*유형(필수)</th>
+						<td >
+							<select name="" id="">
+								<option value="">1단</option>
+								<option value="">2단</option>
+								<option value="">3단</option>
+								<option value="">4단</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<th>*검색어(필수)</th>
+						<td >
+							<input type="text" placeholder="2023, 설배너, 명절, 새해, 인사, 소망" style="width:100%;">
+							<p class="mt10">콤마(,)로 구분해서 검색어를 등록해주세요</p>
+						</td>
+					</tr>
+					<tr>
+						<th>*피시 이미지(필수)</th>
+						<td >
+							<input type="file" name="">
+							<p class="mt10">리스트에 노출되는 이미지입니다.</p>
+						</td>
+					</tr>
+					<tr>
+						<th>*모바일 이미지(필수)</th>
+						<td >
+							<input type="file" name="">
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		
+			<div class="button_area">
+				<button type="button" class="btn_ty3">수정</button>
+				<button type="button" class="btn_ty3">등록</button>
+				<button type="button" class="btn_ty2">목록</button>
+			</div>
+
+			<h3 class="tit_h3">※도움말</h3>
+			<table class="tbl_view">
+				<colgroup>
+					<col style="width:170px;">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th>롤링배너</th>
+						<td colspan="3">
+							PC : 2단(480*350), 1단(980*350) / 모바일: 960*960
+						</td>
+					</tr>
+					<tr>
+						<th>중단배너</th>
+						<td colspan="3">
+							PC : 4단(230*140), 3단(314*140), 2단(480*140), 1단(980*140) / 모바일(840*390)
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div><!-- //inner -->
+	</div><!-- //content -->
+</div><!-- //container -->
+</div><!-- //wrap -->
+</body>
+</html>

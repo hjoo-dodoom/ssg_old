@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<meta charset="UTF-8">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>페이지명</title>
+<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="../../css/popup.css">
+<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script type="text/javascript" charset="utf-8" src="../../js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/common.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+<div class="popup">
+	<div class="popup_inner">
+		<h1>페이지명</h1>
+		<div id="" class="tbb_3section content clear mt10">
+			<div class="left">
+				<div class="pop_search">
+				<h3 class="tit_h3">협력회사 선택</h3>
+					<div id="" class="tbl_outer">
+					<table class="tbl_view">
+						<colgroup>
+							<col style="width:100px;">
+							<col>
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>고객사</th>
+								<td>
+									<select name="" id="">
+										<option value="">고객사 선택</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<th>협력회사</th>
+								<td>
+									<select name="" id="">
+										<option value="">협력회사 명</option>
+										<option value="">협력회사 아이디</option>
+									</select>
+									<input type="text" name="">
+								</td>
+							</tr>
+							<tr>
+								<th>주력상품</th>
+								<td>
+									<input type="text" name="" class="w100">
+								</td>
+							</tr>
+							<tr>
+								<th>상태</th>
+								<td>
+									<select name="" id="">
+										<option value="">정상승인</option>
+										<option value="">승인대기</option>
+										<option value="">정지</option>
+									</select>
+									<input type="radio" name="" id="aa"> <label for="aa">매장만</label>
+									<input type="radio" name="" id="bb"> <label for="bb">매장제외</label>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					</div>
+					<div class="button_area">
+				<div class="left">
+					<button type="button" class="btn_ty3">전체추가</button>
+				</div>
+				<button type="button" class="btn_ty1">검색</button>
+			</div>
+				</div>
+
+				<div class="tbl_search_list">
+					<table class="tbl_primary">
+						<colgroup>
+							<col style="width:30px;">
+							<col style="width:50px;">
+							<col>
+							<col>
+							<col>
+							<col>
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="row"><input type="checkbox" name="chk" id="chkall"></th>
+								<th scope="row">번호</th>
+								<th scope="row">협력회사명</th>
+								<th scope="row">담당자</th>
+								<th scope="row">주력상품</th>
+								<th scope="row">상태</th>
+							</tr>
+						</thead>
+						<tbody class="txtc">
+							<tr>
+								<td><input type="checkbox" name="chk" id="chk1"></td>
+								<td>5</td>
+								<td>(주)돋움</td>
+								<td>홍길동</td>
+								<td>골프용품</td>
+								<td>정상승인</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" name="chk" id="chk1"></td>
+								<td>4</td>
+								<td>(주)돋움</td>
+								<td>홍길동</td>
+								<td>골프용품</td>
+								<td>정상승인</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" name="chk" id="chk1"></td>
+								<td>3</td>
+								<td>(주)돋움</td>
+								<td>홍길동</td>
+								<td>골프용품</td>
+								<td>정상승인</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" name="chk" id="chk1"></td>
+								<td>2</td>
+								<td>(주)돋움</td>
+								<td>홍길동</td>
+								<td>골프용품</td>
+								<td>정상승인</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" name="chk" id="chk1"></td>
+								<td>1</td>
+								<td>(주)돋움</td>
+								<td>홍길동</td>
+								<td>골프용품</td>
+								<td>정상승인</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="paging">
+					<a href="#none" class="first">처음페이지</a>
+					<a href="#none" class="prev">이전페이지</a>
+					<a href="#none" class="on">1</a>
+					<a href="#none" class="num">2</a>
+					<a href="#none" class="num">3</a>
+					<a href="#none" class="num">4</a>
+					<a href="#none" class="num">5</a>
+					<a href="#none" class="next">다음페이지</a>
+					<a href="#none" class="last">마지막페이지</a>
+				</div>
+
+			</div>
+			<div class="center">
+				<div class="center_btn txtc">
+					<button type="button" class="btn_ty1">추가</button><br/>
+					<button type="button" class="btn_ty3">선택완료</button><br/>
+					<button type="button" class="btn_ty4">삭제</button>
+				</div>
+			</div>
+			<div class="right">
+				<h3 class="tit_h3">선택된 협력회사 리스트</h3>
+				<div class="search_btn_area txtr">
+					<div id="" class="right">
+						<button type="button" class="btn_ty4">전체삭제</button>
+					</div>
+				</div>
+				<div class="tbl_search_list">
+					<table class="tbl_primary">
+						<colgroup>
+							<col style="width:30px;">
+							<col style="width:50px;">
+							<col>
+							<col>
+							<col>
+							<col>
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="row"><input type="checkbox" name="chk" id="chkall"></th>
+								<th scope="row">번호</th>
+								<th scope="row">협력회사명</th>
+								<th scope="row">담당자</th>
+								<th scope="row">주력상품</th>
+								<th scope="row">상태</th>
+							</tr>
+						</thead>
+						<tbody class="txtc">
+							<tr>
+								<td><input type="checkbox" name="chk" id="chk1"></td>
+								<td>5</td>
+								<td>(주)돋움</td>
+								<td>홍길동</td>
+								<td>골프용품</td>
+								<td>정상승인</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" name="chk" id="chk1"></td>
+								<td>4</td>
+								<td>(주)돋움</td>
+								<td>홍길동</td>
+								<td>골프용품</td>
+								<td>정상승인</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" name="chk" id="chk1"></td>
+								<td>3</td>
+								<td>(주)돋움</td>
+								<td>홍길동</td>
+								<td>골프용품</td>
+								<td>정상승인</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" name="chk" id="chk1"></td>
+								<td>2</td>
+								<td>(주)돋움</td>
+								<td>홍길동</td>
+								<td>골프용품</td>
+								<td>정상승인</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" name="chk" id="chk1"></td>
+								<td>1</td>
+								<td>(주)돋움</td>
+								<td>홍길동</td>
+								<td>골프용품</td>
+								<td>정상승인</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+
+		<div class="button_area">
+			<button type="button" class="btn_ty4">닫기</button>
+		</div>
+	</div><!--//popup_inner -->
+</div><!--//popup -->
+</body>
+</html>

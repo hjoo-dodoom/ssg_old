@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<meta charset="UTF-8">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>GIFT CARD</title>
+<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="../../css/sub.css">
+<script type="text/javascript" charset="utf-8" src="../../js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/common.js"></script>
+</head>
+<body>
+<? include("../include/header.html"); ?>
+
+<div id="container" class="container">
+	<? include("../include/snb.html"); ?>
+
+	<div class="content">
+		<div class="location">
+			<span>HOME</span>
+			<span>상품</span>
+			<span>상품진열관리</span>
+			<span class="on">GIFT CARD</span>
+		</div>
+		<div class="inner">
+			<h3 class="tit_h3">GIFT CARD</h3>
+
+			<div class="tbl_outer">
+				<table class="tbl_view">
+					<colgroup>
+						<col style="width:100px">
+						<col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">고객사</th>
+							<td>
+								<select name="all1" id="all1">
+									<option value="">전체</option>
+								</select>
+								<select name="sel1" id="sel1">
+									<option value="">선택</option>
+								</select>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div class="button_area">
+				<div class="left">
+					<button type="button" class="btn_ty3">GIFT CARD 추가</button>
+				</div>
+				<button type="button" class="btn_ty1">검색</button>
+			</div>
+
+			<div class="tbl_search_list">
+				<div class="mid">
+					<button type="button" class="btn_bnr_ty1">마지막상품</button>
+					<button type="button" class="btn_bnr_ty2">다음상품</button>
+					<button type="button" class="btn_bnr_ty3">이전상품</button>
+					<button type="button" class="btn_bnr_ty4">처음상품</button>
+					<button type="button" class="mid_btn_ty1">상품 삭제</button>
+				</div>
+
+				<table class="tbl_primary">
+					<colgroup>
+						<col style="width:30px;">
+						<col style="width:80px;">
+						<col style="width:100px;">
+						<col>
+						<col style="width:100px;">
+						<col style="width:130px;">
+						<col style="width:70px;">
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="row"><input type="checkbox" name="chk" id="chkall"></th>
+							<th scope="row">진열순서</th>
+							<th scope="row">상품코드</th>
+							<th scope="row">상품명</th>
+							<th scope="row">판매가</th>
+							<th scope="row">상품등록일</th>
+							<th scope="row">삭제</th>
+						</tr>
+					</thead>
+					<tbody class="txtc">
+						<tr>
+							<td><input type="checkbox" name="chk" id="chk1"></td>
+							<td>1</td>
+							<td><a href="#">123456789</a></td>
+							<td class="txtl"><a href="#">[트로이카]LICHT-ALARM 키링 (TOR50/YE)</a></td>
+							<td class="txtr">100,000</td>
+							<td>2017-06-01 23:59:59</td>
+							<td><button type="button" class="mid_btn_ty4">삭제</button></td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="chk" id="chk1"></td>
+							<td>1</td>
+							<td><a href="#">123456789</a></td>
+							<td class="txtl"><a href="#">[트로이카]LICHT-ALARM 키링 (TOR50/YE)</a></td>
+							<td class="txtr">100,000</td>
+							<td>2017-06-01 23:59:59</td>
+							<td><button type="button" class="mid_btn_ty4">삭제</button></td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="chk" id="chk1"></td>
+							<td>1</td>
+							<td><a href="#">123456789</a></td>
+							<td class="txtl"><a href="#">[트로이카]LICHT-ALARM 키링 (TOR50/YE)</a></td>
+							<td class="txtr">100,000</td>
+							<td>2017-06-01 23:59:59</td>
+							<td><button type="button" class="mid_btn_ty4">삭제</button></td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="chk" id="chk1"></td>
+							<td>1</td>
+							<td><a href="#">123456789</a></td>
+							<td class="txtl"><a href="#">[트로이카]LICHT-ALARM 키링 (TOR50/YE)</a></td>
+							<td class="txtr">100,000</td>
+							<td>2017-06-01 23:59:59</td>
+							<td><button type="button" class="mid_btn_ty4">삭제</button></td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="mid">
+					<button type="button" class="btn_bnr_ty1">마지막상품</button>
+					<button type="button" class="btn_bnr_ty2">다음상품</button>
+					<button type="button" class="btn_bnr_ty3">이전상품</button>
+					<button type="button" class="btn_bnr_ty4">처음상품</button>
+				</div>
+				<div class="mid">
+					선택한 상품의 진열순위를 <input type="text" name="" class="txtc" style="width:50px;"> 로 <button type="button" class="mid_btn_ty3">변경</button>
+				</div>
+			</div>
+			<div class="paging">
+				<a href="#none" class="first">처음페이지</a>
+				<a href="#none" class="prev">이전페이지</a>
+				<a href="#none" class="on">1</a>
+				<a href="#none" class="num">2</a>
+				<a href="#none" class="num">3</a>
+				<a href="#none" class="num">4</a>
+				<a href="#none" class="num">5</a>
+				<a href="#none" class="num">6</a>
+				<a href="#none" class="num">7</a>
+				<a href="#none" class="num">8</a>
+				<a href="#none" class="num">9</a>
+				<a href="#none" class="num">10</a>
+				<a href="#none" class="next">다음페이지</a>
+				<a href="#none" class="last">마지막페이지</a>
+			</div>
+		</div>
+	</div><!-- //content -->
+</div><!-- //container -->
+</div><!-- //wrap -->
+</body>
+</html>

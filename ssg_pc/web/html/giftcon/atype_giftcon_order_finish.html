@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<meta charset="UTF-8">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>SHINSEGAE</title>
+<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="../../css/atype.css">
+<script type="text/javascript" charset="utf-8" src="../../js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/common.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/ssg.carousel.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/jquery.selectbox-0.2.js"></script>
+</head>
+<body>
+<? include("../include/header.html"); ?>
+
+<div id="container" class="container">
+<div class="content">
+	<div class="inner">
+		<div class="cnt_tit_area clear">
+			<h2>주문완료</h2>
+			<div class="step_ty1">
+				<ul>
+					<li class="step1"><b>01</b> <em>주문/결제</em><span>&gt;</span></li>
+					<li class="step2 on"><b>02</b> <em>주문완료</em></li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- 신용카드일 경우 S -->
+		<div class="order_txt">
+			<p class="txt1">주문 및 결제가 정상적으로 완료 되었습니다.</p>
+			<p class="txt3">주문번호 : 329504772  /  결제완료일자 : 2017-05-01 13;58:32</p>
+		</div>
+		<!--// 신용카드일 경우 E -->
+
+		<div class="cart_list">
+			<h3 class="tit_h3">상품정보 확인</h3>
+			<table class="tbl_cart">
+				<colgroup>
+					<col style="width:20px;">
+					<col>
+					<col style="width:100px;">
+					<col style="width:140px;">
+					<col style="width:140px;">
+				</colgroup>
+				<thead>
+					<tr>
+						<th></th>
+						<th class="txtl">상품정보/옵션</th>
+						<th>수량</th>
+						<th>판매가</th>
+						<th>주문금액</th>
+					</tr>
+				</thead>
+				<tbody class="txtc">
+					<tr>
+						<td></td>
+						<td class="txtl item">
+							<div class="outer">
+								<div class="thum">
+									<img src="../../images/dummy/thum_cart_list.png" alt="">
+								</div>
+								<div class="item_txt">
+									<p>엘라스틴 아보카도허니 트린트먼트 1000ml</p>
+									<p class="linetop option">· 레드 / M /1개</p>
+								</div>
+							</div>
+						</td>
+						<td>1개</td>
+						<td class="price"><b>500,000</b>원</td>
+						<td class="price"><b>500,000</b>원</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td class="txtl item">
+							<div class="outer">
+								<div class="thum">
+									<img src="../../images/dummy/thum_cart_list.png" alt="">
+								</div>
+								<div class="item_txt">
+									<p>엘라스틴 아보카도허니 트린트먼트 1000ml</p>
+									<p class="linetop option">· 레드 / M /1개</p>
+								</div>
+							</div>
+						</td>
+						<td>2개</td>
+						<td class="price"><b>500,000</b>원</td>
+						<td class="price"><b>500,000</b>원</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<h3 class="tit_h3">받는사람정보</h3>
+			<table class="tbl_view2">
+				<colgroup>
+					<col style="width:200px;">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th>핸드폰</th>
+						<td>02-1234-5678</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<!-- 기프티콘 메시지입력 -->
+			<div class="tit_area">
+				<h3 class="tit_h3">기프티콘 메시지입력</h3>
+			</div>
+			<table class="tbl_view2">
+				<colgroup>
+					<col style="width:200px;">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th>MMS 제목</th>
+						<td>MMS 제목입니다.</td>
+					</tr>
+					<tr>
+						<th>메시지 입력</th>
+						<td>MMS 메시지 내용입니다.<br/>MMS 메시지 내용입니다.<br/>MMS 메시지 내용입니다.</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<!-- 신용카드일 경우 S -->
+			<h3 class="tit_h3">결제정보</h3>
+			<table class="tbl_view2">
+				<colgroup>
+					<col style="width:200px;">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th>사용 포인트</th>
+						<td>400,000 point</td>
+					</tr>
+					<tr>
+						<th>결제방법</th>
+						<td>신용카드</td>
+					</tr>
+				</tbody>
+			</table>
+			<!--// 신용카드일 경우 E -->
+
+			<div class="total col3">
+				<ul class="tit clear">
+					<li>총 주문금액</li>
+					<li>포인트 차감</li>
+					<li class="last">총 결제금액</li>
+				</ul>
+				<ul class="cnt clear">
+					<li><b>500,000</b>원 <div class="operator_ty1">+</div></li>
+					<li><b>400,000</b>원 <div class="operator_ty1">=</div></li>
+					<li class="last"><b>104,000</b>원</li>
+				</ul>
+			</div>
+
+			<div class="btn_btm_area txtc">
+				<button type="button" class="btn_bg_mid_ty1">계속 쇼핑하기</button>
+				<button type="button" class="btn_bg_mid_ty2">주문내역확인 </button>
+			</div>
+
+		</div>
+	</div><!-- //inner -->
+</div><!-- //content -->
+<div class="quick_area">
+	<div class="inner">
+		<div class="quick_left_box">
+			<div class="quick_left slide">
+				<div>
+					<a href="#"><img src="../../images/dummy/img_quick_left.png" alt="">
+					<span>12% 더블쿠폰<br>+청구할인</span></a>
+				</div>
+				<div>
+					<a href="#"><img src="../../images/dummy/img_quick_left.png" alt="">
+					<span>12% 더블쿠폰<br>+청구할인</span></a>
+				</div>
+				<div>
+					<a href="#"><img src="../../images/dummy/img_quick_left.png" alt="">
+					<span>12% 더블쿠폰<br>+청구할인</span></a>
+				</div>
+			</div>
+		</div>
+		<div class="quick_right_box">
+			<div class="quick_right">
+				<p class="tit">오늘본상품</p>
+				<div class="quick_r_out">
+					<div class="quick_r slide">
+						<div>
+							<a href="#"><img src="../../images/dummy/img_quick_right1.png" alt=""></a>
+							<a href="#"><img src="../../images/dummy/img_quick_right2.png" alt=""></a>
+							<a href="#"><img src="../../images/dummy/img_quick_right3.png" alt=""></a>
+						</div>
+						<div>
+							<a href="#"><img src="../../images/dummy/img_quick_right1.png" alt=""></a>
+							<a href="#"><img src="../../images/dummy/img_quick_right2.png" alt=""></a>
+							<a href="#"><img src="../../images/dummy/img_quick_right3.png" alt=""></a>
+						</div>
+					</div>
+				</div>
+				<a href="#container" class="btn_top">TOP </a>
+			</div>
+		</div>
+	</div>
+</div>
+</div><!-- //container -->
+<? include("../include/footer.html"); ?>
+</div><!-- //wrap -->
+</body>
+</html>

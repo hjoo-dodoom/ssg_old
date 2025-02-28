@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<meta charset="UTF-8">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>협력회사관리자 파일 목록</title>
+<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<script type="text/javascript" charset="utf-8" src="js/jquery-1.11.2.min.js"></script>
+<style type="text/css">
+	#guide_wrap {padding:10px}
+	table {border-collapse:collapse;border-spacing:0;}
+	table th, strong {font-weight:normal;}
+	h1{
+		margin:0 0 10px 0;
+		text-align:center;
+		font-size:2.4em;
+		color:#000
+	}
+	a {text-decoration:none;}
+	a:hover {text-decoration:underline;}
+	table {
+		width:100%;
+		margin-top:5px;
+		border-top:2px solid #1e61a8;
+	}
+	table th, table td{
+		padding:5px 7px;
+		border-left:1px solid #ccc; border-bottom:1px solid #ccc;
+	}
+	table th:rowspan + th, table td:rowspan + td{border-left:1px solid #ccc;}
+	td.lineli, th.lineli {border-left:1px solid #ccc !important;}
+	table th:first-child, table td:first-child{border-left:0 none}
+	table thead th {
+		font-family:'ngB';
+		font-size:13px;
+		color:#000;
+		border-bottom:1px solid #ccc;
+		background-color:#f2f2f2;
+	}
+	.no, .date, .work {
+		text-align:center;
+		padding:5px 0
+	}
+
+	tr.on {background-color: #f5fed0}
+
+	.lastmdate {color: #1155CC;}
+	.stand_by {color:#777;}
+	.ing, .per_2 {color:#4848D4 !important;}
+	.curr_n, .per, .end {color:#ff0000 !important;}
+
+	.division td{border-top:2px solid #7e8e9e}
+	table tr.division:first-child td{border-top:0 none;}
+	td a {text-decoration: none;}
+</style>
+</head>
+<body>
+<div id="wrap" class="wrap">
+<div class="skip">
+	<a href="html/joint_#navi"><span>주 메뉴 바로가기</span></a>
+	<a href="html/joint_#container"><span>본문 바로가기</span></a>
+	<a href="html/joint_#footer"><span>하단 메뉴 바로가기</span></a>
+</div>
+<!-- eniter wrap -->
+<div id="guide_wrap">
+	<div class="header">
+		<h1>협력회사관리자 파일 목록</h1>
+		<p>진행중 : <span class="ing_n"></span>p / 미완료 : <span class="notcurr_n"></span>p / 완료 : <span class="curr_n"></span>p / 전체 : <span class="total_n"></span>p</p>
+		<p>진행율 : <span class="per_2"></span> / 완료율 : <span class="per"></span></p>
+	</div>
+	<div class="list_w">
+		<table class="codinglist">
+			<colgroup>
+				<col style="width:40px">
+				<col>
+				<col>
+				<col>
+				<col>
+				<col style="width:5%">
+				<col style="width:80px">
+				<col style="width:50px">
+				<col>
+			</colgroup>
+			<thead>
+				<tr>
+					<th rowspan="2">no.</th>
+					<th colspan="4">navi</th>
+					<th rowspan="2">filename/link</th>
+					<th rowspan="2">date</th>
+					<th rowspan="2">work</th>
+					<th rowspan="2">etc.</th>
+				</tr>
+				<tr>
+					<th class="lineli">1depth</th>
+					<th>2depth</th>
+					<th>3depth</th>
+					<th>4depth</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="no"></td>
+					<td>로그인</td>
+					<td>협력회사 로그인</td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="html/mypage/joint_login.html" target="_blank">joint_login.html</a></td>
+					<td class="date">2017-07-28</td>
+					<td class="work"></td>
+					<td class="etc">통합과 동일</td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td>협력회사 등록</td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="html/joint_mypage/joint_reg.html" target="_blank">joint_reg.html</a></td>
+					<td class="date">2017-08-23</td>
+					<td class="work"></td>
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td>아이디/비밀번호 찾기</td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="html/joint_mypage/find_id.html" target="_blank">find_id.html</a></td>
+					<td class="date">2017-08-23</td>
+					<td class="work"></td>
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td>관리자 접근 제한</td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="html/popup/admin_confinement.html" target="_blank">admin_confinement.html</a></td>
+					<td class="date">2017-07-14</td>
+					<td class="work"></td>
+					<td class="etc">통합과 동일</td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td>메인</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="html/joint_index.html" target="_blank"></a>index.html</td>
+					<td class="date"></td>
+					<td class="work"></td>
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td>기본양식 다운로드 - 팝업</td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="html/joint_popup/basic_download.html" target="_blank">basic_download.html</a></td>
+					<td class="date">2017-08-16</td>
+					<td class="work"></td>
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td>보안체크</td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="html/joint_security/joint_security.html" target="_blank">joint_security.html</a></td>
+					<td class="date">2017-08-11</td>
+					<td class="work"></td>
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td>에러</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="html/error.html" target="_blank">error.html</a></td>
+					<td class="date">2017-08-23</td>
+					<td class="work"></td>
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td>회원</td>
+					<td>협력회사 계약관리</td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="html/joint_member/joint_info.html" target="_blank">joint_info.html</a></td>
+					<td class="date">2017-08-16</td>
+					<td class="work"></td>
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td></td>
+					<td>정보보안 서약서 이력관리 - 팝업</td>
+					<td></td>
+					<td class="link"><a href="html/joint_popup/pop_ifsc.html" target="_blank">pop_ifsc.html</a></td>
+					<td class="date">2019-02-07</td>
+					<td class="work"></td>
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td>상품</td>
+					<td>상품전체목록</td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="html/joint_goods/goods_list.html" target="_blank">goods_list.html</a></td>
+					<td class="date">2017-08-11</td>
+					<td class="work"></td>
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td>상시상품승인목록</td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="html/joint_goods/ordinary_goods_request_list.html" target="_blank">ordinary_goods_request_list.html</a></td>
+					<td class="date">2017-08-11</td>
+					<td class="work"></td>
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td>상시상품대기목록</td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="html/joint_goods/ordinary_goods_wait_list.html" target="_blank">ordinary_goods_wait_list.html</a></td>
+					<td class="date">2017-08-16</td>
+					<td class="work"></td>
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td>한시상품승인목록</td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="html/joint_goods/same_time_goods_request_list.html" target="_blank">same_time_goods_request_list.html</a></td>
+					<td class="date">2017-08-16</td>
+					<td class="work"></td>
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td>한시상품대기목록</td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="html/joint_goods/same_time_goods_wait_list.html" target="_blank">same_time_goods_wait_list.html</a></td>
+					<td class="date">2017-08-16</td>
+					<td class="work"></td>
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td>상품반송목록</td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="html/joint_goods/goods_return_list.html" target="_blank">goods_return_list.html</a></td>
+					<td class="date">2017-08-16</td>
+					<td class="work"></td>
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td>승인요청목록</td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="html/joint_goods/request_permission.html" target="_blank">request_permission.html</a></td>
+					<td class="date">2017-08-16</td>
+					<td class="work"></td>
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td>판매종료목록</td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="html/joint_goods/sales_ending.html" target="_blank">sales_ending.html</a></td>
+					<td class="date">2017-08-16</td>
+					<td class="work"></td>
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td>상품재고목록</td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="html/joint_goods/godds_stock.html" target="_blank">godds_stock.html</a></td>
+					<td class="date">2017-08-16</td>
+					<td class="work"></td>
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td></td>
+					<td>상품 이용 고객사 - 팝업</td>
+					<td></td>
+					<td class="link"><a href="html/joint_popup/pop_co_view.html" target="_blank">pop_co_view.html</a></td>
+					<td class="date">2017-08-16</td>
+					<td class="work"></td>
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td></td>
+					<td>상품 미리보기 팝업</td>
+					<td></td>
+					<td class="link"><a href="html/popup/pop_goods_view.html" target="_blank">pop_goods_view.html</a></td>
+					<td class="date">2017-08-09</td>
+					<td class="work"></td>
+					<td class="etc">통합과 동일</td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td>상세페이지</td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="html/joint_goods/detail_view.html" target="_blank">detail_view.html</a></td>
+					<td class="date">2017-08-16</td>
+					<td class="work"></td>
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td></td>
+					<td>상품 카테고리 팝업</td>
+					<td></td>
+					<td class="link"><a href="html/popup/pop_goods_category.html" target="_blank">pop_goods_category.html</a></td>
+					<td class="date">2017-07-11</td>
+					<td class="work"></td>
+					<td class="etc">통합과 동일</td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td></td>
+					<td>고시 카테고리 팝업</td>
+					<td></td>
+					<td class="link"><a href="html/popup/pop_gosi_category.html" target="_blank">pop_gosi_category.html</a></td>
+					<td class="date">2017-07-11</td>
+					<td class="work"></td>
+					<td class="etc">통합과 동일</td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td>상품등록하기</td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="html/joint_goods/goods_reg.html" target="_blank">goods_reg.html</a></td>
+					<td class="date">2017-08-16</td>
+					<td class="work"></td>
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td>상품대량등록</td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="html/joint_goods/large_reg.html" target="_blank">large_reg.html</a></td>
+					<td class="date">2017-08-16</td>
+					<td class="work"></td>
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td></td>
+					<td>상품대량등록 팝업</td>
+					<td></td>
+					<td class="link"><a href="html/popup/pop_large_reg.html" target="_blank">pop_large_reg.html</a></td>
+					<td class="date">2017-07-11</td>
+					<td class="work"></td>
+					<td class="etc">통합과 동일</td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td>상품대량등록</td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="html/joint_goods/large_reg_list.html" target="_blank">large_reg_list.html</a></td>
+					<td class="date">2017-08-16</td>
+					<td class="work"></td>
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td>주문</td>
+					<td>주문전체목록</td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="html/joint_order/order_list_all.html" target="_blank">order_list_all.html</a></td>
+					<td class="date">2017-08-16</td>
+					<td class="work"></td>
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td>주문취소목록</td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="html/joint_order/order_cancel_list.html" target="_blank">order_cancel_list.html</a></td>
+					<td class="date">2017-08-16</td>
+					<td class="work"></td>
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td>반품접수</td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="html/joint_order/order_cancel_list.html" target="_blank">order_cancel_list.html</a></td>
+					<td class="date">2017-08-16</td>
+					<td class="work"></td>
+					<td class="etc">주문취소목록과 동일</td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td>반품완료</td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="html/joint_order/order_cancel_list.html" target="_blank">order_cancel_list.html</a></td>
+					<td class="date">2017-08-16</td>
+					<td class="work"></td>
+					<td class="etc">주문취소목록과 동일</td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td>교환접수</td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="html/joint_order/order_cancel_list.html" target="_blank">order_cancel_list.html</a></td>
+					<td class="date">2017-08-16</td>
+					<td class="work"></td>
+					<td class="etc">주문취소목록과 동일</td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td>교환완료</td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="html/joint_order/order_cancel_list.html" target="_blank">order_cancel_list.html</a></td>
+					<td class="date">2017-08-16</td>
+					<td class="work"></td>
+					<td class="etc">주문취소목록과 동일</td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td>환불접수</td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="html/joint_order/order_cancel_list.html" target="_blank">order_cancel_list.html</a></td>
+					<td class="date">2017-08-16</td>
+					<td class="work"></td>
+					<td class="etc">주문취소목록과 동일</td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td>환불완료</td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="html/joint_order/order_cancel_list.html" target="_blank">order_cancel_list.html</a></td>
+					<td class="date">2017-08-16</td>
+					<td class="work"></td>
+					<td class="etc">주문취소목록과 동일</td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td>정산조회</td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="html/joint_order/calc_search.html" target="_blank">calc_search.html</a></td>
+					<td class="date">2017-08-16</td>
+					<td class="work"></td>
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td>주문상세 정보</td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="html/joint_order/order_detail.html" target="_blank">order_detail.html</a></td>
+					<td class="date">2017-08-16</td>
+					<td class="work"></td>
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td>송장업로드</td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="html/order/invoice_upload.html" target="_blank">invoice_upload.html</a></td>
+					<td class="date">2017-07-19</td>
+					<td class="work"></td>
+					<td class="etc">통합과 동일</td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td></td>
+					<td>송장 업로드 - 팝업</td>
+					<td></td>
+					<td class="link"><a href="html/popup/pop_outsourcing_large_reg.html" target="_blank">pop_outsourcing_large_reg.html</a></td>
+					<td class="date">2017-07-19</td>
+					<td class="work"></td>
+					<td class="etc">통합과 동일(외부몰주문대량등록와 동일)</td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td>외부몰주문목록</td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="html/joint_order/external_order.html" target="_blank">external_order.html</a></td>
+					<td class="date">2017-08-16</td>
+					<td class="work"></td>
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td></td>
+					<td>주문상세정보</td>
+					<td></td>
+					<td class="link"><a href="html/joint_order/external_order_detail.html" target="_blank">external_order_detail.html</a></td>
+					<td class="date">2017-08-16</td>
+					<td class="work"></td>
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td>고객센터</td>
+					<td>공지사항</td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="html/joint_customer/notice.html" target="_blank">notice.html</a></td>
+					<td class="date">2017-08-16</td>
+					<td class="work"></td>
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td></td>
+					<td>공지사항 상세</td>
+					<td></td>
+					<td class="link"><a href="html/joint_customer/notice_detail.html" target="_blank">notice_detail.html</a></td>
+					<td class="date">2017-08-16</td>
+					<td class="work"></td>
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td></td>
+					<td>공지사항 답변</td>
+					<td></td>
+					<td class="link"><a href="html/joint_customer/notice_answer.html" target="_blank">notice_answer.html</a></td>
+					<td class="date">2017-08-16</td>
+					<td class="work"></td>
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td>상품문의</td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="html/customer/goods_permission_list.html" target="_blank">goods_permission_list.html</a></td>
+					<td class="date">2017-08-01</td>
+					<td class="work"></td>
+					<td class="etc">통합과 동일</td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td></td>
+					<td>상품문의 상세</td>
+					<td></td>
+					<td class="link"><a href="html/joint_customer/goods_permission_detail.html" target="_blank">goods_permission_detail.html</a></td>
+					<td class="date">2017-08-16</td>
+					<td class="work"></td>
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td></td>
+					<td>상품문의 답변</td>
+					<td></td>
+					<td class="link"><a href="html/customer/goods_permission_answer.html" target="_blank">goods_permission_answer.html</a></td>
+					<td class="date">2017-08-01</td>
+					 <td class="work"></td>
+					<td class="etc">통합과 동일</td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>상품미리보기 팝업</td>
+					<td class="link"><a href="html/joint_popup/pop_goods_view.html" target="_blank">pop_goods_view.html</a></td>
+					<td class="date">2017-08-09</td>
+					<td class="work"></td>
+					<td class="etc">통합과 동일</td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td>사은품</td>
+					<td>샘플요청리스트</td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="html/joint_freebie/sample_list.html" target="_blank">sample_list.html</a></td>
+					<td class="date">2017-08-16</td>
+					<td class="work"></td>
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td></td>
+					<td>신청자 정보 팝업</td>
+					<td></td>
+					<td class="link">
+					a href="html/popup/pop_claimant_info.html" target="_blank">pop_claimant_info.html</a></td>
+					<td class="date">2017-08-09</td>
+					<td class="work"></td>
+					<td class="etc">통합과 동일</td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td></td>
+					<td>상품미리보기 팝업</td>
+					<td></td>
+					<td class="link"><a href="html/popup/pop_goods_view.html" target="_blank">pop_goods_view.html</a></td>
+					<td class="date">2017-08-09</td>
+					<td class="work"></td>
+					<td class="etc">통합과 동일</td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+	 				<td></td>
+					<td>견적리스트</td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="html/joint_freebie/estimate_list.html" target="_blank">estimate_list.html</a></td>
+					<td class="date">2017-08-16</td>
+					<td class="work"></td>
+					<td class="etc"></td>
+				</tr>
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td>발주리스트</td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="html/joint_freebie/order_list.html" target="_blank">order_list.html</a></td>
+					<td class="date">2017-08-16</td>
+					<td class="work"></td>
+					<td class="etc"></td>
+				</tr>
+				<!-- 
+				<tr>
+					<td class="no"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="link"><a href="html/joint_.html" target="_blank"></a>.html</td>
+					<td class="date"></td>
+					<td class="work"></td>
+					<td class="etc"></td>
+				</tr>
+				 -->
+			</tbody>
+		</table>
+	</div>
+</div>
+
+<script type="text/javascript">
+	$(function () {
+		$(".tab_menu li a").click(function () {
+			$(".tab_menu li a").removeClass("active");
+			$(this).addClass("active");
+			$(".list_w").hide().removeClass("codinglist")
+			var activeTab = $(this).attr("rel");
+			$("#" + activeTab).fadeIn().addClass("codinglist");
+			chkList();
+		});
+		chkList();
+	});
+
+	function chkList(){
+		var tatal_n = $(".codinglist tbody tr").length;
+		var curr_n = 0;
+		var ing_n = 0;
+		$(".codinglist td a").each(function() {
+			$(this).closest('tr').find('.work').text('대기중').addClass('stand_by');
+			if($(this).attr('href') != '#' && $(this).text().length > 0 && $(this).closest('tr').find('.date').text().length > 4){
+				curr_n++;
+				$(this).closest('tr').find('.work').text('완료').addClass('end');
+			} else if ($(this).text().length > 0 && $(this).attr('href') != '#') {
+				ing_n++;
+				$(this).closest('tr').find('.work').text('진행중').addClass('ing');
+			}
+		});
+
+		$(".codinglist tbody tr").each(function() {
+			var index = $(this).index()+1;
+			$(this).children(".codinglist td.no").text(index);
+		});
+		$(".codinglist .no + td").each(function() {
+			if($(this).text() != ""){
+				$(this).parent('tr').addClass('division');
+			}
+		});
+
+		$(".codinglist td").click(function() {
+			$(".codinglist tr").removeClass("on");
+			$(this).parent(".codinglist tr").addClass("on");
+		});
+
+		$('.total_n').text(tatal_n);
+		$('.curr_n').text(curr_n);
+		$('.notcurr_n').text(tatal_n - curr_n);
+		$('.ing_n').text(ing_n).addClass('ing');
+		$('.per').text(Math.floor((curr_n/tatal_n)*100) + '%');
+		$('.per_2').text(Math.floor((ing_n/tatal_n)*100) + '%');
+	}
+</script>
+</div><!-- //wrap -->
+</body>
+</html>

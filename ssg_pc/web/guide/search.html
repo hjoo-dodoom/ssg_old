@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<meta charset="UTF-8">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>Search 스타일 가이드</title>
+<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="../css/sub.css">
+<link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+<script type="text/javascript" charset="utf-8" src="../js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/common.js"></script>
+</head>
+<body>
+<? include("../html/include/header.html"); ?>
+
+<div id="container" class="container">
+<div class="inner clear">
+<div class="content">
+	<h2 class="tit_h2">검색/조회 정의</h2>
+
+	<div class="search_ty1">
+		<form method="post" action="text.jsp">
+		<fieldset>
+			<legend>게시판 검색</legend>
+			<div class="sel_ty1" style="width:160px;">
+				<label for="sel_ty1">전체</label>
+				<select id="sel_ty1">
+					<option value="1" selected>전체</option>
+					<option value="2">2</option>
+				</select>
+			</div>
+			<input type="text" placeholder="검색어를 입력하세요" style="width:350px;">
+			<button type="button">검색</button>
+			<p><strong>키워드</strong>한글나라 <span>|</span> 우수고객 쿠폰 <span>|</span> 연말정산 <span>|</span> 신기한 한글나라 이야기 전집</p>
+		</fieldset>
+		</form>
+	</div>
+</div><!-- //content -->
+</div><!-- //inner -->
+</div><!-- //container -->
+<? include("../html/include/footer.html"); ?>
+</div><!-- //wrap -->
+</body>
+</html>

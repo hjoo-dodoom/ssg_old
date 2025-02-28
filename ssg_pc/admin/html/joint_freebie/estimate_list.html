@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<meta charset="UTF-8">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>견적리스트</title>
+<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="../../css/sub.css">
+<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script type="text/javascript" charset="utf-8" src="../../js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/common.js"></script>
+</head>
+<body>
+<? include("../include/header.html"); ?>
+
+<div id="container" class="container">
+	<? include("../include/snb.html"); ?>
+
+	<div class="content">
+		<div class="location">
+			<span>HOME</span>
+			<span>사은품</span>
+			<span class="on">견적리스트</span>
+		</div>
+		<div class="inner">
+			<h3 class="tit_h3">견적리스트</h3>
+
+			<div class="tbl_outer">
+				<table class="tbl_view">
+					<colgroup>
+						<col style="width:100px">
+						<col>
+						<col style="width:100px">
+						<col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">요청일자</th>
+							<td>
+								<input type="text" name="" class="datepicker">
+								<span class="division">~</span>
+								<input type="text" name="" class="datepicker">
+							</td>
+							<th scope="row">검색</th>
+							<td>
+								<select name="sel8" id="sel8" style="width:110px;">
+									<option value="">검색구분 </option>
+								</select>
+								<input type="text" style="width:195px;">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div class="button_area">
+				<button type="button" class="btn_ty1">검색</button>
+				<button type="button" class="btn_ty2">초기화</button>
+			</div>
+
+			<div class="tbl_search_list">
+				<div class="top">
+					<div class="left">
+						<p>※ 견적단가 수정은 미승인 상태에서만 가능합니다.</p>
+					</div>
+					<div class="right">
+						<select name="sel9" id="sel9" style="width:120px;">
+							<option value="">20개씩 보기</option>
+						</select>
+					</div>
+				</div>
+
+				<table class="tbl_primary">
+					<colgroup>
+						<col style="width:30px;">
+						<col style="width:60px;">
+						<col style="width:80px;">
+						<col style="width:100px;">
+						<col style="width:100px;">
+						<col>
+						<col style="width:100px;">
+						<col style="width:80px;">
+						<col style="width:70px;">
+						<col style="width:80px;">
+						<col style="width:80px;">
+						<col style="width:80px;">
+						<col style="width:80px;">
+						<col style="width:130px;">
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="row"><input type="checkbox" name="chk" id="chkall"></th>
+							<th scope="row">번호</th>
+							<th scope="row">요청일자</th>
+							<th scope="row">신청자명</th>
+							<th scope="row">신청자<br>아이디</th>
+							<th scope="row">상품명</th>
+							<th scope="row">업체명</th>
+							<th scope="row">공급가</th>
+							<th scope="row">수량</th>
+							<th scope="row">견적<br>단가</th>
+							<th scope="row">관리자<br>승인일</th>
+							<th scope="row">수정</th>
+						</tr>
+					</thead>
+					<tbody class="txtc">
+						<tr>
+							<td><input type="checkbox" name="chk" id="chk1"></td>
+							<td>41</td>
+							<td>2017-06-01</td>
+							<td><a href="#">홍**</a></td>
+							<td>12345</td>
+							<td class="txtl"><a href="#">[JAJU] 쿨방석/매트</a></td>
+							<td>(주)돋움</td>
+							<td class="txtr">10,000</td>
+							<td>100</td>
+							<td><input type="text" name="" class="txtr w100" placeholder="9,900"></td>
+							<td>미승인</td>
+							<td><button type="button" class="btn_line_ty1">수정</button></td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="chk" id="chk1"></td>
+							<td>41</td>
+							<td>2017-06-01</td>
+							<td><a href="#">홍**</a></td>
+							<td>12345</td>
+							<td class="txtl"><a href="#">[JAJU] 쿨방석/매트</a></td>
+							<td>(주)돋움</td>
+							<td class="txtr">10,000</td>
+							<td>100</td>
+							<td><input type="text" name="" class="txtr w100" placeholder="9,900"></td>
+							<td>2017-06-01</td>
+							<td><button type="button" class="btn_line_ty1">수정</button></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="paging">
+				<a href="#none" class="first">처음페이지</a>
+				<a href="#none" class="prev">이전페이지</a>
+				<a href="#none" class="on">1</a>
+				<a href="#none" class="num">2</a>
+				<a href="#none" class="num">3</a>
+				<a href="#none" class="num">4</a>
+				<a href="#none" class="num">5</a>
+				<a href="#none" class="num">6</a>
+				<a href="#none" class="num">7</a>
+				<a href="#none" class="num">8</a>
+				<a href="#none" class="num">9</a>
+				<a href="#none" class="num">10</a>
+				<a href="#none" class="next">다음페이지</a>
+				<a href="#none" class="last">마지막페이지</a>
+			</div>
+		</div>
+	</div><!-- //content -->
+</div><!-- //container -->
+</div><!-- //wrap -->
+</body>
+</html>

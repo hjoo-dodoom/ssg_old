@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<meta charset="UTF-8">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>고객사</title>
+<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="../../css/sub.css">
+<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script type="text/javascript" charset="utf-8" src="../../js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/common.js"></script>
+</head>
+<body>
+<? include("../include/header.html"); ?>
+
+<div id="container" class="container">
+	<? include("../include/snb.html"); ?>
+
+	<div class="content">
+		<div class="location">
+			<span>HOME</span>
+			<span>회원 </span>
+			<span>고객사 관리</span>
+			<span class="on">고객사</span>
+		</div>
+		<div class="inner">
+			<h3 class="tit_h3">고객사</h3>
+
+			<div class="tbl_outer">
+				<table class="tbl_view">
+					<colgroup>
+						<col style="width:120px">
+						<col>
+						<col style="width:120px">
+						<col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">승인상태</th>
+							<td>
+								<select name="" id="">
+									<option value="">전체</option>
+								</select>
+							</td>
+							<th scope="row">구분</th>
+							<td>
+								<select name="" id="">
+									<option value="">전체</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">고객사검색</th>
+							<td colspan="3">
+								<select name="sel8" id="sel8" style="width:110px;">
+									<option value="">고객사명</option>
+								</select>
+								<input type="text" style="width:195px;">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div class="button_area">
+				<div class="left">
+					<button type="button" class="btn_ty3">고객사 등록</button>
+				</div>
+				<button type="button" class="btn_ty1">검색</button>
+				<button type="button" class="btn_ty2">초기화</button>
+			</div>
+
+			<table class="tbl_primary">
+				<colgroup>
+					<col style="width:40px;">
+					<col>
+					<col>
+					<col style="width:60px;">
+					<col style="width:40px;">
+					<col style="width:60px;">
+					<col style="width:80px;">
+					<col style="width:80px;">
+					<col style="width:80px;">
+					<col style="width:79px;">
+					<col style="width:100px;">
+					<col style="width:130px;">
+				</colgroup>
+				<thead>
+					<tr>
+						<th scope="row">번호</th>
+						<th scope="row">아이디</th>
+						<th scope="row">고객사</th>
+						<th scope="row">회원수</th>
+						<th scope="row">승인<br>상태</th>
+						<th scope="row">구분</th>
+						<th scope="row">영업담당자</th>
+						<th scope="row">등록일</th>
+						<th scope="row">만료일</th>
+						<th scope="row">URL</th>
+						<th scope="row">설정</th>
+						<th scope="row">로그인/메모</th>
+					</tr>
+				</thead>
+				<tbody class="txtc">
+					<tr>
+						<td>100</td>
+						<td><a href="#">ssg1234</a></td>
+						<td><a href="#">신세계</a></td>
+						<td>100</td>
+						<td>승인</td>
+						<td>폐쇄형</td>
+						<td>박영업</td>
+						<td>2017-05-01</td>
+						<td>2020-12-31</td>
+						<td><a href="#">b2e.com</a></td>
+						<td>
+							<p><button type="button" class="mid_btn_ty5 w100">디자인설정</button><p>
+							<p><button type="button" class="mid_btn_ty5 w100">포인트설정</button><p>
+							<p><button type="button" class="mid_btn_ty5 w100">카테고리설정</button><p>
+							
+						</td>
+						<td>
+							<button type="button" class="mid_btn_ty4">로그인</button>
+							<button type="button" class="mid_btn_ty4">메모(1)</button>
+						</td>
+					</tr>
+					<tr>
+						<td>100</td>
+						<td><a href="#">ssg1234</a></td>
+						<td><a href="#">신세계</a></td>
+						<td>100</td>
+						<td>승인</td>
+						<td>폐쇄형</td>
+						<td>박영업</td>
+						<td>2017-05-01</td>
+						<td>2020-12-31</td>
+						<td><a href="#">b2e.com</a></td>
+						<td>
+							<p><button type="button" class="mid_btn_ty5 w100">디자인설정</button><p>
+							<p><button type="button" class="mid_btn_ty5 w100">포인트설정</button><p>
+							<p><button type="button" class="mid_btn_ty5 w100">카테고리설정</button><p>
+							
+						</td>
+						<td>
+							<button type="button" class="mid_btn_ty4">로그인</button>
+							<button type="button" class="mid_btn_ty4">메모(1)</button>
+						</td>
+					</tr>
+					<tr>
+						<td>100</td>
+						<td><a href="#">ssg1234</a></td>
+						<td><a href="#">신세계</a></td>
+						<td>100</td>
+						<td>승인</td>
+						<td>폐쇄형</td>
+						<td>박영업</td>
+						<td>2017-05-01</td>
+						<td>2020-12-31</td>
+						<td><a href="#">b2e.com</a></td>
+						<td>
+							<p><button type="button" class="mid_btn_ty5 w100">디자인설정</button><p>
+							<p><button type="button" class="mid_btn_ty5 w100">포인트설정</button><p>
+							<p><button type="button" class="mid_btn_ty5 w100">카테고리설정</button><p>
+							
+						</td>
+						<td>
+							<button type="button" class="mid_btn_ty4">로그인</button>
+							<button type="button" class="mid_btn_ty4">메모(1)</button>
+						</td>
+					</tr>
+					<tr>
+						<td>100</td>
+						<td><a href="#">ssg1234</a></td>
+						<td><a href="#">신세계</a></td>
+						<td>100</td>
+						<td>승인</td>
+						<td>폐쇄형</td>
+						<td>박영업</td>
+						<td>2017-05-01</td>
+						<td>2020-12-31</td>
+						<td><a href="#">b2e.com</a></td>
+						<td>
+							<p><button type="button" class="mid_btn_ty5 w100">디자인설정</button><p>
+							<p><button type="button" class="mid_btn_ty5 w100">포인트설정</button><p>
+							<p><button type="button" class="mid_btn_ty5 w100">카테고리설정</button><p>
+							
+						</td>
+						<td>
+							<button type="button" class="mid_btn_ty4">로그인</button>
+							<button type="button" class="mid_btn_ty4">메모(1)</button>
+						</td>
+					</tr>
+					<tr>
+						<td>100</td>
+						<td><a href="#">ssg1234</a></td>
+						<td><a href="#">신세계</a></td>
+						<td>100</td>
+						<td>승인</td>
+						<td>폐쇄형</td>
+						<td>박영업</td>
+						<td>2017-05-01</td>
+						<td>2020-12-31</td>
+						<td><a href="#">b2e.com</a></td>
+						<td>
+							<p><button type="button" class="mid_btn_ty5 w100">디자인설정</button><p>
+							<p><button type="button" class="mid_btn_ty5 w100">포인트설정</button><p>
+							<p><button type="button" class="mid_btn_ty5 w100">카테고리설정</button><p>
+							
+						</td>
+						<td>
+							<button type="button" class="mid_btn_ty4">로그인</button>
+							<button type="button" class="mid_btn_ty4">메모(1)</button>
+						</td>
+					</tr>
+					<tr>
+						<td>100</td>
+						<td><a href="#">ssg1234</a></td>
+						<td><a href="#">신세계</a></td>
+						<td>100</td>
+						<td>승인</td>
+						<td>폐쇄형</td>
+						<td>박영업</td>
+						<td>2017-05-01</td>
+						<td>2020-12-31</td>
+						<td><a href="#">b2e.com</a></td>
+						<td>
+							<p><button type="button" class="mid_btn_ty5 w100">디자인설정</button><p>
+							<p><button type="button" class="mid_btn_ty5 w100">포인트설정</button><p>
+							<p><button type="button" class="mid_btn_ty5 w100">카테고리설정</button><p>
+							
+						</td>
+						<td>
+							<button type="button" class="mid_btn_ty4">로그인</button>
+							<button type="button" class="mid_btn_ty4">메모(1)</button>
+						</td>
+					</tr>
+					<tr>
+						<td>100</td>
+						<td><a href="#">ssg1234</a></td>
+						<td><a href="#">신세계</a></td>
+						<td>100</td>
+						<td>승인</td>
+						<td>폐쇄형</td>
+						<td>박영업</td>
+						<td>2017-05-01</td>
+						<td>2020-12-31</td>
+						<td><a href="#">b2e.com</a></td>
+						<td>
+							<p><button type="button" class="mid_btn_ty5 w100">디자인설정</button><p>
+							<p><button type="button" class="mid_btn_ty5 w100">포인트설정</button><p>
+							<p><button type="button" class="mid_btn_ty5 w100">카테고리설정</button><p>
+							
+						</td>
+						<td>
+							<button type="button" class="mid_btn_ty4">로그인</button>
+							<button type="button" class="mid_btn_ty4">메모(1)</button>
+						</td>
+					</tr>
+					<tr>
+						<td>100</td>
+						<td><a href="#">ssg1234</a></td>
+						<td><a href="#">신세계</a></td>
+						<td>100</td>
+						<td>승인</td>
+						<td>폐쇄형</td>
+						<td>박영업</td>
+						<td>2017-05-01</td>
+						<td>2020-12-31</td>
+						<td><a href="#">b2e.com</a></td>
+						<td>
+							<p><button type="button" class="mid_btn_ty5 w100">디자인설정</button><p>
+							<p><button type="button" class="mid_btn_ty5 w100">포인트설정</button><p>
+							<p><button type="button" class="mid_btn_ty5 w100">카테고리설정</button><p>
+							
+						</td>
+						<td>
+							<button type="button" class="mid_btn_ty4">로그인</button>
+							<button type="button" class="mid_btn_ty4">메모(1)</button>
+						</td>
+					</tr>
+					<tr>
+						<td>100</td>
+						<td><a href="#">ssg1234</a></td>
+						<td><a href="#">신세계</a></td>
+						<td>100</td>
+						<td>승인</td>
+						<td>폐쇄형</td>
+						<td>박영업</td>
+						<td>2017-05-01</td>
+						<td>2020-12-31</td>
+						<td><a href="#">b2e.com</a></td>
+						<td>
+							<p><button type="button" class="mid_btn_ty5 w100">디자인설정</button><p>
+							<p><button type="button" class="mid_btn_ty5 w100">포인트설정</button><p>
+							<p><button type="button" class="mid_btn_ty5 w100">카테고리설정</button><p>
+							
+						</td>
+						<td>
+							<button type="button" class="mid_btn_ty4">로그인</button>
+							<button type="button" class="mid_btn_ty4">메모(1)</button>
+						</td>
+					</tr>
+					<tr>
+						<td>100</td>
+						<td><a href="#">ssg1234</a></td>
+						<td><a href="#">신세계</a></td>
+						<td>100</td>
+						<td>승인</td>
+						<td>폐쇄형</td>
+						<td>박영업</td>
+						<td>2017-05-01</td>
+						<td>2020-12-31</td>
+						<td><a href="#">b2e.com</a></td>
+						<td>
+							<p><button type="button" class="mid_btn_ty5 w100">디자인설정</button><p>
+							<p><button type="button" class="mid_btn_ty5 w100">포인트설정</button><p>
+							<p><button type="button" class="mid_btn_ty5 w100">카테고리설정</button><p>
+							
+						</td>
+						<td>
+							<button type="button" class="mid_btn_ty4">로그인</button>
+							<button type="button" class="mid_btn_ty4">메모(1)</button>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<div class="paging">
+				<a href="#none" class="first">처음페이지</a>
+				<a href="#none" class="prev">이전페이지</a>
+				<a href="#none" class="on">1</a>
+				<a href="#none" class="num">2</a>
+				<a href="#none" class="num">3</a>
+				<a href="#none" class="num">4</a>
+				<a href="#none" class="num">5</a>
+				<a href="#none" class="num">6</a>
+				<a href="#none" class="num">7</a>
+				<a href="#none" class="num">8</a>
+				<a href="#none" class="num">9</a>
+				<a href="#none" class="num">10</a>
+				<a href="#none" class="next">다음페이지</a>
+				<a href="#none" class="last">마지막페이지</a>
+			</div>
+		</div>
+	</div><!-- //content -->
+</div><!-- //container -->
+</div><!-- //wrap -->
+</body>
+</html>

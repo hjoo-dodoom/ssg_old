@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<meta charset="UTF-8">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>기프티콘 대량등록</title>
+<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="../../css/sub.css">
+<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script type="text/javascript" charset="utf-8" src="../../js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/common.js"></script>
+</head>
+<body>
+<? include("../include/header.html"); ?>
+
+<div id="container" class="container">
+	<? include("../include/snb.html"); ?>
+
+	<div class="content">
+		<div class="location">
+			<span>HOME</span>
+			<span>기프티콘</span>
+			<span class="on">기프티콘 대량등록</span>
+		</div>
+		<div class="inner">
+			<h3 class="tit_h3">기프티콘 대량등록</h3>
+			<p class="tbl_tit_ty1">※ 대량의 상품DB를 빠르게 등록하실 수 있습니다.</p>
+			<table class="tbl_view">
+				<colgroup>
+					<col style="width:170px;">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th>샘플 CSV</th>
+						<td>
+							<p>1. 아래 샘플파일 및 대량등록파일 작성안내를 다운받아 엑셀에서 상품정보를 작성하세요. <br>&nbsp;&nbsp; (반드시 "<b>2번째 라인</b>" 부터 작성해주세요. 100개 이상 등록 시 100개 단위로 분할해서 올려주시기 바랍니다.)</p>
+							<p>
+								<button type="button" class="mid_btn_ty1">대량등록파일 작성안내</button>
+								<button type="button" class="mid_btn_ty1">샘플파일 다운로드</button>
+								<button type="button" class="mid_btn_ty1">참고카테고리 다운로드</button>
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<th>파일업로드</th>
+						<td>
+							<p>3. 작성 완료된 상품CSV파일을 올리세요. </p>
+							<p><input type="file" name=""></p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<div class="button_area clear">
+				<div class="left">
+					<button type="button" class="btn_ty9">등록내역 보기</button>
+				</div>
+				<button type="button" class="btn_ty3">기프티콘 대량등록</button>
+			</div>
+
+		</div><!-- //inner -->
+	</div><!-- //content -->
+</div><!-- //container -->
+</div><!-- //wrap -->
+</body>
+</html>

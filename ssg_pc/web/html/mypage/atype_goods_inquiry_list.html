@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<meta charset="UTF-8">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>SHINSEGAE</title>
+<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="../../css/atype.css">
+<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script type="text/javascript" charset="utf-8" src="../../js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/ssg.carousel.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/common.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/jquery.selectbox-0.2.js"></script>
+</head>
+<body>
+<? include("../include/atype_header1.html"); ?>
+
+<div id="container" class="container mypage">
+<div class="content">
+	<div class="inner clear">
+		<div class="cnt_left">
+			<h2>마이페이지</h2>
+			<div class="lnb">
+				<ul>
+					<li><a href="#">주문관리</a>
+						<ul>
+							<li class="on"><a href="#">주문목록/배송조회</a></li>
+							<li><a href="#">위시리스트</a></li>
+							<li><a href="#">취소/반품/교환/환불</a></li>
+						</ul>
+					</li>
+					<li><a href="#">포인트 관리</a></li>
+					<li><a href="#">활동관리</a>
+						<ul>
+							<li><a href="#">상품문의</a></li>
+							<li><a href="#">1:1문의</a></li>
+						</ul>
+					</li>
+					<li><a href="#">정보관리</a>
+						<ul>
+							<li><a href="#">개인정보수정</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="cnt_right">
+			<ul class="top clear">
+				<li>
+					<p class="txt1">진행중인 주문</p>
+					<p class="txt2"><b>5</b> 건</p>
+				</li>
+				<li>
+					<p class="txt1">취소/반품/교환/환불</p>
+					<p class="txt2"><b>2</b> 건</p>
+				</li>
+				<li>
+					<p class="txt1">위시리스트</p>
+					<p class="txt2"><b>3</b> 건</p>
+				</li>
+				<li>
+					<p class="txt1">장바구니 </p>
+					<p class="txt2"><b>1</b> 건</p>
+				</li>
+			</ul>
+
+			<div class="mypage_cnt">
+				<div class="tit_outer">
+					<h3 class="tit_ty1">상품문의</h3>
+					<div class="right">
+						<div class="sel_ty4">
+							<select>
+								<option value="1">답변대기</option>
+								<option value="2">답변완료</option>
+							</select>
+						</div>
+					</div>					
+				</div>
+
+				<table class="tbl_list1">
+					<colgroup>
+						<col style="width:80px;">
+						<col style="width:120px;">
+						<col>
+						<col style="width:120px;">
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col">번호</th>
+							<th scope="col">문의날짜</th>
+							<th scope="col">상품평</th>
+							<th scope="col">답변상태</th>
+						</tr>
+					</thead>
+					<tbody class="txtc">
+						<tr>
+							<td>10</td>
+							<td>2017-05-01</td>
+							<td class="txtl"><a href="#">[삼성전자] 삼성 UHD LED TV VR-ER1 1900</a></td>
+							<td>답변대기</td>
+						</tr>
+						<tr>
+							<td>10</td>
+							<td>2017-05-01</td>
+							<td class="txtl"><a href="#">[삼성전자] 삼성 UHD LED TV VR-ER1 1900</a></td>
+							<td>답변대기</td>
+						</tr>
+						<tr>
+							<td>10</td>
+							<td>2017-05-01</td>
+							<td class="txtl"><a href="#">[삼성전자] 삼성 UHD LED TV VR-ER1 1900</a></td>
+							<td class="em">답변완료</td>
+						</tr>
+						<tr>
+							<td>10</td>
+							<td>2017-05-01</td>
+							<td class="txtl"><a href="#">[삼성전자] 삼성 UHD LED TV VR-ER1 1900</a></td>
+							<td>답변대기</td>
+						</tr>
+						<tr>
+							<td>10</td>
+							<td>2017-05-01</td>
+							<td class="txtl"><a href="#">[삼성전자] 삼성 UHD LED TV VR-ER1 1900</a></td>
+							<td>답변대기</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="paging">
+					<a href="#" class="page first">처음페이지</a> <a href="#" class="page prev">이전페이지</a> <a href="#" class="on">1</a> <a href="#">2</a> <a href="#">3</a> <a href="#">4</a> <a href="#">5</a> <a href="#">6</a> <a href="#">7</a> <a href="#">8</a> <a href="#">9</a> <a href="#">10</a> <a href="#" class="page next">다음페이지</a> <a href="#" class="page last">마지막페이지</a>
+				</div>
+			</div>
+		</div>
+	</div><!-- //inner -->
+</div><!-- //content -->
+<div class="quick_area">
+	<div class="inner">
+		<div class="quick_left_box">
+			<div class="quick_left slide">
+				<div>
+					<a href="#"><img src="../../images/dummy/img_quick_left.png" alt="">
+					<span>12% 더블쿠폰<br>+청구할인</span></a>
+				</div>
+				<div>
+					<a href="#"><img src="../../images/dummy/img_quick_left.png" alt="">
+					<span>12% 더블쿠폰<br>+청구할인</span></a>
+				</div>
+				<div>
+					<a href="#"><img src="../../images/dummy/img_quick_left.png" alt="">
+					<span>12% 더블쿠폰<br>+청구할인</span></a>
+				</div>
+			</div>
+		</div>
+		<div class="quick_right_box">
+			<div class="quick_right">
+				<p class="tit">오늘본상품</p>
+				<div class="quick_r_out">
+					<div class="quick_r slide">
+						<div>
+							<a href="#"><img src="../../images/dummy/img_quick_right1.png" alt=""></a>
+							<a href="#"><img src="../../images/dummy/img_quick_right2.png" alt=""></a>
+							<a href="#"><img src="../../images/dummy/img_quick_right3.png" alt=""></a>
+						</div>
+						<div>
+							<a href="#"><img src="../../images/dummy/img_quick_right1.png" alt=""></a>
+							<a href="#"><img src="../../images/dummy/img_quick_right2.png" alt=""></a>
+							<a href="#"><img src="../../images/dummy/img_quick_right3.png" alt=""></a>
+						</div>
+					</div>
+				</div>
+				<a href="#container" class="btn_top">TOP </a>
+			</div>
+		</div>
+	</div>
+</div>
+</div><!-- //container -->
+<? include("../include/atype_footer.html"); ?>
+</div><!-- //wrap -->
+</body>
+</html>

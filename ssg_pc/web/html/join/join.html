@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<meta charset="UTF-8">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>로그인</title>
+<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="../../css/atype.css">
+<script type="text/javascript" charset="utf-8" src="../../js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/common.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/jquery.selectbox-0.2.js"></script>
+</head>
+<body>
+<div class="join">
+	<div class="join_inner">
+		<h2 class="no_line"><b>회원가입 (임직원)</b></h2>
+
+		<div class="div_tab_ty4 click">
+			<ul class="tab_tit clear">
+				<li class="on"><a href="#none">01. 약관동의</a></li>
+				<li><a href="#none">02. 정보입력</a></li>
+				<li class="last"><a href="#none">03. 가입완료</a></li>
+			</ul>
+			<div class="tab_cnt1" style="display: block">
+				<div class="agree">
+					<div class="agree_all">
+						개인정보 이용약관 ,개인정보수집 및 이용에 대한 안내 , 개인정보의 취급위탁 동의에 모두 동의합니다.
+						<div class="right">
+							<input type="checkbox" name="chkall" id="chkall" class="chk_ty1" />
+							<label for="chkall" class="chk_ty1_label"></label>
+						</div>
+					</div>
+
+					<dl>
+						<dt>· 개인정보 이용약관 동의에
+							<div class="right">
+								<input type="checkbox" name="chk1" id="chk1" class="chk_ty1" />
+								<label for="chk1" class="chk_ty1_label"></label>
+							</div>
+						</dt>
+						<dd>
+							<div class="agree_scroll">
+								총칙<br>
+								제 1조 (목적)<br>
+								본 약관은 신세계가 제공하는 인터넷 관련 서비스 (이하 “서비서”라 한다) 신세계 2B/E몰 회원이 이용함에 있어서 신세계몰과 이용자의 권리/의무 및 책임사항을
+							</div>
+						</dd>
+						<dt>· 개인정보수집 및 이용에 대한 안내
+							<div class="right">
+								<input type="checkbox" name="chk2" id="chk2" class="chk_ty1" />
+								<label for="chk2" class="chk_ty1_label"></label>
+							</div>
+						</dt>
+						<dd>
+							<div class="agree_scroll">
+								총칙<br>
+								제 1조 (목적)<br>
+								본 약관은 신세계가 제공하는 인터넷 관련 서비스 (이하 “서비서”라 한다) 신세계 2B/E몰 회원이 이용함에 있어서 신세계몰과 이용자의 권리/의무 및 책임사항을
+							</div>
+							<div class="agree_scroll">
+								총칙<br>
+								제 1조 (목적)<br>
+								본 약관은 신세계가 제공하는 인터넷 관련 서비스 (이하 “서비서”라 한다) 신세계 2B/E몰 회원이 이용함에 있어서 신세계몰과 이용자의 권리/의무 및 책임사항을
+							</div>
+							<div class="agree_scroll">
+								총칙<br>
+								제 1조 (목적)<br>
+								본 약관은 신세계가 제공하는 인터넷 관련 서비스 (이하 “서비서”라 한다) 신세계 2B/E몰 회원이 이용함에 있어서 신세계몰과 이용자의 권리/의무 및 책임사항을
+							</div>
+						</dd>
+						<dt>· 개인정보의 취급위탁 동의
+							<div class="right">
+								<input type="checkbox" name="chk3" id="chk3" class="chk_ty1" />
+								<label for="chk3" class="chk_ty1_label"></label>
+							</div>
+						</dt>
+						<dd>
+							<div class="agree_scroll">
+								총칙<br>
+								제 1조 (목적)<br>
+								본 약관은 신세계가 제공하는 인터넷 관련 서비스 (이하 “서비서”라 한다) 신세계 2B/E몰 회원이 이용함에 있어서 신세계몰과 이용자의 권리/의무 및 책임사항을
+							</div>
+						</dd>
+					</dl>
+					<ul class="ref">
+						<li>ㆍ이용 약관과 개인 정보 수집 및 이용안내에 동의하지 않으시면 서비스를 이용할 수 없습니다.</li>
+					</ul>
+					<button type="button" class="join_btn_btm">동의</button>
+				</div>
+			</div>
+			<div class="tab_cnt2">
+				<div>
+					<div class="reg">
+						<div class="sel_ty5">
+							<select>
+								<option value="1">계열사를 선택해주세요.</option>
+							</select>
+						</div>
+					</div>
+					<div class="reg has_btn">
+						<input type="text" name="" placeholder="(필수) 아이디">
+						<button type="button">중복확인</button>
+					</div>
+					<div class="reg">
+						<input type="text" name="" placeholder="(필수) 사번">
+					</div>
+					<div class="reg has_btn mail">
+						<input type="text" name="" placeholder="(필수) 임직원사번@shinsegae.com으로만 등록이 가능합니다.">
+						<div class="sel_ty5">
+							<select>
+								<option value="w">직접입력</option>
+							</select>
+						</div>
+						<button type="button">인증발송</button>
+						<span class="ct">* 계열사 이메일 서버에 상태에 따라 인증번호 메일수신이 최대 10 ~ 20분 걸릴 수 있습니다.</span>
+					</div>
+					<div class="reg">
+						<input type="password" name="" placeholder="(필수) 비밀번호는 8~20자 사이로 영문 대문자/소문자, 숫자, 특수문자(~!@#$%^*)중 3종류를 조합하여 작성하시면 됩니다.">
+					</div>
+					<div class="reg">
+						<input type="password" name="" placeholder="(필수) 비밀번호 확인 (동일한 비밀번호를 입력해주세요.)">
+					</div>
+					<div class="reg">
+						<input type="text" name="" placeholder="(필수) 회사명">
+					</div>
+					<div class="reg">
+						<input type="text" name="" placeholder="(필수) 부서">
+					</div>
+					<div class="reg has_btn">
+						<input type="text" name="" placeholder="우편번호(입력시 기본 배송지로 설정됩니다)">
+						<button type="button">우편번호찾기</button>
+					</div>
+					<div class="reg">
+						<input type="text" name="" placeholder="주소(입력시 기본 배송지로 설정됩니다)">
+					</div>
+					<div class="reg">
+						<input type="text" name="" placeholder="상세주소(입력시 기본 배송지로 설정됩니다)">
+					</div>
+					<div class="reg">
+						<input type="text" name="" placeholder="(필수) 이름">
+					</div>
+					<div class="reg">
+						<input type="text" name="" placeholder="이메일">
+					</div>
+					<div class="reg">
+						<input type="text" name="" placeholder="전화번호">
+					</div>
+					<div class="reg has_btn">
+						<input type="text" name="" placeholder="(필수) 본인인증 (휴대폰번호’-’제외하고 숫자만 입력)">
+						<button type="button">인증발송</button>
+					</div>
+					<div class="reg has_btn">
+						<input type="text" name="" placeholder="(필수) 인증번호">
+						<button type="button">인증확인</button>
+					</div>
+					<p class="jn_txt">※ 신세계법인영업몰에서 제공하는 상품 및 마케팅 정보(이벤트/기획전/쿠폰)에 대한 마케팅 정보 수신에 동의하시겠습니까?</p>
+					<a href="javascript:;" class="jn_link" onclick="layerShow('mkt_layer')">내용보기</a>
+					<div class="jn_check clear">
+						<div class="item">
+							<input type="checkbox" name="chk10" id="chk10" class="chk_ty1" />
+							<label for="chk10" class="chk_ty1_label"><em>(선택)</em> 서비스·이벤트 정보 제공을 위한 개인정보 수집 및 이용동의</label>
+						</div>
+					</div>
+					<button type="button" class="join_btn_btm">회원가입</button>
+				</div>
+			</div>
+			<div class="tab_cnt3">
+				<div class="fn">
+					회원가입이 완료되었습니다!<br>환영합니다!
+				</div>
+				<button type="button" class="join_btn_btm">로그인하기</button>
+				<button type="button" class="join_btn_btm2">메인으로 이동</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="layer_form fixed_layer black type2 mkt_layer" style="display:none;">
+	<div class="layer_box" style="width:720px;">
+		<h4 class="layer_title mgn sm"><span class="sub">(선택)</span> 서비스ㆍ이벤트 정보 제공을 위한 개인정보 수집 및 이용 동의</h4>
+		<div class="layer_cnt">
+			<div class="mkt_txt">
+				<p class="txt_style2">※  마케팅 정보 수신 동의를 하지 않더라도 회원 서비스를 이용할 수 있습니다. 다만, 이벤트 소식 및 일부 할인 쿠폰 서비스를
+				받을 수 없습니다.</p>
+				<p class="txt_style2">※ 회원가입/주문배송/계약상 지급의 의무가 있는 쿠폰이나 포인트/회사 주요 정책 관련 정보는 수신동의와 관계없이 모든
+				회원에게 발송됩니다.</p>
+			</div>
+
+			<table class="tbl_list4 mt30">
+				<caption>마케팅 수신동의 내용</caption>
+				<thead class="txtc">
+					<tr>
+						<th>항목</th>
+						<th>이용목적</th>
+						<th>수집항목</th>
+						<th>보유기간</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>마케팅</td>
+						<td><strong class="underline">상품 및 서비스 안내,<br>이벤트 정보 및 혜택 제공</strong></td>
+						<td><span style="font-size:12px;">이름, 휴대폰 번호,<br>마케팅 수신 동의 여부</span></td>
+						<td><strong class="underline">회원 탈퇴 또는 동의 철회 시</strong></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<a href="javascript:;" class="layer_close_top" onclick="layerHide('mkt_layer')">닫기</a>
+	</div>
+	<span class="layer_align"></span>
+	<span class="bg_close" onclick="layerHide('mkt_layer')"></span>
+</div>
+
+</body>
+</html>

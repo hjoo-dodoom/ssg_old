@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<meta charset="UTF-8">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>상품소싱의뢰서 상세</title>
+<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="../../css/sub.css">
+<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script type="text/javascript" charset="utf-8" src="../../js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/common.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+<? include("../include/header.html"); ?>
+
+<div id="container" class="container">
+	<? include("../include/snb.html"); ?>
+
+	<div class="content">
+		<div class="location">
+			<span>HOME</span>
+			<span>고객센터</span>
+			<span>공지사항</span>
+			<span>상품소싱의뢰서</span>
+			<span class="on">상품소싱의뢰서 상세</span>
+		</div>
+		<div class="inner">
+			<h3 class="tit_h3">상품소싱의뢰서 상세</h3>
+
+			<h4 class="tit_h4">기본정보</h4>
+			<table class="tbl_view">
+				<colgroup>
+					<col style="width:150px">
+					<col>
+					<col style="width:150px">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th scope="row">신청일</th>
+						<td><input type="text" name="" class="datepicker"></td>
+						<th scope="row">수주예정일</th>
+						<td><input type="text" name="" class="datepicker"></td>
+					</tr>
+					<tr>
+						<th scope="row">제안기한</th>
+						<td><input type="text" name="" class="datepicker"></td>
+						<th scope="row">고객사명</th>
+						<td><input type="text" name="" class="w100"></td>
+					</tr>
+					<tr>
+						<th scope="row">행사명</th>
+						<td colspan="3"><input type="text" name="" class="w100"></td>
+					</tr>
+				</tbody>
+			</table>
+
+			<h4 class="tit_h4">소싱의뢰내용</h4>
+			<table class="tbl_view">
+				<colgroup>
+					<col style="width:150px">
+					<col>
+					<col style="width:150px">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th scope="row">운영구분</th>
+						<td><input type="text" name="" class="w100"></td>
+						<th scope="row">가격대(VAT 포함)</th>
+						<td><input type="text" name="" class="w100"></td>
+					</tr>
+					<tr>
+						<th scope="row">수량</th>
+						<td><input type="text" name="" class="w100"></td>
+						<th scope="row">총 금액</th>
+						<td><input type="text" name="" class="w100"></td>
+					</tr>
+					<tr>
+						<th scope="row">납기/포장 배송기준</th>
+						<td colspan="3"><input type="text" name="" class="w100"></td>
+					</tr>
+					<tr>
+						<th scope="row">전년 &amp; 기존 진행품목</th>
+						<td colspan="3"><textarea class="w100" style="height:100px;"></textarea></td>
+					</tr>
+				</tbody>
+			</table>
+
+			<h4 class="tit_h4">영업담당자 의견</h4>
+			<textarea class="w100" style="height:100px;"></textarea>
+			<div class="button_area">
+				<button type="button" class="btn_ty9">확인</button>
+				<button type="button" class="btn_ty2">목록</button>
+			</div>
+		</div>
+	</div><!-- //content -->
+</div><!-- //container -->
+</div><!-- //wrap -->
+</body>
+</html>

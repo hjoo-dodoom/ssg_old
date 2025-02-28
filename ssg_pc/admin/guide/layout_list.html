@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<meta charset="UTF-8">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>상품 목록</title>
+<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="../css/sub.css">
+<script type="text/javascript" charset="utf-8" src="../js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/common.js"></script>
+</head>
+<body>
+<? include("../html/include/header.html"); ?>
+
+<div id="container" class="container">
+	<? include("../html/include/snb.html"); ?>
+
+	<div class="content">
+		<div class="location">
+			<span>HOME</span>
+			<span>상품</span>
+			<span>상품목록</span>
+			<span class="on">상품전체목록</span>
+		</div>
+		<div class="inner">
+			<h3 class="tit_h3">상품전체목록</h3>
+			<div class="item_box">
+				<a href="#">전체상품</a>
+				<a href="#">가전/IT</a>
+				<a href="#">생활/주방/가구/건강</a>
+				<a href="#">스포츠/레저/자동차</a>
+				<a href="#">의류/잡화</a>
+				<a href="#">화장품/이미용</a>
+				<a href="#">유아동/도서/문구</a>
+				<a href="#">식품</a>
+				<a href="#">상품권</a>
+				<a href="#">MRO</a>
+				<a href="#">식음료/컵</a>
+				<a href="#">청소/생활용품</a>
+				<a href="#">필기구/사무용품</a>
+				<a href="#">사은품</a>
+				<a href="#">선물</a>
+				<a href="#">기념일</a>
+				<a href="#">기프티콘</a>
+				<a href="#">컨텐츠</a>
+				<a href="#">추석특가</a>
+				<a href="#" class="last">MD추천</a>
+			</div>
+
+			<div class="tbl_outer">
+				<table class="tbl_view">
+					<colgroup>
+						<col style="width:94px">
+						<col>
+						<col style="width:94px">
+						<col>
+						<col style="width:94px">
+						<col>
+						<col style="width:94px">
+						<col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">쇼핑몰(회원사)</th>
+							<td colspan="3">
+								<select name="all1" id="all1" style="width:110px;">
+									<option value="">전체</option>
+								</select>
+								<select name="sel1" id="sel1" style="width:195px;">
+									<option value="">선택</option>
+								</select>
+								<input type="radio" name="ra1" id="ra1"> <label for="ra1">미배정 상품</label>
+							</td>
+							<th scope="row">입점회원</th>
+							<td colspan="3">
+								<select name="all2" id="all2" style="width:110px;">
+									<option value="">업체명</option>
+								</select>
+								<input type="text" style="width:195px;">
+								<input type="radio" name="ra2" id="ra2"> <label for="ra1">미배정 상품</label>
+
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">가격대</th>
+							<td colspan="3">
+								<input type="text" style="width:110px;">
+								<span>~</span>
+								<input type="text" style="width:110px;">
+							</td>
+							<th scope="row">판매가/마진율</th>
+							<td colspan="3">
+								<input type="text" style="width:110px;">
+								<span>~</span>
+								<input type="text" style="width:110px;">
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">몰 구분</th>
+							<td colspan="3">
+								<input type="radio" name="ra3" id="ra3_1"> <label for="ra3_1">전체</label>
+								<input type="radio" name="ra3" id="ra3_2"> <label for="ra3_2">폐쇄몰</label>
+								<input type="radio" name="ra3" id="ra3_3"> <label for="ra3_3">포인트몰</label>
+								<input type="radio" name="ra3" id="ra3_4"> <label for="ra3_4">사은품몰</label>
+							</td>
+							<th scope="row">복사상품</th>
+							<td colspan="3">
+								<input type="radio" name="ra4" id="ra4_1"> <label for="ra4_1">전체</label>
+								<input type="radio" name="ra4" id="ra4_2"> <label for="ra4_2">폐쇄몰</label>
+								<input type="radio" name="ra4" id="ra4_3"> <label for="ra4_3">포인트몰</label>
+								<input type="radio" name="ra4" id="ra4_4"> <label for="ra4_4">사은품몰</label>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">포인트사용</th>
+							<td>
+								<select name="sel4" id="sel4" style="width:140px;">
+									<option value="">선택</option>
+								</select>
+							</td>
+							<th scope="row">승인</th>
+							<td>
+								<select name="sel5" id="sel5" style="width:140px;">
+									<option value="">선택</option>
+								</select>
+							</td>
+							<th scope="row">포인트사용</th>
+							<td>
+								<select name="sel6" id="sel6" style="width:140px;">
+									<option value="">선택</option>
+								</select>
+							</td>
+							<th scope="row">재고관리</th>
+							<td>
+								<select name="sel7" id="sel7" style="width:140px;">
+									<option value="">선택</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">검색</th>
+							<td colspan="7">
+								<select name="sel8" id="sel8" style="width:110px;">
+									<option value="">선택</option>
+								</select>
+								<input type="text" style="width:195px;">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div class="button_area">
+				<button type="button" class="btn_ty1">검색</button>
+				<button type="button" class="btn_ty2">초기화</button>
+				<div class="right">
+					<button type="button" class="btn_ty3">상품등록하기</button>
+					<button type="button" class="btn_ty3">상품대량등록</button>
+				</div>
+			</div>
+
+			<div class="tbl_search_list">
+				<div class="top">
+					<div class="left">* 전체 : <em>111,592</em>건 / 검색 : <em>50</em>건</div>
+					<div class="right">
+						<a href="#" class="icon_excel">엑셀저장</a>
+						<a href="#" class="icon_excel">엑셀저장(옵션별)</a>
+						<a href="#" class="icon_excel">엑셀저장(상세제외)</a>
+
+						<select name="sel9" id="sel9" style="width:120px;">
+							<option value="">등록일 역순</option>
+						</select>
+						<select name="sel10" id="sel10" style="width:120px;">
+							<option value="">20개씩 보기</option>
+						</select>
+					</div>
+				</div>
+				<div class="mid">
+					<span class="icon_check">선택한 상품을 </span>
+					<select name="sel11" id="sel11" style="width:120px;">
+						<option value="">상품상태</option>
+					</select>
+					<button type="button" class="mid_btn_ty1">일괄처리</button>
+					<div class="right">
+						<!-- <span class="division">|</span> -->
+						<select name="sel10" id="sel10" style="width:120px;">
+							<option value="">쇼핑몰(회원사)</option>
+						</select>
+						<button type="button" class="mid_btn_ty1" style="width: 96px;">쇼핑몰 판매</button>
+						<button type="button" class="mid_btn_ty1">쇼핑몰 판매 삭제</button>
+						<button type="button" class="mid_btn_ty1" style="width: 96px;">쇼핑몰 복사</button>
+						<button type="button" class="mid_btn_ty1" style="width: 96px;">상품 원본 복사</button>
+					</div>
+				</div>
+				<table class="tbl_primary tr_hover layer_price">
+					<colgroup>
+						<col style="width:20px;">
+						<col style="width:24px;">
+						<col style="width:34px;">
+						<col style="width:70px;">
+						<col style="width:56px;">
+						<col>
+						<col style="width:230px;">
+						<col>
+						<col style="width:34px;">
+						<col style="width:34px;">
+						<col style="width:24px;">
+						<col style="width:34px;">
+						<col style="width:60px;">
+						<col style="width:60px;">
+						<col style="width:70px;">
+						<col style="width:70px;">
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="row"><input type="checkbox" name="chk" id="chkall"></th>
+							<th scope="row">승인</th>
+							<th scope="row">구분</th>
+							<th scope="row">카테고리</th>
+							<th scope="row">상품코드</th>
+							<th scope="row">상품명</th>
+							<th scope="row">상품가</th>
+							<th scope="row">입점업체명</th>
+							<th scope="row">옵션</th>
+							<th scope="row">배송</th>
+							<th scope="row">과세</th>
+							<th scope="row">포인트</th>
+							<th scope="row">쇼핑몰</th>
+							<th scope="row">상태</th>
+							<th scope="row">최종<br>등록일</th>
+							<th scope="row">최종<br>수정일</th>
+						</tr>
+					</thead>
+					<tbody class="txtc">
+						<tr>
+							<td><input type="checkbox" name="chk" id="chk1"></td>
+							<td>대기</td>
+							<td>폐쇄몰</td>
+							<td class="txtl">가전/IT &gt;<br>생활가전 &gt;<br>청소기</td>
+							<td><a href="#">12345678</a></td>
+							<td><div class="ellipsis3">[카페]카페머그 45ml [카페]카페머그 45ml [카페]카페머그 45ml</div></td>
+							<td class="txtl price">
+								<ul class="clear">
+									<li class="right btm">제안가 : 10,000,000</li>
+									<li class="btm">판매가 : 10.000,000</li>
+									<li class="right">인터넷가 : 10,000,000</li>
+									<li>소비자가 : 10,000,000</li>
+								</ul>
+								<div class="hover"><span class="first">마진율 : 10%</span> <span class="last">할인율 : 30%</span></div>
+							</td>
+							<td><div class="ellipsis3">[신규]돋움</div></td>
+							<td>수량품</td>
+							<td>개별배송</td>
+							<td>과세</td>
+							<td>모두사용</td>
+							<td>
+								회원사(3)<br>
+								<button type="button" class="tbl_btn_ty1 mt3">상세보기</button>
+							</td>
+							<td>
+								<button type="button" class="tbl_btn_ty2">미리보기</button>
+								<button type="button" class="tbl_btn_ty3">상태변동</button>
+								<button type="button" class="tbl_btn_ty4">제안서</button>
+							</td>
+							<td>2017-05-20 <br>23:59:59</td>
+							<td>2017-05-20 <br>23:59:59</td>
+						</tr>
+						<tr class="on">
+							<td><input type="checkbox" name="chk" id="chk1" checked="checked"></td>
+							<td>대기</td>
+							<td>폐쇄몰</td>
+							<td class="txtl">가전/IT &gt;<br>생활가전 &gt;<br>청소기</td>
+							<td><a href="#">12345678</a></td>
+							<td><div class="ellipsis3">[카페]카페머그 45ml [카페]카페머그 45ml [카페]카페머그 45ml</div></td>
+							<td class="txtl price">
+								<ul class="clear">
+									<li class="right btm">제안가 : 10,000,000</li>
+									<li class="btm">판매가 : 10.000,000</li>
+									<li class="right">인터넷가 : 10,000,000</li>
+									<li>소비자가 : 10,000,000</li>
+								</ul>
+								<div class="hover"><span class="first">마진율 : 10%</span> <span class="last">할인율 : 30%</span></div>
+							</td>
+							<td><div class="ellipsis3">[신규]돋움</div></td>
+							<td>수량품</td>
+							<td>개별배송</td>
+							<td>과세</td>
+							<td>모두사용</td>
+							<td>
+								회원사(3)<br>
+								<button type="button" class="tbl_btn_ty1 mt3">상세보기</button>
+							</td>
+							<td>
+								<button type="button" class="tbl_btn_ty2">미리보기</button>
+								<button type="button" class="tbl_btn_ty3">상태변동</button>
+								<button type="button" class="tbl_btn_ty4">제안서</button>
+							</td>
+							<td>2017-05-20 <br>23:59:59</td>
+							<td>2017-05-20 <br>23:59:59</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="chk" id="chk1"></td>
+							<td>대기</td>
+							<td>폐쇄몰</td>
+							<td class="txtl">가전/IT &gt;<br>생활가전 &gt;<br>청소기</td>
+							<td><a href="#">12345678</a></td>
+							<td><div class="ellipsis3">[카페]카페머그 45ml [카페]카페머그 45ml [카페]카페머그 45ml</div></td>
+							<td class="txtl price">
+								<ul class="clear">
+									<li class="right btm">제안가 : 10,000,000</li>
+									<li class="btm">판매가 : 10.000,000</li>
+									<li class="right">인터넷가 : 10,000,000</li>
+									<li>소비자가 : 10,000,000</li>
+								</ul>
+								<div class="hover"><span class="first">마진율 : 10%</span> <span class="last">할인율 : 30%</span></div>
+							</td>
+							<td><div class="ellipsis3">[신규]돋움</div></td>
+							<td>수량품</td>
+							<td>개별배송</td>
+							<td>과세</td>
+							<td>모두사용</td>
+							<td>
+								회원사(3)<br>
+								<button type="button" class="tbl_btn_ty1 mt3">상세보기</button>
+							</td>
+							<td>
+								<button type="button" class="tbl_btn_ty2">미리보기</button>
+								<button type="button" class="tbl_btn_ty3">상태변동</button>
+								<button type="button" class="tbl_btn_ty4">제안서</button>
+							</td>
+							<td>2017-05-20 <br>23:59:59</td>
+							<td>2017-05-20 <br>23:59:59</td>
+						</tr>
+						<tr class="copy">
+							<td><input type="checkbox" name="chk" id="chk1"></td>
+							<td>대기</td>
+							<td>폐쇄몰</td>
+							<td class="txtl">가전/IT &gt;<br>생활가전 &gt;<br>청소기</td>
+							<td><a href="#">12345678</a></td>
+							<td><div class="ellipsis3">[복사]카페머그 45ml [카페]카페머그 45ml [카페]카페머그 45ml</div></td>
+							<td class="txtl price">
+								<ul class="clear">
+									<li class="right btm">제안가 : 10,000,000</li>
+									<li class="btm">판매가 : 10.000,000</li>
+									<li class="right">인터넷가 : 10,000,000</li>
+									<li>소비자가 : 10,000,000</li>
+								</ul>
+								<div class="hover"><span class="first">마진율 : 10%</span> <span class="last">할인율 : 30%</span></div>
+							</td>
+							<td><div class="ellipsis3">[신규]돋움</div></td>
+							<td>수량품</td>
+							<td>개별배송</td>
+							<td>과세</td>
+							<td>모두사용</td>
+							<td>
+								회원사(3)<br>
+								<button type="button" class="tbl_btn_ty1 mt3">상세보기</button>
+							</td>
+							<td>
+								<button type="button" class="tbl_btn_ty2">미리보기</button>
+								<button type="button" class="tbl_btn_ty3">상태변동</button>
+								<button type="button" class="tbl_btn_ty4">제안서</button>
+							</td>
+							<td>2017-05-20 <br>23:59:59</td>
+							<td>2017-05-20 <br>23:59:59</td>
+						</tr>
+						<tr class="last">
+							<td><input type="checkbox" name="chk" id="chk1"></td>
+							<td>대기</td>
+							<td>폐쇄몰</td>
+							<td class="txtl">가전/IT &gt;<br>생활가전 &gt;<br>청소기</td>
+							<td><a href="#">12345678</a></td>
+							<td><div class="ellipsis3">[카페]카페머그 45ml [카페]카페머그 45ml [카페]카페머그 45ml</div></td>
+							<td class="txtl price">
+								<ul class="clear">
+									<li class="right btm">제안가 : 10,000,000</li>
+									<li class="btm">판매가 : 10.000,000</li>
+									<li class="right">인터넷가 : 10,000,000</li>
+									<li>소비자가 : 10,000,000</li>
+								</ul>
+								<div class="hover"><span class="first">마진율 : 10%</span> <span class="last">할인율 : 30%</span></div>
+							</td>
+							<td><div class="ellipsis3">[신규]돋움</div></td>
+							<td>수량품</td>
+							<td>개별배송</td>
+							<td>과세</td>
+							<td>모두사용</td>
+							<td>
+								회원사(3)<br>
+								<button type="button" class="tbl_btn_ty1 mt3">상세보기</button>
+							</td>
+							<td>
+								<button type="button" class="tbl_btn_ty2">미리보기</button>
+								<button type="button" class="tbl_btn_ty3">상태변동</button>
+								<button type="button" class="tbl_btn_ty4">제안서</button>
+							</td>
+							<td>2017-05-20 <br>23:59:59</td>
+							<td>2017-05-20 <br>23:59:59</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="mid">
+					<span class="icon_check">선택한 상품을 </span>
+					<select name="sel11" id="sel11" style="width:120px;">
+						<option value="">상품상태</option>
+					</select>
+					<button type="button" class="mid_btn_ty1">일괄처리</button>
+					<div class="right">
+						<!-- <span class="division">|</span> -->
+						<select name="sel10" id="sel10" style="width:120px;">
+							<option value="">쇼핑몰(회원사)</option>
+						</select>
+						<button type="button" class="mid_btn_ty1" style="width: 96px;">쇼핑몰 판매</button>
+						<button type="button" class="mid_btn_ty1">쇼핑몰 판매 삭제</button>
+						<button type="button" class="mid_btn_ty1" style="width: 96px;">쇼핑몰 복사</button>
+						<button type="button" class="mid_btn_ty1" style="width: 96px;">상품 원본 복사</button>
+					</div>
+				</div>
+				<div class="mid">
+					<span class="icon_check">체크한 업체로 상품원본 복사 </span>
+					<select name="sel11" id="sel11" style="width:120px;">
+						<option value="">전체</option>
+					</select>
+					<button type="button" class="mid_btn_ty1" style="width: 96px;">상품 원본 복사</button>
+				</div>
+			</div>
+			<div class="paging">
+				<a href="#none" class="first">처음페이지</a>
+				<a href="#none" class="prev">이전페이지</a>
+				<a href="#none" class="on">1</a>
+				<a href="#none" class="num">2</a>
+				<a href="#none" class="num">3</a>
+				<a href="#none" class="num">4</a>
+				<a href="#none" class="num">5</a>
+				<a href="#none" class="num">6</a>
+				<a href="#none" class="num">7</a>
+				<a href="#none" class="num">8</a>
+				<a href="#none" class="num">9</a>
+				<a href="#none" class="num">10</a>
+				<a href="#none" class="next">다음페이지</a>
+				<a href="#none" class="last">마지막페이지</a>
+			</div>
+		</div>
+	</div><!-- //content -->
+</div><!-- //container -->
+</div><!-- //wrap -->
+</body>
+</html>

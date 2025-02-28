@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<meta charset="UTF-8">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>업로드된 주문정보 목록</title>
+<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="../../css/popup.css">
+<script type="text/javascript" charset="utf-8" src="../../js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/common.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/jquery.selectbox-0.2.js"></script>
+</head>
+<body>
+<style>
+html,body{width:100%;height:100%;overflow:hidden;}
+</style>
+<div class="oe_popup">
+	<h1>업로드된 주문정보 목록</h1>
+	<div class="oe_cnt">
+		<div class="oe_obox top clear">
+			<ul class="caution">
+				<li>※ 업로드한 엑셀내용과 실제 상품 및 총 주문금액이 동일한지 확인 후 <strong>[오류체크]</strong>버튼을 선택해주세요</li>
+				<li>※ 실패사유가 있으면 사유를 참고하여 화면에서 수정 후 [주문완료 확정]버튼을 선택해주세요</li>
+			</ul>
+			<div class="btn_box">
+				<label class="btn btn4 btn_file"><input type="file">파일등록</label>
+				<a href="javascript:;" class="btn btn1">오류체크</a>
+				<a href="javascript:;" class="btn btn2">주문완료 확정</a>
+				<a href="javascript:;" class="btn btn3">닫기</a>
+			</div>
+		</div>
+		<div class="oe_table_wrap">
+			<table class="oe_table">
+				<thead>
+					<tr>
+						<th style="width:55px;">번호</th>
+						<th style="width:70px;">주문자</th>
+						<th style="width:100px;">주문자 연락처</th>
+						<th style="width:70px;">수신인</th>
+						<th style="width:100px;">수취인 연락처</th>
+						<th style="width:100px;">수취인 핸드폰</th>
+						<th style="width:70px;">수취인<br/>우편번호</th>
+						<th>수취인 주소</th>
+						<th style="width:130px;">상품코드</th>
+						<th>상품명</th>
+						<th>상품단가</th>
+						<th style="width:100px;">수량</th>
+						<th>총주문금액</th>
+						<th>결제정보</th>
+						<th style="width:80px;">대금지급월</th>
+						<th style="width:70px;">감사카드<br/>유무</th>
+					</tr>
+				</thead>
+				<tbody class="txtc">
+					<tr>
+						<td>1</td>
+						<td><input type="text" name="" value="홍길동"></td>
+						<td><input type="text" name="" value="0212341234"></td>
+						<td><input type="text" name="" value="홍길동"></td>
+						<td><input type="text" name="" value="0212341234"></td>
+						<td><input type="text" name="" value="01012345678"></td>
+						<td><input type="text" name="" value="12345"></td>
+						<td><input type="text" name="" value="경기도 고양시 덕양구 무원로63 1009동 602호"></td>
+						<td><input type="text" name="" value="P0000000007354"></td>
+						<td class="subject">메디칼드림 프리미엄 헬스케어 로봇 안마의자 A527(네이비) A537(브라운)</td>
+						<td><input type="text" name="" value="1,190,900 "></td>
+						<td><input type="text" name="" value="999"></td>
+						<td><input type="text" name="" value="1,190,900 "></td>
+						<td><input type="text" name="" value="신용카드"></td>
+						<td><input type="text" name="" value="8"></td>
+						<td><input type="text" name="" value="Y"></td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td><input type="text" name="" value="홍길동"></td>
+						<td><input type="text" name="" value="0212341234"></td>
+						<td><input type="text" name="" value="홍길동"></td>
+						<td><input type="text" name="" value="0212341234"></td>
+						<td><input type="text" name="" value="01012345678"></td>
+						<td><input type="text" name="" value="12345"></td>
+						<td><input type="text" name="" value="경기도 고양시 덕양구 무원로63 1009동 602호"></td>
+						<td><input type="text" name="" value="P0000000007354"></td>
+						<td class="subject">메디칼드림 프리미엄 헬스케어 로봇 안마의자 A527(네이비) A537(브라운)</td>
+						<td><input type="text" name="" value="1,190,900 "></td>
+						<td><input type="text" name="" value="999"></td>
+						<td><input type="text" name="" value="1,190,900 "></td>
+						<td><input type="text" name="" value="현금"></td>
+						<td><input type="text" name="" value="8"></td>
+						<td><input type="text" name="" value="N"></td>
+					</tr>
+					<tr>
+						<td class="error" colspan="16">실패사유 : 실패사유가 표기됩니다</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td><input type="text" name="" value="홍길동"></td>
+						<td><input type="text" name="" value="0212341234"></td>
+						<td><input type="text" name="" value="홍길동"></td>
+						<td><input type="text" name="" value="0212341234"></td>
+						<td><input type="text" name="" value="01012345678"></td>
+						<td><input type="text" name="" value="12345"></td>
+						<td><input type="text" name="" value="경기도 고양시 덕양구 무원로63 1009동 602호"></td>
+						<td><input type="text" name="" value="P0000000007354"></td>
+						<td class="subject">메디칼드림 프리미엄 헬스케어 로봇 안마의자 A527(네이비) A537(브라운)</td>
+						<td><input type="text" name="" value="1,190,900 "></td>
+						<td><input type="text" name="" value="999"></td>
+						<td><input type="text" name="" value="1,190,900 "></td>
+						<td><input type="text" name="" value="신용카드"></td>
+						<td><input type="text" name="" value="8"></td>
+						<td><input type="text" name="" value="Y"></td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td><input type="text" name="" value="홍길동"></td>
+						<td><input type="text" name="" value="0212341234"></td>
+						<td><input type="text" name="" value="홍길동"></td>
+						<td><input type="text" name="" value="0212341234"></td>
+						<td><input type="text" name="" value="01012345678"></td>
+						<td><input type="text" name="" value="12345"></td>
+						<td><input type="text" name="" value="경기도 고양시 덕양구 무원로63 1009동 602호"></td>
+						<td><input type="text" name="" value="P0000000007354"></td>
+						<td class="subject">메디칼드림 프리미엄 헬스케어 로봇 안마의자 A527(네이비) A537(브라운)</td>
+						<td><input type="text" name="" value="1,190,900 "></td>
+						<td><input type="text" name="" value="999"></td>
+						<td><input type="text" name="" value="1,190,900 "></td>
+						<td><input type="text" name="" value="현금"></td>
+						<td><input type="text" name="" value="8"></td>
+						<td><input type="text" name="" value="N"></td>
+					</tr>
+					<tr>
+						<td class="error" colspan="16">실패사유 : 실패사유가 표기됩니다</td>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td><input type="text" name="" value="홍길동"></td>
+						<td><input type="text" name="" value="0212341234"></td>
+						<td><input type="text" name="" value="홍길동"></td>
+						<td><input type="text" name="" value="0212341234"></td>
+						<td><input type="text" name="" value="01012345678"></td>
+						<td><input type="text" name="" value="12345"></td>
+						<td><input type="text" name="" value="경기도 고양시 덕양구 무원로63 1009동 602호"></td>
+						<td><input type="text" name="" value="P0000000007354"></td>
+						<td class="subject">메디칼드림 프리미엄 헬스케어 로봇 안마의자 A527(네이비) A537(브라운)</td>
+						<td><input type="text" name="" value="1,190,900 "></td>
+						<td><input type="text" name="" value="999"></td>
+						<td><input type="text" name="" value="1,190,900 "></td>
+						<td><input type="text" name="" value="신용카드"></td>
+						<td><input type="text" name="" value="8"></td>
+						<td><input type="text" name="" value="Y"></td>
+					</tr>
+					<tr>
+						<td>6</td>
+						<td><input type="text" name="" value="홍길동"></td>
+						<td><input type="text" name="" value="0212341234"></td>
+						<td><input type="text" name="" value="홍길동"></td>
+						<td><input type="text" name="" value="0212341234"></td>
+						<td><input type="text" name="" value="01012345678"></td>
+						<td><input type="text" name="" value="12345"></td>
+						<td><input type="text" name="" value="경기도 고양시 덕양구 무원로63 1009동 602호"></td>
+						<td><input type="text" name="" value="P0000000007354"></td>
+						<td class="subject">메디칼드림 프리미엄 헬스케어 로봇 안마의자 A527(네이비) A537(브라운)</td>
+						<td><input type="text" name="" value="1,190,900 "></td>
+						<td><input type="text" name="" value="999"></td>
+						<td><input type="text" name="" value="1,190,900 "></td>
+						<td><input type="text" name="" value="현금"></td>
+						<td><input type="text" name="" value="8"></td>
+						<td><input type="text" name="" value="N"></td>
+					</tr>
+					<tr>
+						<td class="error" colspan="16">실패사유 : 실패사유가 표기됩니다</td>
+					</tr>
+					<tr>
+						<td>6</td>
+						<td><input type="text" name="" value="홍길동"></td>
+						<td><input type="text" name="" value="0212341234"></td>
+						<td><input type="text" name="" value="홍길동"></td>
+						<td><input type="text" name="" value="0212341234"></td>
+						<td><input type="text" name="" value="01012345678"></td>
+						<td><input type="text" name="" value="12345"></td>
+						<td><input type="text" name="" value="경기도 고양시 덕양구 무원로63 1009동 602호"></td>
+						<td><input type="text" name="" value="P0000000007354"></td>
+						<td class="subject">메디칼드림 프리미엄 헬스케어 로봇 안마의자 A527(네이비) A537(브라운)</td>
+						<td><input type="text" name="" value="1,190,900 "></td>
+						<td><input type="text" name="" value="999"></td>
+						<td><input type="text" name="" value="1,190,900 "></td>
+						<td><input type="text" name="" value="현금"></td>
+						<td><input type="text" name="" value="8"></td>
+						<td><input type="text" name="" value="N"></td>
+					</tr>
+					<tr>
+						<td>6</td>
+						<td><input type="text" name="" value="홍길동"></td>
+						<td><input type="text" name="" value="0212341234"></td>
+						<td><input type="text" name="" value="홍길동"></td>
+						<td><input type="text" name="" value="0212341234"></td>
+						<td><input type="text" name="" value="01012345678"></td>
+						<td><input type="text" name="" value="12345"></td>
+						<td><input type="text" name="" value="경기도 고양시 덕양구 무원로63 1009동 602호"></td>
+						<td><input type="text" name="" value="P0000000007354"></td>
+						<td class="subject">메디칼드림 프리미엄 헬스케어 로봇 안마의자 A527(네이비) A537(브라운)</td>
+						<td><input type="text" name="" value="1,190,900 "></td>
+						<td><input type="text" name="" value="999"></td>
+						<td><input type="text" name="" value="1,190,900 "></td>
+						<td><input type="text" name="" value="현금"></td>
+						<td><input type="text" name="" value="8"></td>
+						<td><input type="text" name="" value="N"></td>
+					</tr>
+					<tr>
+						<td>6</td>
+						<td><input type="text" name="" value="홍길동"></td>
+						<td><input type="text" name="" value="0212341234"></td>
+						<td><input type="text" name="" value="홍길동"></td>
+						<td><input type="text" name="" value="0212341234"></td>
+						<td><input type="text" name="" value="01012345678"></td>
+						<td><input type="text" name="" value="12345"></td>
+						<td><input type="text" name="" value="경기도 고양시 덕양구 무원로63 1009동 602호"></td>
+						<td><input type="text" name="" value="P0000000007354"></td>
+						<td class="subject">메디칼드림 프리미엄 헬스케어 로봇 안마의자 A527(네이비) A537(브라운)</td>
+						<td><input type="text" name="" value="1,190,900 "></td>
+						<td><input type="text" name="" value="999"></td>
+						<td><input type="text" name="" value="1,190,900 "></td>
+						<td><input type="text" name="" value="현금"></td>
+						<td><input type="text" name="" value="8"></td>
+						<td><input type="text" name="" value="N"></td>
+					</tr>
+					<tr>
+						<td>6</td>
+						<td><input type="text" name="" value="홍길동"></td>
+						<td><input type="text" name="" value="0212341234"></td>
+						<td><input type="text" name="" value="홍길동"></td>
+						<td><input type="text" name="" value="0212341234"></td>
+						<td><input type="text" name="" value="01012345678"></td>
+						<td><input type="text" name="" value="12345"></td>
+						<td><input type="text" name="" value="경기도 고양시 덕양구 무원로63 1009동 602호"></td>
+						<td><input type="text" name="" value="P0000000007354"></td>
+						<td class="subject">메디칼드림 프리미엄 헬스케어 로봇 안마의자 A527(네이비) A537(브라운)</td>
+						<td><input type="text" name="" value="1,190,900 "></td>
+						<td><input type="text" name="" value="999"></td>
+						<td><input type="text" name="" value="1,190,900 "></td>
+						<td><input type="text" name="" value="현금"></td>
+						<td><input type="text" name="" value="8"></td>
+						<td><input type="text" name="" value="N"></td>
+					</tr>
+					<tr>
+						<td>6</td>
+						<td><input type="text" name="" value="홍길동"></td>
+						<td><input type="text" name="" value="0212341234"></td>
+						<td><input type="text" name="" value="홍길동"></td>
+						<td><input type="text" name="" value="0212341234"></td>
+						<td><input type="text" name="" value="01012345678"></td>
+						<td><input type="text" name="" value="12345"></td>
+						<td><input type="text" name="" value="경기도 고양시 덕양구 무원로63 1009동 602호"></td>
+						<td><input type="text" name="" value="P0000000007354"></td>
+						<td class="subject">메디칼드림 프리미엄 헬스케어 로봇 안마의자 A527(네이비) A537(브라운)</td>
+						<td><input type="text" name="" value="1,190,900 "></td>
+						<td><input type="text" name="" value="999"></td>
+						<td><input type="text" name="" value="1,190,900 "></td>
+						<td><input type="text" name="" value="현금"></td>
+						<td><input type="text" name="" value="8"></td>
+						<td><input type="text" name="" value="N"></td>
+					</tr>
+					<tr>
+						<td>6</td>
+						<td><input type="text" name="" value="홍길동"></td>
+						<td><input type="text" name="" value="0212341234"></td>
+						<td><input type="text" name="" value="홍길동"></td>
+						<td><input type="text" name="" value="0212341234"></td>
+						<td><input type="text" name="" value="01012345678"></td>
+						<td><input type="text" name="" value="12345"></td>
+						<td><input type="text" name="" value="경기도 고양시 덕양구 무원로63 1009동 602호"></td>
+						<td><input type="text" name="" value="P0000000007354"></td>
+						<td class="subject">메디칼드림 프리미엄 헬스케어 로봇 안마의자 A527(네이비) A537(브라운)</td>
+						<td><input type="text" name="" value="1,190,900 "></td>
+						<td><input type="text" name="" value="999"></td>
+						<td><input type="text" name="" value="1,190,900 "></td>
+						<td><input type="text" name="" value="현금"></td>
+						<td><input type="text" name="" value="8"></td>
+						<td><input type="text" name="" value="N"></td>
+					</tr>
+					<tr>
+						<td>6</td>
+						<td><input type="text" name="" value="홍길동"></td>
+						<td><input type="text" name="" value="0212341234"></td>
+						<td><input type="text" name="" value="홍길동"></td>
+						<td><input type="text" name="" value="0212341234"></td>
+						<td><input type="text" name="" value="01012345678"></td>
+						<td><input type="text" name="" value="12345"></td>
+						<td><input type="text" name="" value="경기도 고양시 덕양구 무원로63 1009동 602호"></td>
+						<td><input type="text" name="" value="P0000000007354"></td>
+						<td class="subject">메디칼드림 프리미엄 헬스케어 로봇 안마의자 A527(네이비) A537(브라운)</td>
+						<td><input type="text" name="" value="1,190,900 "></td>
+						<td><input type="text" name="" value="999"></td>
+						<td><input type="text" name="" value="1,190,900 "></td>
+						<td><input type="text" name="" value="현금"></td>
+						<td><input type="text" name="" value="8"></td>
+						<td><input type="text" name="" value="N"></td>
+					</tr>
+					<tr>
+						<td>6</td>
+						<td><input type="text" name="" value="홍길동"></td>
+						<td><input type="text" name="" value="0212341234"></td>
+						<td><input type="text" name="" value="홍길동"></td>
+						<td><input type="text" name="" value="0212341234"></td>
+						<td><input type="text" name="" value="01012345678"></td>
+						<td><input type="text" name="" value="12345"></td>
+						<td><input type="text" name="" value="경기도 고양시 덕양구 무원로63 1009동 602호"></td>
+						<td><input type="text" name="" value="P0000000007354"></td>
+						<td class="subject">메디칼드림 프리미엄 헬스케어 로봇 안마의자 A527(네이비) A537(브라운)</td>
+						<td><input type="text" name="" value="1,190,900 "></td>
+						<td><input type="text" name="" value="999"></td>
+						<td><input type="text" name="" value="1,190,900 "></td>
+						<td><input type="text" name="" value="현금"></td>
+						<td><input type="text" name="" value="8"></td>
+						<td><input type="text" name="" value="N"></td>
+					</tr>
+					<tr>
+						<td>6</td>
+						<td><input type="text" name="" value="홍길동"></td>
+						<td><input type="text" name="" value="0212341234"></td>
+						<td><input type="text" name="" value="홍길동"></td>
+						<td><input type="text" name="" value="0212341234"></td>
+						<td><input type="text" name="" value="01012345678"></td>
+						<td><input type="text" name="" value="12345"></td>
+						<td><input type="text" name="" value="경기도 고양시 덕양구 무원로63 1009동 602호"></td>
+						<td><input type="text" name="" value="P0000000007354"></td>
+						<td class="subject">메디칼드림 프리미엄 헬스케어 로봇 안마의자 A527(네이비) A537(브라운)</td>
+						<td><input type="text" name="" value="1,190,900 "></td>
+						<td><input type="text" name="" value="999"></td>
+						<td><input type="text" name="" value="1,190,900 "></td>
+						<td><input type="text" name="" value="현금"></td>
+						<td><input type="text" name="" value="8"></td>
+						<td><input type="text" name="" value="N"></td>
+					</tr>
+					<tr>
+						<td>6</td>
+						<td><input type="text" name="" value="홍길동"></td>
+						<td><input type="text" name="" value="0212341234"></td>
+						<td><input type="text" name="" value="홍길동"></td>
+						<td><input type="text" name="" value="0212341234"></td>
+						<td><input type="text" name="" value="01012345678"></td>
+						<td><input type="text" name="" value="12345"></td>
+						<td><input type="text" name="" value="경기도 고양시 덕양구 무원로63 1009동 602호"></td>
+						<td><input type="text" name="" value="P0000000007354"></td>
+						<td class="subject">메디칼드림 프리미엄 헬스케어 로봇 안마의자 A527(네이비) A537(브라운)</td>
+						<td><input type="text" name="" value="1,190,900 "></td>
+						<td><input type="text" name="" value="999"></td>
+						<td><input type="text" name="" value="1,190,900 "></td>
+						<td><input type="text" name="" value="현금"></td>
+						<td><input type="text" name="" value="8"></td>
+						<td><input type="text" name="" value="N"></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="oe_obox bottom clear">
+			<div class="btn_box">
+				<label class="btn btn4 btn_file"><input type="file">파일등록</label>
+				<a href="javascript:;" class="btn btn1">오류체크</a>
+				<a href="javascript:;" class="btn btn2">주문완료 확정</a>
+				<a href="javascript:;" class="btn btn3">닫기</a>
+			</div>
+		</div>
+
+
+	</div>
+</div><!-- //pop_outer -->
+<script>
+function otwh(){
+	var otwHeight = $(window).height() - $('.oe_popup h1').outerHeight() - $('.oe_popup h1').outerHeight() - $('.oe_obox.top').outerHeight() - $('.oe_obox.bottom').outerHeight() - 60;
+	$('.oe_table_wrap').height(otwHeight);
+}
+otwh();
+ $( window ).resize( function() {
+	otwh();
+ });
+</script>
+</body>
+</html>

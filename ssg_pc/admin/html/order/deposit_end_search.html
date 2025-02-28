@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<meta charset="UTF-8">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>영업담당 입금마감 조회</title>
+<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="../../css/sub.css">
+<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script type="text/javascript" charset="utf-8" src="../../js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/common.js"></script>
+</head>
+<body>
+<? include("../include/header.html"); ?>
+
+<div id="container" class="container">
+	<? include("../include/snb.html"); ?>
+
+	<div class="content">
+		<div class="location">
+			<span>HOME</span>
+			<span>주문</span>
+			<span>PG정산</span>
+			<span class="on">영업담당 입금마감 조회</span>
+		</div>
+		<div class="inner">
+			<h3 class="tit_h3">영업담당 입금마감 조회</h3>
+
+			<div class="tbl_outer">
+				<table class="tbl_view">
+					<colgroup>
+						<col style="width:100px">
+						<col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">매출기간</th>
+							<td>
+								<input type="text" name="" class="datepicker">
+								<span class="division">~</span>
+								<input type="text" name="" class="datepicker">
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">고객사</th>
+							<td colspan="3">
+								<select name="all2">
+									<option value="">전체</option>
+								</select>
+								<select name="all2">
+									<option value="">선택</option>
+								</select>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div class="button_area">
+				<button type="button" class="btn_ty1">검색</button>
+			</div>
+
+			<table class="tbl_primary">
+				<thead>
+					<tr>
+						<th rowspan="2" scope="row">담당자</th>
+						<th colspan="5" scope="row">조회기간이전</th>
+						<th rowspan="2" scope="row">쇼핑몰<br>(고객사)</th>
+						<th colspan="5" scope="row">조회기간</th>
+						<th rowspan="2" scope="row">조회<br>기간미수</th>
+					</tr>
+					<tr>
+						<th scope="row">매출금액</th>
+						<th scope="row">PG 입금액</th>
+						<th scope="row">입금 수수료</th>
+						<th scope="row">입금 VAT</th>
+						<th scope="row">실 입금액</th>
+						<th scope="row">매출금액</th>
+						<th scope="row">PG 입금액</th>
+						<th scope="row">입금 수수료</th>
+						<th scope="row">입금 VAT</th>
+						<th scope="row">실 입금액</th>
+					</tr>
+				</thead>
+				<tbody class="txtr">
+					<tr>
+						<td class="txtc">홍길동</td>
+						<td>100,000</td>
+						<td>0</td>
+						<td>0</td>
+						<td>0</td>
+						<td>100,000</td>
+						<td class="txtc">신세계 <br>폐쇄몰</td>
+						<td>100,000</td>
+						<td>0</td>
+						<td>0</td>
+						<td>0</td>
+						<td>100,000</td>
+						<td>100,000</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<table class="tbl_primary">
+				<thead>
+					<tr>
+						<th scope="row">주문일</th>
+						<th scope="row">쇼핑몰<br>(고객사)</th>
+						<th scope="row">입금일자</th>
+						<th scope="row">체결번호</th>
+						<th scope="row">상품명</th>
+						<th scope="row">거래구분</th>
+						<th scope="row">주문자<br>아이디</th>
+						<th scope="row">총<br>주문액</th>
+						<th scope="row">PG<br>거래금액</th>
+						<th scope="row">PG<br>수수료</th>
+						<th scope="row">PG<br>부가세</th>
+						<th scope="row">입금액</th>
+						<th scope="row">담당자</th>
+					</tr>
+				</thead>
+				<tbody class="txtc">
+					<tr>
+						<td>2017-06-01</td>
+						<td>신세계<br>폐쇄몰</td>
+						<td>2017-06-01</td>
+						<td>13456741</td>
+						<td class="txtl">[HICKIES] LED라이트 암밴드</td>
+						<td>발송완료</td>
+						<td>User_1</td>
+						<td class="txtr">100,000</td>
+						<td class="txtr">100,000</td>
+						<td class="txtr">10,000</td>
+						<td class="txtr">10,000</td>
+						<td class="txtr">100</td>
+						<td>홍길동</td>
+					</tr>
+					<tr>
+						<td>2017-06-01</td>
+						<td>신세계<br>폐쇄몰</td>
+						<td>2017-06-01</td>
+						<td>13456741</td>
+						<td class="txtl">[HICKIES] LED라이트 암밴드</td>
+						<td>발송완료</td>
+						<td>User_1</td>
+						<td class="txtr">100,000</td>
+						<td class="txtr">100,000</td>
+						<td class="txtr">10,000</td>
+						<td class="txtr">10,000</td>
+						<td class="txtr">100</td>
+						<td>홍길동</td>
+					</tr>
+					<tr>
+						<td>2017-06-01</td>
+						<td>신세계<br>폐쇄몰</td>
+						<td>2017-06-01</td>
+						<td>13456741</td>
+						<td class="txtl">[HICKIES] LED라이트 암밴드</td>
+						<td>발송완료</td>
+						<td>User_1</td>
+						<td class="txtr">100,000</td>
+						<td class="txtr">100,000</td>
+						<td class="txtr">100,000</td>
+						<td class="txtr">10,000</td>
+						<td class="txtr">100</td>
+						<td>홍길동</td>
+					</tr>
+				</tbody>
+				<tfoot class="txtr">
+					<tr>
+						<td  colspan="7" class="txtc">합계</td>
+						<td>100,000</td>
+						<td>100,000</td>
+						<td>100,000</td>
+						<td>100,000</td>
+						<td>100,000</td>
+						<td></td>
+					</tr>
+				</tfoot>
+			</table>
+		</div>
+	</div><!-- //content -->
+</div><!-- //container -->
+</div><!-- //wrap -->
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<meta charset="UTF-8">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>Button 스타일 가이드</title>
+<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="../css/sub.css">
+<link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+<script type="text/javascript" charset="utf-8" src="../js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/common.js"></script>
+</head>
+<body>
+<? include("../html/include/header.html"); ?>
+
+<div id="container" class="container">
+	<? include("../html/include/snb.html"); ?>
+
+	<div class="content">
+		<div class="location">
+			<span>HOME</span>
+			<span>상품</span>
+			<span>상품목록</span>
+			<span class="on">상품전체목록</span>
+		</div>
+		<div class="inner clear">
+			<h3 class="tit_h3">Button 정의</h3>
+
+			<table class="tbl_primary">
+				<caption></caption>
+				<colgroup>
+					<col style="width:100px">
+					<col>
+					<col style="width:100px">
+					<col>
+				</colgroup>
+				<thead>
+					<tr>
+						<th scope="col"></th>
+						<th scope="col">normal</th>
+						<th scope="col"></th>
+						<th scope="col">normal</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th class="txtl">btn_ty1</th>
+						<td><button type="button" class="btn_ty1">검색</button></td>
+						<th class="txtl">btn_ty2</th>
+						<td><button type="button" class="btn_ty2">초기화</button> <button type="button" class="btn_ty2">목록</button></td>
+					</tr>
+					<tr>
+						<th class="txtl">btn_ty3</th>
+						<td>
+							<button type="button" class="btn_ty3">신규등록</button>
+							<button type="button" class="btn_ty3">등록</button>
+							<button type="button" class="btn_ty3">상품추가</button>
+							<button type="button" class="btn_ty3">상품제안등록</button>
+							<button type="button" class="btn_ty3">상품등록하기</button>
+							<button type="button" class="btn_ty3">상품대량등록</button>
+							<button type="button" class="btn_ty3">옵션추가</button>
+							<button type="button" class="btn_ty3">대량회원 등록</button>
+							<button type="button" class="btn_ty3">상품대량 등록</button>
+							<button type="button" class="btn_ty3">추가</button>
+						</td>
+						<th class="txtl">btn_ty4</th>
+						<td><button type="button" class="btn_ty4">창닫기</button> <button type="button" class="btn_ty4">닫기</button> <button type="button" class="btn_ty4">취소</button> <button type="button" class="btn_ty4">주문취소</button> <button type="button" class="btn_ty4">취소생성</button></td>
+					</tr>
+					<tr>
+						<th class="txtl">btn_ty5</th>
+						<td>
+							<button type="button" class="btn_ty5">수정</button>
+							<button type="button" class="btn_ty5">반품/교환/환불 처리</button>
+							<button type="button" class="btn_ty5">메모변경</button>
+							<button type="button" class="btn_ty5">금액변경</button>
+							<button type="button" class="btn_ty5">재계산</button>
+						</td>
+						<th class="txtl">btn_ty6</th>
+						<td>
+							<button type="button" class="btn_ty6">SMS전송</button>
+							<button type="button" class="btn_ty6">전체 SMS</button>
+							<button type="button" class="btn_ty6">메일 발송</button>
+						</td>
+					</tr>
+					<tr>
+						<th class="txtl">btn_ty7</th>
+						<td>
+							<button type="button" class="btn_ty7">엑셀다운로드</button>
+							<button type="button" class="btn_ty7">상품복사</button>
+							<button type="button" class="btn_ty7">기획전 복사</button>
+						</td>
+						<th class="txtl">btn_ty8</th>
+						<td>
+							<button type="button" class="btn_ty8">삭제</button>
+							<button type="button" class="btn_ty8">상품삭제</button>
+							<button type="button" class="btn_ty8">주문인/수취인 정보 삭제</button>
+						</td>
+					</tr>
+					<tr>
+						<th class="txtl">btn_ty9</th>
+						<td>
+							<button type="button" class="btn_ty9">기본배송지 적용</button>
+							<button type="button" class="btn_ty9">기본배송지 적용</button>
+							<button type="button" class="btn_ty9">등록내역 보기</button>
+							<button type="button" class="btn_ty9">관리자 접속기록</button>
+							<button type="button" class="btn_ty9">이전</button>
+							<button type="button" class="btn_ty9">다음</button>
+							<button type="button" class="btn_ty9">확인</button>
+						</td>
+						<th class="txtl">btn_ty10</th>
+						<td>
+							<button type="button" class="btn_ty10">관리자에게 <br>당부변경</button>
+						</td>
+					</tr>
+					<tr>
+						<th class="txtl">tbl_btn_ty1</th>
+						<td><button type="button" class="tbl_btn_ty1">상세보기</button></td>
+						<th class="txtl">tbl_btn_ty2</th>
+						<td><button type="button" class="tbl_btn_ty2">미리보기</button></td>
+					</tr>
+					<tr>
+						<th class="txtl">tbl_btn_ty3</th>
+						<td><button type="button" class="tbl_btn_ty3">상태변동</button></td>
+						<th class="txtl">tbl_btn_ty4</th>
+						<td><button type="button" class="tbl_btn_ty4">제안서</button></td>
+					</tr>
+					<tr>
+						<th class="txtl">mid_btn_ty1</th>
+						<td>
+							<button type="button" class="mid_btn_ty1">일괄처리</button>
+							<button type="button" class="mid_btn_ty1">쇼핑몰 판매</button>
+							<button type="button" class="mid_btn_ty1">쇼핑몰 판매 삭제</button>
+						</td>
+						<th class="txtl">mid_btn_ty2</th>
+						<td>
+							<button type="button" class="mid_btn_ty2">입점업체명</button>
+							<button type="button" class="mid_btn_ty2">상품 카테고리 검색</button>
+							<button type="button" class="mid_btn_ty2">상품정보고시 카테고리 검색</button>
+						</td>
+					</tr>
+					<tr>
+						<th class="txtl">mid_btn_ty3</th>
+						<td><button type="button" class="mid_btn_ty3">변경</button></td>
+						<th class="txtl">mid_btn_ty4</th>
+						<td><button type="button" class="mid_btn_ty4">삭제</button>
+						<a href="#" class="mid_btn_ty4">삭제</a></td>
+					</tr>
+					<tr>
+						<th class="txtl">mid_btn_ty5</th>
+						<td>
+							<button type="button" class="mid_btn_ty5">업체선택</button>
+							<button type="button" class="mid_btn_ty5">설정</button>
+							<button type="button" class="mid_btn_ty5">상품(10)</button>
+							<button type="button" class="mid_btn_ty5">제안상품(1)</button>
+						</td>
+						<th class="txtl">mid_btn_ty6</th>
+						<td><button type="button" class="mid_btn_ty6">추가</button></td>
+					</tr>
+					<tr>
+						<th class="txtl">mid_btn_ty7</th>
+						<td>
+							<button type="button" class="mid_btn_ty7">삭제</button>
+						</td>
+						<th class="txtl">mid_btn_ty8</th>
+						<td><button type="button" class="mid_btn_ty8"></button></td>
+					</tr>
+					<tr>
+						<th class="txtl">btn_line_ty1</th>
+						<td>
+							<button type="button" class="btn_line_ty1">수정</button>
+							<button type="button" class="btn_line_ty1">상품검색</button>
+						</td>
+						<th class="txtl">btn_line_ty2</th>
+						<td>
+							<button type="button" class="btn_line_ty2">등록</button>
+							<button type="button" class="btn_line_ty2">추가</button>
+							<button type="button" class="btn_line_ty2">등록하기</button>
+						</td>
+					</tr>
+					<tr>
+						<th class="txtl">btn_line_ty3</th>
+						<td>
+							<button type="button" class="btn_line_ty3">상품복사</button>
+							<button type="button" class="btn_line_ty3">기획전 복사</button>
+						</td>
+						<th class="txtl">btn_line_ty4</th>
+						<td style="background-color: #72aa2a">
+							<button type="button" class="btn_line_ty4">협력회사 등록</button>
+						</td>
+					</tr>
+					<tr>
+						<th class="txtl">date_term</th>
+						<td>
+							<div class="date_term">
+								<button type="button">오늘</button>
+								<button type="button">1주일</button>
+								<button type="button">15일</button>
+								<button type="button" class="on">1개월</button>
+								<button type="button">3개월</button>
+								<button type="button">6개월</button>
+							</div>
+						</td>
+						<th class="txtl"></th>
+						<td>
+							<button type="button" class="btn_line_ty4"></button>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div><!-- //inner -->
+	</div><!-- //content -->
+</div><!-- //container -->
+</div><!-- //wrap -->
+</body>
+</html>

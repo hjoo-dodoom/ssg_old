@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<meta charset="UTF-8">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>인증샷 올리기 이벤트</title>
+<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="../css/sub.css">
+<script type="text/javascript" charset="utf-8" src="../js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/common.js"></script>
+<style>
+
+/*2021-02-26*/
+.pu_header{background-color:#056dae;padding:13px 30px;position:relative;}
+.pu_header h2{color:#fff;font-size:18px;text-align:left;padding:0;}
+.pu_header h2 span{font-size:13px;display:inline-block;}
+.pu_header .pu_close{width:20px;height:20px;text-indent:-999em;overflow:hidden;position:absolute;right:30px;top:15px;background-position:center center;background-repeat:no-repeat;background-image:url('../images/btn/btn_top_banner_closed.png');}
+.pu_inner{padding:25px 30px 50px;}
+.tbl_view2 tbody td .ref_ty1{margin-top:5px;}
+.nb_count{display:inline-block;color:#009de6;font-size:13px;margin-left:7px;vertical-align:middle;line-height:18px;}
+.ref_ty1{margin-top:5px;}
+
+.pu_title{padding-bottom:18px;border-bottom:1px solid #dbdbdb;margin-bottom:28px;}
+.pu_title h3{float:left;color:#333;font-size:18px;}
+.pu_title .step{float:right;margin-top:4px;margin-left:10px;}
+.pu_title .step li{float:left;color:#b4b4b4;font-size:14px;font-family: 'NanumSquareB';}
+.pu_title .step li .num{font-weight:600;color:#b4b4b4;font-size:20px;vertical-align:baseline;display:inline-block;margin-right:3px;}
+.pu_title .step li.active{color:#222;}
+.pu_title .step li.active .num{color:#009de6;}
+.pu_title .step li + li:before{content:">";font-size:18px;color:#525252;font-family: 'ngR';display:inline-block;margin:0 10px;}
+.pu_info{border:1px solid #ececec;background-color:#f8f8f8;padding:20px 13px;margin:30px -15px 0;}
+.pu_info strong{display:block;color:#222;font-size:13px;}
+.pu_info ul{margin-top:7px;}
+.pu_info ul li{color:#777;font-size:13px;text-indent:-10px;padding-left:10px;}
+.pu_info ul li + li{margin-top:7px;}
+.pu_cs{margin-top:25px;text-align:center;color:#777;font-size:13px;word-break:keep-all;}
+.pu_cs strong{color:#222;}
+.photo_upload .textarea_outer{position:relative;}
+.photo_upload .textarea_outer .txt {
+	position: absolute; right:20px; bottom:10px;
+	color:#777;
+}
+.ev_time{color:#222222;font-size:13px;margin-bottom:10px;padding-left:70px;padding-top:2px;position:relative;line-height:1.6;}
+.ev_time .tit{display:inline-block;background-color:#4a4a4a;color:#fff;border-radius:12px;padding:2px 0;font-size:12px;font-weight:400;margin-right:5px;vertical-align:baseline;
+position:absolute;left:0;top:0;width:64px;text-align:center;}
+.ev_time span{color:#666;font-size:12px;}
+.design_file{margin-top:7px;}
+.design_file label{float:left;overflow:hidden;border:1px solid #494949;width:116px;height:32px;line-height:33px;text-align:center;font-size:13px;cursor:pointer;margin-right:10px;}
+.design_file label input[type="file"]{position:absolute;left:-999em}
+.design_file .value{float:left;margin:8px 0 0;color:#555;font-size:12px;}
+.pu_agree{border:1px solid #ededed;padding:19px 19px 19px 42px;color:#222;font-size:13px;margin-top:10px;line-height:20px;position:relative;}
+.pu_agree input{position:absolute;left:19px;top:19px;}
+.pu_agree a{font-weight:600;text-decoration:underline;}
+.pu_terms{padding:20px;background-color:#e7e7e7;color:#666;font-size:13px;height:140px;overflow-y:auto;margin-top:30px;}
+.pu_terms{}
+@media screen and (max-width: 525px) {
+ .btn_line_mid_ty3{width:200px;margin:5px 0 0 0;}
+ .nb_count{margin:5px 0 0 0;width:200px;}
+}
+.photo_img{border:1px solid #ececec;background-color:#ececec;padding:0 30px 20px;margin:40px 0 10px;}
+.photo_img .img{position:relative;display:block;margin:0 auto;top:-25px;z-index:10;text-align:center;}
+.photo_img .txt{display:block;position:relative;text-align:center;color:#222;font-size:13px;font-weight:600;line-height:20px;}
+.photo_img .txt strong{color:#056dae;}
+</style>
+</head>
+<body>
+<div class="photo_upload">
+	<div class="pu_header">
+		<h2>손카드 인증샷 올리기 이벤트 <span>응원메세지 작성 후 손카드 사진 등록</span></h2>
+	</div>
+	<div class="pu_inner">
+		<div class="pu_title clear">
+			<h3>고객님의 휴대폰번호를 입력해주세요</h3>
+			<ul class="step">
+				<li class="active"><span class="num">01</span>본인인증</li>
+				<li><span class="num">02</span>후기등록</li>
+			</ul>
+		</div>
+		<div class="ev_time"><strong class="tit">행사기간</strong> 2021년 3월 2일(화) ~ 31일(수) </div>
+		<div class="ev_time"><strong class="tit">경품지급</strong> 4월 중 지급 </div>
+		<div class="ev_time"><strong class="tit">행사경품</strong> 갤럭시위치 (10명), 스타벅스 커피 (응모자 전원) </div>
+		<table class="tbl_view">
+			<colgroup>
+				<col style="width:130px;">
+				<col>
+			</colgroup>
+			<tbody>
+				<tr>
+					<th>휴대폰번호</th>
+					<td>
+						<input type="text" name="" style="width:200px;"><button type="button" class="btn_line_mid_ty3">인증발송</button>
+						<p class="ref_ty1">-없이 숫자만 입력해주세요.</p>
+					</td>
+				</tr>
+				<tr>
+					<th>인증번호</th>
+					<td><input type="text" name="" style="width:200px;"><span class="nb_count">04:00</span></td>
+				</tr>
+			</tbody>
+		</table>
+
+		<div class="btn_area txtc mt30">
+			<button type="button" class="btn_ty2" style="background-color:#009de6;">인증완료</button>
+		</div>
+		
+		<div class="pu_info">
+			<strong>인증번호를 받지 못하셨나요?</strong>
+			<ul>
+				<li>- 손카드 인증샷 대상자는 꽃선물 주문 시 등록된 수취인 핸드폰번호 등록 대상자만 참여 가능합니다.</li>
+				<li>- 휴대폰번호를 정확히 입력하셨는지 다시한번 확인해주세요</li>
+				<li>- 02-3406-6938 번호가 스팸문자로 등록되어 있는 것은 아닌지 확인해주세요
+					스팸문자로 등록되어 있지 않다면 다시한번 [재 발송 버튼]을 눌러주세요</li>
+			</ul>
+		</div>
+
+		<div class="pu_cs"><strong>* 고객센터</strong>  02-3406-6909 | 평일 10:00 ~ 17:00 (주말/공휴일 휴무)</div>
+	</div>
+</div>
+</body>
+</html>

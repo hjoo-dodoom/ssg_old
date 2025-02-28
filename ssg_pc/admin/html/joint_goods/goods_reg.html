@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<meta charset="UTF-8">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>상품 등록하기</title>
+<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="../../css/sub.css">
+<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script type="text/javascript" charset="utf-8" src="../../js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/common.js"></script>
+</head>
+<body>
+<? include("../include/header.html"); ?>
+
+<div id="container" class="container">
+	<? include("../include/snb.html"); ?>
+
+	<div class="content">
+		<div class="location">
+			<span>HOME</span>
+			<span>상품</span>
+			<span>상품목록</span>
+			<span class="on">상품 등록하기</span>
+		</div>
+		<div class="inner">
+			<h3 class="tit_h3">상품 등록하기</h3>
+			<div class="txtr">상품등록 매뉴얼 : <button type="button" class="mid_btn_ty1">매뉴얼 다운로드</button></div>
+			<table class="tbl_view">
+				<colgroup>
+					<col style="width:170px;">
+					<col>
+					<col style="width:170px;">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th>아이디</th>
+						<td colspan="3">dodoom_01</td>
+					</tr>
+					<tr>
+						<th><span class="req">주 카테고리</span></th>
+						<td colspan="3">
+							<div class="">
+								<button type="button" class="mid_btn_ty2">상품 카테고리 검색</button>
+								<span>등록된 카테고리가 없습니다.</span>
+							</div>
+							<p class="req_txt">* 카테고리 등록 시 반드시 "<em>소분류 코드</em>" 까지 선택해 주시기 바랍니다.</p>
+							<div class="line_top">
+								<input type="text" name="" id=""> <span class="req_txt">* 카테고리 코드를 정확히 아시는 경우 직접 입력하실 수 있습니다.</span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th><span class="req">부 카테고리</span></th>
+						<td colspan="3">
+							<button type="button" class="mid_btn_ty2">상품 카테고리 검색</button>
+							<span>등록된 카테고리가 없습니다.</span>
+						</td>
+					</tr>
+					<tr>
+						<th><span class="req">상품정보고시 카테고리</span></th>
+						<td colspan="3">
+							<button type="button" class="mid_btn_ty2">상품정보고시 카테고리 검색</button>
+							<span>등록된 카테고리가 없습니다.</span>
+						</td>
+					</tr>
+					<tr>
+						<th><span class="req">상품명</span></th>
+						<td colspan="3">
+							<div class="">
+								<input type="text" name="" id="" class="w100"><br>
+								<p class="req_txt">
+									* 다음과 같이 브랜드와 상품명을 등록해주세요. 예) [브랜드] 상품명
+								</p>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th>모델명</th>
+						<td><input type="text" name="" id="" class="w100"></td>
+						<th>브랜드</th>
+						<td><input type="text" name="" id="" class="w100"></td>
+					</tr>
+					<tr>
+						<th><span class="req">제조사</span></th>
+						<td><input type="text" name="" id="" class="w100"></td>
+						<th><span class="req">원산지</span></th>
+						<td><input type="text" name="" id="" class="w100"></td>
+					</tr>
+					<tr>
+						<th>검색키워드</th>
+						<td colspan="3">
+							<div class="">
+								<input type="text" name="" id="" class="w100"><br>
+								<p class="req_txt">
+									상품 검색 시 상품명이 아닌 검색 키워드에서 검색됩니다, 키워드는 <em>200Byte</em>까지 등록 가능합니다.
+								</p>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th><span class="req">제안가</span></th>
+						<td colspan="3">
+							<input type="text" name="" id="" style="width:116px;" class="txtr"> 원 (부가세 포함) <span class="division"></span> ※ 10원 단위로 입력해주세요. ex)54110 (O), 54111 (X)
+						</td>
+					</tr>
+					<tr>
+						<th>인터넷 최저가</th>
+						<td colspan="3">
+							<span class="in_bl" style="width:230px;">
+								<input type="text" name="" id="" style="width:116px;" class="txtr"> 원
+							</span>
+							<span class="in_bl">
+								<span class="in_bl" style="width:70px;">판가율 : </span>
+								<input type="text" name="" id="" style="width:116px;" class="txtr"> %
+							</span>
+						</td>
+					</tr>
+					<tr>
+						<th><span class="req">소비자가</span></th>
+						<td colspan="3">
+							<input type="text" name="" id="" style="width:116px;" class="txtr"> 원
+						</td>
+					</tr>
+					<tr>
+						<th>판매가</th>
+						<td colspan="3">※ 판매가는 신세계에서 정합니다.</td>
+					</tr>
+					<tr>
+						<th><span class="req">과세구분</span></th>
+						<td colspan="3">
+							<select name="" id="">
+								<option value="">과세</option>
+							</select>
+							(과세, 면세, 유가증권 중 구분 선택)
+						</td>
+					</tr>
+					<tr>
+						<th>판매구분</th>
+						<td colspan="3">
+							<input type="radio" name="" id=""> <label for="">폐쇄몰</label>
+							<input type="radio" name="" id=""> <label for="">포인트몰</label>
+							<input type="radio" name="" id=""> <label for="">사은품몰</label>
+						</td>
+					</tr>
+					<tr>
+						<th>재고관리</th>
+						<td colspan="3">
+							<p>
+								<input type="radio" name="" id=""> <label for="">상시판매</label>
+								<input type="radio" name="" id=""> <label for="">수량품</label>
+								<input type="radio" name="" id=""> <label for="">단품수량품(옵션)</label>
+								<input type="radio" name="" id=""> <label for="">일시품절</label>
+								<input type="radio" name="" id=""> <label for="">판매중지</label>
+							</p>
+							<!-- 수량폼 선택시 노출 S -->
+							<p class=""> 상품수량(현재수량) : <input type="text" name="" style="width:100px;" class="txtr"> 개</p>
+							<!-- //수량폼 선택시 노출 E -->
+
+							<!-- 단품수량품(옵션) 선택시 노출 S -->
+							<div class="">
+								<p>* 구매자가 선택할 수 있는 추가 옵션을 사용할 수 있습니다. (색상/사이즈/추가구성)</p>
+								<p> * 옵션등록 시 수량을 “0” 으로 기입 시 일시품절로 판매가 되지 않습니다. 수량을 필히 확인해 주시기 바랍니다</p>
+								<p class="txtr"><button type="button" class="btn_line_ty2">옵션추가
+								</button></p>
+								<table class="tbl_primary">
+									<thead>
+										<tr>
+											<th scope="row">옵션사항명</th>
+											<th scope="row">상세옵션</th>
+											<th scope="row">공급가</th>
+											<th scope="row">판매가</th>
+											<th scope="row">수량</th>
+											<th scope="row">노출</th>
+											<th scope="row">상세추가</th>
+										</tr>
+									</thead>
+									<tbody class="txtc">
+										<tr>
+											<td><input type="text" name="" class="w100"></td>
+											<td><input type="text" name="" class="w100"></td>
+											<td><input type="text" name="" class="w100 txtr"></td>
+											<td><input type="text" name="" class="w100 txtr"></td>
+											<td><input type="text" name="" class="w100 txtr"></td>
+											<td>
+												<select name="" id="">
+													<option value="">Y</option>
+												</select>
+											</td>
+											<td class="txtl">
+												<button type="button" class="btn_line_ty2">추가</button>
+											</td>
+										</tr>
+										<tr>
+											<td><input type="text" name="" class="w100"></td>
+											<td><input type="text" name="" class="w100"></td>
+											<td><input type="text" name="" class="w100 txtr"></td>
+											<td><input type="text" name="" class="w100 txtr"></td>
+											<td><input type="text" name="" class="w100 txtr"></td>
+											<td>
+												<select name="" id="">
+													<option value="">Y</option>
+												</select>
+											</td>
+											<td class="txtl">
+												<button type="button" class="btn_line_ty2">추가</button>
+												<button type="button" class="mid_btn_ty4">삭제</button>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+
+							</div>
+							<!-- //단품수량품(옵션) 선택시 노출 E -->
+						</td>
+					</tr>
+					<tr>
+						<th>배송비</th>
+						<td colspan="3">
+							<table class="tbl_primary">
+								<colgroup>
+									<col>
+									<col style="width:180px;">
+									<col style="width:180px;">
+								</colgroup>
+								<thead>
+									<tr>
+										<th class="txtci">선택</th>
+										<th class="txtci">조건</th>
+										<th class="txtci">배송비</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><input type="radio" name="" id=""> <label for="">무료(디폴트 무료배송원칙)</label></td>
+										<td class="txtci">판매자 부담</td>
+										<td class="txtci">해당없음</td>
+									</tr>
+									<tr>
+										<td><input type="radio" name="" id=""> <label for="">기본배송비(업체정보에 등록된 무료조건 이하 시 사용)</label></td>
+										<td class="txtci">구매자 부담</td>
+										<td class="txtci">2,500원</td>
+									</tr>
+									<tr>
+										<td><input type="radio" name="" id=""> <label for="">상품별 별도 배송비(기본배송비와 상이한 배송비 부과 시 사용, 상품무료조건 예외)</label></td>
+										<td class="txtci">구매자 부담</td>
+										<td class="txtci"><input type="text" name="" id="" style="width:100px;" class="txtr"> 원</td>
+									</tr>
+								</tbody>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<th>대표이미지</th>
+						<td colspan="3">
+							<p class="req_txt" style="line-height: 16px;">* 신세계 법인몰 에서는 <em>대표 이미지(최대 5개)</em>외 상품 이미지 등록은 불가합니다.<br>&nbsp;&nbsp;대표 이미지 사이즈는 <em>500*500</em>, 이미지용량은 <em>2MB 이하</em>로 올리셔야 상품이 정상 등록됩니다.</p>
+							<ul class="detail_item_main clear">
+								<li>
+									<p class="img"><img src="../../images/dummy/dummy_item_1.png" alt=""></p>
+									<p>
+										<span  class="fake_btn">
+											<button type="button" class="mid_btn_ty2">변경</button>
+											<input type="file" name="">
+										</span>
+										<button type="button" class="mid_btn_ty1" style="margin-top:0">삭제</button>
+									</p>
+								</li>
+								<li>
+									<p class="img"><img src="../../images/dummy/dummy_item_2.png" alt=""></p>
+									<p>
+										<span  class="fake_btn">
+											<button type="button" class="mid_btn_ty2">변경</button>
+											<input type="file" name="">
+										</span>
+										<button type="button" class="mid_btn_ty1" style="margin-top:0">삭제</button>
+									</p>
+								</li>
+								<li>
+									<p class="img"></p>
+									<p>
+										<span  class="fake_btn">
+											<button type="button" class="mid_btn_ty2 w100">등록</button>
+											<input type="file" name="">
+										</span>
+									</p>
+								</li>
+								<li>
+									<p class="img"></p>
+									<p>
+										<span  class="fake_btn">
+											<button type="button" class="mid_btn_ty2 w100">등록</button>
+											<input type="file" name="">
+										</span>
+									</p>
+								</li>
+								<li>
+									<p class="img"></p>
+									<p>
+										<span  class="fake_btn">
+											<button type="button" class="mid_btn_ty2 w100">등록</button>
+											<input type="file" name="">
+										</span>
+									</p>
+								</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<th>기본 상품소개</th>
+						<td colspan="3">
+							<p class="req_txt" style="line-height: 16px;">* 상세이미지 등록을 위해서 “이미지호스팅”을 이용하셔야 합니다.<br>&nbsp;&nbsp;
+							1. HTML 옆 체크박스를 선택 하시면 HTML모드를 이용 하실 수 있습니다.<br>&nbsp;&nbsp;
+							2. &lt;IMG src="이미지호스팅 파일 주소"&gt; 의 형식으로 이미지를 연결하시면 됩니다. <br>&nbsp;&nbsp;
+							ex) &lt;IMG src="http://img507.imageshack.us/img507/8662/67428656.jpg"&gt;</p>
+							<div class="" style="width:100%; height:300px; border:1px solid #ddd; margin:10px 0">editor</div>
+							<p class="req_txt" style="line-height: 16px;">* 기본 상품소개 이미지 사이즈는 가로 최대 980px 입니다.</p>
+
+						</td>
+					</tr>
+					<tr>
+						<th>제안용 상품소개<br>(제안서 출력용)</th>
+						<td colspan="3"><textarea name="" id="" cols="30" rows="15" class="w100"></textarea></td>
+					</tr>
+					<tr>
+						<th><span class="req">상품구성</span></th>
+						<td colspan="3"><input type="text" name="" id="" class="w100"></td>
+					</tr>
+					<tr>
+						<th>상품규격</th>
+						<td colspan="3"><input type="text" name="" id="" class="w100"></td>
+					</tr>
+					<tr>
+						<th>재질/원료</th>
+						<td colspan="3"><input type="text" name="" id="" class="w100"></td>
+					</tr>
+					<tr>
+						<th>발주 후 배송기간</th>
+						<td><input type="text" name="" id=""></td>
+						<th>배송형식</th>
+						<td>
+							<input type="radio" name="" id=""> <label for="">개별배송</label>
+							<input type="radio" name="" id=""> <label for="">일괄배송</label>
+						</td>
+					</tr>
+					<tr>
+						<th>복수배송지</th>
+						<td>
+							<input type="radio" name="" id=""> <label for="">Y</label>
+							<input type="radio" name="" id=""> <label for="">N</label>
+						</td>
+						<th>로고인쇄</th>
+						<td>
+							<input type="radio" name="" id=""> <label for="">Y</label>
+							<input type="radio" name="" id=""> <label for="">N</label>
+						</td>
+					</tr>
+					<tr>
+						<th>스티커</th>
+						<td>
+							<input type="radio" name="" id=""> <label for="">Y</label>
+							<input type="radio" name="" id=""> <label for="">N</label>
+						</td>
+						<th>포장</th>
+						<td>
+							<input type="radio" name="" id=""> <label for="">유</label>
+							<input type="radio" name="" id=""> <label for="">무</label>
+						</td>
+					</tr>
+					<tr>
+						<th>최소단위 수량</th>
+						<td colspan="3">
+							<p class="">
+								<input type="text" name="" id="" style="width:60px"> <input type="checkbox" name="" id="group"> <label for="group">묶음으로 구매</label>
+							</p>
+							<p>1. 묶음으로 구매 체크를 안했을때 기본 1씩 증가<br>&nbsp;&nbsp;&nbsp;   - ex) 최소 수량 2일때 1개씩 증가 2, 3, 4, 5 ...</p>
+							<p>2. 묶음으로 구매 체크 시 상품구매시 최소단위수량으로 증가 처리<br>&nbsp;&nbsp;&nbsp;- ex) 최소 수량 2일때 2개씩 증가 2, 4, 6, 8 ...</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="button_area">
+				<button type="button" class="btn_ty3">등록</button>
+				<button type="button" class="btn_ty2">목록</button>
+			</div>
+		</div><!-- //inner -->
+	</div><!-- //content -->
+</div><!-- //container -->
+</div><!-- //wrap -->
+</body>
+</html>

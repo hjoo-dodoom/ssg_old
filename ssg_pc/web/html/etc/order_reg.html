@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>SHINSEGAE</title>
+<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="../../css/sub.css">
+<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script type="text/javascript" charset="utf-8" src="../../js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/ssg.carousel.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/common.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/jquery.selectbox-0.2.js"></script>
+</head>
+<body>
+<? include("../include/header.html"); ?>
+
+<div id="container" class="container">
+<div class="content">
+	<div class="inner clear">
+		<div class="many_reg">
+			<h2>대량<strong>주문등록</strong></h2>
+			<div class="how">
+				<strong class="title">주문 신청방법</strong>
+				<ul class="list">
+					<li><span class="count">01</span><span class="txt">주문가이드<br/>다운로드</span></li>
+					<li><span class="count">02</span><span class="txt">주문가이드<br/>필독</span></li>
+					<li><span class="count">03</span><span class="txt">주문양식<br/>파일에 내용작성</span></li>
+					<li><span class="count">04</span><span class="txt">작성한 주문파일<br/>등록(엑셀)</span></li>
+					<li><span class="count">05</span><span class="txt">주문 확인 후<br/>[오류체크] 클릭</span></li>
+					<li><span class="count">06</span><span class="txt">오류 수정 후<br/>[주문신청] 클릭</span></li>
+				</ul>
+			</div>
+			<div class="cnt_wrap">
+				<div class="box">
+					<div class="item">
+						<div class="txt_box">
+							<strong class="title">※ 주문 신청 시 안내사항</strong>
+							<ol>
+								<li>1. 주문 파일 등록 시 엑셀파일에 작성한 내용 중 잘못 작성한 경우 화면에서 수정할 수 있습니다</li>
+								<li>2. 반드시 [주문신청]버튼을 클릭 하셔야 주문이 완료됩니다</li>
+								<li>3. 승인이 완료된 건은 [발송준비중]으로 표시되며, 우측 하단의 [주문/배송 조회]를 선택하시면 
+									확인하실 수 있습니다</li>
+								<li>4. 상품 발송 시, 송장표기는 “주문자” 그대로 발송됩니다 [예) 홍길동(○), ○○점 홍길동(Ⅹ)]</li>
+							</ol>
+						</div>
+						<div class="btn_box"><a href="javasript:;" class="bg1">주문 가이드 다운로드<span class="stit">이용가이드ㆍ주문샘플파일</span></a></div>
+					</div>
+					<div class="item">
+						<div class="txt_box">
+							<strong class="title">※ 주문 파일 등록 유의사항</strong>
+							<ol>
+								<li>1. DRM 문서보안이 적용된 파일이나 암호화 파일인 경우 보안 해지 또는 암호화 해지 후 업로드 
+									해주시기 바랍니다</li>
+								<li>2. 다른 파일에서 내용을 가져올 경우, 서식/함수 등은 반드시 제거하여야 합니다</li>
+							</ol>
+						</div>
+						<div class="btn_box"><a href="javasript:;" class="bg2">엑셀로 업로드하기</a></div>
+					</div>
+				</div>
+				<div class="box">
+					<div class="item">
+						<div class="txt_box">
+							<strong class="title">※ 주문신청 진행현황</strong>
+							<ul>
+								<li>ㆍ협력회사에서 승인완료하면 [발송준비중]상태로 표기되며, 배송은 우측 [주문/배송조회]메뉴에서 확인 가능합니다</li>
+								<li>ㆍ주문취소는 "주문접수" 상태에서 개별 또는 일괄적으로 취소가 가능합니다</li>
+								<li>ㆍ추후 취소건은 고객센터에 별도 문의 바랍니다</li>
+							</ul>
+						</div>
+						<div class="btn_box"><a href="javasript:;" class="bg3">주문/배송조회</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div><!-- //inner -->
+</div><!-- //content -->
+<!-- <div class="quick_area">
+	<div class="inner">
+		<div class="quick_left slide">
+			<div>
+				<a href="#"><img src="../images/dummy/img_quick_left.png" alt="">
+				<span>12% 더블쿠폰<br>+청구할인</span></a>
+			</div>
+			<div>
+				<a href="#"><img src="../images/dummy/img_quick_left.png" alt="">
+				<span>12% 더블쿠폰<br>+청구할인</span></a>
+			</div>
+			<div>
+				<a href="#"><img src="../images/dummy/img_quick_left.png" alt="">
+				<span>12% 더블쿠폰<br>+청구할인</span></a>
+			</div>
+		</div>
+		<div class="quick_right">
+			<p class="tit">오늘본상품</p>
+			<div class="quick_r_out">
+				<div class="quick_r slide">
+					<div>
+						<a href="#"><img src="../images/dummy/img_quick_right1.png" alt=""></a>
+						<a href="#"><img src="../images/dummy/img_quick_right2.png" alt=""></a>
+						<a href="#"><img src="../images/dummy/img_quick_right3.png" alt=""></a>
+					</div>
+					<div>
+						<a href="#"><img src="../images/dummy/img_quick_right1.png" alt=""></a>
+						<a href="#"><img src="../images/dummy/img_quick_right2.png" alt=""></a>
+						<a href="#"><img src="../images/dummy/img_quick_right3.png" alt=""></a>
+					</div>
+				</div>
+			</div>
+			<a href="#container" class="btn_top">TOP </a>
+		</div>
+	</div>
+</div> -->
+</div><!-- //container -->
+<? include("../include/footer.html"); ?>
+</div><!-- //wrap -->
+</body>
+</html>

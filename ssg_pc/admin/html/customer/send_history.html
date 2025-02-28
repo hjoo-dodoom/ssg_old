@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<meta charset="UTF-8">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>발송내역</title>
+<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="../../css/sub.css">
+<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script type="text/javascript" charset="utf-8" src="../../js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/common.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+<? include("../include/header.html"); ?>
+
+<div id="container" class="container">
+	<? include("../include/snb.html"); ?>
+
+	<div class="content">
+		<div class="location">
+			<span>HOME</span>
+			<span>고객센터</span>
+			<span>메세지관리</span>
+			<span class="on">발송내역</span>
+		</div>
+		<div class="inner">
+			<h3 class="tit_h3">발송내역</h3>
+
+			<table class="tbl_view">
+				<colgroup>
+					<col style="width:100px">
+					<col>
+					<col style="width:100px">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th scope="row">발송일</th>
+						<td colspan="3">
+							<input type="text" name="" class="datepicker">
+							<span class="division">~</span>
+							<input type="text" name="" class="datepicker">
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">발송유형</th>
+						<td>
+							<select name="" id="">
+								<option value="">전체</option>
+								<option value="">일반문자</option>
+								<option value="">알림톡</option>
+								<option value="">친구톡</option>
+							</select>
+						</td>
+						<th scope="row">상태</th>
+						<td>
+							<select name="" id="">
+								<option value="">전체</option>
+								<option value="">완료</option>
+								<option value="">대기</option>
+								<option value="">실패</option>
+								<option value="">반려</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">검색</th>
+						<td colspan="3">
+							<select name="sel8" id="sel8" style="width:110px;">
+								<option value="">메세지</option>
+								<option value="">발송인</option>
+							</select>
+							<input type="text" style="width:195px;">
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<div class="button_area">
+				<button type="button" class="btn_ty1">검색</button>
+			</div>
+
+			<div class="txtr">
+				<select name="sel10" id="sel10" style="width:120px;">
+					<option value="">50</option>
+				</select>
+			</div>
+			
+
+			<div class="tbl_search_list">
+				<div class="tbl_search_list mid">
+					검색 <span class="txt_red">50건</span>
+				</div>
+
+				<table class="tbl_primary">
+					<colgroup>
+						<col style="width:60px;">
+						<col>
+						<col>
+						<col>
+						<col>
+						<col>
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="row">번호</th>
+							<th scope="row">발송일자</th>
+							<th scope="row">발송유형</th>
+							<th scope="row">발송인</th>
+							<th scope="row">메세지/템플릿명</th>
+							<th scope="row">발송/성공/실패</th>
+							<th scope="row">상태</th>
+						</tr>
+					</thead>
+					<tbody class="txtc">
+						<tr>
+							<td>10</td>
+							<td>2021-04-06 11:11:11</td>
+							<td>일반문자</td>
+							<td>admin1</td>
+							<td class="txtl"><a href="#">시크릿스토어 대표상품 안내 메세지입니다</a></td>
+							<td><a href="#">300,000/100,000/100</a></td>
+							<td>완료</td>
+						</tr>
+						<tr>
+							<td>10</td>
+							<td>2021-04-06 11:11:11</td>
+							<td>일반문자</td>
+							<td>admin1</td>
+							<td class="txtl"><a href="#">시크릿스토어 대표상품 안내 메세지입니다</a></td>
+							<td><a href="#">300,000/100,000/100</a></td>
+							<td>완료</td>
+						</tr>
+						<tr>
+							<td>10</td>
+							<td>2021-04-06 11:11:11</td>
+							<td>일반문자</td>
+							<td>admin1</td>
+							<td class="txtl"><a href="#">시크릿스토어 대표상품 안내 메세지입니다</a></td>
+							<td><a href="#">300,000/100,000/100</a></td>
+							<td>완료</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="paging">
+				<a href="#none" class="first">처음페이지</a>
+				<a href="#none" class="prev">이전페이지</a>
+				<a href="#none" class="on">1</a>
+				<a href="#none" class="num">2</a>
+				<a href="#none" class="num">3</a>
+				<a href="#none" class="num">4</a>
+				<a href="#none" class="num">5</a>
+				<a href="#none" class="num">6</a>
+				<a href="#none" class="num">7</a>
+				<a href="#none" class="num">8</a>
+				<a href="#none" class="num">9</a>
+				<a href="#none" class="num">10</a>
+				<a href="#none" class="next">다음페이지</a>
+				<a href="#none" class="last">마지막페이지</a>
+			</div>
+		</div>
+	</div><!-- //content -->
+</div><!-- //container -->
+</div><!-- //wrap -->
+</body>
+</html>

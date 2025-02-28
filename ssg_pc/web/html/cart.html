@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<meta charset="UTF-8">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>SHINSEGAE</title>
+<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="../css/sub.css">
+<script type="text/javascript" charset="utf-8" src="../js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/ssg.carousel.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/common.js"></script>
+</head>
+<body>
+<? include("include/header.html"); ?>
+
+<div id="container" class="container">
+<div class="content">
+	<div class="inner">
+		<div class="cnt_tit_area clear">
+			<h2>장바구니</h2>
+			<div class="step_ty1">
+				<ul>
+					<li class="step1 on"><b>01</b> <em>장바구니</em><span>&gt;</span></li>
+					<li class="step2"><b>02</b> <em>결제하기</em><span>&gt;</span></li>
+					<li class="step3"><b>03</b> <em>주문완료</em></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="cart_list">
+			<table class="tbl_cart">
+				<colgroup>
+					<col style="width:35px;">
+					<col>
+					<col style="width:170px;">
+					<col style="width:130px;">
+					<col style="width:100px;">
+					<col style="width:130px;">
+					<col style="width:70px;">
+				</colgroup>
+				<thead>
+					<tr>
+						<th><input type="checkbox" name="" id="chk_all"></th>
+						<th class="txtl">상품정보/옵션</th>
+						<th>수량</th>
+						<th>판매가</th>
+						<th>배송비</th>
+						<th>주문금액</th>
+						<th>주문</th>
+					</tr>
+				</thead>
+				<tbody class="txtc">
+					<tr>
+						<td><input type="checkbox" name="" id="chk_1"></td>
+						<td class="txtl item">
+							<div class="outer">
+								<div class="thum">
+									<img src="../images/dummy/thum_cart_list.png" alt="">
+								</div>
+								<div class="item_txt">
+									<p>엘라스틴 아보카도허니 트린트먼트 1000ml</p>
+									<p class="linetop option">· 레드 / M </p>
+									<p><button type="button" class="btn_tbl_ty1">옵션변경/추가</button></p>
+								</div>
+							</div>
+						</td>
+						<td>
+							<div class="cart_variation">
+								<div class="clear">
+									<button type="button" class="btn_minus">-</button>
+									<input type="text" class="quantity" value="1" placeholder="1">
+									<button type="button" class="btn_plus">+</button>
+								</div>
+								<button type="button" class="btn_line_small_ty1">변경</button>
+							</div>
+						</td>
+						<td class="price"><b>500,000</b>원</td>
+						<td class="price"><b>3,000</b>원</td>
+						<td class="price txtred"><b>500,000</b>원</td>
+						<td>
+							<p><button type="button" class="btn_tbl_ty6">주문하기</button></p>
+							<p><button type="button" class="btn_tbl_ty2">삭제하기</button></p>
+						</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" name="" id="chk_1"></td>
+						<td class="txtl item">
+							<div class="outer">
+								<div class="thum">
+									<img src="../images/dummy/thum_cart_list.png" alt="">
+								</div>
+								<div class="item_txt">
+									<p>엘라스틴 아보카도허니 트린트먼트 1000ml</p>
+									<p class="linetop option">· 레드 / M <button type="button" class="btn_option_del">삭제</button></p>
+									<p class="option">· 블랙 / XXXL / 1개 <button type="button" class="btn_option_del">삭제</button></p>
+									<p><button type="button" class="btn_tbl_ty1">옵션변경/추가</button></p>
+								</div>
+							</div>
+						</td>
+						<td>
+							<div class="cart_variation">
+								<div class="clear">
+									<button type="button" class="btn_minus">-</button>
+									<input type="text" class="quantity" value="2" placeholder="2">
+									<button type="button" class="btn_plus">+</button>
+								</div>
+								<button type="button" class="btn_line_small_ty1">변경</button>
+							</div>
+						</td>
+						<td class="price"><b>500,000</b>원</td>
+						<td class="price"><b>3,000</b>원</td>
+						<td class="price txtred"><b>500,000</b>원</td>
+						<td>
+							<p><button type="button" class="btn_tbl_ty6">주문하기</button></p>
+							<p><button type="button" class="btn_tbl_ty2">삭제하기</button></p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<div class="btn_area">
+				<button type="button" class="btn_line_mid_ty1">선택상품삭제</button>
+				<button type="button" class="btn_line_mid_ty1">전체상품삭제</button>
+				<p class="ref">* 장바구니에 담긴 상품은 로그아웃(접속종료)시 자동으로 삭제됩니다.</p>
+			</div>
+
+			<div class="total col3">
+				<ul class="tit clear">
+					<li>총 주문금액</li>
+					<li>총 배송비</li>
+					<li class="last">총 결제금액</li>
+				</ul>
+				<ul class="cnt clear">
+					<li><b>500,000</b>원 <div class="operator_ty1">+</div></li>
+					<li><b>4,000</b>원 <div class="operator_ty1">=</div></li>
+					<li class="last"><b>504,000</b>원</li>
+				</ul>
+			</div>
+
+			<div class="btn_btm_area txtc">
+				<button type="button" class="btn_bg_mid_ty1">전체상품 주문</button>
+				<button type="button" class="btn_bg_mid_ty2">선택상품 주문</button>
+				<button type="button" class="btn_line_big_ty1">계속 쇼핑하기</button>
+			</div>
+
+		</div>
+	</div><!-- //inner -->
+</div><!-- //content -->
+<div class="quick_area">
+	<div class="inner">
+		<div class="quick_left slide">
+			<div>
+				<a href="#"><img src="../images/dummy/img_quick_left.png" alt="">
+				<span>12% 더블쿠폰<br>+청구할인</span></a>
+			</div>
+			<div>
+				<a href="#"><img src="../images/dummy/img_quick_left.png" alt="">
+				<span>12% 더블쿠폰<br>+청구할인</span></a>
+			</div>
+			<div>
+				<a href="#"><img src="../images/dummy/img_quick_left.png" alt="">
+				<span>12% 더블쿠폰<br>+청구할인</span></a>
+			</div>
+		</div>
+		<div class="quick_right">
+			<p class="tit">오늘본상품</p>
+			<div class="quick_r_out">
+				<div class="quick_r slide">
+					<div>
+						<a href="#"><img src="../images/dummy/img_quick_right1.png" alt=""></a>
+						<a href="#"><img src="../images/dummy/img_quick_right2.png" alt=""></a>
+						<a href="#"><img src="../images/dummy/img_quick_right3.png" alt=""></a>
+					</div>
+					<div>
+						<a href="#"><img src="../images/dummy/img_quick_right1.png" alt=""></a>
+						<a href="#"><img src="../images/dummy/img_quick_right2.png" alt=""></a>
+						<a href="#"><img src="../images/dummy/img_quick_right3.png" alt=""></a>
+					</div>
+				</div>
+			</div>
+			<a href="#container" class="btn_top">TOP </a>
+		</div>
+	</div>
+</div>
+</div><!-- //container -->
+<? include("include/footer.html"); ?>
+</div><!-- //wrap -->
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<meta charset="UTF-8">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>Search 스타일 가이드</title>
+<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="../css/sub.css">
+<link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+<script type="text/javascript" charset="utf-8" src="../js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/common.js"></script>
+</head>
+<body>
+<? include("../html/include/header.html"); ?>
+
+<div id="container" class="container">
+	<? include("../html/include/snb.html"); ?>
+
+	<div class="content">
+		<div class="location">
+			<span>HOME</span>
+			<span>상품</span>
+			<span>상품목록</span>
+			<span class="on">상품전체목록</span>
+		</div>
+
+		<div class="inner">
+			<h3 class="tit_h3">검색/조회 정의</h3>
+
+			<div class="tbl_outer">
+				<table class="tbl_view">
+					<colgroup>
+						<col style="width:94px">
+						<col>
+						<col style="width:94px">
+						<col>
+						<col style="width:94px">
+						<col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<th>쇼핑몰(회원사)</th>
+							<td colspan="3">
+								<select name="all1" id="all1" style="width:110px;">
+									<option value="">전체</option>
+								</select>
+								<select name="sel1" id="sel1" style="width:195px;">
+									<option value="">선택</option>
+								</select>
+								<input type="radio" name="ra1" id="ra1"> <label for="ra1">미배정 상품</label>
+							</td>
+							<th>입점회원</th>
+							<td colspan="3">
+								<select name="all2" id="all2" style="width:110px;">
+									<option value="">업체명</option>
+								</select>
+								<input type="text" style="width:195px;">
+								<input type="radio" name="ra2" id="ra2"> <label for="ra1">미배정 상품</label>
+
+							</td>
+						</tr>
+						<tr>
+							<th>가격대</th>
+							<td colspan="3">
+								<input type="text" style="width:110px;">
+								<span>~</span>
+								<input type="text" style="width:110px;">
+							</td>
+							<th>판매가/마진율</th>
+							<td colspan="3">
+								<input type="text" style="width:110px;">
+								<span>~</span>
+								<input type="text" style="width:110px;">
+							</td>
+						</tr>
+						<tr>
+							<th>몰 구분</th>
+							<td colspan="3">
+								<input type="radio" name="ra3" id="ra3_1"> <label for="ra3_1">전체</label>
+								<input type="radio" name="ra3" id="ra3_2"> <label for="ra3_2">폐쇄몰</label>
+								<input type="radio" name="ra3" id="ra3_3"> <label for="ra3_3">포인트몰</label>
+								<input type="radio" name="ra3" id="ra3_4"> <label for="ra3_4">사은품몰</label>
+							</td>
+							<th>복사상품</th>
+							<td colspan="3">
+								<input type="radio" name="ra4" id="ra4_1"> <label for="ra4_1">전체</label>
+								<input type="radio" name="ra4" id="ra4_2"> <label for="ra4_2">폐쇄몰</label>
+								<input type="radio" name="ra4" id="ra4_3"> <label for="ra4_3">포인트몰</label>
+								<input type="radio" name="ra4" id="ra4_4"> <label for="ra4_4">사은품몰</label>
+							</td>
+						</tr>
+						<tr>
+							<th>포인트사용</th>
+							<td>
+								<select name="sel4" id="sel4" style="width:140px;">
+									<option value="">선택</option>
+								</select>
+							</td>
+							<th>승인</th>
+							<td>
+								<select name="sel5" id="sel5" style="width:140px;">
+									<option value="">선택</option>
+								</select>
+							</td>
+							<th>포인트사용</th>
+							<td>
+								<select name="sel6" id="sel6" style="width:140px;">
+									<option value="">선택</option>
+								</select>
+							</td>
+							<th>재고관리</th>
+							<td>
+								<select name="sel7" id="sel7" style="width:140px;">
+									<option value="">선택</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<th>검색</th>
+							<td colspan="7">
+								<select name="sel8" id="sel8" style="width:110px;">
+									<option value="">선택</option>
+								</select>
+								<input type="text" style="width:195px;">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div class="button_area">
+				<div class="left">
+					<button type="button" class="btn_ty3">상품등록하기</button>
+					<button type="button" class="btn_ty3">상품대량등록</button>
+				</div>
+				<button type="button" class="btn_ty1">검색</button>
+				<button type="button" class="btn_ty2">초기화</button>
+			</div>
+
+</div><!-- //content -->
+</div><!-- //inner -->
+</div><!-- //container -->
+</div><!-- //wrap -->
+</body>
+</html>

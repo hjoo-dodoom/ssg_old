@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<meta charset="UTF-8">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>마일리지 설정</title>
+<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="../../css/sub.css">
+<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script type="text/javascript" charset="utf-8" src="../../js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/common.js"></script>
+</head>
+<body>
+<? include("../include/header.html"); ?>
+
+<div id="container" class="container">
+	<? include("../include/snb.html"); ?>
+
+	<div class="content">
+		<div class="location">
+			<span>HOME</span>
+			<span>고객</span>
+			<span>마일리지</span>
+			<span class="on">마일리지 설정</span>
+		</div>
+		<div class="inner">
+			<form action="">
+			<h3 class="tit_h3">마일리지 설정</h3>
+
+			<div class="tbl_outer">
+				<table class="tbl_view">
+					<colgroup>
+						<col style="width:100px">
+						<col>
+						<col style="width:100px">
+						<col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">그룹사/고객사</th>
+							<td colspan="3">
+								<select name="all2">
+									<option value="">전체</option>
+								</select>
+								<select name="all2">
+									<option value="">전체</option>
+								</select>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div class="button_area">
+				<button type="button" class="btn_ty1">검색</button>
+				<button type="button" class="btn_ty2">초기화</button>
+			</div>
+
+			<h4 class="tit_h4">기본설정</h4>
+			<table class="tbl_view">
+				<colgroup>
+					<col style="width:170px;">
+					<col>
+				</colgroup>
+				<tbody>
+				<tr>
+					<th>(*)사용여부</th>
+					<td>
+						<label><input type="radio" name="mgUse" id=""> 사용함</label>
+						<label><input type="radio" name="mgUse" id=""> 사용안함</label>
+					</td>
+				</tr>
+				<tr>
+					<th>(*)노출이름</th>
+					<td><input type="text" name="" style="width:200px;"></td>
+				</tr>
+				<tr>
+					<th>(*)노출단위</th>
+					<td><input type="text" name="" style="width:200px;"> 원</td>
+				</tr>
+				<tr>
+					<th rowspan="3">(*)유효기간</th>
+					<td><label><input type="radio" name="mgEtime" id=""> 유효기간 없음</label></td>
+				</tr>
+				<tr>
+					<td><label><input type="radio" name="mgEtime" id=""> 유효기간 있음</label> : 마일리지 적립일로 부터 <input type="text" name="" style="width:100px;"> 일 까지</td>
+				</tr>
+				<tr>
+					<td>유효기간 만료 <span class="underline">30일 전</span> 카카오 알림톡으로 마일리지 소멸 자동안내</td>
+				</tr>
+				<tr>
+					<th>금액절사기준</th>
+					<td>
+						<select name="" id="">
+							<option value="0.1">0.1</option>
+							<option value="1">1</option>
+							<option value="10">10</option>
+							<option value="100">100</option>
+							<option value="1000">1000</option>
+						</select>
+						단위로 
+						<select name="" id="">
+							<option value="버림"></option>
+						</select>
+						<p class="req_txt">* (%) 사용 또는 적립 시 금액 끝자리 단위를 관리합니다</p>
+					</td>
+				</tr>
+				</tbody>
+			</table>
+
+
+			<h4 class="tit_h4">사용설정</h4>
+			<table class="tbl_view">
+				<colgroup>
+					<col style="width:170px;">
+					<col>
+				</colgroup>
+				<tbody>
+				<tr>
+					<th>마일리지 결제</th>
+					<td><input type="text" name="" style="width:200px;" class="txtr">원 이상 마일리지를 보유한 경우 사용</td>
+				</tr>
+				<tr>
+					<th>구매금액 제한</th>
+					<td>결제금액 합계가 <input type="text" name="" style="width:200px;" class="txtr">원 이상인 경우 결제 시 마일리지 사용</td>
+				</tr>
+				<tr>
+					<th>최소 사용금액</th>
+					<td>1회 결제 시 최소 <input type="text" name="" style="width:200px;" class="txtr">원 이상인 마일리지 사용가능</td>
+				</tr>
+				<tr>
+					<th>최대 사용금액</th>
+					<td>1회 결제 시 최대 <input type="text" name="" style="width:200px;" class="txtr">
+					<select name="" id="">
+						<option value="">원</option>
+						<option value="">%</option>
+					</select>
+					까지 마일리지 사용가능
+					<p class="req_txt">* 미 설정 시 제한 없음</p>
+					</td>
+				</tr>
+				<tr>
+					<th>배송비 포함여부</th>
+					<td>
+						<label><input type="radio" name="mgDelcharge" id=""> 배송비 포함</label>
+						<label><input type="radio" name="mgDelcharge" id=""> 배송비 미포함</label>
+					<p class="req_txt">* 배송비 미 포함은 상품금액에 대해서만 마일리지 사용이 가능</p>
+					</td>
+				</tr>
+				<tr>
+					<th>사용불가 카테고리</th>
+					<td>
+						<button type="button" class="mid_btn_ty2" onclick='window.open("../popup/pop_cate.html", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=100,left=100,width=580,height=563");'>카테고리 조회</button>
+						총 <span class="underline">3개</span> 카테고리 선택
+						<p class="req_txt">* 상품권은 마일리지 사용이 불가합니다</p>
+					</td>
+				</tr>
+				</tbody>
+			</table>
+
+
+			<h4 class="tit_h4">마일리지 지급</h4>
+			<table class="tbl_view">
+				<colgroup>
+					<col style="width:170px;">
+					<col>
+				</colgroup>
+				<tbody>
+				<tr>
+					<th>상품구매 시 마일리지</th>
+					<td>구매금액의 <input type="text" name="" style="width:200px;" class="txtr">% 를 마일리지로 적립</td>
+				</tr>
+				<tr>
+					<th>마일리지 사용 주문건</th>
+					<td>
+						<label><input type="radio" name="mgGive" id=""> 마일리지 지급안함</label>
+						<label><input type="radio" name="mgGive" id=""> 마일리지 지급함</label>
+					</td>
+				</tr>
+				<tr>
+					<th>지급시점</th>
+					<td>배송완료 후 즉시 지급</td>
+				</tr>
+				<tr>
+					<th>회원가입</th>
+					<td>신규회원 가입 시 <input type="text" name="" style="width:200px;" class="txtr">원 적립</td>
+				</tr>
+				</tbody>
+			</table>
+
+			<h4 class="tit_h4">이력관리</h4>
+			<table class="tbl_view">
+				<colgroup>
+					<col style="width:15%;">
+					<col style="">
+				</colgroup>
+				<tbody>
+				<tr>
+					<th>등록일</th>
+					<td>admin1 / 2021-03-31 23:59:59</td>
+				</tr>
+				<tr>
+					<th>최종수정일</th>
+					<td>admin1 / 2021-03-31 23:59:59</td>
+				</tr>
+				</tbody>
+			</table>
+
+			<div class="txt_box"><strong>> 마일리지 유효기간 설정 시 유의사항</strong>
+			<ul>
+				<li>ㆍ마일리지는 공정거래위원회의 약관의 규제에 관한 법률에 따라 쇼핑몰의 이용약관상에 마일리지의 유효기간 또는 소멸 정책 등이 기재가 되어 있어야 합니다. <br/>
+				   (마일리지 정책은 고객에게 지나치게 불리할 경우, 불공정약관으로 분리되어 규제대상이 될 수 있습니다)</li>
+
+				<li>ㆍ마일리지 관련 정책이 변경될 경우 최소 30일 전 변경사항을 홈페이지 공지사항 또는 이메일 등의 수단을 통해 사전에 고지하여야 합니다.</li>
+				<li>ㆍ마일리지의 소멸과 관련하여 최소 30일 전부터 해당 회원에게 SMS 및 카카오톡 등을 통하여 마일리지의 내역 및 소멸 예정 일자를 통보하여야 합니다.</li>
+			</ul>
+			</div>
+
+			<div class="button_area clear">
+				<button type="button" class="btn_ty3">등록</button>
+				<button type="button" class="btn_ty2">목록</button>
+			</div>
+			</form>
+
+
+		</div>
+	</div><!-- //content -->
+</div><!-- //container -->
+</div><!-- //wrap -->
+</body>
+</html>

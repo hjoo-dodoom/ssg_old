@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<meta charset="UTF-8">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>팝업 상세정보</title>
+<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="../../css/sub.css">
+<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script type="text/javascript" charset="utf-8" src="../../js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/common.js"></script>
+</head>
+<body>
+<? include("../include/header.html"); ?>
+
+<div id="container" class="container">
+	<? include("../include/snb.html"); ?>
+
+	<div class="content">
+		<div class="location">
+			<span>HOME</span>
+			<span>디자인</span>
+			<span>팝업창 관리</span>
+			<span>팝업목록</span>
+			<span class="on">팝업 상세정보</span>
+		</div>
+		<div class="inner">
+			<h3 class="tit_h3">팝업 상세정보</h3>
+			<table class="tbl_view">
+				<colgroup>
+					<col style="width:170px;">
+					<col>
+					<col style="width:170px;">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th>팝업명</th>
+						<td colspan="3"><input type="text" name="" class="w100" placeholder="메인상단 배너입니다."></td>
+					</tr>
+					<tr>
+						<th>게시기간</th>
+						<td colspan="3">
+							<input type="text" name="" class="datepicker">
+							<span class="division">~</span>
+							<input type="text" name="" class="datepicker">
+						</td>
+					</tr>
+					<tr>
+						<th>팝업 내용</th>
+						<td colspan="3">
+							<p><img src="../../images/dummy/main_banner.png" alt=""></p>
+							<p><input type="file" name=""></p>
+						</td>
+					</tr>
+					<tr>
+						<th>창 닫기 이미지<br>(000 * 000)</th>
+						<td colspan="3">
+							<p><img src="../../images/dummy/main_banner.png" alt=""></p>
+							<p><input type="file" name=""></p>
+						</td>
+					</tr>
+					<tr>
+						<th>팝업 사이즈</th>
+						<td>
+							<input type="text" name="" style="width:100px;" class="txtc">
+							<span class="division">~</span>
+							<input type="text" name="" style="width:100px;" class="txtc">
+						</td>
+						<th>팝업 위치</th>
+						<td><input type="text" name="" style="width:100px;" class="txtc"></td>
+					</tr>
+					<tr>
+						<th>링크걸기</th>
+						<td colspan="3">
+							<input type="text" name="" style="width:400px;" placeholder="[10] 가전/IT > 생활가전 > 청소기">
+							<button type="button" class="mid_btn_ty2">카테고리 링크</button>
+							<button type="button" class="mid_btn_ty2">상품 링크</button>
+						</td>
+					</tr>
+					<tr>
+						<th>팝업 주소</th>
+						<td colspan="3"><input type="text" name="" class="w100 txtc"></td>
+					</tr>
+					<tr>
+						<th>스크롤사용</th>
+						<td>
+							<input type="radio" name=""> <label for="">미사용</label>
+							<input type="radio" name=""> <label for="">사용</label>
+						</td>
+						<th>로그인 전/후</th>
+						<td>
+							<input type="radio" name=""> <label for="">로그인 전</label>
+							<input type="radio" name=""> <label for="">로그인 후</label>
+						</td>
+					</tr>
+					<tr>
+						<th>상태</th>
+						<td colspan="3">
+							<select name="" id="">
+								<option value="">게시</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<th>팝업 등록일</th>
+						<td>2017-06-01 23:59:59</td>
+						<th>팝업 최종수정일</th>
+						<td>2017-06-02 23:59:59</td>
+					</tr>
+				</tbody>
+			</table>
+		
+			<div class="button_area">
+				<button type="button" class="btn_ty4">삭제</button>
+				<button type="button" class="btn_ty5">수정</button>
+				<button type="button" class="btn_ty2">목록</button>
+			</div>
+		</div><!-- //inner -->
+	</div><!-- //content -->
+</div><!-- //container -->
+</div><!-- //wrap -->
+</body>
+</html>

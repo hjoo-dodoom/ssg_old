@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<meta charset="UTF-8">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>쿠폰 리스트</title>
+<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="../../css/sub.css">
+<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script type="text/javascript" charset="utf-8" src="../../js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/common.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+<? include("../include/header.html"); ?>
+
+<div id="container" class="container">
+	<? include("../include/snb.html"); ?>
+
+	<div class="content">
+		<div class="location">
+			<span>HOME</span>
+			<span>프로모션</span>
+			<span>쿠폰관리</span>
+			<span class="on">쿠폰 리스트</span>
+		</div>
+		<div class="inner">
+			<h3 class="tit_h3">쿠폰 리스트</h3>
+
+			<table class="tbl_view">
+				<colgroup>
+					<col style="width:100px">
+					<col>
+					<col style="width:100px">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th scope="row">(*)고객사</th>
+						<td>
+							<select name="" id="">
+								<option value="" selected>정상승인</option>
+								<option value="">가승인</option>
+								<option value="">정지</option>
+								<option value="">만료</option>
+							</select>
+							<select name="" id="">
+								<option value="">선택</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">등록일</th>
+						<td>
+							<input type="text" name="" class="datepicker">
+							<span class="division">~</span>
+							<input type="text" name="" class="datepicker">
+						</td>
+						<th>상태</th>
+						<td>
+							<select name="" id="">
+								<option value="" selected>전체</option>
+								<option value="">대기</option>
+								<option value="">발급완료</option>
+								<option value="">발급중지</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">유형</th>
+						<td>
+							<select name="" id="">
+								<option value="" selected>전체</option>
+								<option value="">상품쿠폰</option>
+								<option value="">주문쿠폰</option>
+							</select>
+						</td>
+						<th>혜택</th>
+						<td>
+							<select name="" id="">
+								<option value="" selected>전체</option>
+								<option value="">상품할인</option>
+								<option value="">마일리지 적립</option>
+								<option value="">포인트 적립</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">쿠폰 명</th>
+						<td colspan="3">
+							<input type="text" class="w100">
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<div class="button_area">
+				<button type="button" class="btn_ty1">검색</button>
+				<button type="button" class="btn_ty2">초기화</button>
+			</div>
+
+			<div class="txtr">
+				<select name="sel10" id="sel10" style="width:120px;">
+					<option value="">50</option>
+				</select>
+			</div>
+			
+
+			<div class="tbl_search_list">
+				<div class="tbl_search_list mid">
+					검색 <span class="txt_red">50건</span>
+				</div>
+
+				<table class="tbl_primary">
+					<colgroup>
+						<col style="width:60px;">
+						<col>
+						<col>
+						<col>
+						<col>
+						<col>
+						<col>
+						<col>
+						<col>
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="row">번호</th>
+							<th scope="row">고객사명</th>
+							<th scope="row">쿠폰 명</th>
+							<th scope="row">사용기간</th>
+							<th scope="row">유형</th>
+							<th scope="row">혜택</th>
+							<th scope="row">발급/사용완료/미사용</th>
+							<th scope="row">상태</th>
+							<th scope="row">등록일자</th>
+						</tr>
+					</thead>
+					<tbody class="txtc">
+						<tr>
+							<td>10</td>
+							<td>시크릿스토어</td>
+							<td class="txtl"><a href="#">쿠폰명이 표기됩니다.</a></td>
+							<td>2021-04-09<br/>2021-04-09</td>
+							<td>상품쿠폰</td>
+							<td>10%할인</td>
+							<td><a href="#" onclick='window.open("../popup/pop_coupon.html", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=100,left=100,width=580,height=563");'>1,000/10/10</a></td>
+							<td>대기</td>
+							<td>2021-04-09<br/>11:11:11</td>
+						</tr>
+						<tr>
+							<td>10</td>
+							<td>시크릿스토어</td>
+							<td class="txtl"><a href="#">쿠폰명이 표기됩니다.</a></td>
+							<td>2021-04-09<br/>2021-04-09</td>
+							<td>상품쿠폰</td>
+							<td>10%할인</td>
+							<td><a href="#" onclick='window.open("../popup/pop_coupon.html", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=100,left=100,width=580,height=563");'>1,000/10/10</a></td>
+							<td>대기</td>
+							<td>2021-04-09<br/>11:11:11</td>
+						</tr>
+						<tr>
+							<td>10</td>
+							<td>시크릿스토어</td>
+							<td class="txtl"><a href="#">쿠폰명이 표기됩니다.</a></td>
+							<td>2021-04-09<br/>2021-04-09</td>
+							<td>상품쿠폰</td>
+							<td>10%할인</td>
+							<td><a href="#" onclick='window.open("../popup/pop_coupon.html", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=100,left=100,width=580,height=563");'>1,000/10/10</a></td>
+							<td>대기</td>
+							<td>2021-04-09<br/>11:11:11</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="paging">
+				<a href="#none" class="first">처음페이지</a>
+				<a href="#none" class="prev">이전페이지</a>
+				<a href="#none" class="on">1</a>
+				<a href="#none" class="num">2</a>
+				<a href="#none" class="num">3</a>
+				<a href="#none" class="num">4</a>
+				<a href="#none" class="num">5</a>
+				<a href="#none" class="num">6</a>
+				<a href="#none" class="num">7</a>
+				<a href="#none" class="num">8</a>
+				<a href="#none" class="num">9</a>
+				<a href="#none" class="num">10</a>
+				<a href="#none" class="next">다음페이지</a>
+				<a href="#none" class="last">마지막페이지</a>
+			</div>
+		</div>
+	</div><!-- //content -->
+</div><!-- //container -->
+</div><!-- //wrap -->
+</body>
+</html>

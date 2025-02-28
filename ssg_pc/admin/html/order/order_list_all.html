@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<meta charset="UTF-8">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>주문리스트</title>
+<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="../../css/sub.css">
+<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script type="text/javascript" charset="utf-8" src="../../js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/common.js"></script>
+</head>
+<body>
+<? include("../include/header.html"); ?>
+
+<div id="container" class="container">
+	<? include("../include/snb.html"); ?>
+
+	<div class="content">
+		<div class="location">
+			<span>HOME</span>
+			<span>주문</span>
+			<span>주문목록</span>
+			<span class="on">주문리스트</span>
+		</div>
+		<div class="inner">
+			<h3 class="tit_h3">주문리스트</h3>
+
+			<div class="tbl_outer">
+				<table class="tbl_view">
+					<colgroup>
+						<col style="width:100px">
+						<col>
+						<col style="width:100px">
+						<col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">주문일</th>
+							<td colspan="3">
+								<select name="all1" style="width:110px;">
+									<option value="">주문일</option>
+								</select>
+								<input type="text" name="" class="datepicker">
+								<span class="division">~</span>
+								<input type="text" name="" class="datepicker">
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">고객사</th>
+							<td colspan="3">
+								<select name="all2">
+									<option value="">전체</option>
+								</select>
+								<select name="all2">
+									<option value="">선택</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">협력회사</th>
+							<td colspan="3">
+								<select name="all2">
+									<option value="">업체명</option>
+								</select>
+								<input type="text" style="width:195px;">
+								<input type="checkbox" name="" id="chk1"> <label for="chk1">복수 배송지</label>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">결제구분</th>
+							<td>
+								<select name="all2">
+									<option value="">결제구분</option>
+									<option value="">급여공제</option>
+								</select>
+							</td>
+							<th scope="row">처리구분</th>
+							<td>
+								<select name="all2">
+									<option value="">처리구분</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">반품/교환/환불</th>
+							<td>
+								<select name="all2">
+									<option value="">반품/교환구분</option>
+								</select>
+							</td>
+							<th scope="row">상품권 구분</th>
+							<td>
+								<select name="all2">
+									<option value="">상품권 구분</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">검색</th>
+							<td colspan="3">
+								<select name="sel8" id="sel8" style="width:110px;">
+									<option value="">검색구분 </option>
+								</select>
+								<input type="text" style="width:195px;">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div class="button_area">
+				<button type="button" class="btn_ty1">검색</button>
+				<button type="button" class="btn_ty2">초기화</button>
+			</div>
+
+			<div class="tbl_search_list">
+				<div class="top">
+					<div class="left">* 전체 : <em>111,592</em>건 / 검색 : <em>50</em>건</div>
+					<div class="right">
+						<a href="#" class="odbtn1">주문 내역저장</a>
+						<a href="#" class="odbtn1">주문정산</a>
+						<a href="#" class="odbtn1">주문정보 초기화</a>
+						<select name="sel9" id="sel9" style="width:120px;">
+							<option value="">20개씩 보기</option>
+						</select>
+					</div>
+				</div>
+				<div class="mid">
+					<span class="icon_check">선택한 상품을 </span>
+					<button type="button" class="mid_btn_ty1" style="width: 96px;">주문접수</button>
+					<button type="button" class="mid_btn_ty1" style="width: 96px;">발송준비중</button>
+					<button type="button" class="mid_btn_ty1" style="width: 96px;">발송완료</button>
+					<button type="button" class="mid_btn_ty1" style="width: 96px;">배송완료</button>
+				</div>
+
+				<table class="tbl_primary tr_hover">
+					<thead>
+						<tr>
+							<th scope="row"><input type="checkbox" name="chkall" id="chkall"></th>
+							<th scope="row">번호</th>
+							<th scope="row">주문일시<br>(체결번호)</th>
+							<th scope="row">주문번호</th>
+							<th scope="row">상품<br>번호</th>
+							<th scope="row">고객사</th>
+							<th scope="row">결제방법</th>
+							<th scope="row">수량</th>
+							<th scope="row">포인트</th>
+							<th scope="row">마일리지</th>
+							<th scope="row">쿠폰</th>
+							<th scope="row">급여공제</th>
+							<th scope="row">협력회사</th>
+							<th scope="row">상품명</th>
+							<th scope="row">주문인</th>
+							<th scope="row">결제방법</th>
+							<th scope="row">단가</th>
+							<th scope="row">배송비</th>
+							<th scope="row">포인트</th>
+							<th scope="row">선주문<br>후결제</th>
+							<th scope="row">실<br>결제액</th>
+							<th scope="row">총액</th>
+							<th scope="row">주문<br>처리상태</th>
+							<th scope="row">송장번호</th>
+							<th scope="row">수정/<br>삭제</th>
+						</tr>
+					</thead>
+					<tbody class="txtc">
+						<tr class="bg_blue"><!-- bg_blue bg_green bg_purple bg_gblue -->
+							<td>
+							</td>
+							<td>121</td>
+							<td><span class="magic">매직픽업</span>2017-11-29<br>(K000653)<br><button type="button" class="mid_btn_ty4 w100" >주문취소</button></td>
+							<td>O000000000000660</td>
+							<td><a href="javascript:detailView('O000000000000660', '428')">428</a></td>
+							<td></td>
+							<td>포인트</td>
+							<td>1</td>
+							<td>10,000</td>
+							<td>10,000</td>
+							<td>10,000</td>
+							<td>0</td>
+							<td>(주)돋움</td>
+							<td><a href="javascript:detailView('O000000000000660', '428')">[코리아나] 월하미인 기초 3종 세트</a></td>
+							<td>홍선학</td>
+							<td>신용카드</td>
+							<td>60,000</td>
+								<td>0</td>
+								<td>22,100</td>
+								<td>22,100</td>
+								<td>22,100</td>
+								<td>22,100</td>
+							<td>
+								<p>주문취소</p>	
+							</td>
+							<td>
+								<p><input type="text" class="w100" id="f_slipno_428"  value="123123123123"></p>
+								 <p><button type="button" class="mid_btn_ty1 w100" name="slip" id="slip" >조회</button></p>
+							</td>
+							<td>
+								<p><button type="button" class="btn_line_ty1">수정</button></p>
+								<p style="display:none;"><button type="button" class="mid_btn_ty4" >삭제</button></p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+							</td>
+							<td>121</td>
+							<td rowspan="2">2017-11-29<br>(K000653)<br><button type="button" class="mid_btn_ty4 w100" >주문취소</button></td>
+							<td rowspan="2">O000000000000660</td>
+							<td><a href="javascript:detailView('O000000000000660', '428')">428</a></td>
+							<td></td>
+							<td>포인트</td>
+							<td>1</td>
+							<td>10,000</td>
+							<td>10,000</td>
+							<td>10,000</td>
+							<td>0</td>
+							<td>(주)돋움</td>
+							<td><a href="javascript:detailView('O000000000000660', '428')">[코리아나] 월하미인 기초 3종 세트</a></td>
+							<td>홍선학</td>
+							<td>신용카드</td>
+							<td>60,000</td>
+									<td rowspan="2">0</td>
+									<td rowspan="2">22,100</td>
+									<td rowspan="2">22,100</td>
+									<td rowspan="2">68,700</td>
+									<td rowspan="2">90,800</td>
+							<td>
+										<p>주문취소</p>	
+							</td>
+							<td>
+								<p><input type="text" class="w100" id="f_slipno_428"  value="123123123123"></p>
+								 <p><button type="button" class="mid_btn_ty1 w100" name="slip" id="slip" >조회</button></p>
+							</td>
+							<td>
+								<p><button type="button" class="btn_line_ty1">수정</button></p>
+								<p style="display:none;"><button type="button" class="mid_btn_ty4" >삭제</button></p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+									<input type="checkbox" name="chk" id="chk" value="427">
+							</td>
+							<td>120</td>
+							<td><a href="#">427</a></td>
+							<td></td>
+							<td>포인트</td>
+							<td>1</td>
+							<td>10,000</td>
+							<td>10,000</td>
+							<td>10,000</td>
+							<td>0</td>
+							<td>(주)돋움</td>
+							<td><a href="#">[재규어랜드로버] 긴팔 블라우스(여성...</a></td>
+							<td>홍선학</td>
+							<td>신용카드</td>
+							<td>30,800</td>
+							<td>
+										<p>
+											<select class="w100" name="oiprocess" id="">
+												<option value="" selected="selected">선택</option>
+												<option value="0" selected="selected">결제대기</option>
+												<option value="3">결제완료</option>
+												<option value="1">주문접수</option>
+												<option value="4">발송준비중</option>
+												<option value="5">발송완료</option>
+												<option value="6">배송완료</option>
+												<option value="77">전월취소</option>
+												<option value="88">결제실패</option>
+											</select>
+										</p>
+										<p><button type="button" class="mid_btn_ty4 w100" >주문취소</button></p>
+							</td>
+							<td>
+								<p><input type="text" class="w100" value=""></p>
+								 
+								 <p><button type="button" class="mid_btn_ty1 w100" >조회</button></p>
+								 
+							</td>
+							<td>
+								<p><button type="button" class="btn_line_ty1">수정</button></p>
+								<p><button type="button" class="mid_btn_ty4">삭제</button></p>
+							</td>
+						</tr>
+					</tbody>
+					<tfoot class="txtc">
+						<tr>
+							<th scope="col" colspan="16" class="txtl">합계(취소/반품/환불)제외</th>
+							<td>980,600</td>
+							<td>980,600</td>
+							<td>2,046,600</td>
+							<td>1,467,200</td>
+							<td>1,467,200</td>
+							<td>1,467,200</td>
+							<td colspan="3"></td>
+						</tr>
+					</tfoot>
+				</table>
+				<div class="mid">
+					<span class="icon_check">선택한 상품을 </span>
+					<button type="button" class="mid_btn_ty1" style="width: 96px;">주문접수</button>
+					<button type="button" class="mid_btn_ty1" style="width: 96px;">발송준비중</button>
+					<button type="button" class="mid_btn_ty1" style="width: 96px;">발송완료</button>
+					<button type="button" class="mid_btn_ty1" style="width: 96px;">배송완료</button>
+				</div>
+			</div>
+			<div class="paging">
+				<a href="#none" class="first">처음페이지</a>
+				<a href="#none" class="prev">이전페이지</a>
+				<a href="#none" class="on">1</a>
+				<a href="#none" class="num">2</a>
+				<a href="#none" class="num">3</a>
+				<a href="#none" class="num">4</a>
+				<a href="#none" class="num">5</a>
+				<a href="#none" class="num">6</a>
+				<a href="#none" class="num">7</a>
+				<a href="#none" class="num">8</a>
+				<a href="#none" class="num">9</a>
+				<a href="#none" class="num">10</a>
+				<a href="#none" class="next">다음페이지</a>
+				<a href="#none" class="last">마지막페이지</a>
+			</div>
+		</div>
+	</div><!-- //content -->
+</div><!-- //container -->
+</div><!-- //wrap -->
+</body>
+</html>

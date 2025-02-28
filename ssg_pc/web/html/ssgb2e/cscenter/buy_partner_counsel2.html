@@ -1,0 +1,183 @@
+<? include("../inc/head.sub.html"); ?>
+<? include("../inc/head.html"); ?>
+	
+	<!-- 콘텐츠 -->
+	<div id="content" class="container clearfix">
+		<!-- 좌측메뉴 -->
+		<? include("../inc/aside_menu.html"); ?>
+
+		<!-- 협력회사 구매상담 -->
+		<div class="content_right cscontent">
+			<div class="location">
+				<span class="home">홈</span><span class="devide">&gt;</span><span>고객만족 센터</span><span class="devide">&gt;</span><span>협력회사 구매상담</span>
+			</div>
+				
+			<div class="sub_tit clearfix">
+				<h3>협력회사 구매상담</h3>
+				<p>기업체/임직원의 라이프스타일을 제안하는 신세계 법인영업과 함께 하세요.</p>
+			</div>
+
+			<div class="sub_content">
+				<div class="bc_top float clearfix">
+					<div class="left">
+						01. 개인정보 약관동의
+					</div>
+					<div class="right on">
+						02. 상담하기
+					</div>
+				</div>
+
+				<div class="bc_input">
+					<strong class="bc_tit">기본정보</strong>
+					<table class="basic_table tbody_table">
+					<colgroup>
+					<col style="width:120px;"/>
+					<col style="width:;"/>
+					<col style="width:120px;"/>
+					<col style="width:;"/>
+					</colgroup>
+					<tbody>
+					<tr>
+						<th><span class="required">*</span>회사명</th>
+						<td><input type="text" name="" style="width:220px"></td>
+						<th><span class="required">*</span>사업자번호</th>
+						<td><input type="text" name="" class="wid3"><span class="wid_devide">-</span><input type="text" name="" class="wid3"><span class="wid_devide">-</span><input type="text" name="" class="wid3"></td>
+					</tr>
+					<tr>
+						<th><span class="required">*</span>담당자</th>
+						<td><input type="text" name="" style="width:220px"></td>
+						<th><span class="required">*</span>연락처</th>
+						<td><input type="text" name="" class="wid3"><span class="wid_devide">-</span><input type="text" name="" class="wid3"><span class="wid_devide">-</span><input type="text" name="" class="wid3"></td>
+					</tr>
+					<tr>
+						<th><span class="required">*</span>이메일</th>
+						<td><input type="text" name="" style="width:220px"></td>
+						<th><span class="required">*</span>핸드폰</th>
+						<td><input type="text" name="" class="wid3"><span class="wid_devide">-</span><input type="text" name="" class="wid3"><span class="wid_devide">-</span><input type="text" name="" class="wid3"></td>
+					</tr>
+					<tr>
+						<th><span class="required">*</span>회사구분</th>
+						<td colspan="3">
+							<label><input type="checkbox" name=""> 제조사</label>
+							<label><input type="checkbox" name=""> 수입원</label>
+							<label><input type="checkbox" name=""> 총판</label>
+							<label><input type="checkbox" name=""> 특판</label>
+							<label><input type="checkbox" name=""> 대리점</label>
+						</td>
+					</tr>
+					<tr>
+						<th><span class="required">*</span>상담구분</th>
+						<td colspan="3">
+							<label><input type="radio" name="cje" id="cjeCounsel"> 입점상담</label>
+							<label><input type="radio" name="cje" id="cjeEtc"> 기타</label>
+							<input type="text" name="" id="cjeEtcInput"  class="ml5" style="width:220px" disabled="">
+						</td>
+					</tr>
+					<tr>
+						<th><span class="required">*</span>요청가격대</th>
+						<td colspan="3"><input type="text" name="" style="width:220px"></td>
+					</tr>
+					</tbody>
+					</table>
+				</div>
+
+				<div class="bc_input">
+					<strong class="bc_tit">상담내용 입력</strong>
+					<table class="basic_table tbody_table">
+					<colgroup>
+					<col style="width:120px;"/>
+					<col style="width:;"/>
+					</colgroup>
+					<tbody>
+					<tr>
+						<th><span class="required">*</span>제목</th>
+						<td><input type="text" name="" style="width:100%"></td>
+					</tr>
+					<tr>
+						<th><span class="required">*</span>내용</th>
+						<td><textarea name="" rows="" cols=""></textarea></td>
+					</tr>
+					<tr>
+						<th><span class="required">*</span>파일첨부</th>
+						<td>
+							<div class="bo_files">
+								<span class="bo_file_tit">1. 회사소개서</span>
+								<div class="fileBox clearfix">
+									<label for="uploadBtn" class="btn_file">파일 선택</label>
+									<input type="file" id="uploadBtn" class="uploadBtn">
+									<input type="text" class="fileName" readonly="readonly" placeholder="선택된 파일이 없습니다.">
+								</div>
+							</div>
+							<div class="bo_files">
+								<span class="bo_file_tit">2. 사업자등록증</span>
+								<div class="fileBox clearfix">
+									<label for="uploadBtn" class="btn_file">파일 선택</label>
+									<input type="file" id="uploadBtn" class="uploadBtn">
+									<input type="text" class="fileName" readonly="readonly" placeholder="선택된 파일이 없습니다.">
+								</div>
+							</div>
+							<div class="bo_files">
+								<span class="bo_file_tit">3. 상품제안서 양식 등록 가능여부</span>
+								<div class="fileBox clearfix">
+									<label for="uploadBtn" class="btn_file">파일 선택</label>
+									<input type="file" id="uploadBtn" class="uploadBtn">
+									<input type="text" class="fileName" readonly="readonly" placeholder="선택된 파일이 없습니다.">
+								</div>
+								<a href="#" class="bo_file_sample">상품제안(엑셀) 양식 다운로드</a>
+							</div>
+							<div class="bo_files">
+								<span class="bo_file_tit">4. 총판 및 대리점 계약서</span>
+								<div class="fileBox clearfix">
+									<label for="uploadBtn" class="btn_file">파일 선택</label>
+									<input type="file" id="uploadBtn" class="uploadBtn">
+									<input type="text" class="fileName" readonly="readonly" placeholder="선택된 파일이 없습니다.">
+								</div>
+							</div>
+							<p class="bo_files_p">(사업자등록증사본,회사소개서,수입원/특판관련 증명,상품제안서) </p>
+						</td>
+					</tr>
+					</tbody>
+					</table>
+				</div>
+				
+				<div class="btn_box align_center mt20">
+					<button type="button" class="btn_btn btn_type2">확인</button>
+				</div>
+			</div>
+		</div>
+		<!-- //협력회사 구매상담 -->
+
+	</div>
+	<!-- //콘텐츠 -->
+
+<? include("../inc/tail.html"); ?>
+<? include("../inc/tail.sub.html"); ?>
+<script>
+//상담구분 js
+$( "input[name='cje']" ).prop('checked', false); //radio check 초기화
+$("#cjeEtcInput").removeAttr("value");
+
+$( "input[name='cje']" ).on('change', function() { //radio change 이벤트
+	if($("#cjeEtc").is(":checked")){
+		$("#cjeEtcInput").prop('disabled', false);
+	}else{
+		$("#cjeEtcInput").prop('disabled', true);
+		$("#cjeEtcInput").removeAttr("value");
+	}
+});
+
+//파일첨부 디자인 js
+var uploadFile = $('.fileBox .uploadBtn');
+uploadFile.on('change', function(){
+	if(window.FileReader){
+		var filename = $(this)[0].files[0].name;
+	} else {
+		var filename = $(this).val().split('/').pop().split('\\').pop();
+	}
+	$(this).siblings('.fileName').val(filename);
+});
+
+</script>
+</body>
+</html>
+

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<meta charset="UTF-8">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>마일리지 설정</title>
+<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="../../css/sub.css">
+<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script type="text/javascript" charset="utf-8" src="../../js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/common.js"></script>
+</head>
+<body>
+<? include("../include/header.html"); ?>
+
+<div id="container" class="container">
+	<? include("../include/snb.html"); ?>
+
+	<div class="content">
+		<div class="location">
+			<span>HOME</span>
+			<span>프로모션</span>
+			<span>출석체크</span>
+			<span class="on">출석체크 상세정보</span>
+		</div>
+		<div class="inner">
+			<form action="">
+			<h3 class="tit_h3">출석체크 상세정보</h3>
+
+			<h4 class="tit_h4">기본정보</h4>
+			<table class="tbl_view">
+				<colgroup>
+					<col style="width:170px;">
+					<col>
+				</colgroup>
+				<tbody>
+				<tr>
+					<th>고객사</th>
+					<td>시크릿스토어</td>
+				</tr>
+				<tr>
+					<th rowspan="2">(*)이벤트 기간</th>
+					<td>
+						<label><input type="radio" name="evTime" value="1">회차별</label>
+						<label><input type="radio" name="evTime" value="2">월별</label>
+						<p><p class="req_txt">* 이벤트 기간은 <span class="underline">최소 7일 이상 최대 31일 까지</span> 가능합니다</p></p>
+					</td>
+				</tr>
+				<script>
+					$('input[name="evTime"]').on('change', function(){
+						if(this.value=='1'){
+							$('.evTime1').show();
+							$('.evTime2').hide();
+							$('input[name="evDay"]').attr('disabled', false);
+						}else{
+							$('.evTime2').show();
+							$('.evTime1').hide();
+							$('input[name="evDay"]').attr('disabled', true);
+							$('input[name="evDay"]').prop("checked", false);
+						}
+					});
+					$(document).ready(function(){
+						if($('input[name="evTime"]:checked').val() == '1'){
+							$('.evTime1').show();
+							$('.evTime2').hide();
+							$('input[name="evDay"]').attr('disabled', false);
+						}else{
+							$('.evTime2').show();
+							$('.evTime1').hide();
+							$('input[name="evDay"]').attr('disabled', true);
+							$('input[name="evDay"]').prop("checked", false);
+						}
+					});
+				</script>
+				<tr class="evTime1">
+					<td><input type="text" name="" style="width:200px;"> 회</td>
+				</tr>
+				<tr class="evTime2" style="display:none;">
+					<td><input type="text" name="" style="width:200px;" class="datepicker"><span class="division">~</span><input type="text" name="" style="width:200px;" class="datepicker"></td>
+				</tr>
+				<tr>
+					<th>출석체크 방법</th>
+					<td>
+						<label><input type="radio" name="evHow" value="">스템프형</label>
+						<label><input type="radio" name="evHow" value="">로그인형</label>
+					</td>
+				</tr>
+				<tr>
+					<th>(*)이벤트 조건</th>
+					<td>
+						<label><input type="radio" name="evCondition" value="1">누적 출석횟수 달성</label>
+						<label><input type="radio" name="evCondition" value="2">연속 출석횟수 달성</label>
+						<label><input type="radio" name="evCondition" value="3">출석할 때마다 지급</label>
+					</td>
+				</tr>
+				<tr class="evCondition1">
+					<th>(*)출석 횟수</th>
+					<td>기간 내 <input type="text" name="" style="width:150px;">회 출석</td>
+				</tr>
+				<tr class="evCondition2" style="display:none;">
+					<th>(*)출석 횟수</th>
+					<td>기간 내 <input type="text" name="" style="width:150px;">회 연속 출석</td>
+				</tr>
+				<script>
+					$('input[name="evCondition"]').on('change', function(){
+						if(this.value=='1'){
+							$('.evCondition1').show();
+							$('.evCondition2').hide();
+						}else{
+							$('.evCondition2').show();
+							$('.evCondition1').hide();
+						}
+					});
+					$(document).ready(function(){
+						if($('input[name="evCondition"]:checked').val() == '1'){
+							$('.evCondition1').show();
+							$('.evCondition2').hide();
+						}else{
+							$('.evCondition2').show();
+							$('.evCondition1').hide();
+						}
+					});
+				</script>
+				<tr>
+					<th>(*)목표출석 횟수</th>
+					<td>기간 내 <input type="text" name="" style="width:100px;"> 회 출석</td>
+				</tr>
+				<tr>
+					<th>출석 요일</th>
+					<td>
+						<label><input type="radio" name="evDay" value="">매일</label>
+						<label><input type="radio" name="evDay" value="">주중</label>
+						<label><input type="radio" name="evDay" value="">주말</label>
+					</td>
+				</tr>
+				<tr>
+					<th>(*)출석체크 명</th>
+					<td><input type="text" name=""class="w100"></td>
+				</tr>
+				</tbody>
+			</table>
+
+
+			<h4 class="tit_h4">혜택설정</h4>
+			<table class="tbl_view">
+				<colgroup>
+					<col style="width:170px;">
+					<col>
+				</colgroup>
+				<tbody>
+				<tr>
+					<th>(*)지급 마일리지</th>
+					<td>달성조건 충족 시 <input type="text" name="" style="width:150px;" class="txtr">마일리지 지급</td>
+				</tr>
+				<tr>
+					<th>마일리지 유효기간</th>
+					<td>
+						<label><input type="radio" name="evEtime" value="1">제한없음</label>
+						<label><input type="radio" name="evEtime" value="2">제한</label>
+					</td>
+				</tr>
+				<tr class="evEtime1" style="display:none;">
+					<th>(*)유효기간 설정</th>
+					<td><input type="text" name="" style="width:150px;" class="datepicker">까지</td>
+				</tr>
+				<script>
+					$('input[name="evEtime"]').on('change', function(){
+						if(this.value=='2'){
+							$('.evEtime1').show();
+						}else{
+							$('.evEtime1').hide();
+						}
+					});
+					$(document).ready(function(){
+						if($('input[name="evEtime"]:checked').val() == '2'){
+							$('.evEtime1').show();
+						}else{
+							$('.evEtime1').hide();
+						}
+					});
+				</script>
+				</tbody>
+			</table>
+
+			<h4 class="tit_h4">이벤트</h4>
+			<table class="tbl_view">
+				<colgroup>
+					<col style="width:170px;">
+					<col>
+					<col style="width:170px;">
+					<col>
+				</colgroup>
+				<tbody>
+				<tr>
+					<th>(*)상태</th>
+					<td colspan="3">
+						<select name="" id="">
+							<option value="">대기</option>
+							<option value="">진행중</option>
+							<option value="">종료</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<th>배너 등록 PC</th>
+					<td colspan="3">
+						<input type="file">
+					</td>
+				</tr>
+				<tr>
+					<th>배너 등록 MOBILE</th>
+					<td colspan="3">
+						<input type="file">
+					</td>
+				</tr>
+				<tr>
+					<th>등록일</th>
+					<td>admin1 / 2021-03-31 11:11:11</td>
+					<th>최종수정일</th>
+					<td>admin1 / 2021-03-31 11:11:11</td>
+				</tr>
+				</tbody>
+			</table>
+			
+			<div class="button_area">
+				<button type="button" class="btn_ty4">삭제</button>
+				<button type="button" class="btn_ty5">수정</button>
+				<button type="button" class="btn_ty2">목록</button>
+			</div>
+
+			</form>
+
+			<h4 class="tit_h4">안내 메시지</h4>
+			<table class="tbl_view">
+				<colgroup>
+					<col style="width:170px;">
+					<col>
+				</colgroup>
+				<tbody>
+				<tr>
+					<th>출석체크 시</th>
+					<td>출석체크를 하셨습니다 내일도 참여해주세요</td>
+				</tr>
+				<tr>
+					<th>이미 출석 체크한 경우</th>
+					<td>이미 참여하셨습니다.</td>
+				</tr>
+				<tr>
+					<th>출석체크 목표달성 시</th>
+					<td>축하드립니다!  {mileage}마일리지 가 지급되었습니다</td>
+				</tr>
+				<tr>
+					<th>이벤트 종료 시</th>
+					<td>본 이벤트는 종료되었습니다</td>
+				</tr>
+				</tbody>
+			</table>
+			
+
+
+		</div>
+	</div><!-- //content -->
+</div><!-- //container -->
+</div><!-- //wrap -->
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<meta charset="UTF-8">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>공지사항 답변</title>
+<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="../../css/sub.css">
+<script type="text/javascript" charset="utf-8" src="../../js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/common.js"></script>
+</head>
+<body>
+<? include("../include/header_partner.html"); ?>
+
+<div id="container" class="container">
+	<? include("../include/snb_partner.html"); ?>
+
+	<div class="content">
+		<div class="location">
+			<span>HOME</span>
+			<span>고객센터</span>
+			<span>공지사항</span>
+			<span class="on">공지사항 답변</span>
+		</div>
+		<div class="inner">
+			<h3 class="tit_h3">공지사항 답변</h3>
+
+			<table class="tbl_view">
+				<colgroup>
+					<col style="width:100px">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th scope="row">작성자</th>
+						<td><input type="text" name="" class="w100" placeholder=""></td>
+					</tr>
+					<tr>
+						<th scope="row">제목</th>
+						<td><input type="text" name="" class="w100" placeholder="" value="→ RE : 신세계 법인 공지사항 안내"></td>
+					</tr>
+					<tr>
+						<th scope="row" colspan="2">
+							<input type="checkbox" name=""> <label for="">공지</label>
+						</th>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<div class="editor">
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">첨부파일</th>
+						<td><input type="file" name=""></td>
+					</tr>
+				</tbody>
+			</table>
+
+			<div class="button_area">
+				<button type="button" class="btn_ty3">답변</button>
+				<button type="button" class="btn_ty2">목록</button>
+			</div>
+		</div>
+	</div><!-- //content -->
+</div><!-- //container -->
+</div><!-- //wrap -->
+</body>
+</html>

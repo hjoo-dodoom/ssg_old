@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<meta charset="UTF-8">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>회원 상세페이지</title>
+<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="../../css/sub.css">
+<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script type="text/javascript" charset="utf-8" src="../../js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/common.js"></script>
+</head>
+<body>
+<? include("../include/header_partner.html"); ?>
+
+<div id="container" class="container">
+	<? include("../include/snb_partner.html"); ?>
+
+	<div class="content">
+		<div class="location">
+			<span>HOME</span>
+			<span>회원 </span>
+			<span>회원목록</span>
+			<span class="on">회원 상세페이지</span>
+		</div>
+		<div class="inner">
+			<h3 class="tit_h3">회원 상세페이지</h3>
+			<table class="tbl_view">
+				<colgroup>
+					<col style="width:170px;">
+					<col>
+					<col style="width:170px;">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th>아이디</th>
+						<td>user_01</td>
+						<th>회원유형</th>
+						<td>
+							일반회원
+						</td>
+					</tr>
+					<tr>
+						<th>이름</th>
+						<td>홍길동</td>
+						<th>사원번호</th>
+						<td>123456789</td>
+					</tr>
+					<tr>
+						<th>사업장</th>
+						<td>신세계 강남점</td>
+						<th>사업자번호</th>
+						<td>
+							111-11-111111
+						</td>
+					</tr>
+					<tr>
+						<th>소속</th>
+						<td>법인영업팀</td>
+						<th>부서(직급)</th>
+						<td>사원</td>
+					</tr>
+					<tr>
+						<th>업체명</th>
+						<td>신세계</td>
+						<th>업체코드</th>
+						<td>SD1234</td>
+					</tr>
+					<tr>
+						<th>이메일</th>
+						<td>user01@gmail.com</td>
+						<th>전화번호</th>
+						<td>02-1234-1234</td>
+					</tr>
+					<tr>
+						<th>휴대폰 번호</th>
+						<td>010-1234-1234</td>
+						<th>회원상태</th>
+						<td>승인</td>
+					</tr>
+					<tr>
+						<th>약관동의</th>
+						<td colspan="3">회원가입 및 약관동의일시 : 2017-05-01 23:59:59 / 동의IP : 111.111.11.111</td>
+					</tr>
+					<tr>
+						<th>기타정보</th>
+						<td colspan="3">방문횟수 : 3회 / 마지막방문일 : 2017-05-01 23:59:59 / 마지막방문IP : 111.111.11.111</td>
+					</tr>
+				</tbody>
+			</table>
+
+			
+
+			<h4 class="tit_h4">배송지 설정</h4>
+			<table class="tbl_primary">
+				<thead>
+					<tr>
+						<th>별칭</th>
+						<th>전화번호</th>
+						<th>휴대폰 번호</th>
+						<th>주소</th>
+					</tr>
+				</thead>
+				<tbody class="txtc">
+					<tr>
+						<td>우리집</td>
+						<td>02-1234-1234</td>
+						<td>010-1234-1234</td>
+						<td class="txtl"> 12345, 서울시 서초구 사평대로 205 CENTRAL CITY 반포천 복개주차장</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<div class="button_area clear">
+				<button type="button" class="btn_ty2">목록</button>
+			</div>
+		</div><!-- //inner -->
+	</div><!-- //content -->
+</div><!-- //container -->
+</div><!-- //wrap -->
+</body>
+</html>

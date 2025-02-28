@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>주문/결제</title>
+<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="../../css/mobile.css">
+<link rel="stylesheet" type="text/css" href="../../css/btype.css"><!-- 디자인설정에 따른 css -->
+<script type="text/javascript" charset="utf-8" src="../../js/jquery-1.7.2.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script type="text/javascript" charset="utf-8" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/common.js"></script>
+</head>
+<body>
+<div class="m_order">
+	<div class="m_tit">
+		<h1>주문/결제</h1>
+	</div>
+	<div class="m_content">
+		<div class="m_box">
+			<ul class="dot_li">
+				<li>. 주문자/배송지 주소를 정확히 확인 후 입력하시기 바랍니다. 
+				특히 우편번호는 정확히 확인해 주시기 바랍니다.</li>
+				<li>. 배송지 오기입으로 인한 배송 오류는 본사가 책임지지 않습니다.</li>
+				<li>. 취소는 당일만 전체취소 및 부분취소가 가능하며, 이미출고된 
+				상품은 취소가 불가합니다.</li>
+			</ul>
+		</div>
+
+		<div class="m_box">
+			<div class="m_info_box">
+				<div class="ib_title">
+					안심번호 서비스 도입 
+					<button type="button" class="info_detail" onclick="$('.m_info_detail_layer').show()">자세히 보기</button>
+				</div>
+				<div class="ib_cnt">
+					결제완료 후 받는사람의 <strong>핸드폰번호는 1회성 임시번호(0502-XXX-XXXX)로 자동변환</strong>됩니다.<br/>만일에 발생할 수 있는 개인정보 유출을 사전에 차단 할 수 있습니다. (택배상자에 안심번호가 표시됩니다) 
+				</div>
+			</div>
+
+			<!-- 안심번호 서비스 도입  레이어 -->
+			<div class="m_info_detail_layer layer_form fixed_layer basic_layer" style="display: none;">
+				<div class="layer_cnt basic_cnt">
+					<strong class="popup_title">안심번호 서비스 안내</strong>
+					<div class="fl_cnt">
+						<div class="txt_style3">
+							안심번호 서비스는 받는사람의 개인정보인 휴대폰번호를 1회성 임시번호(050-XXX-XXXX)로 변경하는 서비스입니다.
+						</div>
+						<p class="txt_style2">협력회사/택배사에게 050 안심번호가 전달되므로 만일에 발생할 수 있는 개인정보 유출을 사전에 차단할 수 있습니다 (택배상자에 안심번호 표시)</p>
+						<p class="txt_style2">본 서비스는 세종텔레콤과 제휴하여 고객님께 무료로 제공됩니다. 부여된 안심번호는 배송완료 또는 주문취소 시 자동으로 해지/소멸됩니다</p>
+						<p class="txt_style2">안심번호는 해지/소멸 후 다른 고객 번호에 연결하여 재사용할 수 있으며, 일부 택배사의 경우 안심번호 서비스 지원이 불가할 수 있습니다</p>
+						<p class="txt_style2">본 서비스 제공 동의를 거부할 권리가 있으나, 동의를 거부하실 경우 서비스 이용이 제한 될 수 있습니다</p>
+					</div>
+					<a href="javascript:;" class="popup_close" onclick="layerHide('m_info_detail_layer')">닫기</a>
+				</div>
+			</div>
+			<!-- //안심번호 서비스 도입  레이어 -->
+
+		</div>
+
+		<div class="m_box">
+			<h2>상품정보/옵션</h2>
+			<div class="m_prdthum">
+				<div class="outer">
+					<div class="thum">
+						<img src="../../images/dummy/thum_cart_list.png" alt="">
+					</div>
+					<div class="item_txt">
+						<p>엘라스틴 아보카도허니 트린트먼트 1000ml</p>
+						<p class="linetop option">· 레드 / M /1개</p>
+						<p class="option">· 블랙 / M /1개</p>
+						<p class="price"><strong>500,000</strong>원</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="m_box m_order_price m_aside_info">
+			<h2>결제금액</h2>
+			<div class="mpb">
+				<div class="clearfix"><span class="mai_tit">총 주문금액</span><span class="mai_price"><strong>500,000</strong>원</span></div>
+				<div class="clearfix"><span class="mai_tit">총 배송비</span><span class="mai_price"><strong>+ 3,000</strong>원</span></div>
+			</div>
+			<div class="m_total_price clearfix"><span class="mai_tit">총 결제금액</span><span class="mai_price"><strong>503,000</strong>원</span></div>
+		</div>
+		
+		<div class="m_box m_order_point m_aside_info">
+			<h2>보유 포인트</h2>
+			<div class="mpb">
+				<div class="clearfix"><span class="mai_tit">기본 포인트</span><span class="mai_price"><strong>300,000</strong> point</span></div>
+				<div class="clearfix"><span class="mai_tit">특별 포인트</span><span class="mai_price"><strong>300,000</strong> point</span></div>
+			</div>
+		</div>
+
+		<div class="m_box motb">
+			<h2>주문자 정보</h2>
+			<div class="mpb">
+				<p class="blue_txt">* 변경하시는 정보는 이번 주문에만 적용되며, 고객님의 회원정보는 변경되지 않습니다.</p>
+				<table class="m_table txtl">
+					<colgroup>
+					<col style="width:100px;">
+					<col>
+					</colgroup>
+					<tbody>
+					<tr>
+						<th>이름(실명)</th>
+						<td><input type="text" name="" value="홍길동" class="w100"></td>
+					</tr>
+					<tr>
+						<th>전화번호</th>
+						<td><input type="text" name="" value="02-1234-1234" class="w100"></td>
+					</tr>
+					<tr>
+						<th>이메일</th>
+						<td><input type="text" name="" value="010-1234-1234" class="w100"></td>
+					</tr>
+					<tr>
+						<th>주소</th>
+						<td class="zip">
+							<div>
+								<input name="" style="width:140px;" type="text" value="12345" class="zip_input"><button type="button" class="btn_line_mid_ty3">우편번호로 찾기</button>
+							</div>
+							<div>
+								<input name="" class="w100" type="text" value="서울시 서초구 사평대로 205">
+							</div>
+							<div>
+								<input name="" class="w100" type="text" value="CENTRAL CITY 반포천 복개주차장">
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th>요구사항</th>
+						<td><textarea name="" rows="" cols=""></textarea></td>
+					</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+		<div class="m_box motb">
+			<h2>받는사람 정보</h2>
+			<div class="mpb">
+				<div class="same_ads">
+					<label><input type="checkbox" name=""> 주문자 정보와 동일</label><button type="button" class="btn_line_mid_ty3 right">배송지 변경하기</button>
+				</div>
+				<table class="m_table txtl">
+					<colgroup>
+					<col style="width:100px;">
+					<col>
+					</colgroup>
+					<tbody>
+					<tr>
+						<th>이름(실명)</th>
+						<td><input type="text" name="" class="w100"></td>
+					</tr>
+					<tr>
+						<th>전화번호</th>
+						<td><input type="text" name="" class="w100"></td>
+					</tr>
+					<tr>
+						<th>이메일</th>
+						<td><input type="text" name="" class="w100"></td>
+					</tr>
+					<tr>
+						<th>주소</th>
+						<td class="zip">
+							<div>
+								<input name="" style="width:140px;" type="text"  class="zip_input"><button type="button" class="btn_line_mid_ty3">우편번호로 찾기</button>
+							</div>
+							<div>
+								<input name="" class="w100" type="text">
+							</div>
+							<div>
+								<input name="" class="w100" type="text">
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th>요구사항</th>
+						<td><textarea name="" rows="" cols=""></textarea><p>* 요청사항이 있으신 경우는 반드시 내용을 정확하게 넣어주세요.</p></td>
+					</tr>
+					<tr>
+						<th>감사카드</th>
+						<td><input type="text" name="" class="w100"></td>
+					</tr>
+					<tr>
+						<th>배송요청일</th>
+						<td><input type="text" name="" class="datepicker" style="text-align:left;width:100%;"></td>
+					</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		
+		<div class="m_box motb">
+			<h2>할인혜택 사용</h2>
+			<div class="mpb">
+				<p class="blue_txt">* 포인트+복합결제(신용카드,가상계좌)시 부분취소는 불가합니다.</p>
+
+				<table class="m_table_cp">
+					<colgroup>
+					<col style="width:100px;">
+					<col>
+					</colgroup>
+					<tbody>
+					<tr>
+						<th>총 주문금액</th>
+						<td class="tt"><strong>40,000</strong>원</td>
+					</tr>
+					<tr>
+						<th>쿠폰 할인금액</th>
+						<td><strong>-2,000</strong>원</td>
+					</tr>
+					</tbody>
+				</table>
+				<button type="button" class="btn_cp" onclick="layerShow('coupon_down')">할인쿠폰 선택</button>
+
+				<div class="pm_box">
+					<strong class="tit">포인트 사용</strong>
+					<span class="prc">(잔여: 100,000원)</span>
+					<div class="pm_ip">
+						<input type="num">
+						<button type="button">전체사용</button>
+					</div>
+				</div>
+
+				<div class="pm_box">
+					<strong class="tit">마일리지 사용</strong>
+					<span class="prc">(잔여: 100,000원)</span>
+					<div class="pm_ip">
+						<input type="num">
+						<button type="button">전체사용</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="m_box motb">
+			<h2>결제방법</h2>
+			<div class="mpb">
+
+				<table class="m_table txtl">
+					<colgroup>
+					<col style="width:100px;">
+					<col>
+					</colgroup>
+					<tbody>
+					<tr>
+						<th>선주문 후 결제</th>
+						<td><input type="text" name="" style="width:160px"> 원<p>(선 주문 후 결제금액을 입력해 주시기 바랍니다.)</p></td>
+					</tr>
+					<tr>
+						<th style="vertical-align:middle;">주문방식</th>
+						<td class="t_label">
+							<label><input type="radio" name="order_type" id="order_type1" value="1"> 일반결제</label> 
+							<label><input type="radio" name="order_type" id="order_type2" value="2"> 대량결제</label>
+						</td>
+					</tr>
+					<tr class="pay_type" style="display:none;">
+						<th style="vertical-align:middle;">결제방법</th>
+						<td class="t_label">
+							<label><input type="radio" name="pay_type" id="pay_type1" value="1"> 신용카드</label> 
+							<label><input type="radio" name="pay_type" id="pay_type2" value="2"> 가상계좌</label> 
+							<label><input type="radio" name="pay_type" id="pay_type3" value="3"> 실시간계좌이체</label> 
+							<label><input type="radio" name="pay_type" id="pay_type4" value="4"> 급여공제</label>
+						</td>
+					</tr>
+
+					</tbody>
+				</table>
+
+				<script>
+				$('input[name="order_type"]').change(function(){
+					if($('input[name="order_type"]:checked').val() == 2){
+						$('.pay_type').show();
+					}else{
+						$('.pay_type').hide();
+					}
+				});
+
+				$('input[name="pay_type"]').change(function(){
+					if($('input[name="pay_type"]:checked').val() == 4){
+						$('.receipt_toggle').show();
+					}else{
+						$('.receipt_toggle').hide();
+					}
+				});
+				</script>
+				<div class="receipt_txt receipt_toggle" style="display:none;"><strong>현금영수증 발급신청</strong>현금영수증은 고객 신청내역 취합 후 관리자가 일괄 발행합니다</div>
+				<div class="tab_ty3 click receipt_form receipt_toggle" style="display:none;">
+					<div class="tab_tit flex">
+						<ul class="clear">
+							<li class="on"><a href="#none">개인 소득 공제</a></li>
+							<li class="last"><a href="#none">사업자 지출 증빙</a></li>
+						</ul>
+					</div>
+					<div class="tab_cnt1" style="display: block;">
+						<div class="receipt_ip">
+							<select name="" id="">
+								<option value="">휴대폰번호</option>
+								<option value="">신용카드</option>
+								<option value="">현금영수증카드</option>
+							</select>
+							<input type="text">
+						</div>
+					</div>
+					<div class="tab_cnt2" style="display: none;">
+						<div class="receipt_ip">
+							<select name="" id="">
+								<option value="">사업자번호</option>
+							</select>
+							<input type="text">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="m_box m_order_price m_aside_info">
+			<h2>총 결제금액</h2>
+			<div class="mpb">
+				<div class="clearfix"><span class="mai_tit">총 주문금액</span><span class="mai_price"><strong>500,000</strong>원</span></div>
+				<div class="clearfix"><span class="mai_tit">총 배송비</span><span class="mai_price"><strong>+ 3,000</strong>원</span></div>
+				<div class="clearfix"><span class="mai_tit">포인트 차감</span><span class="mai_price"><strong>- 400,000</strong>원</span></div>
+			</div>
+			<div class="m_total_price clearfix"><span class="mai_tit">총 결제금액</span><span class="mai_price"><strong>503,000</strong>원</span></div>
+		</div>
+
+		<div class="m_box moa">
+			<label><input type="checkbox" name=""> 구매동의 및 결제대행서비스 이용약관, 안심번호 서비스제공에 동의합니다.</label>
+			<p>- 주문할 상품의 상품명, 상품가격, 배송정보를 모두 확인하였으며, 구매에 동의합니다(전자상거래법 제8조 2항)</p>
+			<p>- 받는사람의 휴대폰번호를 1회성 임시번호로 변경하는 서비스 제공에 동의합니다(안심번호 서비스)</p>
+		</div>
+		
+		<div class="big_btn_area btn_1tap mt15">
+			<button type="button" class="background_type">결제하기</button>
+		</div>
+
+	</div>
+</div>
+
+
+<!-- 쿠폰선택 레이어 -->
+<div class="coupon_down layer_form fixed_layer basic_layer" style="display: none;">
+	<div class="layer_cnt basic_cnt">
+		<strong class="popup_title">사용가능 쿠폰</strong>
+		<div class="coupon_list fl_cnt">
+			<ul class="list">
+				<li>
+					<label class="cnt design_check">
+						<input type="checkbox">
+						<div id="" class="in_cnt">
+							<input type="checkbox">
+							<span class="per"><strong>2,000</strong>원 <span class="s">(1장)</span></span>
+							<span class="type">상품할인 쿠폰</span>
+							<span class="condition">30,000원 이상 구매 시, 일부상품 제외</span>
+							<span class="date">2021.1.29 ~ 2021.2.22</span>
+						</div>
+						<div class="coupon_check"><span class="icon"></span><span class="line"></span></div>
+					</label>
+				</li>
+				<li>
+					<label class="cnt design_check active">
+						<input type="checkbox">
+						<div id="" class="in_cnt">
+							<input type="checkbox">
+							<span class="per"><strong>10</strong>% <span class="s">(1장)</span></span>
+							<span class="type">상품할인 쿠폰</span>
+							<span class="condition">30,000원 이상 구매 시, 일부상품 제외</span>
+							<span class="date">2021.1.29 ~ 2021.2.22</span>
+						</div>
+						<div class="coupon_check"><span class="icon"></span><span class="line"></span></div>
+					</label>
+				</li>
+				<li>
+					<label class="cnt design_check">
+						<input type="checkbox">
+						<div id="" class="in_cnt">
+							<input type="checkbox">
+							<span class="per"><strong>2,000</strong>원 <span class="s">(1장)</span></span>
+							<span class="type">상품할인 쿠폰</span>
+							<span class="condition">30,000원 이상 구매 시, 일부상품 제외</span>
+							<span class="date">2021.1.29 ~ 2021.2.22</span>
+						</div>
+						<div class="coupon_check"><span class="icon"></span><span class="line"></span></div>
+					</label>
+				</li>
+				<li>
+					<label class="cnt design_check">
+						<input type="checkbox">
+						<div id="" class="in_cnt">
+							<input type="checkbox">
+							<span class="per"><strong>2,000</strong>원 <span class="s">(1장)</span></span>
+							<span class="type">상품할인 쿠폰</span>
+							<span class="condition">30,000원 이상 구매 시, 일부상품 제외</span>
+							<span class="date">2021.1.29 ~ 2021.2.22</span>
+						</div>
+						<div class="coupon_check"><span class="icon"></span><span class="line"></span></div>
+					</label>
+				</li>
+			</ul>
+		</div>
+		<div class="big_btn_area btn_1tap">
+			<button type="button" class="background_type" onclick="layerHide('coupon_down')">할인금액 2,000원 적용하기</button>
+		</div>
+		<a href="javascript:;" class="popup_close" onclick="layerHide('coupon_down')">닫기</a>
+	</div>
+</div>
+<!-- //쿠폰선택 레이어 -->
+
+
+<script>
+$(document).ready(function() {
+	$("label.design_radio input:checked,label.design_check input:checked").closest('label').addClass("active");
+});
+$(document).on('click', 'label.design_check', function () {
+	if ($(this).find('input').is(":checked")) {
+		if($(this).hasClass('all')){
+			$(this).closest('.label_control').find('.design_check').addClass('active');
+			$(this).closest('.label_control').find('.design_check input[type="checkbox"]').prop("checked", true);
+		}
+		else if($(this).closest('.label_control').find('.all').hasClass('active')){
+			$(this).closest('.label_control').find('.all').removeClass('active');
+			$(this).closest('.label_control').find('.all input[type="checkbox"]').prop("checked", false);
+			$(this).addClass('active');
+		}
+		else{
+			$(this).addClass('active');
+		}
+	} else {
+		if($(this).hasClass('all')){	
+			$(this).closest('.label_control').find('.design_check').removeClass('active');
+			$(this).closest('.label_control').find('.design_check input[type="checkbox"]').prop("checked", false);
+		}
+		else{
+			$(this).removeClass('active');
+		}
+	}
+});
+
+function layerShow(thisClass){
+    $('.'+thisClass).show();
+	
+	if($('.'+thisClass).hasClass('fixed_layer')){
+		$('html,body').css('overflow-y' , 'hidden');
+	}
+	if($('.'+thisClass+' .popup_full').length == 1){
+		$('.'+thisClass+' .popup_full').css('padding-bottom' , '52px');
+		$('.'+thisClass+' .pf_cnt .pf_cnt_inner').css('padding-bottom' , '26px');
+	}
+}
+function layerHide(thisClass){
+    $('.'+thisClass).hide();
+	
+	if($('.layer_form.fixed_layer:visible').length == 0 ){
+		$('html,body').css('overflow-y' , 'auto');
+	}
+}
+</script>
+</body>
+</html>

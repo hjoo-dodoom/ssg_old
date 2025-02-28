@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<meta charset="UTF-8">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>정산조회</title>
+<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="../../css/sub.css">
+<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script type="text/javascript" charset="utf-8" src="../../js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/common.js"></script>
+</head>
+<body>
+<? include("../include/header.html"); ?>
+
+<div id="container" class="container">
+	<? include("../include/snb.html"); ?>
+
+	<div class="content">
+		<div class="location">
+			<span>HOME</span>
+			<span>주문</span>
+			<span>주문목록</span>
+			<span>주문리스트 </span>
+			<span class="on">정산조회</span>
+		</div>
+		<div class="inner">
+			<h3 class="tit_h3">정산조회</h3>
+
+			<div class="tbl_outer">
+				<table class="tbl_view">
+					<colgroup>
+						<col style="width:100px">
+						<col>
+						<col style="width:100px">
+						<col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">주문일</th>
+							<td colspan="3">
+								<select name="all1" style="width:110px;">
+									<option value="">주문일</option>
+								</select>
+								<input type="text" name="" class="datepicker">
+								<span class="division">~</span>
+								<input type="text" name="" class="datepicker">
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">과세여부</th>
+							<td>
+								<select name="all2">
+									<option value="">과세여부</option>
+								</select>
+							</td>
+							<th scope="row">결제 구분</th>
+							<td>
+								<select name="all2">
+									<option value="">결제 구분</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">상품권 구분</th>
+							<td colspan="3">
+								<select name="all2">
+									<option value="">상품권 구분</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">고객사</th>
+							<td>
+								<select name="all2">
+									<option value="">전체</option>
+								</select>
+								<select name="all2">
+									<option value="">선택 </option>
+								</select>
+							</td>
+							<th scope="row">협력회사</th>
+							<td>
+								<select name="all2">
+									<option value="">업체명</option>
+								</select>
+								<input type="text" style="width:195px;">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div class="button_area">
+				<button type="button" class="btn_ty1">검색</button>
+				<button type="button" class="btn_ty2">초기화</button>
+			</div>
+
+			<div class="tbl_search_list">
+				<div class="top">
+					<div class="left"><h4 class="tit_h4">결제수단 별</h4></div>
+					<div class="right">
+						※ 반품접수 및 반품완료건은 주문취소가 이루어진 후 정산작업을 하시기 바랍니다.
+						<span class="division">&nbsp;&nbsp;</span>
+						<a href="#">통계저장</a>
+						<span class="division">|</span>
+						<a href="#">정산주문 저장</a>
+						<span class="division">|</span>
+						<a href="#">고객사별 주문통계</a>
+					</div>
+				</div>
+				
+				<table class="tbl_primary">
+					<thead>
+						<tr>
+							<th scope="row">결제수단</th>
+							<th scope="row">총건</th>
+							<th scope="row">매출건</th>
+							<th scope="row">취소건</th>
+							<th scope="row">실건</th>
+							<th scope="row">(+)매출</th>
+							<th scope="row">(-)매출</th>
+							<th scope="row">배송비</th>
+							<th scope="row">실매출</th>
+							<th scope="row">매입</th>
+						</tr>
+					</thead>
+					<tbody class="txtr">
+						<tr>
+							<td class="txtl">신용카드</td>
+							<td>39</td>
+							<td>39</td>
+							<td>0</td>
+							<td>39</td>
+							<td>75,300</td>
+							<td>0</td>
+							<td>0</td>
+							<td>75,300</td>
+							<td>-100,000</td>
+						</tr>
+						<tr>
+							<td class="txtl">급여공제</td>
+							<td>39</td>
+							<td>39</td>
+							<td>0</td>
+							<td>39</td>
+							<td>75,300</td>
+							<td>0</td>
+							<td>0</td>
+							<td>75,300</td>
+							<td>-100,000</td>
+						</tr>
+						<tr>
+							<td class="txtl">가상계좌</td>
+							<td>39</td>
+							<td>39</td>
+							<td>0</td>
+							<td>39</td>
+							<td>75,300</td>
+							<td>0</td>
+							<td>0</td>
+							<td>75,300</td>
+							<td>-100,000</td>
+						</tr>
+						<tr>
+							<td class="txtl">실시간계좌이체</td>
+							<td>39</td>
+							<td>39</td>
+							<td>0</td>
+							<td>39</td>
+							<td>75,300</td>
+							<td>0</td>
+							<td>0</td>
+							<td>75,300</td>
+							<td>-100,000</td>
+						</tr>
+						<tr>
+							<td class="txtl">선주문후결제</td>
+							<td>39</td>
+							<td>39</td>
+							<td>0</td>
+							<td>39</td>
+							<td>75,300</td>
+							<td>0</td>
+							<td>0</td>
+							<td>75,300</td>
+							<td>-100,000</td>
+						</tr>
+						<tr>
+							<td class="txtl">포인트</td>
+							<td>39</td>
+							<td>39</td>
+							<td>0</td>
+							<td>39</td>
+							<td>75,300</td>
+							<td>0</td>
+							<td>0</td>
+							<td>75,300</td>
+							<td>-100,000</td>
+						</tr>
+						<tr>
+							<td class="txtl">기타</td>
+							<td>39</td>
+							<td>39</td>
+							<td>0</td>
+							<td>39</td>
+							<td>75,300</td>
+							<td>0</td>
+							<td>0</td>
+							<td>75,300</td>
+							<td>-100,000</td>
+						</tr>
+						<tr class="tfoot txtr">
+							<td class="txtl">합계</td>
+							<td>41</td>
+							<td>41</td>
+							<td>0</td>
+							<td>41</td>
+							<td>100,000</td>
+							<td>0</td>
+							<td>0</td>
+							<td>100,000</td>
+							<td>0</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div class="tbl_search_list">
+				<div class="top">
+					<div class="left"><h4 class="tit_h4">업체 별</h4></div>
+					<div class="right">
+						※ 아래 해당업체에 세금계산서 요청 문자를 발송합니다.
+						<span class="division">&nbsp;&nbsp;</span>
+						<button type="button" class="mid_btn_ty5">전체 문자발송</button>
+					</div>
+				</div>
+				
+				<table class="tbl_primary">
+					<thead>
+						<tr>
+							<th scope="row">협력회사 명</th>
+							<th scope="row">과세구분</th>
+							<th scope="row">총<br>건수</th>
+							<th scope="row">매출<br>건수</th>
+							<th scope="row">취소<br>건수</th>
+							<th scope="row">실<br>건수</th>
+							<th scope="row">(+)<br>매출</th>
+							<th scope="row">(-)<br>매출</th>
+							<th scope="row">배송비</th>
+							<th scope="row">실<br>매출</th>
+							<th scope="row">매입</th>
+							<th scope="row">공급가</th>
+							<th scope="row">세액</th>
+							<th scope="row">이익</th>
+							<th scope="row">비율</th>
+						</tr>
+					</thead>
+					<tbody class="txtr">
+						<tr>
+							<td class="txtl">㈜돋움</td>
+							<td class="txtc">과세</td>
+							<td>1</td>
+							<td>1</td>
+							<td>0</td>
+							<td>1</td>
+							<td>1,000</td>
+							<td>0</td>
+							<td>0</td>
+							<td>1,000</td>
+							<td>9,500</td>
+							<td>8,000</td>
+							<td>200</td>
+							<td>5,000</td>
+							<td class="txtc">10%</td>
+						</tr>
+						<tr>
+							<td class="txtl">㈜제이코스</td>
+							<td class="txtc">과세</td>
+							<td>1</td>
+							<td>1</td>
+							<td>0</td>
+							<td>1</td>
+							<td>1,000</td>
+							<td>0</td>
+							<td>0</td>
+							<td>1,000</td>
+							<td>9,500</td>
+							<td>8,000</td>
+							<td>200</td>
+							<td>5,000</td>
+							<td class="txtc">10%</td>
+						</tr>
+						<tr>
+							<td class="txtl">㈜신세계</td>
+							<td class="txtc">과세</td>
+							<td>1</td>
+							<td>1</td>
+							<td>0</td>
+							<td>1</td>
+							<td>1,000</td>
+							<td>0</td>
+							<td>0</td>
+							<td>1,000</td>
+							<td>9,500</td>
+							<td>8,000</td>
+							<td>200</td>
+							<td>5,000</td>
+							<td class="txtc">10%</td>
+						</tr>
+						<tr>
+							<td class="txtl">㈜AOMG</td>
+							<td class="txtc">과세</td>
+							<td>1</td>
+							<td>1</td>
+							<td>0</td>
+							<td>1</td>
+							<td>1,000</td>
+							<td>0</td>
+							<td>0</td>
+							<td>1,000</td>
+							<td>9,500</td>
+							<td>8,000</td>
+							<td>200</td>
+							<td>5,000</td>
+							<td class="txtc">10%</td>
+						</tr>
+						<tr>
+							<td class="txtl">㈜제이제이</td>
+							<td class="txtc">과세</td>
+							<td>1</td>
+							<td>1</td>
+							<td>0</td>
+							<td>1</td>
+							<td>1,000</td>
+							<td>0</td>
+							<td>0</td>
+							<td>1,000</td>
+							<td>9,500</td>
+							<td>8,000</td>
+							<td>200</td>
+							<td>5,000</td>
+							<td class="txtc">10%</td>
+						</tr>
+						<tr>
+							<td class="txtl">㈜에이원</td>
+							<td class="txtc">유가증권</td>
+							<td>1</td>
+							<td>1</td>
+							<td>0</td>
+							<td>1</td>
+							<td>1,000</td>
+							<td>0</td>
+							<td>0</td>
+							<td>1,000</td>
+							<td>9,500</td>
+							<td>8,000</td>
+							<td>200</td>
+							<td>5,000</td>
+							<td class="txtc">10%</td>
+						</tr>
+						<tr class="tfoot txtr">
+							<td colspan="2" class="txtl">합계</td>
+							<td>1</td>
+							<td>1</td>
+							<td>0</td>
+							<td>1</td>
+							<td>1,000</td>
+							<td>0</td>
+							<td>0</td>
+							<td>1,000</td>
+							<td>9,500</td>
+							<td>8,000</td>
+							<td>200</td>
+							<td>5,000</td>
+							<td class="txtc">10%</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div class="tbl_search_list">
+				<div class="top">
+					<div class="left"><h4 class="tit_h4">㈜돋움</h4></div>
+				</div>
+				
+				<table class="tbl_primary">
+					<thead>
+						<tr>
+							<th scope="row">상품명</th>
+							<th scope="row">과세구분</th>
+							<th scope="row">총<br>건수</th>
+							<th scope="row">매출<br>건수</th>
+							<th scope="row">취소<br>건수</th>
+							<th scope="row">실<br>건수</th>
+							<th scope="row">(+)<br>매출</th>
+							<th scope="row">(-)<br>매출</th>
+							<th scope="row">배송비</th>
+							<th scope="row">실<br>매출</th>
+							<th scope="row">매입</th>
+							<th scope="row">이익</th>
+							<th scope="row">비율</th>
+						</tr>
+					</thead>
+					<tbody class="txtr">
+						<tr>
+							<td class="txtl">[아우디] 여성 스커트</td>
+							<td class="txtc">과세</td>
+							<td>1</td>
+							<td>1</td>
+							<td>0</td>
+							<td>1</td>
+							<td>1,000</td>
+							<td>0</td>
+							<td>0</td>
+							<td>1,000</td>
+							<td>9,500</td>
+							<td>8,000</td>
+							<td class="txtc">10%</td>
+						</tr>
+						<tr>
+							<td class="txtl">[아우디] 여성 스커트</td>
+							<td class="txtc">과세</td>
+							<td>1</td>
+							<td>1</td>
+							<td>0</td>
+							<td>1</td>
+							<td>1,000</td>
+							<td>0</td>
+							<td>0</td>
+							<td>1,000</td>
+							<td>9,500</td>
+							<td>8,000</td>
+							<td class="txtc">10%</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div class="tbl_search_list">
+				<div class="top">
+					<div class="left"><h4 class="tit_h4">회원 별</h4></div>
+				</div>
+				
+				<table class="tbl_primary">
+					<thead>
+						<tr>
+							<th scope="row">회원명</th>
+							<th scope="row">아이디</th>
+							<th scope="row">과세구분</th>
+							<th scope="row">실 매출</th>
+							<th scope="row">총 포인트</th>
+							<th scope="row">급여공제</th>
+							<th scope="row">신용카드</th>
+							<th scope="row">가상계좌</th>
+							<th scope="row">실시간<br>계좌이체</th>
+							<th scope="row">기타</th>
+					</thead>
+					<tbody class="txtr">
+						<tr>
+							<td class="txtc">홍길동</td>
+							<td class="txtc">user@daum.net</td>
+							<td class="txtc">과세</td>
+							<td>16,000</td>
+							<td>16,000</td>
+							<td>0</td>
+							<td>0</td>
+							<td>1,000</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td class="txtc">홍길동</td>
+							<td class="txtc">user@daum.net</td>
+							<td class="txtc">유가증권</td>
+							<td>16,000</td>
+							<td>16,000</td>
+							<td>0</td>
+							<td>0</td>
+							<td>1,000</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+						<tr class="tfoot txtr">
+							<td colspan="3" class="txtl">합계</td>
+							<td>951,000</td>
+							<td>851,000</td>
+							<td>0</td>
+							<td>100,000</td>
+							<td>0</td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div><!-- //content -->
+</div><!-- //container -->
+</div><!-- //wrap -->
+</body>
+</html>

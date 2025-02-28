@@ -1,0 +1,117 @@
+<? include("../inc/head.sub.html"); ?>
+<? include("../inc/head.html"); ?>
+	
+	<!-- 콘텐츠 -->
+	<div id="content" class="container clearfix">
+		<!-- 좌측메뉴 -->
+		<? include("../inc/aside_menu.html"); ?>
+
+		<!-- 보드리스트 -->
+		<div class="content_right cscontent">
+			<div class="location">
+				<span class="home">홈</span><span class="devide">&gt;</span><span>고객만족 센터</span><span class="devide">&gt;</span><span>공지사항</span>
+			</div>
+				
+			<div class="sub_tit clearfix">
+				<h3>공지사항</h3>
+				<p>새로워지는 신세계 법인영업의 소식들을 알려드립니다.</p>
+			</div>
+
+			<div class="sub_content board_list">
+				<div class="board_list_top float">
+					<div class="left">
+						<span class="bo_total">총 <strong>300</strong>건</span>
+					</div>
+					<fieldset id="bo_sch" class="right">
+						<legend class="sound_only">게시물 검색</legend>
+						<form name="" method="" class="clearfix">
+							<label for="sfl" class="sound_only">검색대상</label>
+							<select name="">
+								<option value="">제목</option>
+								<option value="">내용</option>
+								<option value="">제목+내용</option>
+								<option value="">작성자</option>
+							</select>
+							<label for="stx" class="sound_only">검색어<strong class="sound_only"> 필수</strong></label>
+							<input name="stx" value="" required="" id="stx" class="sch_input" size="25" maxlength="20" placeholder="검색어를 입력해주세요" type="text">
+							<button type="submit" value="검색" class="sch_btn">검색</button>
+						</form>
+					</fieldset>
+				</div>
+				
+				<div class="boad_table">
+					<table class="basic_table align_center">
+					<colgroup>
+					<col style="width:65px;"/>
+					<col style="width:;"/>
+					<col style="width:130px;"/>
+					<col style="width:110px;"/>
+					</colgroup>
+					<thead>
+					<tr>
+						<th>번호</th>
+						<th>제목</th>
+						<th>작성자</th>
+						<th>등록일</th>
+					</tr>
+					</thead>
+					<tbody>
+					<tr>
+						<td>5</td>
+						<td class="bl_subject"><span><a href="#">새로워지는 신세계 법인영업의 소식들을 알려드립니다.새로워지는신세계법인영업의 소식들을 알려드립니다.새로워지는신세계 법인영업의 소식들을 알려드립니다.</a></span></td>
+						<td>신세계법인영업</td>
+						<td class="bl_date">2015-12-12</td>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td class="bl_subject"><span><a href="#">새로워지는신세계 법인영업의 소식들을 알려드립니다.</a></span></td>
+						<td>신세계법인영업</td>
+						<td class="bl_date">2015-12-12</td>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td class="bl_subject"><span><a href="#">새로워지는 신세계 법인영업의 소식들을 알려드립니다.새로워지는신세계법인영업의 소식들을 알려드립니다.새로워지는신세계 법인영업의 소식들을 알려드립니다.</a></span></td>
+						<td>신세계법인영업</td>
+						<td class="bl_date">2015-12-12</td>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td class="bl_subject"><span><a href="#">새로워지는신세계 법인영업의 소식들을 알려드립니다.</a></span></td>
+						<td>신세계법인영업</td>
+						<td class="bl_date">2015-12-12</td>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td class="bl_subject"><span><a href="#">새로워지는 신세계 법인영업의 소식들을 알려드립니다.새로워지는신세계법인영업의 소식들을 알려드립니다.새로워지는신세계 법인영업의 소식들을 알려드립니다.</a></span></td>
+						<td>신세계법인영업</td>
+						<td class="bl_date">2015-12-12</td>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td class="bl_subject"><span><a href="#">새로워지는신세계 법인영업의 소식들을 알려드립니다.</a></span></td>
+						<td>신세계법인영업</td>
+						<td class="bl_date">2015-12-12</td>
+					</tr>
+					</tbody>
+					</table>
+
+					<div class="paging">
+						<!-- a와 a사이 공백X -->
+						<a href="#none" class="first">첫 페이지</a><a href="#none" class="prev">이전 페이지</a><a href="#none" class="on">1</a><a href="#none" class="num">2</a><a href="#none" class="num">3</a><a href="#none" class="num">4</a><a href="#none" class="num">5</a><a href="#none" class="num">6</a><a href="#none" class="num">7</a><a href="#none" class="num">8</a><a href="#none" class="num">9</a><a href="#none" class="num">10</a><a href="#none" class="next">다음 페이지</a><a href="#none" class="last">마지막 페이지</a>
+					</div>
+
+				</div>
+
+				
+			</div>
+		</div>
+		<!-- //보드리스트 -->
+
+	</div>
+	<!-- //콘텐츠 -->
+
+<? include("../inc/tail.html"); ?>
+<? include("../inc/tail.sub.html"); ?>
+</body>
+</html>
+

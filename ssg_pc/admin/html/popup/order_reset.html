@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<meta charset="UTF-8">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>주문자/수취인 정보 초기화</title>
+<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="../../css/popup.css">
+<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script type="text/javascript" charset="utf-8" src="../../js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/common.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+<div class="popup">
+	<div class="popup_inner">
+		<h1>주문자/수취인 정보 초기화</h1>
+		<ul class="ref">
+			<li>※ 초기화된 정보는 <b>복구불가</b>하오니 신중히 처리하시기 바랍니다.</li>
+		</ul>		
+		<div class="pop_search">
+			<table class="tbl_view">
+				<colgroup>
+					<col style="width:100px;">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th>고객사</th>
+						<td>
+							<select name="" id="">
+								<option value="">전체</option>
+							</select>
+							<select name="" id="">
+								<option value="">선택</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<th>주문일</th>
+						<td>
+							<input type="text" name="" class="datepicker">
+							<span class="division">~</span>
+							<input type="text" name="" class="datepicker">
+						</td>
+					</tr>
+					<tr>
+						<th>처리내용</th>
+						<td>
+							<textarea class="w100" style="height: 100px;"></textarea>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="search_btn_area txtr">
+				<button type="button" class="btn_ty8">주문인/수취인 정보 삭제</button>
+			</div>
+		</div>
+
+		<table class="tbl_primary">
+			<colgroup>
+				<col style="width:60px;">
+				<col style="width:110px;">
+				<col style="width:110px;">
+				<col>
+				<col style="width:80px;">
+				<col style="width:90px;">
+			</colgroup>
+			<thead>
+				<tr>
+					<th>번호</th>
+					<th>쇼핑몰<br>(고객사)</th>
+					<th>주문일</th>
+					<th>처리내용</th>
+					<th>관리자</th>
+					<th>초기화 일시</th>
+				</tr>
+			</thead>
+			<tbody class="txtc">
+				<tr>
+					<td>10</td>
+					<td>신세계몰</td>
+					<td>2016-05-01 ~ <br>2016-12-31</td>
+					<td class="txtl">주문자/수취인 초기화</td>
+					<td>admin01</td>
+					<td>2017-05-01<br>23:59:59</td>
+				</tr>
+				<tr>
+					<td>10</td>
+					<td>신세계몰</td>
+					<td>2016-05-01 ~ <br>2016-12-31</td>
+					<td class="txtl">주문자/수취인 초기화</td>
+					<td>admin01</td>
+					<td>2017-05-01<br>23:59:59</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<div class="paging">
+			<a href="#none" class="first">처음페이지</a>
+			<a href="#none" class="prev">이전페이지</a>
+			<a href="#none" class="on">1</a>
+			<a href="#none" class="num">2</a>
+			<a href="#none" class="num">3</a>
+			<a href="#none" class="num">4</a>
+			<a href="#none" class="num">5</a>
+			<a href="#none" class="next">다음페이지</a>
+			<a href="#none" class="last">마지막페이지</a>
+			<button type="button" class="btn_ty4">창닫기</button>
+		</div>
+	</div><!--//popup_inner -->
+</div><!--//popup -->
+</body>
+</html>

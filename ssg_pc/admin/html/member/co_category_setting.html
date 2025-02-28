@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<meta charset="UTF-8">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>상품/컨텐츠 카테고리 설정</title>
+<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="../../css/sub.css">
+<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script type="text/javascript" charset="utf-8" src="../../js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/common.js"></script>
+</head>
+<body>
+<? include("../include/header.html"); ?>
+
+<div id="container" class="container">
+	<? include("../include/snb.html"); ?>
+
+	<div class="content co_category_setting">
+		<div class="location">
+			<span>HOME</span>
+			<span>회원</span>
+			<span>고객사 관리</span>
+			<span>고객사</span>
+			<span class="on">카테고리 설정</span>
+		</div>
+		<div class="inner">
+			<h3 class="tit_h3">상품/컨텐츠 카테고리 설정</h3>
+
+			<div class="div_tab_ty1 click">
+				<ul class="tab_tit clear">
+					<li class="on"><a href="#none">상품 카테고리 설정</a></li>
+					<li class="last"><a href="#none">컨텐츠 카테고리 설정</a></li>
+				</ul>
+
+				<div class="tab_cnt1 itemsetting" style="display: block">
+					<div class="all">
+						<input type="checkbox" name=""> <label for="">상품 카테고리 전체선택</label>
+					</div>
+
+					<div class="itemsetting_outer clear">
+						<div class="left">
+							<table class="tbl_primary">
+								<colgroup>
+									<col style="width:50%;">
+									<col>
+								</colgroup>
+								<thead>
+									<tr>
+										<th>대분류</th>
+										<th>중분류</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><input type="checkbox" name=""> <label for="">가전/IT</label></td>
+										<td>
+											<ul>
+												<li><input type="checkbox" name=""> <label for="">전체</label></li>
+												<li><input type="checkbox" name=""> <label for="">생활가전</label></li>
+												<li><input type="checkbox" name=""> <label for="">주방가전</label></li>
+												<li><input type="checkbox" name=""> <label for="">계절가전</label></li>
+												<li><input type="checkbox" name=""> <label for="">영상/음향</label></li>
+												<li><input type="checkbox" name=""> <label for="">컴퓨터/통신가전</label></li>
+												<li><input type="checkbox" name=""> <label for="">대형가전</label></li>
+											</ul>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="right">
+							<table class="tbl_primary">
+								<colgroup>
+									<col style="width:50%;">
+									<col>
+								</colgroup>
+								<thead>
+									<tr>
+										<th>대분류</th>
+										<th>중분류</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><input type="checkbox" name=""> <label for="">생활/주방/가구/건강</label></td>
+										<td>
+											<ul>
+												<li><input type="checkbox" name=""> <label for="">전체</label></li>
+												<li><input type="checkbox" name=""> <label for="">생활용품</label></li>
+												<li><input type="checkbox" name=""> <label for="">주방용품</label></li>
+												<li><input type="checkbox" name=""> <label for="">식기/용기</label></li>
+												<li><input type="checkbox" name=""> <label for="">가구/침구</label></li>
+												<li><input type="checkbox" name=""> <label for="">인테리어 소품</label></li>
+												<li><input type="checkbox" name=""> <label for="">건강용품</label></li>
+											</ul>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+
+					<div class="itemsetting_outer clear">
+						<div class="left">
+							<table class="tbl_primary">
+								<colgroup>
+									<col style="width:50%;">
+									<col>
+								</colgroup>
+								<thead>
+									<tr>
+										<th>대분류</th>
+										<th>중분류</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><input type="checkbox" name=""> <label for="">스포츠/레저/자동차</label></td>
+										<td>
+											<ul>
+												<li><input type="checkbox" name=""> <label for="">전체</label></li>
+												<li><input type="checkbox" name=""> <label for="">네비게이션</label></li>
+												<li><input type="checkbox" name=""> <label for="">하이패스/블랙박스</label></li>
+												<li><input type="checkbox" name=""> <label for="">자동차용품</label></li>
+												<li><input type="checkbox" name=""> <label for="">스포츠/레저</label></li>
+												<li><input type="checkbox" name=""> <label for="">골프</label></li>
+												<li><input type="checkbox" name=""> <label for="">악기</label></li>
+												<li><input type="checkbox" name=""> <label for="">여행</label></li>
+											</ul>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="right">
+							<table class="tbl_primary">
+								<colgroup>
+									<col style="width:50%;">
+									<col>
+								</colgroup>
+								<thead>
+									<tr>
+										<th>대분류</th>
+										<th>중분류</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><input type="checkbox" name=""> <label for="">의류/잡화</label></td>
+										<td>
+											<ul>
+												<li><input type="checkbox" name=""> <label for="">전체</label></li>
+												<li><input type="checkbox" name=""> <label for="">남녀의류</label></li>
+												<li><input type="checkbox" name=""> <label for="">가방/지갑/벨트</label></li>
+												<li><input type="checkbox" name=""> <label for="">구두/신발</label></li>
+												<li><input type="checkbox" name=""> <label for="">액세서리/시계</label></li>
+												<li><input type="checkbox" name=""> <label for="">기타잡화</label></li>
+											</ul>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+
+					<div class="itemsetting_outer clear">
+						<div class="left">
+							<table class="tbl_primary">
+								<colgroup>
+									<col style="width:50%;">
+									<col>
+								</colgroup>
+								<thead>
+									<tr>
+										<th>대분류</th>
+										<th>중분류</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><input type="checkbox" name=""> <label for="">가전/IT</label></td>
+										<td>
+											<ul>
+												<li><input type="checkbox" name=""> <label for="">전체</label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+											</ul>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="right">
+							<table class="tbl_primary">
+								<colgroup>
+									<col style="width:50%;">
+									<col>
+								</colgroup>
+								<thead>
+									<tr>
+										<th>대분류</th>
+										<th>중분류</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><input type="checkbox" name=""> <label for="">가전/IT</label></td>
+										<td>
+											<ul>
+												<li><input type="checkbox" name=""> <label for="">전체</label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+											</ul>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+
+					<div class="itemsetting_outer clear">
+						<div class="left">
+							<table class="tbl_primary">
+								<colgroup>
+									<col style="width:50%;">
+									<col>
+								</colgroup>
+								<thead>
+									<tr>
+										<th>대분류</th>
+										<th>중분류</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><input type="checkbox" name=""> <label for="">가전/IT</label></td>
+										<td>
+											<ul>
+												<li><input type="checkbox" name=""> <label for="">전체</label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+											</ul>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="right">
+							<table class="tbl_primary">
+								<colgroup>
+									<col style="width:50%;">
+									<col>
+								</colgroup>
+								<thead>
+									<tr>
+										<th>대분류</th>
+										<th>중분류</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><input type="checkbox" name=""> <label for="">가전/IT</label></td>
+										<td>
+											<ul>
+												<li><input type="checkbox" name=""> <label for="">전체</label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+											</ul>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+
+					<div class="itemsetting_outer clear">
+						<div class="left">
+							<table class="tbl_primary">
+								<colgroup>
+									<col style="width:50%;">
+									<col>
+								</colgroup>
+								<thead>
+									<tr>
+										<th>대분류</th>
+										<th>중분류</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><input type="checkbox" name=""> <label for="">가전/IT</label></td>
+										<td>
+											<ul>
+												<li><input type="checkbox" name=""> <label for="">전체</label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+											</ul>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="right">
+							<table class="tbl_primary">
+								<colgroup>
+									<col style="width:50%;">
+									<col>
+								</colgroup>
+								<thead>
+									<tr>
+										<th>대분류</th>
+										<th>중분류</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><input type="checkbox" name=""> <label for="">가전/IT</label></td>
+										<td>
+											<ul>
+												<li><input type="checkbox" name=""> <label for="">전체</label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+											</ul>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+
+					<div class="itemsetting_outer clear">
+						<div class="left">
+							<table class="tbl_primary">
+								<colgroup>
+									<col style="width:50%;">
+									<col>
+								</colgroup>
+								<thead>
+									<tr>
+										<th>대분류</th>
+										<th>중분류</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><input type="checkbox" name=""> <label for="">가전/IT</label></td>
+										<td>
+											<ul>
+												<li><input type="checkbox" name=""> <label for="">전체</label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+											</ul>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="right">
+							<table class="tbl_primary">
+								<colgroup>
+									<col style="width:50%;">
+									<col>
+								</colgroup>
+								<thead>
+									<tr>
+										<th>대분류</th>
+										<th>중분류</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><input type="checkbox" name=""> <label for="">가전/IT</label></td>
+										<td>
+											<ul>
+												<li><input type="checkbox" name=""> <label for="">전체</label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+											</ul>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+
+					<div class="itemsetting_outer clear">
+						<div class="left">
+							<table class="tbl_primary">
+								<colgroup>
+									<col style="width:50%;">
+									<col>
+								</colgroup>
+								<thead>
+									<tr>
+										<th>대분류</th>
+										<th>중분류</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><input type="checkbox" name=""> <label for="">가전/IT</label></td>
+										<td>
+											<ul>
+												<li><input type="checkbox" name=""> <label for="">전체</label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+											</ul>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="right">
+							<table class="tbl_primary">
+								<colgroup>
+									<col style="width:50%;">
+									<col>
+								</colgroup>
+								<thead>
+									<tr>
+										<th>대분류</th>
+										<th>중분류</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><input type="checkbox" name=""> <label for="">가전/IT</label></td>
+										<td>
+											<ul>
+												<li><input type="checkbox" name=""> <label for="">전체</label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+											</ul>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+
+					<div class="itemsetting_outer clear">
+						<div class="left">
+							<table class="tbl_primary">
+								<colgroup>
+									<col style="width:50%;">
+									<col>
+								</colgroup>
+								<thead>
+									<tr>
+										<th>대분류</th>
+										<th>중분류</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><input type="checkbox" name=""> <label for="">가전/IT</label></td>
+										<td>
+											<ul>
+												<li><input type="checkbox" name=""> <label for="">전체</label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+											</ul>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="right">
+							<table class="tbl_primary">
+								<colgroup>
+									<col style="width:50%;">
+									<col>
+								</colgroup>
+								<thead>
+									<tr>
+										<th>대분류</th>
+										<th>중분류</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><input type="checkbox" name=""> <label for="">가전/IT</label></td>
+										<td>
+											<ul>
+												<li><input type="checkbox" name=""> <label for="">전체</label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+											</ul>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+
+					<div class="all">
+						<input type="checkbox" name=""> <label for="">상품 카테고리 전체선택</label>
+					</div>
+					<div class="button_area">
+						<button type="button" class="btn_ty3">등록</button>
+						<button type="button" class="btn_ty4">취소</button>
+					</div>
+				</div>
+				<div class="tab_cnt2">
+					<div class="all">
+						<input type="checkbox" name=""> <label for="">컨텐츠 카테고리 전체선택</label>
+					</div>
+
+					<div class="itemsetting_outer clear">
+						<div class="left">
+							<table class="tbl_primary">
+								<colgroup>
+									<col style="width:50%;">
+									<col>
+								</colgroup>
+								<thead>
+									<tr>
+										<th>대분류</th>
+										<th>중분류</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><input type="checkbox" name=""> <label for="">가전/IT</label></td>
+										<td>
+											<ul>
+												<li><input type="checkbox" name=""> <label for="">전체</label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+											</ul>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="right">
+							<table class="tbl_primary">
+								<colgroup>
+									<col style="width:50%;">
+									<col>
+								</colgroup>
+								<thead>
+									<tr>
+										<th>대분류</th>
+										<th>중분류</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><input type="checkbox" name=""> <label for="">가전/IT</label></td>
+										<td>
+											<ul>
+												<li><input type="checkbox" name=""> <label for="">전체</label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+											</ul>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+
+					<div class="itemsetting_outer clear">
+						<div class="left">
+							<table class="tbl_primary">
+								<colgroup>
+									<col style="width:50%;">
+									<col>
+								</colgroup>
+								<thead>
+									<tr>
+										<th>대분류</th>
+										<th>중분류</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><input type="checkbox" name=""> <label for="">가전/IT</label></td>
+										<td>
+											<ul>
+												<li><input type="checkbox" name=""> <label for="">전체</label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+											</ul>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="right">
+							<table class="tbl_primary">
+								<colgroup>
+									<col style="width:50%;">
+									<col>
+								</colgroup>
+								<thead>
+									<tr>
+										<th>대분류</th>
+										<th>중분류</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><input type="checkbox" name=""> <label for="">가전/IT</label></td>
+										<td>
+											<ul>
+												<li><input type="checkbox" name=""> <label for="">전체</label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+											</ul>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+
+					<div class="itemsetting_outer clear">
+						<div class="left">
+							<table class="tbl_primary">
+								<colgroup>
+									<col style="width:50%;">
+									<col>
+								</colgroup>
+								<thead>
+									<tr>
+										<th>대분류</th>
+										<th>중분류</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><input type="checkbox" name=""> <label for="">가전/IT</label></td>
+										<td>
+											<ul>
+												<li><input type="checkbox" name=""> <label for="">전체</label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+												<li><input type="checkbox" name=""> <label for=""></label></li>
+											</ul>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="right">
+						</div>
+					</div>
+
+					<div class="all">
+						<input type="checkbox" name=""> <label for="">컨텐츠 카테고리 전체선택</label>
+					</div>
+					<div class="button_area">
+						<button type="button" class="btn_ty3">등록</button>
+						<button type="button" class="btn_ty4">취소</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div><!-- //content -->
+</div><!-- //container -->
+</div><!-- //wrap -->
+</body>
+</html>

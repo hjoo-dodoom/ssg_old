@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<meta charset="UTF-8">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>배송지 신규등록</title>
+<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="../../css/atype_popup.css">
+<script type="text/javascript" charset="utf-8" src="../../js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/common.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/jquery.selectbox-0.2.js"></script>
+</head>
+<body>
+<div class="pop_outer">
+	<div class="pop_inner">
+		<h1>배송지 신규등록</h1>
+
+		<table class="tbl_view">
+			<colgroup>
+				<col style="width:130px;">
+				<col>
+			</colgroup>
+			<tbody>
+				<tr>
+					<th>별칭</th>
+					<td><input type="text" name="" style="width:200px;" placeholder="우리집"></td>
+				</tr>
+				<tr>
+					<th>이름(실명)</th>
+					<td><input type="text" name="" style="width:200px;" placeholder="홍길동"></td>
+				</tr>
+				<tr>
+					<th>전화번호</th>
+					<td><input type="text" name="" style="width:200px;" placeholder="02-1234-134"></td>
+				</tr>
+				<tr>
+					<th>핸드폰</th>
+					<td><input type="text" name="" style="width:200px;" placeholder="010-1234-134"></td>
+				</tr>
+				<tr>
+					<th>주소</th>
+					<td class="zip">
+						<div>
+							<input type="text" name="" placeholder="12345" style="width:140px;"><button type="button" class="btn_line_mid_ty3">우편번호로 찾기</button>
+						</div>
+						<div>
+							<input type="text" name="" placeholder="서울시 서초구 사평대로 205" class="w100">
+						</div>
+						<div>
+							<input type="text" name="" placeholder="CENTRAL CITY 반포천 복개주차장" class="w100">
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<div class="btn_area txtc">
+			<button type="button" class="btn_ty2">배송지 등록</button>
+			<button type="button" class="btn_ty3" onclick="window.close()">취소</button>
+		</div>
+
+
+	</div>
+</div><!-- //pop_outer -->
+<script type="text/javascript">
+	$(document).ready(function() {
+		$(".sel_ty3 select").selectbox();
+	});
+</script>
+</body>
+</html>

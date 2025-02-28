@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<meta charset="UTF-8">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>관리자</title>
+<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="../../css/sub.css">
+<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script type="text/javascript" charset="utf-8" src="../../js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/common.js"></script>
+</head>
+<body>
+<? include("../include/header_partner.html"); ?>
+
+<div id="container" class="container">
+	<? include("../include/snb_partner.html"); ?>
+
+	<div class="content">
+		<div class="location">
+			<span>HOME</span>
+			<span>회원 </span>
+			<span>관리자 설정</span>
+			<span class="on">관리자 관리</span>
+		</div>
+		<div class="inner">
+			<h3 class="tit_h3">관리자 관리</h3>
+
+			<div class="tbl_outer">
+				<table class="tbl_view">
+					<colgroup>
+						<col style="width:100px">
+						<col>
+						<col style="width:100px">
+						<col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">승인상태</th>
+							<td>
+								<select name="all2">
+									<option value="">선택</option>
+								</select>
+							</td>
+							<th scope="row">관리자 검색</th>
+							<td>
+								<select name="all2">
+									<option value="">아이디</option>
+								</select>
+								<input type="text" style="width:195px;">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div class="button_area">
+				<div class="left">
+					<button type="button" class="btn_ty9">조직구성 관리</button>
+					<button type="button" class="btn_ty3">관리자 등록</button>
+					<button type="button" class="btn_ty8">관리자 삭제</button>
+				</div>
+				<button type="button" class="btn_ty1">검색</button>
+				<button type="button" class="btn_ty2">초기화</button>
+			</div>
+
+			<table class="tbl_primary">
+				<thead>
+					<tr>
+						<th scope="row"><input type="checkbox" name="chk" id="chkall"></th>
+						<th scope="row">번호</th>
+						<th scope="row">아이디</th>
+						<th scope="row">관리자명</th>
+						<th scope="row">소속</th>
+						<th scope="row">등급</th>
+						<th scope="row">등록일</th>
+						<th scope="row">상태</th>
+						<th scope="row">최근<br/>로그인</th>
+						<th scope="row">최근IP</th>
+					</tr>
+				</thead>
+				<tbody class="txtc">
+					<tr>
+						<td><input type="checkbox" name="chk" id="chk1"></td>
+						<td>100</td>
+						<td><a href="#">user_01</a></td>
+						<td><a href="#">홍**</a></td>
+						<td>강남점</td>
+						<td></td>
+						<td>2017-07-03</td>
+						<td>승인</td>
+						<td>2017-05-01<br>23:59:59</td>
+						<td>123.1.12.123</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" name="chk" id="chk1"></td>
+						<td>100</td>
+						<td><a href="#">user_01</a></td>
+						<td><a href="#">홍**</a></td>
+						<td>강남점</td>
+						<td></td>
+						<td>2017-07-03</td>
+						<td>승인</td>
+						<td>2017-05-01<br>23:59:59</td>
+						<td>123.1.12.123</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" name="chk" id="chk1"></td>
+						<td>100</td>
+						<td><a href="#">user_01</a></td>
+						<td><a href="#">홍**</a></td>
+						<td>강남점</td>
+						<td></td>
+						<td>2017-07-03</td>
+						<td>승인</td>
+						<td>2017-05-01<br>23:59:59</td>
+						<td>123.1.12.123</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" name="chk" id="chk1"></td>
+						<td>100</td>
+						<td><a href="#">user_01</a></td>
+						<td><a href="#">홍**</a></td>
+						<td>강남점</td>
+						<td></td>
+						<td>2017-07-03</td>
+						<td>승인</td>
+						<td>2017-05-01<br>23:59:59</td>
+						<td>123.1.12.123</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" name="chk" id="chk1"></td>
+						<td>100</td>
+						<td><a href="#">user_01</a></td>
+						<td><a href="#">홍**</a></td>
+						<td>강남점</td>
+						<td></td>
+						<td>2017-07-03</td>
+						<td>승인</td>
+						<td>2017-05-01<br>23:59:59</td>
+						<td>123.1.12.123</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" name="chk" id="chk1"></td>
+						<td>100</td>
+						<td><a href="#">user_01</a></td>
+						<td><a href="#">홍**</a></td>
+						<td>강남점</td>
+						<td></td>
+						<td>2017-07-03</td>
+						<td>승인</td>
+						<td>2017-05-01<br>23:59:59</td>
+						<td>123.1.12.123</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" name="chk" id="chk1"></td>
+						<td>100</td>
+						<td><a href="#">user_01</a></td>
+						<td><a href="#">홍**</a></td>
+						<td>강남점</td>
+						<td></td>
+						<td>2017-07-03</td>
+						<td>승인</td>
+						<td>2017-05-01<br>23:59:59</td>
+						<td>123.1.12.123</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" name="chk" id="chk1"></td>
+						<td>100</td>
+						<td><a href="#">user_01</a></td>
+						<td><a href="#">홍**</a></td>
+						<td>강남점</td>
+						<td></td>
+						<td>2017-07-03</td>
+						<td>승인</td>
+						<td>2017-05-01<br>23:59:59</td>
+						<td>123.1.12.123</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" name="chk" id="chk1"></td>
+						<td>100</td>
+						<td><a href="#">user_01</a></td>
+						<td><a href="#">홍**</a></td>
+						<td>강남점</td>
+						<td></td>
+						<td>2017-07-03</td>
+						<td>승인</td>
+						<td>2017-05-01<br>23:59:59</td>
+						<td>123.1.12.123</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" name="chk" id="chk1"></td>
+						<td>100</td>
+						<td><a href="#">user_01</a></td>
+						<td><a href="#">홍**</a></td>
+						<td>강남점</td>
+						<td></td>
+						<td>2017-07-03</td>
+						<td>승인</td>
+						<td>2017-05-01<br>23:59:59</td>
+						<td>123.1.12.123</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<div class="paging">
+				<a href="#none" class="first">처음페이지</a>
+				<a href="#none" class="prev">이전페이지</a>
+				<a href="#none" class="on">1</a>
+				<a href="#none" class="num">2</a>
+				<a href="#none" class="num">3</a>
+				<a href="#none" class="num">4</a>
+				<a href="#none" class="num">5</a>
+				<a href="#none" class="num">6</a>
+				<a href="#none" class="num">7</a>
+				<a href="#none" class="num">8</a>
+				<a href="#none" class="num">9</a>
+				<a href="#none" class="num">10</a>
+				<a href="#none" class="next">다음페이지</a>
+				<a href="#none" class="last">마지막페이지</a>
+			</div>
+		</div>
+	</div><!-- //content -->
+</div><!-- //container -->
+</div><!-- //wrap -->
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<meta charset="UTF-8">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>로그인</title>
+<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="../../css/sub.css">
+<script type="text/javascript" charset="utf-8" src="../../js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/common.js"></script>
+</head>
+<body>
+<div class="login_area client">
+	<div class="login_inner">
+		<div class="left" style="margin-top:-278px;height:558px;">
+			<h1>SHINSEGAE</h1>
+			<div class="box">
+				<p><em>삼성생명 GA</em><b>고객사 로그인</b></p>
+				<p>고객사로 등록, 승인된 업체만<br>접근할 수 있습니다.</p>
+				<div class="button_area">
+					<p><button type="button" class="btn_line_ty4">아이디/비밀번호 찾기</button></p>
+				</div>
+			</div>
+			<div id="" class="" style="background-color:#e44d4d;color:#fff;font-size:16px;line-height:22px;padding:30px 20px 20px 20px;height:151px;font-weight:bold;word-break:keep-all">
+				<strong style="font-size:20px;font-size:20px;text-align:center;display:block;padding:5px 0 8px 0;color:#fff;margin-bottom:10px;border:3px solid #fff;">중요!</strong>
+				<p>시스템 개편(3월 25일) 이후<br> 최초 로그인 시 아이디 및 비밀번호에 아이디를 입력하시고 등록된 핸드폰 번호로 인증하셔야 로그인이 됩니다.</p>
+			</div>
+		</div>
+		<div class="right">
+			<h2>LOGIN</h2>
+			<ul>
+				<li><input type="text" name="id" placeholder="아이디"></li>
+				<li><input type="password" name="pw" placeholder="비밀번호"></li>
+				<!-- 외부망일경우 S -->
+				<li><input type="text" name="in1" placeholder="본인인증 (휴대폰번호 ‘-’제외하고 숫자만입력)"><button type="button" class="btn1">인증발송</button></li>
+				<li><input type="text" name="in2" placeholder="인증번호"><button type="button" class="btn2">인증확인</button></li>
+				<!-- 외부망일경우 E -->
+			</ul>
+			<div class="btn_area"><button type="button">로그인</button></div>
+			<ul class="ref">
+				<li>* 미등록 고객사는 등록 과정을 거친 후 이용하실 수 있습니다.</li>
+				<li>* 비승인된 사람이나 비정상적인 접근으로 로그인할 경우 민형사상 책임을 질 수 있습니다.</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+$(document).ready(function() {
+var layerBox = $('.login_inner');
+	var boxLeft = $('.left');
+    layerBox.css('margin-top',  + (layerBox.height() / 2) * -1);
+    boxLeft.css('margin-top',  + (boxLeft.height() / 2) * -1);
+});
+</script>
+</body>
+</html>

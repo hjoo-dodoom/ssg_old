@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<meta charset="UTF-8">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>회원별 포인트 현황</title>
+<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="../../css/sub.css">
+<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script type="text/javascript" charset="utf-8" src="../../js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/common.js"></script>
+</head>
+<body>
+<? include("../include/header_partner.html"); ?>
+
+<div id="container" class="container">
+	<? include("../include/snb_partner.html"); ?>
+
+	<div class="content">
+		<div class="location">
+			<span>HOME</span>
+			<span>회원 </span>
+			<span>포인트관리</span>
+			<span class="on">회원별 포인트 내역</span>
+		</div>
+		<div class="inner">
+			<h3 class="tit_h3">회원별 포인트 내역</h3>
+
+			<div class="tbl_outer">
+				<table class="tbl_view">
+					<colgroup>
+						<col style="width:100px">
+						<col>
+						<col style="width:100px">
+						<col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">포인트</th>
+							<td>
+								<input type="radio" name=""> <label for="">기본포인트</label>
+								<input type="radio" name=""> <label for="">특별포인트</label>
+							</td>
+							<th>검색</th>
+							<td colspan="3">
+									<select name="sel8" id="sel8" style="width:110px;">
+										<option value="">선택</option>
+									</select>
+									<input type="text" style="width:195px;">
+								</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div class="button_area">
+				<div class="left">
+					<button type="button" class="btn_ty7">엑셀다운로드</button>
+				</div>
+				<button type="button" class="btn_ty1">검색</button>
+				<button type="button" class="btn_ty2">초기화</button>
+			</div>
+
+			<table class="tbl_primary">
+				<thead>
+					<tr>
+						<th scope="row">번호</th>
+						<th scope="row">아이디</th>
+						<th scope="row">이름</th>
+						<th scope="row">사업장</th>
+						<th scope="row">소속</th>
+						<th scope="row">부서(직급)</th>
+						<th scope="row">업체명</th>
+						<th scope="row">업체코드</th>
+						<th scope="row">포인트</th>
+						<th scope="row">사업자번호</th>
+						<th scope="row">상세<br/>내역</th>
+					</tr>
+				</thead>
+				<tbody class="txtc">
+					<tr>
+						<td>100</td>
+						<td>user1</td>
+						<td>홍**</td>
+						<td>신세계</td>
+						<td>법인팀</td>
+						<td>100,000</td>
+						<td>신세계강남</td>
+						<td>1253456</td>
+						<td>99,000</td>
+						<td>123456123</td>
+						<td class="txtc"><button type="button" class="tbl_btn_ty1">상세보기</button></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div><!-- //content -->
+</div><!-- //container -->
+</div><!-- //wrap -->
+</body>
+</html>

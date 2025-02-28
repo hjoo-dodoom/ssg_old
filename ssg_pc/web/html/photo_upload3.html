@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<meta charset="UTF-8">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>인증샷 올리기 이벤트</title>
+<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="../css/sub.css">
+<script type="text/javascript" charset="utf-8" src="../js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/common.js"></script>
+<style>
+
+/*2021-02-26*/
+.pu_header{background-color:#056dae;padding:13px 30px;position:relative;}
+.pu_header h2{color:#fff;font-size:18px;text-align:left;padding:0;}
+.pu_header h2 span{font-size:13px;display:inline-block;}
+.pu_header .pu_close{width:20px;height:20px;text-indent:-999em;overflow:hidden;position:absolute;right:30px;top:15px;background-position:center center;background-repeat:no-repeat;background-image:url('../images/btn/btn_top_banner_closed.png');}
+.pu_inner{padding:25px 30px 50px;}
+.tbl_view2 tbody td .ref_ty1{margin-top:5px;}
+.nb_count{display:inline-block;color:#009de6;font-size:13px;margin-left:7px;vertical-align:middle;line-height:18px;}
+.ref_ty1{margin-top:5px;}
+
+.pu_title{padding-bottom:18px;border-bottom:1px solid #dbdbdb;margin-bottom:28px;}
+.pu_title h3{float:left;color:#333;font-size:18px;}
+.pu_title .step{float:right;margin-top:4px;margin-left:10px;}
+.pu_title .step li{float:left;color:#b4b4b4;font-size:14px;font-family: 'NanumSquareB';}
+.pu_title .step li .num{font-weight:600;color:#b4b4b4;font-size:20px;vertical-align:baseline;display:inline-block;margin-right:3px;}
+.pu_title .step li.active{color:#222;}
+.pu_title .step li.active .num{color:#009de6;}
+.pu_title .step li + li:before{content:">";font-size:18px;color:#525252;font-family: 'ngR';display:inline-block;margin:0 10px;}
+.pu_info{border:1px solid #ececec;background-color:#f8f8f8;padding:20px 13px;margin:30px -15px 0;}
+.pu_info strong{display:block;color:#222;font-size:13px;}
+.pu_info ul{margin-top:7px;}
+.pu_info ul li{color:#777;font-size:13px;text-indent:-10px;padding-left:10px;}
+.pu_info ul li + li{margin-top:7px;}
+.pu_cs{margin-top:25px;text-align:center;color:#777;font-size:13px;word-break:keep-all;}
+.pu_cs strong{color:#222;}
+.photo_upload .textarea_outer{position:relative;}
+.photo_upload .textarea_outer .txt {
+	position: absolute; right:20px; bottom:10px;
+	color:#777;
+}
+.ev_time{color:#222222;font-size:13px;margin-bottom:10px;padding-left:70px;padding-top:2px;position:relative;line-height:1.6;}
+.ev_time .tit{display:inline-block;background-color:#4a4a4a;color:#fff;border-radius:12px;padding:2px 0;font-size:12px;font-weight:400;margin-right:5px;vertical-align:baseline;
+position:absolute;left:0;top:0;width:64px;text-align:center;}
+.ev_time span{color:#666;font-size:12px;}
+.design_file{margin-top:7px;}
+.design_file label{float:left;overflow:hidden;border:1px solid #494949;width:116px;height:32px;line-height:33px;text-align:center;font-size:13px;cursor:pointer;margin-right:10px;}
+.design_file label input[type="file"]{position:absolute;left:-999em}
+.design_file .value{float:left;margin:8px 0 0;color:#555;font-size:12px;}
+.pu_agree{border:1px solid #ededed;padding:19px 19px 19px 42px;color:#222;font-size:13px;margin-top:10px;line-height:20px;position:relative;}
+.pu_agree input{position:absolute;left:19px;top:19px;}
+.pu_agree a{font-weight:600;text-decoration:underline;}
+.pu_terms{padding:20px;background-color:#e7e7e7;color:#666;font-size:13px;height:140px;overflow-y:auto;margin-top:30px;}
+.pu_terms{}
+@media screen and (max-width: 525px) {
+ .btn_line_mid_ty3{width:200px;margin:5px 0 0 0;}
+ .nb_count{margin:5px 0 0 0;width:200px;}
+}
+.photo_img{border:1px solid #ececec;background-color:#ececec;padding:0 30px 20px;margin:40px 0 10px;}
+.photo_img .img{position:relative;display:block;margin:0 auto;top:-25px;z-index:10;text-align:center;}
+.photo_img .txt{display:block;position:relative;text-align:center;color:#222;font-size:13px;font-weight:600;line-height:20px;}
+.photo_img .txt strong{color:#056dae;}
+</style>
+</head>
+<body>
+<div class="photo_upload">
+	<div class="pu_header">
+		<h2>손카드 인증샷 올리기 이벤트 <span>응원메세지 작성 후 손카드 사진 등록</span></h2>
+	</div>
+	<div class="pu_inner">
+		<div class="pu_title clear">
+			<h3>소중한 인증샷과 구매후기를 올려주세요</h3>
+			<ul class="step">
+				<li><span class="num">01</span>본인인증</li>
+				<li class="active"><span class="num">02</span>후기등록</li>
+			</ul>
+		</div>
+
+		<div class="ev_time"><strong class="tit">행사기간 </strong> 2021년 3월 2일(화) ~ 31일(수) </div>
+		<div class="ev_time"><strong class="tit">경품지급</strong> 4월 중 지급 </div>
+		<div class="ev_time"><strong class="tit">행사경품</strong> 갤럭시위치 (10명), 스타벅스 커피 (응모자 전원)</span>  </div>
+		<table class="tbl_view">
+			<colgroup>
+				<col style="width:130px;">
+				<col>
+			</colgroup>
+			<tbody>
+				<tr>
+					<th>이름</th>
+					<td>
+						<input type="text" name="" style="width:200px;">
+					</td>
+				</tr>
+				<tr>
+					<th>구매하기</th>
+					<td>
+						<div class="textarea_outer">
+							<textarea class="w100 max_text" style="height: 200px;" maxlength="1000"></textarea>
+							<div class="txt max_len"><b>0</b>/1000</div>
+						</div>
+						<div class="design_file clear">
+							<label><input type="file">사진 첨부하기</label>
+							<span class="value"></span>
+						</div>
+						<script>
+						//글자수 제한
+						$(document).on('keyup', '.max_text', function () {
+							var numChar = $(this).val().length;
+							var maxNum = $(this).attr('maxlength');
+							var lenDisplay = $(this).closest('.textarea_outer').find('.max_len b');
+							 if(numChar == maxNum){
+							  alert('최대 글자 수가 모두 찼습니다.');
+							}
+							lenDisplay.text(numChar);
+						});
+
+						//첨부파일
+						$(document).on('change', '.design_file input', function() {
+							var imageName = $(this).val().split("\\");
+							var fileName = imageName[imageName.length-1];
+							$(this).closest('.design_file').find('.value').text(fileName);
+						});
+						</script>
+						<p class="ref_ty1">* 사진은 최대 20MB 이하의 JPG, PNG, GIF파일만 첨부 가능합니다</p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		
+		<div class="pu_agree clear">
+			<input type="checkbox"> 본인은 <a href="javascript:;" onclick="$('.pu_terms').hide();$('.terms1').show();">이용약관</a>, <a href="javascript:;"onclick="$('.pu_terms').hide();$('.terms2').show();">개인정보 수집 및 이용</a>, 에 대한 내용을 확인 하였으며, 동의합니다.
+		</div>
+
+		<div class="btn_area txtc mt30">
+			<button type="button" class="btn_ty2" style="background-color:#009de6;">수정하기</button>
+			<button type="button" class="btn_ty3">삭제하기</button>
+		</div>
+		
+		<div class="pu_terms terms1" style="display:none;">
+			총칙 제 1조 (목적)<br/>
+			본 약관은 신세계가 제공하는 인터넷 관련 서비스(이하”서비스”라 한다)를 신세계 
+			2B/E몰 회원이 이용함에 있어서 신세계몰과 이용자의 관리/의무 및 책임사항을 규정함을
+			목적으로합니다. <br/>
+			*PC통신, 무선 등을 이용하는 전자상거래에 대해서도 그 성질에 반하지 않는 한 이약관을
+			준용합니다.<br/><br/>
+
+			제2조 (정의)<br/>
+			1. “몰”이란 신세계 회사가 재화 또는 용역(이하”재화등”이라 함)을 이용자에게 제공하기
+			위하여 컴퓨터 등 정보통신설비를 이용하여 재화 등을 거래할 수 있도록 설정한 가상의 
+			영업장을 말하며, 아울러 신세계 B2B/E몰 을 운영하는 사업자의 의미로도 사용합니다.<br/>
+			2.”이용자”란 “몰”에 접속하여 이 약관에 따라 “몰”이 제공하는 서비스를 받는 회원 및
+			비회원을 말합니다.<br/>
+			3.”회원”이라 함은 “몰”에 개인정보를 제공하여 회원등록을 한 자로서, “몰”의 정보를 
+			지속적으로 제공받으며, “몰”이 제공하는 서비스를 계속적으로 이용할 수 있는 자를 말
+			합니다.<br/>
+			4.”비회원”이라 함은 회원에 가입하지 않고 “몰”이 제공하는 서비스를 이용하는 자를
+			말합니다.<br/>
+			5.”회원”이라 함은 “몰”에 개인정보를 제공하여 회원등록을 한 자로서, “몰”의 정보를 
+			지속적으로 제공받으며, “몰”이 제공하는 서비스를 계속적으로 이용할 수 있는 자를 
+			말합니다.<br/><br/>
+
+			제 3조 (목적)<br/>
+			본 약관은 신세계가 제공하는 인터넷 관련 서비스(이하”서비스”라 한다)를 신세계 
+			2B/E몰 회원이 이용함에 있어서 신세계몰과 이용자의 관리/의무 및 책임사항을 규정함을
+			목적으로합니다. <br/>
+			*PC통신, 무선 등을 이용하는 전자상거래에 대해서도 그 성질에 반하지 않는 한 이약관을
+			준용합니다.하는 자를
+			말합니다.<br/>
+			4.”비회원”이라 함은 회원에 가입하지 않고 “몰”이 제공하는 서비스를 이용하는 자를
+			말합니다.
+		</div>
+		<div class="pu_terms terms2" style="display:none;">
+			개인정보 수집 및 이용 내용
+		</div>
+	</div>
+</div>
+</body>
+</html>

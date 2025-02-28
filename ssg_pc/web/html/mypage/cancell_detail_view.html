@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>SHINSEGAE</title>
+<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="../../css/sub.css">
+<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script type="text/javascript" charset="utf-8" src="../../js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/ssg.carousel.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/common.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/jquery.selectbox-0.2.js"></script>
+</head>
+<body>
+<? include("../include/header1.html"); ?>
+
+<div id="container" class="container mypage">
+    <div class="content">
+        <div class="inner clear">
+            <div class="mypage_nw">
+                <div class="mpn_nav">
+                    <div class="linfo">
+                        <div class="cnt">
+                            <span class="tit">마이페이지</span>
+                            <span class="name">관리자님</span>
+                        </div>
+                        <a href="javascript:;" class="mp_all">전체보기</a>
+                        <div class="mp_all_box" style="display:none;">
+                            <ul>
+                                <li>
+                                <a href="javascript:;">주문관리</a>
+                                <ul>
+                                    <li><a href="javascript:;">주문배송조회</a></li>
+                                    <li><a href="javascript:;">취소 상품</a></li>
+                                </ul>
+                                </li>
+                                <li>
+                                <a href="javascript:;">포인트</a>
+                                <ul>
+                                    <li><a href="javascript:;">포인트</a></li>
+                                </ul>
+                                </li>
+                                <li>
+                                <a href="javascript:;">마일리지</a>
+                                <ul>
+                                    <li><a href="javascript:;">마일리지</a></li>
+                                </ul>
+                                </li>
+                                <li>
+                                <a href="javascript:;">쿠폰</a>
+                                <ul>
+                                    <li><a href="javascript:;">쿠폰</a></li>
+                                </ul>
+                                </li>
+                                <li>
+                                <a href="javascript:;">활동관리</a>
+                                <ul>
+                                    <li><a href="javascript:;">상품문의</a></li>
+                                    <li><a href="javascript:;">1:1문의</a></li>
+                                </ul>
+                                </li>
+                                <li>
+                                <a href="javascript:;">정보관리</a>
+                                <ul>
+                                    <li><a href="javascript:;">정보수정</a></li>
+                                    <li><a href="javascript:;">나의 배송지</a></li>
+                                    <li><a href="javascript:;">마케팅 수신 동의</a></li>
+                                </ul>
+                                </li>
+                            </ul>
+                            <a href="javascript:;" class="mp_all_close">닫기</a>
+                        </div>
+                        <script>
+                        $('.mp_all,.mp_all_close').click(function(){
+                        $('.mp_all_box').toggle();
+                        $('.mp_all').toggleClass('active');
+                        });
+                        </script>
+                    </div>
+                    <ul class="list">
+                        <li><a href="javascript:;" class="od active">주문배송조회</a></li>
+                        <li><a href="javascript:;" class="fa">상품문의</a></li>
+                        <li><a href="javascript:;" class="qa">1:1문의</a></li>
+                        <li><a href="javascript:;" class="mb">정보수정</a></li>
+                        <li><a href="javascript:;" class="md">나의 배송지</a></li>
+                    </ul>
+                </div>
+
+                <div class="cnt_wrap clear">
+                    <div class="cnt_left">
+                        <div class="lnb">
+                            <ul>
+                                <li>
+                                <a href="#">주문관리</a>
+                                <ul>
+                                    <li><a href="#">주문배송조회</a></li>
+                                    <li><a href="#">취소 상품</a></li>
+                                    <li><a href="#">취소/반품/교환/환불</a></li>
+                                </ul>
+                                </li>
+                                <li><a href="#">포인트</a></li>
+                                <li><a href="#">마일리지</a></li>
+                                <li><a href="#">쿠폰</a></li>
+                                <li>
+                                <a href="#">활동관리</a>
+                                <ul>
+                                    <li><a href="#">상품문의</a></li>
+                                    <li><a href="#">1:1문의</a></li>
+                                </ul>
+                                </li>
+                                <li>
+                                <a href="#">정보관리</a>
+                                <ul>
+                                    <li><a href="#">정보수정</a></li>
+                                    <li class="on"><a href="#">나의 배송지</a></li>
+                                    <li><a href="#">마케팅 수신 동의</a></li>
+                                </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="cnt_right">
+
+                        <div class="mypage_cnt">
+                            <h3 class="tit_ty1">취소/반품/교환/환불 상세페이지</h3>
+
+                            <div class="order_date">
+                                <span class="tit">주문일</span>
+                                <span class="txt">2017-05-01</span>
+                                <span class="division">|</span>
+                                <span class="tit">체결번호</span>
+                                <span class="txt">1234567</span>
+                            </div>
+
+                            <table class="tbl_cart">
+                            <colgroup>
+                            <col style="width:140px;">
+                            <col>
+                            <col style="width:50px;">
+                            <col style="width:100px;">
+                            <col style="width:60px;">
+                            <col style="width:100px;">
+                            </colgroup>
+                            <thead>
+                            <tr>
+                                <th>주문번호</th>
+                                <th>상품정보/옵션</th>
+                                <th>수량</th>
+                                <th>판매가</th>
+                                <th>배송비</th>
+                                <th>주문금액</th>
+                            </tr>
+                            </thead>
+                            <tbody class="txtc">
+                            <tr>
+                                <td>1707133213540001</td>
+                                <td class="txtl border">
+                                    <div class="item">
+                                        <div class="outer">
+                                            <div class="thum">
+                                                <img src="../../images/dummy/thum_cart_list.png" alt="">
+                                            </div>
+                                            <div class="item_txt">
+                                                <p>엘라스틴 아보카도허니 트린트먼트 1000ml</p>
+                                                <p class="linetop option">· 레드 / M / 2개</p>
+                                                <p class="option">· 블랙 / XXXL / 1개 </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>100개</td>
+                                <td><b class="amount">500,000</b>원</td>
+                                <td>무료배송</td>
+                                <td><b class="amount">500,000</b>원</td>
+                            </tr>
+                            </tbody>
+                            <tfoot>
+                            <tr>
+                                <td colspan="6">
+                                    <span class="txt">주문현황</span>
+                                    <span class="division">|</span>
+                                    <span class="txt">주문취소</span>
+                                </td>
+                            </tr>
+                            <tr class="reason"">
+                                <th>사유</th>
+                                <th colspan="5" style="height: 90px; background-color: #fff; vertical-align: top; color:#666">
+                                단순변심으로 인해 취소합니다.
+                                </th>
+                            </tr>
+                            </tfoot>
+                            </table>
+                            <div class="total col4">
+                                <ul class="tit clear">
+                                    <li>총 주문금액</li>
+                                    <li>총 배송비</li>
+                                    <li>총 할인금액</li>
+                                    <li class="last">총 결제금액</li>
+                                </ul>
+                                <ul class="cnt clear">
+                                    <li><b>500,000</b>원 <div class="operator_ty1">+</div></li>
+                                    <li><b>4,000</b>원 <div class="operator_ty1">-</div></li>
+                                    <li><b>400,000</b>원 <div class="operator_ty1">=</div></li>
+                                    <li class="last"><b>504,000</b>원</li>
+                                </ul>
+                            </div>
+
+                            <h3 class="tit_h3">주문자 정보</h3>
+                            <table class="tbl_view2">
+                            <colgroup>
+                            <col style="width:200px;">
+                            <col>
+                            </colgroup>
+                            <tbody>
+                            <tr>
+                                <th>이름(실명)</th>
+                                <td>홍길동</td>
+                            </tr>
+                            <tr>
+                                <th>전화번호</th>
+                                <td>02-1234-5678</td>
+                            </tr>
+                            <tr>
+                                <th>핸드폰</th>
+                                <td>010-1234-5678</td>
+                            </tr>
+                            <tr>
+                                <th>이메일</th>
+                                <td>shinsegae@shinsegae.com</td>
+                            </tr>
+                            <tr>
+                                <th>주소</th>
+                                <td>12345, 서울시 서초구 사평대로 205 CENTRAL CITY 반포천 복개주차장</td>
+                            </tr>
+                            </tbody>
+                            </table>
+
+                            <h3 class="tit_h3">받는사람정보</h3>
+                            <table class="tbl_view2">
+                            <colgroup>
+                            <col style="width:200px;">
+                            <col>
+                            </colgroup>
+                            <tbody>
+                            <tr>
+                                <th>이름(실명)</th>
+                                <td>홍길동</td>
+                            </tr>
+                            <tr>
+                                <th>전화번호</th>
+                                <td>02-1234-5678</td>
+                            </tr>
+                            <tr>
+                                <th>핸드폰</th>
+                                <td>010-1234-5678</td>
+                            </tr>
+                            <tr>
+                                <th>주소</th>
+                                <td>기본배송지 [12345], 서울시 서초구 사평대로 205 CENTRAL CITY 반포천 복개주차장</td>
+                            </tr>
+                            <tr>
+                                <th>배송요청사항</th>
+                                <td>겅비실에 맡겨주세요.</td>
+                            </tr>
+                            <tr>
+                                <th>감사카드</th>
+                                <td>생일 축하해요</td>
+                            </tr>
+                            <tr>
+                                <th>배송요청일</th>
+                                <td>2017-06-01</td>
+                            </tr>
+                            </tbody>
+                            </table>
+
+                            <h3 class="tit_h3">결제정보</h3>
+                            <table class="tbl_view2">
+                            <colgroup>
+                            <col style="width:200px;">
+                            <col>
+                            </colgroup>
+                            <tbody>
+                            <tr>
+                                <th>결제방법</th>
+                                <td>신용카드</td>
+                            </tr>
+                            <tr>
+                                <th>증빙서류</th>
+                                <td><button type="button" class="btn_line_mid_ty6">영수증출력</button></td>
+                            </tr>
+                            </tbody>
+                            </table>
+                            <div class="btn_btm_area txtc">
+                                <button type="button" class="btn_bg_mid_ty1">재 주문하기</button>
+                                <button type="button" class="btn_bg_mid_ty2">목록</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //inner -->
+    </div>
+    <!-- //content -->
+   <div class="quick_area">
+	<div class="inner">
+		<div class="quick_left_box">
+			<div class="quick_customer">
+				<div id="" class="qc_banner">
+					<img src="../../images/common/qc_img.png" alt="" style="width:90px;">
+				</div>
+				<div class="qc_box">
+					<div id="" class="qc_cont">
+						<span class="number">
+									023-3333-4444
+						</span>
+						<span class="time">평일 오전 10시 ~ 오후 5시 <br>점심시간 12시 ~ 13시</span>
+						<span class="holiday">(토/일, 공휴일 휴무)</span>
+					</div>
+					<button type="button" class="qc_close">고객센터 팝업 닫기</button>
+				</div>
+			</div>
+			<div id="" class="quick_left_slide_form">
+				<div class="quick_left_out">
+					<div class="quick_left slide">
+						<div>
+							<a href="#"><img src="../../images/dummy/img_quick_left.png" alt=""></a>
+						</div>
+						<div>
+							<a href="#"><img src="../../images/dummy/img_quick_left.png" alt=""></a>
+						</div>
+						<div>
+							<a href="#"><img src="../../images/dummy/img_quick_left.png" alt=""></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="quick_right_box">
+			<!-- 오늘본 상품 -->
+			<div class="quick_right">
+				<div class="qr_slider_form">
+					<p class="tit">오늘본상품</p>
+					<div class="quick_r_out">
+						<div class="quick_r slide">
+							<div>
+								<a href="#">
+									<img src="../../images/dummy/img_quick_right1.png" alt="">
+									<div class="qr_txt">
+										<span class="qr_name">[k2]남성 가을 바람막이 2종 블루/그레이</span>
+										<span class="qr_price">250,000원</span>
+									</div>
+								</a>
+								<a href="#">
+									<img src="../../images/dummy/img_quick_right2.png" alt="">
+									<div class="qr_txt">
+										<span class="qr_name">[k2]남성 가을 바람막이 2종 블루/그레이</span>
+										<span class="qr_price">250,000원</span>
+									</div>
+								</a>
+								<a href="#">
+									<img src="../../images/dummy/img_quick_right3.png" alt="">
+									<div class="qr_txt">
+										<span class="qr_name">[k2]남성 가을 바람막이 2종 블루/그레이</span>
+										<span class="qr_price">250,000원</span>
+									</div>
+								</a>
+							</div>
+							<div>
+								<a href="#">
+									<img src="../../images/dummy/img_quick_right3.png" alt="">
+									<div class="qr_txt">
+										<span class="qr_name">[k2]남성 가을 바람막이 2종 블루/그레이</span>
+										<span class="qr_price">250,000원</span>
+									</div>
+								</a>
+								<a href="#">
+									<img src="../../images/dummy/img_quick_right1.png" alt="">
+									<div class="qr_txt">
+										<span class="qr_name">[k2]남성 가을 바람막이 2종 블루/그레이</span>
+										<span class="qr_price">250,000원</span>
+									</div>
+								</a>
+								<a href="#">
+									<img src="../../images/dummy/img_quick_right2.png" alt="">
+									<div class="qr_txt">
+										<span class="qr_name">[k2]남성 가을 바람막이 2종 블루/그레이</span>
+										<span class="qr_price">250,000원</span>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<a href="#wrap" class="btn_top">TOP </a>
+					</div>
+					<!-- 오늘본 상품 끝 -->
+					<!-- 오른쪽 퀵배너 이미지 -->
+					<div class="qrb_banner">
+						<ul>
+							<li><a href="http://emart24.modetour.co.kr/Main/OnlineCP_E_NEW.aspx"><img src="../../images/dummy/qrb_img.jpg" alt=""></a></li>
+							<li><a href="http://emart24.modetour.co.kr/Main/OnlineCP_E_NEW.aspx"><img src="../../images/dummy/qrb_img.jpg" alt=""></a></li>
+						</ul>
+					</div>
+					<!-- 오른쪽 퀵배너 이미지 -->
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+<!-- //container -->
+<? include("../include/footer.html"); ?>
+</div>
+<!-- //wrap -->
+</body>
+</html>

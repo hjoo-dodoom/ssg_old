@@ -1,0 +1,124 @@
+@charset "UTF-8";
+@import url('sub.css');
+.background_type{background-color:#056dae !important}
+/* header */
+.header .util {background-color: #056dae;}
+.header .util a, .header .util span {color:#fff;}
+.nav {border-bottom:2px solid #056dae;}
+.nav .inner {position: relative;}
+.nav .btn_menu {background-color:#056dae;}
+.menu_all{border-color:#056dae}
+
+/* login */
+.login_a {
+	background:url('../images/bg/atype_login_a_bg.png') no-repeat 50% 100%;
+	background-size: 100% auto;
+}
+[class^='login_'] h1 {
+	font-size: 25px; text-indent: 0; color:#333959; text-align: center;
+	background:none; 
+}
+[class^='login_'] .box h2 + ul {margin-top:30px;}
+[class^='login_'] .box .id input {
+	border:1px solid #707070;
+	background-color: #fff;
+}
+[class^='login_'] .btn_area button {background-color: #056dae;}
+[class^='login_'] .link {
+	margin-top: 10px;
+	font-size: 13px; color:#777; text-align: center;
+}
+[class^='login_'] .link .division {color:#b4b4b4;}
+
+
+/* id/pw find */
+.id_pw_find {padding-top:50px;}
+.id_pw_find_inner {
+	padding:50px 40px;
+}
+.id_pw_find h2 {
+	padding-bottom:30px;
+	font-size: 22px; color:#333; text-align: center;
+	border-bottom:2px solid #72aa2a;
+}
+.id_pw_find h2.no_line {border-bottom:0 none;}
+.id_pw_find h2 em {font-size: 26px; color:#888;}
+.id_pw_find h2 b {font-size: 26px; font-weight: normal;}
+.id_pw_find .txt {
+	padding:20px 0 25px;
+	font-family: 'NanumSquareB'; color:#222; font-size: 13px;
+}
+.id_pw_find .reg {position: relative;}
+.id_pw_find .reg.id input {
+	border:1px solid #707070;
+	background-color: #fff;
+}
+.id_pw_find input {
+	width:100%; padding:0 80px 0 20px; height:50px; line-height: 50px;
+	font-size: 13px; color:#777;
+	border: 0 none;
+	background-color: #f1f1f1;
+	-webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;
+}
+.id_pw_find .reg + .reg {margin-top:10px;}
+.id_pw_find .reg + .ref_ty1 {margin-top:20px;}
+.id_pw_find .reg button {
+	position: absolute; right:0; top:0;
+	width:80px; height:50px;
+	color:#fff;
+	background-color: #7b7b7b;
+}
+.id_pw_find_inner .joint_btn_btm {
+	width:100%; line-height: 65px; margin-top: 30px;
+	font-size: 18px; font-family: 'NanumSquareB'; color:#fff;
+	background-color: #002a54;
+}
+.ref_ty1 li {
+	padding-left: 8px; line-height: 20px;
+	font-size: 13px; text-indent: -8px; color:#5c5c5c;
+}
+.id_pw_find_inner .effect {
+	line-height: 100px;
+	text-align: center;
+	border:1px solid #e5e5e5;
+	background-color: #f8f8f8;
+}
+.id_pw_find_inner .effect span {display: inline-block;}
+.id_pw_find_inner .effect .id {font-size: 15px; color:#444;}
+.id_pw_find_inner .effect .division {font-size: 15px; color:#999;}
+.id_pw_find_inner .effect .date {font-size: 14px; color:#444;}
+
+
+/* tab_ty */
+.tab_ty2 .tab_tit .on a {background-color: #056dae;}
+
+
+.paging .on {background-color:#056dae;}
+
+/* list */
+.product_list_top > p em {font-size: 20px; color:#056dae;}
+.product_list_top + .tab_ty2 [class^='tab_cnt'] {border-top:2px solid #056dae;}
+/* detail_view */
+.product_view .top .relation {border-top:1px solid #056dae}
+.reviews .outer > .answer.end {color:#056dae;}
+.reviews .subject_info dd:before {color:#056dae;}
+
+/* cart */
+.cnt_tit_area .step_ty1 .on b {color:#056dae;}
+.tbl_cart {border-top:2px solid #056dae;}
+
+/* mypage */
+.mypage .cnt_left .lnb .on > a {color:#056dae;}
+
+
+/* button */
+.btn_ty2, .btn_bg_ty3, .btn_bg_mid_ty1, .btn_tbl_ty4 {background-color: #056dae;}
+.btn_line_ty1, .btn_line_mid_ty7, .btn_tbl_ty5 {
+	color:#056dae;
+	border:1px solid #056dae;
+}
+
+/* mypage  */
+.tbl_list1 tbody td.em {color:#056dae;}
+.tbl_view3 .red {color: #056dae}
+.tbl_view3 .a > div:before {color:#056dae;}

@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<meta charset="UTF-8">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>외부몰관리자</title>
+<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="../css/sub.css">
+<script type="text/javascript" charset="utf-8" src="../js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/common.js"></script>
+</head>
+<body>
+<? include("include/header.html"); ?>
+
+<!-- <div class="popup_notice type1" style="top:70px;left:20px;width:500px;z-index:999999;">
+	<div id="" class="popup_nbox" style="max-height:550px;">
+		<div class="tit">신한은행 협력사 공지</div>	
+		<div class="cnt">
+			신한은행 기프트몰을 찾아주셔서<br/>
+			감사드립니다.<br/>
+			해당 사이트에서 각 지점에서 필요로 하신 상품을 선택, <br/>
+			결제까지 가능합니다.<br/>
+			결제방법은 법인카드로 가능하며 30만원이<br/>
+			결제방법은 법인카드로 가능하며 30만원이<br/>
+			결제방법은 법인카드로 가능하며 30만원이<br/>
+			결제방법은 법인카드로 가능하며 30만원이<br/>
+			결제방법은 법인카드로 가능하며 30만원이<br/>
+			결제방법은 법인카드로 가능하며 30만원이<br/>
+			결제방법은 법인카드로 가능하며 30만원이<br/>
+			결제방법은 법인카드로 가능하며 30만원이<br/>
+			결제방법은 법인카드로 가능하며 30만원이<br/>
+			결제방법은 법인카드로 가능하며 30만원이<br/>
+			결제방법은 법인카드로 가능하며 30만원이<br/>
+			초과시 공인인증서를 요구할 수 있으니 수량을 <br/>
+			조절하시어 분할 결제 하시면 됩니다.<br/>
+			기타 문의사항은 아래 연락처로 연락주세요.<br/>
+			문의 : 02-3406-6998 (평일 : 9:30 ~ 5:30)
+		</div>
+	</div>
+	<div class="popup_nbtn clear">
+		<label class="ppn_cookie"><input type="checkbox"> 24시간동안 팝업 안열기</label>
+		<button type="button" class="ppn_close">닫기</button>
+	</div>
+</div>
+
+<div class="popup_notice type2" style="top:70px;left:450px;">
+	<div id="" class="popup_nbox" style="max-height:550px;">
+		<div id="" class="popup_wp">
+			<div class="tit">신한은행 협력사 공지</div>	
+			<div class="cnt">
+				신한은행 기프트몰을 찾아주셔서<br/>
+				감사드립니다.<br/>
+				해당 사이트에서 각 지점에서 필요로 하신 상품을 선택, <br/>
+				결제까지 가능합니다.<br/>
+				결제방법은 법인카드로 가능하며 30만원이<br/>
+				결제방법은 법인카드로 가능하며 30만원이<br/>
+				결제방법은 법인카드로 가능하며 30만원이<br/>
+				결제방법은 법인카드로 가능하며 30만원이<br/>
+				결제방법은 법인카드로 가능하며 30만원이<br/>
+				결제방법은 법인카드로 가능하며 30만원이<br/>
+				결제방법은 법인카드로 가능하며 30만원이<br/>
+				결제방법은 법인카드로 가능하며 30만원이<br/>
+				결제방법은 법인카드로 가능하며 30만원이<br/>
+				결제방법은 법인카드로 가능하며 30만원이<br/>
+				결제방법은 법인카드로 가능하며 30만원이<br/>
+				초과시 공인인증서를 요구할 수 있으니 수량을 <br/>
+				조절하시어 분할 결제 하시면 됩니다.<br/>
+				기타 문의사항은 아래 연락처로 연락주세요.<br/>
+				문의 : 02-3406-6998 (평일 : 9:30 ~ 5:30)
+			</div>
+		</div>
+	</div>
+	<div class="popup_nbtn clear">
+		<label class="ppn_cookie"><input type="checkbox"> 24시간동안 팝업 안열기</label>
+		<button type="button" class="ppn_close">닫기</button>
+	</div>
+</div>
+
+<div class="popup_notice type3" style="top:70px;left:880px;">
+	<div id="" class="popup_nbox" style="max-height:550px;">
+		<div id="" class="popup_wp">
+			<div class="tit"><span>신한은행 협력사 공지</span></div>	
+			<div class="cnt">
+				신한은행 기프트몰을 찾아주셔서<br/>
+				감사드립니다.<br/>
+				해당 사이트에서 각 지점에서 필요로 하신 상품을 선택, <br/>
+				결제까지 가능합니다.<br/>
+				결제방법은 법인카드로 가능하며 30만원이<br/>
+				결제방법은 법인카드로 가능하며 30만원이<br/>
+				결제방법은 법인카드로 가능하며 30만원이<br/>
+				결제방법은 법인카드로 가능하며 30만원이<br/>
+				결제방법은 법인카드로 가능하며 30만원이<br/>
+				결제방법은 법인카드로 가능하며 30만원이<br/>
+				결제방법은 법인카드로 가능하며 30만원이<br/>
+				결제방법은 법인카드로 가능하며 30만원이<br/>
+				결제방법은 법인카드로 가능하며 30만원이<br/>
+				결제방법은 법인카드로 가능하며 30만원이<br/>
+				결제방법은 법인카드로 가능하며 30만원이<br/>
+				초과시 공인인증서를 요구할 수 있으니 수량을 <br/>
+				조절하시어 분할 결제 하시면 됩니다.<br/>
+				기타 문의사항은 아래 연락처로 연락주세요.<br/>
+				문의 : 02-3406-6998 (평일 : 9:30 ~ 5:30)
+			</div>
+		</div>
+	</div>
+	<div class="popup_nbtn clear">
+		<label class="ppn_cookie"><input type="checkbox"> 24시간동안 팝업 안열기</label>
+		<button type="button" class="ppn_close">닫기</button>
+	</div>
+</div> -->
+
+<div class="main">
+	<div class="main_cnt1 clear">
+		<div class="left">
+			<div class="main_tit_area">
+				<h3 class="tit_h3">주문관리</h3>
+				<div class="right">기준일자 : 2017-08-14 ~ 2017-08-25</div>
+			</div>
+			<table class="tbl_primary">
+				<colgroup>
+					<col>
+					<col style="width:33.3%;">
+					<col style="width:33.3%;">
+				</colgroup>
+				<thead>
+					<tr>
+						<th scope="row">주문접수</th>
+						<th scope="row">발송준비중</th>
+						<th scope="row">발송완료</th>
+					</tr>
+				</thead>
+				<tbody class="txtc">
+					<tr>
+						<td><b class="big">10</b> 건</td>
+						<td><b class="big">10</b> 건</td>
+						<td><b class="big">10</b> 건</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="right">
+			<div class="main_tit_area">
+				<h3 class="tit_h3">클레임관리</h3>
+				<div class="right">기준일자 : 2017-08-14 ~ 2017-08-25</div>
+			</div>
+			<table class="tbl_primary">
+				<colgroup>
+					<col style="width:33.333%;">
+					<col style="">
+					<col style="width:33.333%;">
+				</colgroup>
+				<thead>
+					<tr>
+						<th scope="row">주문취소</th>
+						<th scope="row">반품접수/완료</th>
+						<th scope="row">교환접수/완료</th>
+					</tr>
+				</thead>
+				<tbody class="txtc">
+					<tr>
+						<td><b class="big">10</b> 건</td>
+						<td><b class="big">10</b> 건</td>
+						<td><b class="big">10</b> 건</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<div class="main_cnt2">
+		<div class="main_tit_area">
+			<h3 class="tit_h3">오늘의 통계</h3>
+			<div class="right">기준일자 : 2017-08-14</div>
+		</div>
+		<table class="tbl_primary">
+			<colgroup>
+				<col>
+				<col style="width:12.5%;">
+				<col style="width:12.5%;">
+				<col style="width:12.5%;">
+				<col style="width:12.5%;">
+				<col style="width:12.5%;">
+				<col style="width:12.5%;">
+				<col style="width:12.5%;">
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="row" rowspan="2">고객사</th>
+					<th scope="row" colspan="3">상품권</th>
+					<th scope="row" colspan="3">상품</th>
+					<th scope="row" rowspan="2">합계</th>
+				</tr>
+				<tr>
+					<th scope="row">일반</th>
+					<th scope="row">매장</th>
+					<th scope="row">합계</th>
+					<th scope="row">일반</th>
+					<th scope="row">매장</th>
+					<th scope="row">합계</th>
+				</tr>
+			</thead>
+			<tbody class="txtr">
+				<tr>
+					<td class="txtc">시크릿스토어</td>
+					<td>1,720,000</td>
+					<td>1,000,000</td>
+					<td>2,720,000</td>
+					<td>1,000,000</td>
+					<td>1,000,000</td>
+					<td>2,000,000</td>
+					<td>4,720,000</td>
+				</tr>
+				<tr>
+					<td class="txtc">아우디코리아</td>
+					<td>1,720,000</td>
+					<td>1,000,000</td>
+					<td>2,720,000</td>
+					<td>1,000,000</td>
+					<td>1,000,000</td>
+					<td>2,000,000</td>
+					<td>4,720,000</td>
+				</tr>
+				<tr>
+					<td class="txtc">포인트몰</td>
+					<td>1,720,000</td>
+					<td>1,000,000</td>
+					<td>2,720,000</td>
+					<td>1,000,000</td>
+					<td>1,000,000</td>
+					<td>2,000,000</td>
+					<td>4,720,000</td>
+				</tr>
+				<tr>
+					<td class="txtc">애스씨케이컴퍼니</td>
+					<td>1,720,000</td>
+					<td>1,000,000</td>
+					<td>2,720,000</td>
+					<td>1,000,000</td>
+					<td>1,000,000</td>
+					<td>2,000,000</td>
+					<td>4,720,000</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+
+
+<div class="dev_statu active">
+	<form method="post" action="">
+		<div id="" class="ds_top clear">
+			<strong class="title">개발현황표</strong>
+			<button type="button" class="btn_ty5">수정</button>
+		</div>
+		<div class="ds_cnt">
+			<textarea name="" id=""></textarea>
+		</div>
+	</form>
+	<button type="button" class="devs_toggle active">></button>
+</div>
+<script>
+	$('.devs_toggle').click(function(){
+		if($(this).hasClass('active')){
+			$(this).removeClass('active');
+			$(this).text('<')
+			$('.dev_statu').removeClass('active');
+		}else{
+			$(this).addClass('active');
+			$('.dev_statu').addClass('active');
+			$(this).text('>')
+		}
+	});
+</script>
+
+<!-- 레이어 팝업 -->
+	<!-- 정보보안 서약서 -->
+	<div id="" class="layer_form" style="display:none;">
+		<!-- 보안체크 레이어 -->
+        <div class="layer_box">
+            <h3 class="tit_h3">정보보안 서약서</h3>
+
+			<div class="txt_scroll">
+				<div>
+					aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa
+					aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa<br/>aa
+				</div>
+			</div>
+			<div class="check_label">
+				<label><input type="checkbox"> 위 정보보안 서약에 동의하며, 동의는  본인인증을 통해 서약을 확약합니다.</label>
+			</div>
+
+            <table class="tbl_primary">
+				<colgroup>
+					<col style="width:100px;">
+					<col>
+					<col style="width:100px;">
+					<col>
+				</colgroup>
+				<tbody class="txtc">
+					<tr>
+						<td colspan="4">
+							서약일시 : 2019년 02월 01일
+						</td>
+					</tr>
+					<tr>
+						<th>협력회사명</th>
+						<td>회사명</td>
+						<th>아이디</th>
+						<td>아이디</td>
+					</tr>
+					<tr>
+						<th>영업담당자</th>
+						<td>2019-02-01 11:11:11</td>
+						<th>발주담당자</th>
+						<td><button type="button" class="mid_btn_ty1">본인인증</button></td>
+					</tr>
+				</tbody>
+			</table>
+			<ul class="ref mt10">
+				<li>· 계약담당자와 발주담당자 모두 본인인증을 해야 정보보안 서약서 작성이 완료됩니다</li>
+				<li>· 시스템에 등록된정보(계약/발주 담당자)와 동일한 이름 및 휴대폰으로만 본인인증이 가능합니다</li>
+			</ul>
+			<div id="" class="layer_btn">
+				<button type="button" class="layer_close">팝업닫기</button>
+			</div>
+        </div>
+		<!-- //정보보안 서약서 -->
+
+		<!-- 정보보안/개인정보보호 체크리스트 레이어 -->
+        <div class="layer_box" style="display:none;">
+            <h3 class="tit_h3">정보보안/개인정보보호 체크리스트 </h3>
+			<table class="tbl_primary">
+				<tbody>
+					<tr>
+						<th colspan="2">개인정보에 대한 접근통제 및 접근권한의 제한조치 (제6조 2항)</th>
+					</tr>
+					<tr>
+						<td>B2E 관리자 계정을 담당자 이외 공유하고 있는가?</td>
+						<td><input type="radio"><label> 예</label> <input type="radio"><label> 아니오</label></td>
+					</tr>
+					<tr>
+						<td>사용자 계정 및 암호를 윈도우에 저장 후 사용하고 있지는 않는가?</td>
+						<td><input type="radio"><label> 예</label> <input type="radio"><label> 아니오</label></td>
+					</tr>
+					<tr>
+						<td>사무실내 모든PC는 전원을 끄고 최근하는가?</td>
+						<td><input type="radio"><label> 예</label> <input type="radio"><label> 아니오</label></td>
+					</tr>
+					<tr>
+						<th colspan="2">개인정보를 안전하게 저장/전송할 수 있는 암호화 기술의 적용 또는 이에 상응하는 조치 (제6조3항)</th>
+					</tr>
+					<tr>
+						<td>업무PC내 개인정보가 포함된 화일은 암호가 설정되어있는가?</td>
+						<td><input type="radio"><label> 예</label> <input type="radio"><label> 아니오</label></td>
+					</tr>
+					<tr>
+						<td>개인정보가 포함된 자료를 업무용PC이외의 저장장치(USB, 외장하드, CD, 웹하드등)에 저장하지는 않았는가?</td>
+						<td><input type="radio"><label> 예</label> <input type="radio"><label> 아니오</label></td>
+					</tr>
+					<tr>
+						<th colspan="2">개인정보에 대한 보안프로그램의 설치 및 갱신여부 (제6조 5항)</th>
+					</tr>
+					<tr>
+						<td>해당업무PC의 백신이 설치되어 있으며 최신버전으로 관리하는가?</td>
+						<td><input type="radio"><label> 예</label> <input type="radio"><label> 아니오</label></td>
+					</tr>
+					<tr>
+						<td>주1회 백신검사를 통해 바이러스 및 스파이웨어를 차단하고 있는가?</td>
+						<td><input type="radio"><label> 예</label> <input type="radio"><label> 아니오</label></td>
+					</tr>
+					<tr>
+						<th colspan="2">개인정보의 안전한 보관을 위한 보관시설의 마련 또는 잠금장치의 설치 (제6조 6항)</th>
+					</tr>
+					<tr>
+						<td>사용컴퓨터는 부탕시 CMOS암호를 설정하여 사용하고 있는가?</td>
+						<td><input type="radio"><label> 예</label> <input type="radio"><label> 아니오</label></td>
+					</tr>
+					<tr>
+						<td>윈도우 화면보호기 실행시 암호 설정을 하였는가? (8자리 이상, 영문/숫자 혼합형)</td>
+						<td><input type="radio"><label> 예</label> <input type="radio"><label> 아니오</label></td>
+					</tr>
+					<tr>
+						<td>개인정보가 포함된 자료가 포함된 문서를 잠금장치가 있는 서랍에 보관하였는가?</td>
+						<td><input type="radio"><label> 예</label> <input type="radio"><label> 아니오</label></td>
+					</tr>
+					<tr>
+						<td>사무실 출입시 출입문 잠금장치는 작동하는가?</td>
+						<td><input type="radio"><label> 예</label> <input type="radio"><label> 아니오</label></td>
+					</tr>
+					<tr>
+						<th colspan="2">목적외 이용, 제공 및 재위탁 금지 준수여부 (제8조 1항)</th>
+					</tr>
+					<tr>
+						<td>상품 배송의 목적이외 제3자에게 고객정보를 전송하였는가?</td>
+						<td><input type="radio"><label> 예</label> <input type="radio"><label> 아니오</label></td>
+					</tr>
+					<tr>
+						<th colspan="2">개인정보가 포함된 자료(송장/리스트)의 파기</th>
+					</tr>
+					<tr>
+						<td>개인정보가 포함된 자료는 배송목적이 종료된 후 삭제하였는가?</td>
+						<td><input type="radio"><label> 예</label> <input type="radio"><label> 아니오</label></td>
+					</tr>
+					<tr>
+						<td>개인정보자료파기시 사무실내 파쇄기를 이용하여 파기하는가?</td>
+						<td><input type="radio"><label> 예</label> <input type="radio"><label> 아니오</label></td>
+					</tr>
+					<tr>
+						<th colspan="2">회사내에 개인정보관리책임자 지정 운영</th>
+					</tr>
+					<tr>
+						<td>개인정보관리책임자는 위 사항을 성실히 이행하는가?</td>
+						<td><input type="radio"><label> 예</label> <input type="radio"><label> 아니오</label></td>
+					</tr>
+					<tr>
+						<td>
+							개인정보관리책임자는 회사내 다른 직원에게 위 사항에 대해 교육을 하고 있는가?<br/>진행하였다면 가장 최근 진행한 일시는?<br/>
+							( <input type="text" style="width:40px">년
+							<input type="text" style="width:40px">월
+							<input type="text" style="width:40px">일
+							<input type="text" style="width:40px">명 진행 )
+						</td>
+						<td><input type="radio"><label> 예</label> <input type="radio"><label> 아니오</label></td>
+					</tr>
+				</tbody>
+			</table>
+			<div id="" class="txtr mt10">
+				※위 점검사항은 사실에 근거하여 작성하였음을 확인합니다.
+			</div>
+			<div id="" class="txtr mt10">
+				개인정보관리책임자: <input type="text" style="width:130px">
+			</div>
+			
+			<div class="check_label">
+				<label><input type="checkbox"> 위 점검사항은 사실에 근거하여 작성 및 확인 하였으며, 이에 동의합니다.</label>
+			</div>
+
+            <table class="tbl_primary">
+				<colgroup>
+					<col style="width:100px;">
+					<col>
+					<col style="width:100px;">
+					<col>
+				</colgroup>
+				<tbody class="txtc">
+					<tr>
+						<td colspan="4">
+							점검일시 : 2019년 04월 10일 
+						</td>
+					</tr>
+					<tr>
+						<th>협력회사명</th>
+						<td>회사명</td>
+						<th>아이디</th>
+						<td>아이디</td>
+					</tr>
+				</tbody>
+			</table>
+			<div id="" class="txtr mt10">
+				점검자/개인정보관리책임자: <button type="button" class="mid_btn_ty3">본인인증</button>
+			</div>
+			<ul class="ref mt10">
+				<li>· 매달 10일 개인정보보호 체크리스트 작성 및 본인인증 후 시스템 이용이 가능합니다.</li>
+				<li>· 개인정보보호 체크리스트는 담당자 중 한분만 작성하시면 되며, 점검을 안하시면 시스템 이용에 제재가 있습니다.</li>
+				<li>· 작성한 체크리스트는 “회원 → 협력회사 계약관리” 메뉴 에서 확인하실 수 있습니다.</li>
+			</ul>
+			<div id="" class="layer_btn">
+				<button type="button" class="layer_close">팝업닫기</button>
+			</div>
+        </div>
+		<!-- //정보보안/개인정보보호 체크리스트 서약서 -->
+        <span class="layer_align"></span>
+    </div>
+<!-- //레이어팝업 -->
+
+<div id="to_top">
+	<a href="#">TOP</a>
+</div>
+</div> <!-- //wrap -->
+</body>
+</html>

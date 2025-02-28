@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<meta charset="UTF-8">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>상품상세</title>
+<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="../../css/sub.css">
+<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script type="text/javascript" charset="utf-8" src="../../js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/common.js"></script>
+</head>
+<body>
+<? include("../include/header.html"); ?>
+
+<div id="container" class="container">
+	<? include("../include/snb.html"); ?>
+
+	<div class="content">
+		<div class="location">
+			<span>HOME</span>
+			<span>회원 </span>
+			<span>고객사회원 관리</span>
+			<span>고객사회원</span>
+			<span class="on">상세페이지</span>
+		</div>
+		<div class="inner">
+			<h3 class="tit_h3">상세페이지</h3>
+			<p class="tbl_tit_ty1"> ※ 비밀번호는 변경하실 경우에만 입력해주세요. (비밀번호는 8~12자 이내로 영문, 숫자를 조합하셔서 작성하시면 됩니다.)</p>
+			<table class="tbl_view">
+				<colgroup>
+					<col style="width:170px;">
+					<col>
+					<col style="width:170px;">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th>고객사</th>
+						<td>신세계</td>
+						<th>회원유형</th>
+						<td>
+							<select name="" id="">
+								<option value="">고객사회원</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<th>아이디</th>
+						<td>user_01</td>
+						<th>비밀번호</th>
+						<td><input type="password" name="" style="width:195px;"></td>
+					</tr>
+					<tr>
+						<th>이름</th>
+						<td><input type="text" name="" style="width:195px;" placeholder="홍길동"></td>
+						<th>사원번호</th>
+						<td><input type="text" name="" style="width:195px;" placeholder="123456789"></td>
+					</tr>
+					<tr>
+						<th>사업장</th>
+						<td><input type="text" name="" style="width:195px;" placeholder="신세계"></td>
+						<th>사업자번호</th>
+						<td>
+							<input type="text" name="" class="txtc" style="width:45px;" placeholder="">
+							<span class="division">-</span>
+							<input type="text" name="" class="txtc" style="width:35px;" placeholder="">
+							<span class="division">-</span>
+							<input type="text" name="" class="txtc" style="width:60px;" placeholder="">
+						</td>
+					</tr>
+					<tr>
+						<th>소속</th>
+						<td><input type="text" name="" style="width:195px;" placeholder="신세계"></td>
+						<th>부서(직급)</th>
+						<td><input type="text" name="" style="width:195px;" placeholder="사원"></td>
+					</tr>
+					<tr>
+						<th>업체명</th>
+						<td><input type="text" name="" style="width:195px;" placeholder="신세계"></td>
+						<th>업체코드</th>
+						<td><input type="text" name="" style="width:195px;" placeholder="SD1234"></td>
+					</tr>
+					<tr>
+						<th>업체명</th>
+						<td colspan="3"><input type="text" name="" style="width:195px;" placeholder="Partner ID"></td>
+					</tr>
+					<tr>
+						<th>이메일</th>
+						<td colspan="3">
+							<input type="text" name="" style="width:100px;" placeholder="">
+							<span class="division">@</span>
+							<input type="text" name="" style="width:100px;" placeholder="">
+							<select name="" id="">
+								<option value="">직접입력</option>
+								<option value="">naver.com</option>
+							</select>
+							<input type="checkbox" name="" id="mail"> <label for="mail">이메일 수신여부</label>
+						</td>
+					</tr>
+					<tr>
+						<th>전화번호</th>
+						<td colspan="3">
+							<input type="text" name="" class="txtc" style="width:40px;" placeholder="">
+							<span class="division">-</span>
+							<input type="text" name="" class="txtc" style="width:50px;" placeholder="">
+							<span class="division">-</span>
+							<input type="text" name="" class="txtc" style="width:50px;" placeholder="">
+						</td>
+					</tr>
+					<tr>
+						<th>휴대폰 번호</th>
+						<td colspan="3">
+							<input type="text" name="" class="txtc" style="width:40px;" placeholder="">
+							<span class="division">-</span>
+							<input type="text" name="" class="txtc" style="width:50px;" placeholder="">
+							<span class="division">-</span>
+							<input type="text" name="" class="txtc" style="width:50px;" placeholder="">
+							<input type="checkbox" name="" id="phone"> <label for="phone">휴대폰 번호 수신여부</label>
+						</td>
+					</tr>
+					<tr>
+						<th>생년월일</th>
+						<td>
+							<select name="" id="">
+								<option value="">양력</option>
+							</select>
+							<input type="text" name="" style="width:195px;" placeholder="2017-05-01">
+						</td>
+						<th>결혼기념일</th>
+						<td><input type="text" name="" style="width:195px;" placeholder="2017-05-01"></td>
+					</tr>
+					<tr>
+						<th>약관동의</th>
+						<td colspan="3">회원가입 및 약관동의일시 : 2017-05-01 23:59:59 / 동의IP : 111.111.11.111</td>
+					</tr>
+					<tr>
+						<th>기타정보</th>
+						<td colspan="3">방문횟수 : 3회 / 마지막방문일 : 2017-05-01 23:59:59 / 마지막방문IP : 111.111.11.111 / 회원가입일 : 2017-10-16 23:23:23</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<div class="button_area clear">
+				<div class="left">
+					<button type="button" class="btn_ty3">메모등록</button>
+				</div>
+				<button type="button" class="btn_ty4">삭제</button>
+				<button type="button" class="btn_ty5">수정</button>
+				<button type="button" class="btn_ty2">목록</button>
+			</div>
+
+			<h4 class="tit_h4">배송지 설정</h4>
+			<table class="tbl_primary">
+				<colgroup>
+					<col style="width:100px;">
+					<col style="width:100px;">
+					<col style="width:100px;">
+					<col style="width:100px;">
+					<col>
+				</colgroup>
+				<thead>
+					<tr>
+						<th>배송지</th>
+						<th>별칭</th>
+						<th>전화번호</th>
+						<th>휴대폰 번호</th>
+						<th>주소</th>
+					</tr>
+				</thead>
+				<tbody class="txtc">
+					<tr>
+						<td>기본배송지</td>
+						<td>우리집</td>
+						<td>02-1234-1234</td>
+						<td>010-1234-1234</td>
+						<td class="txtl"> 12345, 서울시 서초구 사평대로 205 CENTRAL CITY 반포천 복개주차장</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<table class="tbl_primary">
+				<colgroup>
+					<col style="width:40px;">
+					<col style="width:100px;">
+					<col style="width:100px;">
+					<col style="width:100px;">
+					<col>
+					<col style="width:130px;">
+				</colgroup>
+				<thead>
+					<tr>
+						<th>선택</th>
+						<th>별칭</th>
+						<th>전화번호</th>
+						<th>휴대폰 번호</th>
+						<th>주소</th>
+						<th>변경</th>
+					</tr>
+				</thead>
+				<tbody class="txtc">
+					<tr>
+						<td><input type="radio" name="" id=""></td>
+						<td>우리집</td>
+						<td>02-1234-1234</td>
+						<td>010-1234-1234</td>
+						<td class="txtl"> 12345, 서울시 서초구 사평대로 205 CENTRAL CITY 반포천 복개주차장</td>
+						<td>
+							<button type="button" class="btn_line_ty1">수정</button>
+							<button type="button" class="mid_btn_ty4">삭제</button>
+						</td>
+					</tr>
+					<tr>
+						<td><input type="radio" name="" id=""></td>
+						<td>회사</td>
+						<td>02-1234-1234</td>
+						<td>010-1234-1234</td>
+						<td class="txtl"> 12345, 서울시 서초구 사평대로 205 CENTRAL CITY 반포천 복개주차장</td>
+						<td>
+							<button type="button" class="btn_line_ty1">수정</button>
+							<button type="button" class="mid_btn_ty4">삭제</button>
+						</td>
+					</tr>
+					<tr>
+						<td><input type="radio" name="" id=""></td>
+						<td>공장</td>
+						<td>02-1234-1234</td>
+						<td>010-1234-1234</td>
+						<td class="txtl"> 12345, 서울시 서초구 사평대로 205 CENTRAL CITY 반포천 복개주차장</td>
+						<td>
+							<button type="button" class="btn_line_ty1">수정</button>
+							<button type="button" class="mid_btn_ty4">삭제</button>
+						</td>
+					</tr>
+					<tr>
+						<td><input type="radio" name="" id=""></td>
+						<td>가게</td>
+						<td>02-1234-1234</td>
+						<td>010-1234-1234</td>
+						<td class="txtl"> 12345, 서울시 서초구 사평대로 205 CENTRAL CITY 반포천 복개주차장</td>
+						<td>
+							<button type="button" class="btn_line_ty1">수정</button>
+							<button type="button" class="mid_btn_ty4">삭제</button>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<div class="button_area">
+				<button type="button" class="btn_ty9">기본배송지 적용</button>
+				<button type="button" class="btn_ty3">신규배송지 등록</button>
+			</div>
+
+			<h4 class="tit_h4">변동내역</h4>
+			<table class="tbl_primary">
+				<colgroup>
+					<col>
+					<col style="width:100px;">
+					<col style="width:100px;">
+				</colgroup>
+				<thead>
+					<tr>
+						<th>내용</th>
+						<th>처리자 아이디</th>
+						<th>일시</th>
+					</tr>
+				</thead>
+				<tbody class="txtc">
+					<!-- 정보 없을시 S -->
+					<tr>
+						<td colspan="3">등록된 변동내역이 없습니다.</td>
+					</tr>
+					<!--// 정보 없을시 E -->
+					<tr>
+						<td class="txtl"></td>
+						<td></td>
+						<td></td>
+					</tr>
+				</tbody>
+			</table>
+
+			<div class="paging">
+				<a href="#none" class="first">처음페이지</a>
+				<a href="#none" class="prev">이전페이지</a>
+				<a href="#none" class="on">1</a>
+				<a href="#none" class="num">2</a>
+				<a href="#none" class="num">3</a>
+				<a href="#none" class="num">4</a>
+				<a href="#none" class="num">5</a>
+				<a href="#none" class="num">6</a>
+				<a href="#none" class="num">7</a>
+				<a href="#none" class="num">8</a>
+				<a href="#none" class="num">9</a>
+				<a href="#none" class="num">10</a>
+				<a href="#none" class="next">다음페이지</a>
+				<a href="#none" class="last">마지막페이지</a>
+			</div>
+		</div><!-- //inner -->
+	</div><!-- //content -->
+</div><!-- //container -->
+</div><!-- //wrap -->
+</body>
+</html>

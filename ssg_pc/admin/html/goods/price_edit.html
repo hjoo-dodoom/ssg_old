@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<meta charset="UTF-8">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>상품수정</title>
+<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="../../css/sub.css">
+<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script type="text/javascript" charset="utf-8" src="../../js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/common.js"></script>
+</head>
+<body>
+<? include("../include/header.html"); ?>
+
+<div id="container" class="container">
+	<? include("../include/snb.html"); ?>
+
+	<div class="content">
+		<div class="location">
+			<span>HOME</span>
+			<span>상품</span>
+			<span>상품진열관리</span>
+			<span class="on">상품수정</span>
+		</div>
+		<div class="inner">
+			<h3 class="tit_h3">상품수정</h3>
+			<table class="tbl_view">
+				<colgroup>
+					<col style="width:170px;">
+					<col>
+					<col style="width:170px;">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th>가격대별</th>
+						<td colspan="3">
+							<select name="" id="">
+								<option value="">5~6만원대</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<th>상품선택</th>
+						<td colspan="3"><button type="button" class="mid_btn_ty2">상품검색</button></td>
+					</tr>
+					<tr>
+						<th>상품명</th>
+						<td colspan="3"><input type="text" name="" class="w100" placeholder="[제스파] 라인슬리밍_종아리공기압 ZP418"></td>
+					</tr>
+					<tr>
+						<th>이미지 업로드</th>
+						<td colspan="3">
+							<p><img src="../../images/dummy/main_banner.png" alt=""></p>
+							<p><input type="file" name=""></p>
+						</td>
+					</tr>
+					<tr>
+						<th>진열순서</th>
+						<td colspan="3"><input type="text" name="" style="width:100px;" class="txtc"></td>
+					</tr>
+					<tr>
+						<th>상품등록일</th>
+						<td>2017-06-01 23:59:59</td>
+						<th>상품 최종수정일</th>
+						<td>2017-06-02 23:59:59</td>
+					</tr>
+				</tbody>
+			</table>
+		
+			<div class="button_area">
+				<button type="button" class="btn_ty4">삭제</button>
+				<button type="button" class="btn_ty5">수정</button>
+				<button type="button" class="btn_ty2">목록</button>
+			</div>
+		</div><!-- //inner -->
+	</div><!-- //content -->
+</div><!-- //container -->
+</div><!-- //wrap -->
+</body>
+</html>

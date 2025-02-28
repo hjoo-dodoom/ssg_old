@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<meta charset="UTF-8">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>SHINSEGAE</title>
+<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="../../css/atype.css">
+<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script type="text/javascript" charset="utf-8" src="../../js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/ssg.carousel.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/common.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/jquery.selectbox-0.2.js"></script>
+</head>
+<body>
+<? include("../include/header1.html"); ?>
+
+<div id="container" class="container mypage">
+<div class="content">
+	<div class="inner clear">
+		<div class="cnt_left">
+			<h2>마이페이지</h2>
+			<div class="lnb">
+				<ul>
+					<li><a href="#">주문관리</a>
+						<ul>
+							<li class="on"><a href="#">주문목록/배송조회</a></li>
+							<li><a href="#">위시리스트</a></li>
+							<li><a href="#">취소/반품/교환/환불</a></li>
+						</ul>
+					</li>
+					<li><a href="#">포인트 관리</a></li>
+					<li><a href="#">활동관리</a>
+						<ul>
+							<li><a href="#">상품문의</a></li>
+							<li><a href="#">1:1문의</a></li>
+						</ul>
+					</li>
+					<li><a href="#">정보관리</a>
+						<ul>
+							<li><a href="#">개인정보수정</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="cnt_right">
+			<ul class="top clear">
+				<li>
+					<p class="txt1">진행중인 주문</p>
+					<p class="txt2"><b>5</b> 건</p>
+				</li>
+				<li>
+					<p class="txt1">취소/반품/교환/환불</p>
+					<p class="txt2"><b>2</b> 건</p>
+				</li>
+				<li>
+					<p class="txt1">위시리스트</p>
+					<p class="txt2"><b>3</b> 건</p>
+				</li>
+				<li>
+					<p class="txt1">장바구니 </p>
+					<p class="txt2"><b>1</b> 건</p>
+				</li>
+			</ul>
+
+			<div class="mypage_cnt">
+				<h3 class="tit_ty1">기프티콘 구매내역</h3>
+
+				<div class="search_ty1">
+					<ul>
+						<li>
+							<dl class="clear">
+								<dt>기간조회</dt>
+								<dd>
+									<div class="term">
+										<button type="button">오늘</button>
+										<button type="button">1주일</button>
+										<button type="button" class="on">1개월</button>
+										<button type="button">3개월</button>
+									</div>
+									<input type="text" name="" placeholder="" class="datepicker"> <span class="division">~</span> <input type="text" name="" placeholder="" class="datepicker">
+								</dd>
+							</dl>
+						</li>
+						<li>
+							<dl class="clear">
+								<dt>진행유형</dt>
+								<dd>
+									<div class="sel_ty4">
+										<select>
+											<option value="1">선택</option>
+										</select>
+									</div>
+									<input type="text" name="" placeholder="상품명 또는 주문번호로 검색하세요." style="width:507px;">
+								</dd>
+							</dl>
+						</li>
+					</ul>
+					<div class="btn_area">
+						<button type="button" class="btn_big_ty1">주문내역저장</button>
+						<div class="right"><button type="button" class="btn_big_ty2">검색</button></div>
+					</div>
+				</div>
+
+				<table class="tbl_cart">
+					<colgroup>
+						<col style="width:100px;">
+						<col style="width:105px;">
+						<col>
+						<col style="width:120px;">
+						<col style="width:80px;">
+					</colgroup>
+					<thead>
+						<tr>
+							<th>주문일/주문번호</th>
+							<th>총결제금액</th>
+							<th>상품정보</th>
+							<th>수신자 휴대폰 번호</th>
+							<th>진행현황</th>
+						</tr>
+					</thead>
+					<tbody class="txtc">
+						<tr>
+							<td class="bg">
+								<p>2017-05-01</p>
+								<p>(1707133213540001)</p>
+								<p><button type="button" class="btn_tbl_ty3">상세보기</button></p>
+							</td>
+							<td>99,823,000원</td>
+							<td class="txtl">
+								<div class="item">
+									<div class="outer">
+										<div class="thum">
+											<img src="../../images/dummy/thum_cart_list.png" alt="">
+										</div>
+										<div class="item_txt">
+											<p>엘라스틴 아보카도허니 트린트먼트 1000ml</p>
+											<p>옵션 : 레드 / M</p>
+										</div>
+									</div>
+								</div>
+							</td>
+							<td>010-1234-1234</td>
+							<td class="bg">발송완료</td>
+						</tr>
+						<tr>
+							<td class="bg">
+								<p>2017-05-01</p>
+								<p>(1707133213540001)</p>
+								<p><button type="button" class="btn_tbl_ty3">상세보기</button></p>
+							</td>
+							<td>99,823,000원</td>
+							<td class="txtl">
+								<div class="item">
+									<div class="outer">
+										<div class="thum">
+											<img src="../../images/dummy/thum_cart_list.png" alt="">
+										</div>
+										<div class="item_txt">
+											<p>엘라스틴 아보카도허니 트린트먼트 1000ml</p>
+											<p>옵션 : 레드 / M</p>
+										</div>
+									</div>
+								</div>
+							</td>
+							<td>010-1234-1234</td>
+							<td class="bg">발송완료</td>
+						</tr>
+						<tr>
+							<td class="bg">
+								<p>2017-05-01</p>
+								<p>(1707133213540001)</p>
+								<p><button type="button" class="btn_tbl_ty3">상세보기</button></p>
+							</td>
+							<td>99,823,000원</td>
+							<td class="txtl">
+								<div class="item">
+									<div class="outer">
+										<div class="thum">
+											<img src="../../images/dummy/thum_cart_list.png" alt="">
+										</div>
+										<div class="item_txt">
+											<p>엘라스틴 아보카도허니 트린트먼트 1000ml</p>
+											<p>옵션 : 레드 / M</p>
+										</div>
+									</div>
+								</div>
+							</td>
+							<td>010-1234-1234</td>
+							<td class="bg">발송완료</td>
+						</tr>
+						<tr>
+							<td class="bg">
+								<p>2017-05-01</p>
+								<p>(1707133213540001)</p>
+								<p><button type="button" class="btn_tbl_ty3">상세보기</button></p>
+							</td>
+							<td>99,823,000원</td>
+							<td class="txtl">
+								<div class="item">
+									<div class="outer">
+										<div class="thum">
+											<img src="../../images/dummy/thum_cart_list.png" alt="">
+										</div>
+										<div class="item_txt">
+											<p>엘라스틴 아보카도허니 트린트먼트 1000ml</p>
+											<p>옵션 : 레드 / M</p>
+										</div>
+									</div>
+								</div>
+							</td>
+							<td>010-1234-1234</td>
+							<td class="bg">발송완료</td>
+						</tr>
+						<tr>
+							<td class="bg">
+								<p>2017-05-01</p>
+								<p>(1707133213540001)</p>
+								<p><button type="button" class="btn_tbl_ty3">상세보기</button></p>
+							</td>
+							<td>99,823,000원</td>
+							<td class="txtl">
+								<div class="item">
+									<div class="outer">
+										<div class="thum">
+											<img src="../../images/dummy/thum_cart_list.png" alt="">
+										</div>
+										<div class="item_txt">
+											<p>엘라스틴 아보카도허니 트린트먼트 1000ml</p>
+											<p>옵션 : 레드 / M</p>
+										</div>
+									</div>
+								</div>
+							</td>
+							<td>010-1234-1234</td>
+							<td class="bg">발송완료</td>
+						</tr>
+						<tr>
+							<td class="bg">
+								<p>2017-05-01</p>
+								<p>(1707133213540001)</p>
+								<p><button type="button" class="btn_tbl_ty3">상세보기</button></p>
+							</td>
+							<td>99,823,000원</td>
+							<td class="txtl">
+								<div class="item">
+									<div class="outer">
+										<div class="thum">
+											<img src="../../images/dummy/thum_cart_list.png" alt="">
+										</div>
+										<div class="item_txt">
+											<p>엘라스틴 아보카도허니 트린트먼트 1000ml</p>
+											<p>옵션 : 레드 / M</p>
+										</div>
+									</div>
+								</div>
+							</td>
+							<td>010-1234-1234</td>
+							<td class="bg">발송완료</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="paging">
+					<a href="#" class="page first">처음페이지</a> <a href="#" class="page prev">이전페이지</a> <a href="#" class="on">1</a> <a href="#">2</a> <a href="#">3</a> <a href="#">4</a> <a href="#">5</a> <a href="#">6</a> <a href="#">7</a> <a href="#">8</a> <a href="#">9</a> <a href="#">10</a> <a href="#" class="page next">다음페이지</a> <a href="#" class="page last">마지막페이지</a>
+				</div>
+			</div>
+		</div>
+	</div><!-- //inner -->
+</div><!-- //content -->
+<div class="quick_area">
+	<div class="inner">
+		<div class="quick_left_box">
+			<div class="quick_left slide">
+				<div>
+					<a href="#"><img src="../../images/dummy/img_quick_left.png" alt="">
+					<span>12% 더블쿠폰<br>+청구할인</span></a>
+				</div>
+				<div>
+					<a href="#"><img src="../../images/dummy/img_quick_left.png" alt="">
+					<span>12% 더블쿠폰<br>+청구할인</span></a>
+				</div>
+				<div>
+					<a href="#"><img src="../../images/dummy/img_quick_left.png" alt="">
+					<span>12% 더블쿠폰<br>+청구할인</span></a>
+				</div>
+			</div>
+		</div>
+		<div class="quick_right_box">
+			<div class="quick_right">
+				<p class="tit">오늘본상품</p>
+				<div class="quick_r_out">
+					<div class="quick_r slide">
+						<div>
+							<a href="#"><img src="../../images/dummy/img_quick_right1.png" alt=""></a>
+							<a href="#"><img src="../../images/dummy/img_quick_right2.png" alt=""></a>
+							<a href="#"><img src="../../images/dummy/img_quick_right3.png" alt=""></a>
+						</div>
+						<div>
+							<a href="#"><img src="../../images/dummy/img_quick_right1.png" alt=""></a>
+							<a href="#"><img src="../../images/dummy/img_quick_right2.png" alt=""></a>
+							<a href="#"><img src="../../images/dummy/img_quick_right3.png" alt=""></a>
+						</div>
+					</div>
+				</div>
+				<a href="#container" class="btn_top">TOP </a>
+			</div>
+		</div>
+	</div>
+</div>
+</div><!-- //container -->
+<? include("../include/footer.html"); ?>
+</div><!-- //wrap -->
+</body>
+</html>

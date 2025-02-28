@@ -1,0 +1,148 @@
+@charset "UTF-8";
+@import url('atype.css');
+body {overflow-y: auto;}
+/* popup - windows */
+.pop_outer {}
+.pop_outer .pop_inner {padding:60px 30px 30px;}
+.pop_outer .pop_inner h1 {
+	padding-bottom:20px;
+	font-size: 20px; color:#222; text-align:center; color: #000;
+	border-bottom:2px solid #056dae;
+}
+.pop_outer .pop_inner .txtbox {
+	margin:20px 0; padding:30px 20px; line-height: 20px;
+	font-size:13px; color:#444;
+	border:1px solid #dbdbdb;
+}
+.pop_outer .pop_inner .v_top {
+	padding-top:10px;
+	vertical-align: top;
+}
+.pop_outer .pop_inner .ref {
+	margin-top:20px;
+	font-size: 13px;
+}
+.pop_outer .pop_inner .ref + .tbl_view {margin-top:5px;}
+.pop_outer .pop_inner h1 + .tbl_view {margin-top:20px;}
+.pop_outer .pop_inner .btn_area {margin:30px 0;}
+.pop_outer .pop_inner .textarea_outer {position: relative;}
+.pop_outer .pop_inner .textarea_outer .txt {
+	position: absolute; right:20px; bottom:10px;
+	color:#777;
+}
+
+/* blank */
+.pop_inner h1 + [class^="num_ty1_"], [class^="num_ty1_"] + [class^="num_ty2_"] {margin-top:20px;}
+.pop_inner p + [class^="num_ty2_"] {margin: 30px 0 10px;}
+.pop_inner p.img + [class^="num_ty1_"] {margin: 30px 0 20px;}
+
+
+.pop_inner .img {text-align: center;}
+[class^="num_ty1_"] {
+	position: relative;
+	line-height: 50px; padding-left: 55px;
+	font-size:16px; font-family: 'NanumBarunGothicB'; color:#fff;
+	background-color: #056cae;
+}
+[class^="num_ty1_"]:before {
+	display: block;
+	position: absolute; left:0; top:-1;
+	width:50px; height: 50px;
+	text-align: center;
+	background: url('../images/bg/bg_num_ty1.png') no-repeat 0 0;
+}
+.num_ty1_1:before {content: '1'}
+.num_ty1_2:before {content: '2'}
+
+[class^="num_ty2_"] {
+	position: relative;
+	line-height: 26px; padding-left: 35px;
+	font-size:14px; color:#555;
+}
+[class^="num_ty2_"] b {
+	font-size:15px; font-family: 'NanumBarunGothicB'; color:#2a97dd;
+}
+[class^="num_ty2_"]:before {
+	display: block;
+	position: absolute; left:0; top:-1;
+	width:26px; height: 26px;
+	font-size:12px; font-family: 'NanumBarunGothicEB';text-align: center; color:#fff;
+	background: url('../images/bg/bg_num_ty2.png') no-repeat 0 0;
+}
+.num_ty2_1:before {content: '1'}
+.num_ty2_2:before {content: '2'}
+.num_ty2_3:before {content: '3'}
+
+.bach_dn {
+	line-height: 60px;
+	font-family: 'NanumBarunGothicB'; font-size: 18px; color:#fff; text-align: center;
+	background-color: #ffa438;
+}
+p.bach_dn + ol [class^="num_ty3_"] {margin-top:10px;}
+[class^="num_ty3_"] + [class^="num_ty3_"] {margin-top:5px;}
+[class^="num_ty3_"] {
+	position: relative;
+	line-height: 22px; padding-left:30px;
+	font-size: 13px;
+}
+[class^="num_ty3_"] b {font-family: 'NanumBarunGothicB'; color:#eb813b;}
+[class^="num_ty3_"]:before {
+	display: block;
+	position: absolute; left: 0; top:0;
+	width:22px; height: 22px;
+	font-family: 'NanumBarunGothicEB'; font-size: 12px; color:#fff; text-align: center;
+	background-color: #686868;
+}
+.num_ty3_1:before {content: '1'}
+.num_ty3_2:before {content: '2'}
+
+
+.option_change .img {
+	position: relative;
+	height:100px; padding-left:110px;
+}
+.option_change .img span {
+	position: absolute; left: 10px; top:10px;
+	display: block;
+	margin-right:10px;
+	border:1px solid #ededed;
+}
+}
+.option_change .img img {width:70px; height: 70px;}
+.option_change .color {
+	margin-top:10px;
+	border-top: 1px solid #bbb; border-bottom: 1px solid #bbb;
+	background-color: #f1f1f1;
+}
+.option_change .color dl {position: relative;}
+.option_change .color dt {
+	position: absolute; left:0; top:0;
+	width:90px; padding-left: 10px; line-height: 64px;
+	font-size: 13px; color:#555;
+}
+.option_change .color dd {
+	padding:10px 10px 10px 90px;
+}
+.option_change .option_detail {
+	margin-top: 20px;
+	border:1px solid #ebebeb;
+	background-color: #f8f8f8;
+}
+.option_change .option_detail li {
+	position: relative;
+	padding:10px
+}
+.option_change .option_detail li + li {border-top:1px solid #ebebeb;}
+.option_change .option_detail .cart_variation, .option_change .option_detail .price_big {position: absolute; top:50%;}
+.option_change .option_detail .cart_variation {right:150px; margin-top:-13px;}
+.option_change .option_detail .price_big {right:10px; margin-top:-8px;}
+.option_change .total {margin-top:10px;}
+.option_change .total {
+	position: relative;
+	padding:20px 10px;
+	font-family: 'NanumBarunGothicB'; font-size: 13px; color:#f64b3f;
+	border:1px solid #f75549;
+	background-color: #fff7f6;
+}
+.option_change .total .price {position: absolute; right: 10px;}
+.option_change .total .price b {font-size: 18px;}

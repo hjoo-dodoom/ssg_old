@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> 
+<meta charset="UTF-8">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>퍼블리싱 작성 규칙</title>
+<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="../css/common.css">
+<link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+<script type="text/javascript" charset="utf-8" src="../js/jquery-1.7.2.min.js"></script>
+<style type="text/css">
+	/* heading */
+	h1, h2, h3, h4, h5, h6 {font-family:'ngB'; font-weight:normal;}
+	h1 {font-size:2.2em; color:#000}
+	h2 {font-size:1.9em}
+	h3 {font-size:1.7em;}
+	h4 {font-size:1.5em}
+	h5 {font-size:1.3em}
+	h6 {font-size:1.1em}
+
+	header {padding:30px 0 40px}
+	header h1 {text-align:center;}
+
+	section {
+		width:1000px;
+		margin:0 auto;
+	}
+	section h1 {position:absolute;visibility:hidden;width:0; height:0;overflow:hidden;font-size:0}
+
+	/* table */
+	table {
+		width:100%;
+		border-top:2px solid #1e61a8;
+	}
+	table th, table td {
+		padding:10px;
+		border-right:1px solid #ccc; border-bottom:1px solid #ccc;
+	}
+	table th:rowspan + th, table td:rowspan + td {border-left:1px solid #ccc;}
+	table th:last-child, table td:last-child{border-right:0 none}
+	table thead th {
+		font-family:'ngB'; font-size:13px;
+		color:#000;
+		border-bottom:2px solid #ccc;
+		background-color:#f2f2f2;
+	}
+	.tbl_ty1 {}
+	.tbl_ty1 thead {}
+	.tbl_ty1 tbody {}
+
+	/* heading */
+	h1, h2, h3, h4, h5, h6 {
+		font-family:'ngB'; font-weight:normal;
+	}
+	h1 {font-size:2.2em; color:#000}
+	h2 {font-size:1.9em}
+	h3 {font-size:1.7em}
+	h4 {font-size:1.5em}
+	h5 {font-size:1.3em}
+	h6 {font-size:1.1em}
+
+
+	/* TEXT-ALIGN */
+	.txt-l {text-align:left}
+	.txt-c {text-align:center}
+	.txt-r {text-align:right}
+
+	/*  */
+	.hexa_red {color:#ff0000}
+
+
+	/*  */
+	/* blank */
+	.rule_info + table {margin-top:5px}
+
+	/* ########## BODY ########## */
+	header {padding:30px 0 40px}
+	header h1 {text-align:center;}
+
+	section nav > ul > li {
+		float:left;
+		width:25%;
+		line-height:2em;
+		font-size:1.4em;
+	}
+	section nav li a {
+		position:relative; display:inline-block;
+	}
+	section nav li a:before {
+		display:inline-block; padding-right:10px;
+	}
+	section nav > ul > li:nth-child(1) > a:before {content:'1.';}
+	section nav > ul > li:nth-child(2) > a:before {content:'2.';}
+	section nav > ul > li:nth-child(3) > a:before {content:'3.';}
+	section nav > ul > li:nth-child(4) > a:before {content:'4.';}
+	section nav > ul > li:nth-child(5) > a:before {content:'5.';}
+	section nav > ul > li li a {
+		text-decoration:none;
+		cursor:default;
+	}
+	section nav > ul > li li a:before {
+		content:'-';
+		margin-left:20px;
+	}
+
+
+	section {
+		width:1000px; margin:0 auto;
+	}
+	section h2{
+			margin:30px 0 10px; padding-bottom:3px;
+			border-bottom:1px solid #ccc;
+	}
+	section h3{
+		margin:25px 0 10px;
+		color:#ff5b02;
+	}
+	section h3:before {
+		content:'\F00C';
+		margin-right:10px;
+		font-family:'FontAwesome';
+	}
+	section h4{
+		margin:15px 0 10px;
+		color:#1e61a8;
+	}
+	section h5{margin:10px 0 4px;}
+	section h5:before {
+		content:'\f101';
+		margin-right:7px;
+		font-family:'FontAwesome';
+	}
+	section h6{
+		margin:10px 0 2px;
+		color:#000
+	}
+
+	/* 폴더 구조도 */
+	.structure {line-height:2em}
+	.structure li {
+		padding-top:20px;
+		text-align:center;
+	}
+	.structure button {
+		min-width:100px;
+		padding:5px;
+		text-align:center;
+		border:1px solid #dcad3d;
+		background-color:#fde699;
+	}
+	.structure > li > ul > li{
+		display:inline-block;
+		margin-right:20px;
+		vertical-align:top;
+	}
+	.structure a {
+		display:block;
+		text-align:left;
+	}
+
+	.rule_info {}
+	.rule_info > li {margin-top:5px}
+	.rule_info p {
+		position:relative;
+		padding-left:10px;
+	}
+	.rule_info p:before {
+		position:absolute; left:0; top:6px;
+		display:inline-block; content:'';
+		width:3px; height:3px;
+		background-color:#4d4e6e;
+	}
+	.rule_info div {
+		position:relative;
+		margin:2px 0 0 10px; padding-left:35px;
+	}
+	.rule_info div span {
+		position:absolute; top:0; left:0;
+	}
+</style>
+</head>
+<body>
+<div id="wrap" class="wrap">
+<div class="skip">
+	<a href="#navi"><span>주 메뉴 바로가기</span></a>
+	<a href="#container"><span>본문 바로가기</span></a>
+	<a href="#footer"><span>하단 메뉴 바로가기</span></a>
+</div>
+<header id="header" class="header">
+	<h1>퍼블리싱 작성 규칙</h1>
+</header><!-- //header -->
+<section id="container" class="container">
+<h2>폴더 구조</h2>
+<ul class="structure">
+	<li><button type="button">프로젝트명</button>
+		<ul>
+			<li><button type="button">html</button>
+				<ul>
+					<li><a href="#">index.html</a></li>
+					<li><a href="#"></a></li>
+				</ul>
+			</li>
+			<li><button type="button">js</button>
+				<ul>
+					<li><a href="#">jquery-1.11.2.min.js</a></li>
+					<li><a href="#">common.js</a></li>
+				</ul>
+			</li>
+			<li><button type="button">css</button>
+				<ul>
+					<li><a href="#">reset.css</a></li>
+					<li><a href="#">common.css</a></li>
+					<li><a href="#">index.css</a></li>
+					<li><a href="#">sub.css</a></li>
+				</ul>
+			</li>
+			<li><button type="button">images</button>
+				<ul>
+					<li><button type="button">common</button></li>
+					<li><button type="button">icon</button></li>
+					<li><button type="button">main</button></li>
+					<li><button type="button">sub</button></li>
+				</ul>
+			</li>
+		</ul>
+	</li>
+</ul>
+
+<h2>Naming Guide</h2>
+<h3>naming 규칙</h3>
+<h4>공통규칙</h4>
+<ul class="rule_info">
+	<li><p>naming의 <span class="hexa_red">첫 시작에 숫자, 특수문자, 대문자의 사용은 지양</span>한다.</p>
+		<div><span>예시)</span>
+			<ul>
+				<li>btn_save, icon_home, img_mainvisual 등 (O)</li>
+				<li>2btn_save, Icon_home, $img_mainvisual 등 (X)</li>
+			</ul>
+		</div>
+	</li>
+	<li><p>naming은 <span class="hexa_red">'형태_의미_상태' 순서로 조합</span>하며, 3단계를 넘어가지 않도록 권장한다.</p>
+		<div><span>예시)</span>
+			<ul>
+				<li>btn_apply_on, box_news, box_reply_open 등</li>
+			</ul>
+		</div>
+	</li>
+</ul>
+
+<h4>id/class 규칙</h4>
+<ul class="rule_info">
+	<li><p>id/class는 <span class="hexa_red">underscore 방식으로 사용</span>한다.</p>
+		<div><span>예시)</span>
+			<ul>
+				<li>id="btn_gnb_search" (O)</li>
+				<li>id="btnSearch" (X)</li>
+			</ul>
+		</div>
+	</li>
+</ul>
+
+<h4>folder/file 규칙</h4>
+<h5>HTML</h5>
+<h6>대, 중 프로젝트 겨우</h6>
+<ul class="rule_info">
+	<li><p>서비스의 대분류에 따라 폴더를 생성하고 대분류의 폴더 안에 HTML 파일을 생성한다.</p>
+		<p>생성되는 HTML의 파일명은 <span class="hexa_red">'의미_상태'의 순서로 네이밍</span>한다.(상태는 필요에 따라 사용)</p>
+		<div><span>예시)</span>
+			<ul>
+				<li>/대분류명/notice.html</li>
+				<li>/대분류명/notice_view.html</li>
+			</ul>
+		</div>
+	</li>
+</ul>
+<h6>소 프로젝트 경우</h6>
+<ul class="rule_info">
+	<li><p>따로 폴더를 생성하지 않고 HTML 파일 한곳에 생성한다.</p>
+		<p>성되는 HTML의 파일명은  <span class="hexa_red">'serviceName_의미_상태'의 순서</span>로 네이밍한다.</p>
+		<div><span>예시)</span>
+			<ul>
+				<li>/serviceName_intro.html</li>
+				<li>/serviceName_intro_write.html</li>
+			</ul>
+		</div>
+	</li>
+</ul>
+
+<h5>CSS</h5>
+<h6>대, 중 프로젝트 경우</h6>
+<ul class="rule_info">
+	<li><p>공통요소 모음인 common.css 가 서비스별로 생성되며, 서비스의 대분류에 따라 서비스명_대분류 명으로 CSS의 name을 만들어 사용한다.</p>
+		<div><span>예시)</span>
+			<ul>
+				<li>common.css, service_name_intro.css</li>
+			</ul>
+		</div>
+		<p>각 서비스페이지에 import 되는 css는 common.css, serviceName_대분류명.css가 되며 2개 이하로 import 되도록 한다.</p>
+	</li>
+</ul>
+
+<h6>소 프로젝트 경우</h6>
+<ul class="rule_info">
+	<li><p>공통요소모음인 common.css 하나만 생성하여 사용한다.</p></li>
+</ul>
+
+<h6>프로모션프로젝트의 경우</h6>
+<ul class="rule_info">
+	<li><p>페이지 내 head 사이에 internal 방식으로 style을 추가한다.</p></li>
+</ul>
+
+<h5>images</h5>
+<h6>대, 중 프로젝트 경우</h6>
+<ul class="rule_info">
+	<li><p>images 폴더를 생성하고 common폴더 및 대분류별 폴더가 생성되며 그 하위에 관련 image들이 저장된다.</p>
+		<div><span>예시)</span>
+			<ul>
+				<li>images/common/btn_comm.gif </li>
+				<li>images/대분류명/intro_music.gif</li>
+			</ul>
+		</div>
+	</li>
+	<li><p>images 폴더에 모두 생성하며, 임시 image 사용 시 temp 폴더만 생성한다.</p></li>
+</ul>
+
+<h3>prefix/subfix/suffix 정의</h3>
+<h4>prefix</h4>
+<ul class="rule_info">
+	<li><p>접두사를 의미하는 것으로, 앞부분에 사용하며, 주로 형태를 나타내는 데 사용된다.</p>
+		<div><span>예시)</span>
+			<ul>
+				<li>tab_notice, tbl_product 등</li>
+			</ul>
+		</div>
+		<p>기본 프리픽스는 형태별로 통일한다.</p>
+		<p>서브 프리픽스가 필요한 부분은 underscore로 구분하여 표기한다 (line / line_dot)</p>
+		<p>프리픽스 리스트에 한해 subfix, suffix에서 축약형 네이밍 사용한다 (이외 네이밍은 의미전달 가능하도록 기재)</p>
+	</li>
+</ul>
+<table>
+	<caption>분류별 Prefix 부가설명</caption>
+	<thead>
+		<tr>
+			<th scope="col">분류</th>
+			<th scope="col">prefix</th>
+			<th scope="col">부가설명</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>타이틀</td>
+			<td>tit</td>
+			<td>일반적인 타이틀</td>
+		</tr>
+		<tr>
+			<td rowspan="3">영역</td>
+			<td>section</td>
+			<td>제목 태그(Heading Tag)를 지닌 영역 구분 (선택적 사용, 중첩사용 지양)</td>
+		</tr>
+		<tr>
+			<td>wrap</td>
+			<td>일반 영역의 묶음 (선택적 사용, 중첩사용 지양)</td>
+		</tr>
+		<tr>
+			<td>inner</td>
+			<td>부모 wrapper 가 존재하며 자식 묶음이 단독으로 필요한 경우</td>
+		</tr>
+		<tr>
+			<td rowspan="3">내비게이션</td>
+			<td>gnb</td>
+			<td>서비스 전체 내비게이션</td>
+		</tr>
+		<tr>
+			<td>lnb</td>
+			<td>지역 내비게이션(gnb 영역)</td>
+		</tr>
+		<tr>
+			<td>snb</td>
+			<td>사이드 내비게이션(좌측메뉴)</td>
+		</tr>
+		<tr>
+			<td>탭</td>
+			<td>tab</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>테이블</td>
+			<td>tbl</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>목록</td>
+			<td>list</td>
+			<td>일반 목록(ul, ol, 리스트 형식의 dl)</td>
+		</tr>
+		<tr>
+			<td rowspan="5">폼</td>
+			<td>tf</td>
+			<td>textfield (input 타입 text / textarea)</td>
+		</tr>
+		<tr>
+			<td>inp</td>
+			<td>input 타입 radio, checkbox, file 등</td>
+		</tr>
+		<tr>
+			<td>opt</td>
+			<td>selectbox</td>
+		</tr>
+		<tr>
+			<td>lab	label</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>fld</td>
+			<td>fieldset</td>
+		</tr>
+		<tr>
+			<td>버튼</td>
+			<td>btn</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>박스</td>
+			<td>box</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>아이콘</td>
+			<td>ico</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td rowspan="2">선</td>
+			<td>line_방향</td>
+			<td>일반 실선</td>
+		</tr>
+		<tr>
+			<td>line_dot_방향</td>
+			<td>점선</td>
+		</tr>
+		<tr>
+			<td>배경</td>
+			<td>bg</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>썸일 이미지</td>
+			<td>thum</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>페이징</td>
+			<td>paging</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>배너</td>
+			<td>bnr/banner</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td rowspan="5">텍스트</td>
+			<td>txt</td>
+			<td>일반 텍스트</td>
+		</tr>
+		<tr>
+			<td>txt_bar</td>
+			<td>구분선 텍스트</td>
+		</tr>
+		<tr>
+			<td>num</td>
+			<td>ex) num1, num2, ... - 숫자 사용 시 언더바(underscore) 사용 X</td>
+		</tr>
+		<tr>
+			<td>copyright</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>time</td>
+			<td>날짜 및 시간</td>
+		</tr>
+		<tr>
+			<td>강조</td>
+			<td>em</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td rowspan="2">링크</td>
+			<td>link</td>
+			<td>일반 링크</td>
+		</tr>
+		<tr>
+			<td>link_more</td>
+			<td>더 보기 링크</td>
+		</tr>
+		<tr>
+			<td>순서</td>
+			<td>fst, mid, lst</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>팝업</td>
+			<td>popup</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>레이어</td>
+			<td>layer</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>광고</td>
+			<td>ad</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>스페셜</td>
+			<td>spe</td>
+			<td>검색 스페셜 용도</td>
+		</tr>
+		<tr>
+			<td>위젯</td>
+			<td>widget_소재명</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>상세내용</td>
+			<td>desc</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>댓글</td>
+			<td>cmt</td>
+			<td></td>
+		</tr>
+	</tbody>
+</table>
+
+<h4>subfix</h4>
+<ul class="rule_info">
+	<li><p>하부 기호로서 subfix는 prefix와 함께 부가설명 용도로 사용한다.</p>
+		<div><span>예시)</span>
+			<ul>
+				<li>ico_arr_news.gif</li>
+			</ul>
+		</div>
+	</li>
+</ul>
+<table>
+	<caption>분류별 subfix 부가설명</caption>
+	<thead>
+		<tr>
+			<th scope="col">분류</th>
+			<th scope="col">subfix</th>
+			<th scope="col">부가설명</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>공용</td>
+			<td>comm</td>
+			<td>전역으로만 사용</td>
+		</tr>
+		<tr>
+			<td>위치변화</td>
+			<td>top/mid/bot/left/right</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>순서변화</td>
+			<td>fst/lst</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>그림자</td>
+			<td>shadow</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>화살표</td>
+			<td>arr</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>버튼상태변화</td>
+			<td>nor</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>방향</td>
+			<td>hori/vert</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>카테고리</td>
+			<td>cate</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>순위</td>
+			<td>rank</td>
+			<td></td>
+		</tr>
+	</tbody>
+</table>
+
+<h4>suffix</h4>
+<ul class="rule_info">
+	<li><p>접미사를 의미하는 것으로, prefix와 함께 부가설명 용도로 사용하며 주로 상태를 나타내는 데 사용된다.</p>
+		<div><span>예시)</span>
+			<ul>
+				<li>btn_confirm_on, btn_prev 등</li>
+			</ul>
+		</div>
+	</li>
+</ul>
+<table>
+	<caption>분류별 subfix 부가설명</caption>
+	<thead>
+		<tr>
+			<th scope="col">분류</th>
+			<th scope="col">suffix</th>
+			<th scope="col">부가설명</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>상태변화</td>
+			<td>_on / _off / _over / _hit / _focus</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>위치변화</td>
+			<td>_top / _mid / _bot / _left / _right</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>순서변화</td>
+			<td>_fst / _lst</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>이전/다음</td>
+			<td>_prev / _next</td>
+			<td></td>
+		</tr>
+	</tbody>
+</table>
+
+<h2>CSS Guide</h2>
+<h3>CSS 권장 작성 순서</h3>
+<table>
+	<caption>css 권장 작성 순서</caption>
+	<thead>
+		<tr>
+			<th scope="col">순서</th>
+			<th scope="col">속성</th>
+			<th scope="col">의미</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="txt-c">1</td>
+			<td>display</td>
+			<td>표시</td>
+		</tr>
+		<tr>
+			<td class="txt-c">2</td>
+			<td>overflow</td>
+			<td>넘침</td>
+		</tr>
+		<tr>
+			<td class="txt-c">3</td>
+			<td>float</td>
+			<td>흐름</td>
+		</tr>
+		<tr>
+			<td class="txt-c">4</td>
+			<td>position</td>
+			<td>위치</td>
+		</tr>
+		<tr>
+			<td class="txt-c">5</td>
+			<td>z-index</td>
+			<td>정렬</td>
+		</tr>
+		<tr>
+			<td class="txt-c">6</td>
+			<td>width & height</td>
+			<td>크기</td>
+		</tr>
+		<tr>
+			<td class="txt-c">7</td>
+			<td>margin & padding</td>
+			<td>간격</td>
+		</tr>
+		<tr>
+			<td class="txt-c">8</td>
+			<td>border</td>
+			<td>보더</td>
+		</tr>
+		<tr>
+			<td class="txt-c">9</td>
+			<td>font</td>
+			<td>폰트 (font-style &gt; font-variant &gt; font-weight &gt; font-size &gt; line-height &gt; font-family)</td>
+		</tr>
+		<tr>
+			<td class="txt-c">10</td>
+			<td>background</td>
+			<td>배경</td>
+		</tr>
+		<tr>
+			<td class="txt-c">11</td>
+			<td>etc(기타)</td>
+			<td>color,text-decoration,text-indent,clear...</td>
+		</tr>
+	</tbody>
+</table>
+
+</section><!-- //container -->
+</div><!-- //wrap -->
+</body>
+</html>

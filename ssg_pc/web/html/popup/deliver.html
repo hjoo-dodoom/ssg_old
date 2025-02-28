@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<meta charset="UTF-8">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>배송지 설정</title>
+<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="../../css/popup.css">
+<script type="text/javascript" charset="utf-8" src="../../js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/common.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/jquery.selectbox-0.2.js"></script>
+</head>
+<body>
+<div class="pop_outer">
+	<div class="pop_inner">
+		<h1>배송지 설정</h1>
+		<table class="tbl_view">
+			<colgroup>
+				<col style="width:40px;">
+				<col style="width:100px;">
+				<col>
+				<col style="width:70px;">
+			</colgroup>
+			<thead>
+				<tr>
+					<th>선택</th>
+					<th>배송지 이름</th>
+					<th>주소</th>
+					<th>변경</th>
+				</tr>
+			</thead>
+			<tbody class="txtc">
+				<tr>
+					<td><input type="radio" name="addr" checked="checked"></td>
+					<td>우리집<span class="txtred">(기본)</span></td>
+					<td class="txtl">[기본배송지] 12345, 서울시 서초구 사평대로 205 CENTRAL CITY 반포천 복개주차장<br> 홍길동, 02-1234-1234, 010-4321-4321</td>
+					<td><button type="button" class="btn_tbl_ty1">수정</button></td>
+				</tr>
+				<tr>
+					<td><input type="radio" name="addr"></td>
+					<td>회사</td>
+					<td class="txtl">12345, 서울시 서초구 사평대로 205 CENTRAL CITY 반포천 복개주차장<br> 홍길동, 02-1234-1234, 010-4321-4321</td>
+					<td><button type="button" class="btn_tbl_ty1">수정</button> <button type="button" class="btn_tbl_ty2">삭제</button></td>
+				</tr>
+				<tr>
+					<td><input type="radio" name="addr"></td>
+					<td>친정집</td>
+					<td class="txtl">12345, 서울시 서초구 사평대로 205 CENTRAL CITY 반포천 복개주차장<br> 홍길동, 02-1234-1234, 010-4321-4321</td>
+					<td><button type="button" class="btn_tbl_ty1">수정</button> <button type="button" class="btn_tbl_ty2">삭제</button></td>
+				</tr>
+			</tbody>
+		</table>
+		<div class="ref">* 라디오버튼 선택 후 기본배송지 변경 버튼을 선택하셔야 기본 배송지가 변경됩니다.</div>
+
+		<div class="btn_area txtc">
+			<div class="left"><button type="button" class="btn_ty5">배송지 추가</button></div>
+			<button type="button" class="btn_ty2">배송지로 선택</button>
+		</div>
+
+
+	</div>
+</div><!-- //pop_outer -->
+<script type="text/javascript">
+	$(document).ready(function() {
+		$(".sel_ty3 select").selectbox();
+	});
+</script>
+</body>
+</html>

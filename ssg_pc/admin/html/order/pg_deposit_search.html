@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<meta charset="UTF-8">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>PG입금일별 조회</title>
+<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="../../css/sub.css">
+<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script type="text/javascript" charset="utf-8" src="../../js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/common.js"></script>
+</head>
+<body>
+<? include("../include/header.html"); ?>
+
+<div id="container" class="container">
+	<? include("../include/snb.html"); ?>
+
+	<div class="content">
+		<div class="location">
+			<span>HOME</span>
+			<span>주문</span>
+			<span>주문목록</span>
+			<span class="on">PG입금일별 조회</span>
+		</div>
+		<div class="inner">
+			<h3 class="tit_h3">PG입금일별 조회</h3>
+
+			<table class="tbl_view">
+				<colgroup>
+					<col style="width:100px">
+					<col>
+					<col style="width:100px">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th scope="row">기간검색</th>
+						<td colspan="3">
+							<input type="text" name="" class="datepicker">
+							<span class="division">~</span>
+							<input type="text" name="" class="datepicker">
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">고객사</th>
+						<td colspan="3">
+							<select name="" id="">
+								<option value="">전체</option>
+							</select>
+							<select name="" id="">
+								<option value="">선택 </option>
+							</select>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="button_area">
+				<button type="button" class="btn_ty1">검색</button>
+			</div>
+
+			<div class="tbl_search_list">
+				<div class="top">
+					<div class="left"></div>
+					<div class="right">
+						<a href="#">엑셀저장</a>
+					</div>
+				</div>
+
+				<table class="tbl_primary">
+					<thead>
+						<tr>
+							<th scope="row">구분</th>
+							<th scope="row">입금일자</th>
+							<th scope="row">쇼핑몰<br>(고객사)</th>
+							<th scope="row">주문일</th>
+							<th scope="row">매출액</th>
+							<th scope="row">PG<br>거래금액</th>
+							<th scope="row">PG<br>수수료</th>
+							<th scope="row">PG<br>부가세</th>
+							<th scope="row">실입금액</th>
+							<th scope="row">담당자</th>
+							<th scope="row">마감여부</th>
+							<th scope="row">상세보기</th>
+						</tr>
+					</thead>
+					<tbody class="txtc">
+						<tr>
+							<td>신용카드</td>
+							<td>2017-06-01</td>
+							<td>신세계<br>폐쇄몰</td>
+							<td>2017-06-01 ~ <br>2017-12-31</td>
+							<td class="txtr">1,000,000</td>
+							<td class="txtr">1,000,000</td>
+							<td class="txtr">100,000</td>
+							<td class="txtr">10,000</td>
+							<td class="txtr">1,000,000</td>
+							<td>김담당</td>
+							<td><button type="button" class="mid_btn_ty1">마감처리</button></td>
+							<td><button type="button" class="tbl_btn_ty1">상세보기</button></td>
+						</tr>
+						<tr>
+							<td>신용카드</td>
+							<td>2017-06-01</td>
+							<td>신세계<br>폐쇄몰</td>
+							<td>2017-06-01 ~ <br>2017-12-31</td>
+							<td class="txtr">1,000,000</td>
+							<td class="txtr">1,000,000</td>
+							<td class="txtr">100,000</td>
+							<td class="txtr">10,000</td>
+							<td class="txtr">1,000,000</td>
+							<td>김담당</td>
+							<td><button type="button" class="mid_btn_ty1">마감처리</button></td>
+							<td><button type="button" class="tbl_btn_ty1">상세보기</button></td>
+						</tr>
+						<tr>
+							<td>신용카드</td>
+							<td>2017-06-01</td>
+							<td>신세계<br>폐쇄몰</td>
+							<td>2017-06-01 ~ <br>2017-12-31</td>
+							<td class="txtr">1,000,000</td>
+							<td class="txtr">1,000,000</td>
+							<td class="txtr">100,000</td>
+							<td class="txtr">10,000</td>
+							<td class="txtr">1,000,000</td>
+							<td>김담당</td>
+							<td><button type="button" class="mid_btn_ty1">마감처리</button></td>
+							<td><button type="button" class="tbl_btn_ty1">상세보기</button></td>
+						</tr>
+					</tbody>
+					<tfoot class="txtr">
+						<tr>
+							<td class="txtc" colspan="4">합계</td>
+							<td class="txtr">1,000,000</td>
+							<td class="txtr">1,000,000</td>
+							<td class="txtr">100,000</td>
+							<td class="txtr">10,000</td>
+							<td class="txtr">1,000,000</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</tfoot>
+				</table>
+
+				<h4 class="tit_h4">2017-06-01 신세계폐쇄몰 PG입금 상세조회</h4>
+				<table class="tbl_primary">
+					<thead>
+						<tr>
+							<th scope="row">구분</th>
+							<th scope="row">입금일자</th>
+							<th scope="row">쇼핑몰<br>(고객사)</th>
+							<th scope="row">주문일</th>
+							<th scope="row">체결번호</th>
+							<th scope="row">상품명</th>
+							<th scope="row">거래구분</th>
+							<th scope="row">주문자<br>아이디</th>
+							<th scope="row">총<br>주문액</th>
+							<th scope="row">PG<br>거래금액</th>
+							<th scope="row">PG<br>수수료</th>
+							<th scope="row">PG<br>부가세</th>
+							<th scope="row">입금액</th>
+							<th scope="row">담당자</th>
+							<th scope="row">수정</th>
+						</tr>
+					</thead>
+					<tbody class="txtc">
+						<tr>
+							<td>신용카드</td>
+							<td>2017-06-01</td>
+							<td>신세계<br>폐쇄몰</td>
+							<td>2017-06-01</td>
+							<td>13456741</td>
+							<td class="txtl">[HICKIES] LED라이트 암밴드</td>
+							<td>승인</td>
+							<td>User_1</td>
+							<td class="txtr">1,000,000</td>
+							<td class="txtr">1,000,000</td>
+							<td class="txtr">100,000</td>
+							<td class="txtr">10,000</td>
+							<td class="txtr">1,000,000</td>
+							<td>김담당</td>
+							<td><button type="button" class="btn_line_ty1">수정</button></td>
+						</tr>
+						<tr>
+							<td>신용카드</td>
+							<td>2017-06-01</td>
+							<td>신세계<br>폐쇄몰</td>
+							<td>2017-06-01</td>
+							<td>13456741</td>
+							<td class="txtl">[HICKIES] LED라이트 암밴드</td>
+							<td>승인</td>
+							<td>User_1</td>
+							<td class="txtr">1,000,000</td>
+							<td class="txtr">1,000,000</td>
+							<td class="txtr">100,000</td>
+							<td class="txtr">10,000</td>
+							<td class="txtr">1,000,000</td>
+							<td>김담당</td>
+							<td><button type="button" class="btn_line_ty1">수정</button></td>
+						</tr>
+						<tr>
+							<td>신용카드</td>
+							<td>2017-06-01</td>
+							<td>신세계<br>폐쇄몰</td>
+							<td>2017-06-01</td>
+							<td>13456741</td>
+							<td class="txtl">[HICKIES] LED라이트 암밴드</td>
+							<td>승인</td>
+							<td>User_1</td>
+							<td class="txtr">1,000,000</td>
+							<td class="txtr">1,000,000</td>
+							<td class="txtr">100,000</td>
+							<td class="txtr">10,000</td>
+							<td class="txtr">1,000,000</td>
+							<td>김담당</td>
+							<td><button type="button" class="btn_line_ty1">수정</button></td>
+						</tr>
+					</tbody>
+					<tfoot class="txtr">
+						<tr>
+							<td class="txtc" colspan="8">합계</td>
+							<td class="txtr">1,000,000</td>
+							<td class="txtr">1,000,000</td>
+							<td class="txtr">100,000</td>
+							<td class="txtr">10,000</td>
+							<td class="txtr">1,000,000</td>
+							<td></td>
+							<td></td>
+						</tr>
+					</tfoot>
+				</table>
+			</div>
+		</div>
+	</div><!-- //content -->
+</div><!-- //container -->
+</div><!-- //wrap -->
+</body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<meta charset="UTF-8">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>쿠폰 업로드 현황</title>
+<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="../../css/sub.css">
+<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script type="text/javascript" charset="utf-8" src="../../js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/common.js"></script>
+</head>
+<body>
+<? include("../include/header.html"); ?>
+
+<div id="container" class="container">
+	<? include("../include/snb.html"); ?>
+
+	<div class="content">
+		<div class="location">
+			<span>HOME</span>
+			<span>GA몰</span>
+			<span>쿠폰관리</span>
+			<span class="on">쿠폰 업로드 현황</span>
+		</div>
+		<div class="inner">
+			<h3 class="tit_h3">쿠폰 업로드 현황</h3>
+
+			<div class="tbl_outer">
+				<table class="tbl_view">
+					<colgroup>
+						<col style="width:120px">
+						<col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">기간</th>
+							<td>
+								<input type="text" name="" class="datepicker">
+								<span class="division">~</span>
+								<input type="text" name="" class="datepicker">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div class="button_area">
+				<div class="left">
+					<button type="button" class="btn_ty3">쿠폰 대량지급</button>
+				</div>
+				<button type="button" class="btn_ty1">검색</button>
+			</div>
+
+			<table class="tbl_primary">
+				<thead>
+					<tr>
+						<th scope="row">일자</th>
+						<th scope="row">지급</th>
+						<th scope="row">지급내역</th>
+						<th scope="row">지급대상 수</th>
+						<th scope="row">소멸일자</th>
+						<th scope="row">상태</th>
+						<th scope="row">상세보기</th>
+					</tr>
+				</thead>
+				<tbody class="txtc">
+					<tr>
+						<td>2017-05-01 23:59:59</td>
+						<td>1,000,000</td>
+						<td><button type="button" class="tbl_btn_ty1">지급내역보기</button></td>
+						<td>1,000</td>
+						<td>2018-12-31</td>
+						<td>승인</td>
+						<td><button type="button" class="tbl_btn_ty1">상세보기</button></td>
+					</tr>
+					<tr>
+						<td>2017-05-01 23:59:59</td>
+						<td>1,000,000</td>
+						<td><button type="button" class="tbl_btn_ty1">지급내역보기</button></td>
+						<td>1,000</td>
+						<td>2018-12-31</td>
+						<td>승인</td>
+						<td><button type="button" class="tbl_btn_ty1">상세보기</button></td>
+					</tr>
+					<tr>
+						<td>2017-05-01 23:59:59</td>
+						<td>1,000,000</td>
+						<td><button type="button" class="tbl_btn_ty1">지급내역보기</button></td>
+						<td>1,000</td>
+						<td>2018-12-31</td>
+						<td>승인</td>
+						<td><button type="button" class="tbl_btn_ty1">상세보기</button></td>
+					</tr>
+					<tr>
+						<td>2017-05-01 23:59:59</td>
+						<td>1,000,000</td>
+						<td><button type="button" class="tbl_btn_ty1">지급내역보기</button></td>
+						<td>1,000</td>
+						<td>2018-12-31</td>
+						<td>승인</td>
+						<td><button type="button" class="tbl_btn_ty1">상세보기</button></td>
+					</tr>
+					<tr>
+						<td>2017-05-01 23:59:59</td>
+						<td>1,000,000</td>
+						<td><button type="button" class="tbl_btn_ty1">지급내역보기</button></td>
+						<td>1,000</td>
+						<td>2018-12-31</td>
+						<td>승인</td>
+						<td><button type="button" class="tbl_btn_ty1">상세보기</button></td>
+					</tr>
+					<tr>
+						<td>2017-05-01 23:59:59</td>
+						<td>1,000,000</td>
+						<td><button type="button" class="tbl_btn_ty1">지급내역보기</button></td>
+						<td>1,000</td>
+						<td>2018-12-31</td>
+						<td>승인</td>
+						<td><button type="button" class="tbl_btn_ty1">상세보기</button></td>
+					</tr>
+					<tr>
+						<td>2017-05-01 23:59:59</td>
+						<td>1,000,000</td>
+						<td><button type="button" class="tbl_btn_ty1">지급내역보기</button></td>
+						<td>1,000</td>
+						<td>2018-12-31</td>
+						<td>승인</td>
+						<td><button type="button" class="tbl_btn_ty1">상세보기</button></td>
+					</tr>
+					<tr>
+						<td>2017-05-01 23:59:59</td>
+						<td>1,000,000</td>
+						<td><button type="button" class="tbl_btn_ty1">지급내역보기</button></td>
+						<td>1,000</td>
+						<td>2018-12-31</td>
+						<td>승인</td>
+						<td><button type="button" class="tbl_btn_ty1">상세보기</button></td>
+					</tr>
+					<tr>
+						<td>2017-05-01 23:59:59</td>
+						<td>1,000,000</td>
+						<td><button type="button" class="tbl_btn_ty1">지급내역보기</button></td>
+						<td>1,000</td>
+						<td>2018-12-31</td>
+						<td>승인</td>
+						<td><button type="button" class="tbl_btn_ty1">상세보기</button></td>
+					</tr>
+					<tr>
+						<td>2017-05-01 23:59:59</td>
+						<td>1,000,000</td>
+						<td><button type="button" class="tbl_btn_ty1">지급내역보기</button></td>
+						<td>1,000</td>
+						<td>2018-12-31</td>
+						<td>승인</td>
+						<td><button type="button" class="tbl_btn_ty1">상세보기</button></td>
+					</tr>
+				</tbody>
+			</table>
+
+			<div class="paging">
+				<a href="#none" class="first">처음페이지</a>
+				<a href="#none" class="prev">이전페이지</a>
+				<a href="#none" class="on">1</a>
+				<a href="#none" class="num">2</a>
+				<a href="#none" class="num">3</a>
+				<a href="#none" class="num">4</a>
+				<a href="#none" class="num">5</a>
+				<a href="#none" class="num">6</a>
+				<a href="#none" class="num">7</a>
+				<a href="#none" class="num">8</a>
+				<a href="#none" class="num">9</a>
+				<a href="#none" class="num">10</a>
+				<a href="#none" class="next">다음페이지</a>
+				<a href="#none" class="last">마지막페이지</a>
+			</div>
+		</div>
+	</div><!-- //content -->
+</div><!-- //container -->
+</div><!-- //wrap -->
+</body>
+</html>

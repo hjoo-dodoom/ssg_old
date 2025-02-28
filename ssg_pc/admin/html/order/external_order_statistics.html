@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<meta charset="UTF-8">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>외부몰주문통계</title>
+<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="../../css/sub.css">
+<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script type="text/javascript" charset="utf-8" src="../../js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/common.js"></script>
+</head>
+<body>
+<? include("../include/header.html"); ?>
+
+<div id="container" class="container">
+	<? include("../include/snb.html"); ?>
+
+	<div class="content">
+		<div class="location">
+			<span>HOME</span>
+			<span>주문</span>
+			<span>외부몰주문목록</span>
+			<span class="on">외부몰주문통계</span>
+		</div>
+		<div class="inner">
+			<h3 class="tit_h3">외부몰주문통계</h3>
+
+			<table class="tbl_view">
+				<colgroup>
+					<col style="width:100px">
+					<col style="width:300px">
+					<col style="width:100px">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th scope="row">검색일</th>
+						<td>
+							<input type="text" name="" class="datepicker">
+							<span class="division">~</span>
+							<input type="text" name="" class="datepicker">
+						</td>
+						<th scope="row">파트별</th>
+						<td>
+							<label><input type="checkbox"> 파트별</label>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="button_area">
+				<button type="button" class="btn_ty1">검색</button>
+			</div>
+
+			<h4 class="tit_h4">상품별 매출</h4>
+			<table class="tbl_primary">
+				<thead>
+					<tr>
+						<th rowspan="3" scope="row">파트</th>
+						<th rowspan="3" scope="row">고객사</th>
+						<th rowspan="3" scope="row">담당자</th>
+						<th colspan="6" scope="row">상품별 매출</th>
+						<th rowspan="3" scope="row">합계</th>
+					</tr>
+					<tr>
+						<th colspan="3" scope="row">상품권</th>
+						<th colspan="3" scope="row">상품</th>
+					</tr>
+					<tr>
+						<th scope="row">자사</th>
+						<th scope="row">타사</th>
+						<th scope="row">합계</th>
+						<th scope="row">매장상품</th>
+						<th scope="row">일반상품</th>
+						<th scope="row">합계</th>
+					</tr>
+				</thead>
+				<tbody class="txtr">
+					<tr>
+						<td class="txtc">1파트</td>
+						<td class="txtc">블루베리몰</td>
+						<td class="txtc">홍길동</td>
+						<td>0</td>
+						<td>100,000</td>
+						<td>150,000</td>
+						<td>0</td>
+						<td>150,000</td>
+						<td>250,000</td>
+						<td>250,000</td>
+					</tr>
+					<tr class="strong">
+						<td colspan="3" class="txtc">파트계</td>
+						<td>0</td>
+						<td>200,000</td>
+						<td>150,000</td>
+						<td>0</td>
+						<td>150,000</td>
+						<td>350,000</td>
+						<td>350,000</td>
+					</tr>
+					<tr>
+						<td class="txtc">2파트</td>
+						<td class="txtc">블루베리몰</td>
+						<td class="txtc">홍길동</td>
+						<td>0</td>
+						<td>100,000</td>
+						<td>150,000</td>
+						<td>0</td>
+						<td>150,000</td>
+						<td>250,000</td>
+						<td>250,000</td>
+					</tr>
+					<tr>
+						<td class="txtc">2파트</td>
+						<td class="txtc">블루베리몰</td>
+						<td class="txtc">홍길동</td>
+						<td>0</td>
+						<td>100,000</td>
+						<td>150,000</td>
+						<td>0</td>
+						<td>150,000</td>
+						<td>250,000</td>
+						<td>250,000</td>
+					</tr>
+					<tr class="strong">
+						<td colspan="3" class="txtc">파트계</td>
+						<td>0</td>
+						<td>200,000</td>
+						<td>150,000</td>
+						<td>0</td>
+						<td>150,000</td>
+						<td>350,000</td>
+						<td>350,000</td>
+					</tr>
+				</tbody>
+				<tfoot class="txtr">
+					<tr>
+						<td colspan="3" class="txtc">팀계(법인영업팀)</td>
+						<td>200,000</td>
+						<td>0</td>
+						<td>200,000</td>
+						<td>150,000</td>
+						<td>0</td>
+						<td>150,000</td>
+						<td>150,000</td>
+					</tr>
+				</tfoot>
+			</table>
+
+		</div>
+	</div><!-- //content -->
+</div><!-- //container -->
+</div><!-- //wrap -->
+</body>
+</html>

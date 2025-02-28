@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<meta charset="UTF-8">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>외부상품 업로드 상세</title>
+<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="../../css/sub.css">
+<script type="text/javascript" charset="utf-8" src="../../js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/common.js"></script>
+</head>
+<body>
+<? include("../include/header.html"); ?>
+
+<div id="container" class="container">
+	<? include("../include/snb.html"); ?>
+
+	<div class="content">
+		<div class="location">
+			<span>HOME</span>
+			<span>상품</span>
+			<span>상품목록</span>
+			<span>외부상품관리</span>
+			<span>외부상품대량등록</span>
+			<span class="on">외부상품 업로드 상세</span>
+		</div>
+		<div class="inner">
+			<h3 class="tit_h3">외부상품 업로드 상세</h3>
+
+			<table class="tbl_view">
+				<colgroup>
+					<col style="width:100px">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th scope="row">협력회사명</th>
+						<td>돋움</td>
+					</tr>
+					<tr>
+						<th scope="row">등록일시</th>
+						<td>2023-06-12 11:11:11</td>
+					</tr>
+					<tr>
+						<th scope="row">제목</th>
+						<td>50개</td>
+					</tr>
+					<tr>
+						<th scope="row">관리자</th>
+						<td>admin1</td>
+					</tr>
+					<tr>
+						<th scope="row">등록상태</th>
+						<td>
+							<select name="" id="">
+								<option value="">선택</option>
+							</select>
+						</td>
+					</tr>
+					<tr><!-- 에러건 -->
+						<th scope="row">등록상태</th>
+						<td>
+							<select name="" id="">
+								<option value="">취소</option>
+							</select>
+							<p class="txt_red mt10">여러건이 존재하여 진행이 불가합니다. 확인버튼을 눌러 취소 진행 추 재 업로드 하시기 바랍니다.</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<div class="button_area">
+				<button type="button" class="btn_ty6">확인</button>
+				<button type="button" class="btn_ty2">목록</button>
+			</div>
+
+			<table class="tbl_primary">
+				<thead>
+					<tr>
+						<th scope="row">등록일</th>
+						<th scope="row">협력회사아이디</th>
+						<th scope="row">상품코드</th>
+						<th scope="row">미등록 사유</th>
+					</tr>
+				</thead>
+				<tbody class="txtc">
+					<tr>
+						<td colspan="4">외부상품 미등록 내역이 없습니다</td>
+					</tr>
+					<tr>
+						<td>2023-06-12 11:11:11</td>
+						<td>dodoom12</td>
+						<td>aasd12344</td>
+						<td class="txtl">존재하지 않는 협력회사 아이디입니다</td>
+					</tr>
+					<tr>
+						<td>2023-06-12 11:11:11</td>
+						<td>dodoom12</td>
+						<td>aasd12344</td>
+						<td class="txtl">이미 등록된 상품코드입니다</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div><!-- //content -->
+</div><!-- //container -->
+</div><!-- //wrap -->
+</body>
+</html>

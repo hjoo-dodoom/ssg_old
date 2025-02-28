@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<meta charset="UTF-8">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>Table 스타일 가이드</title>
+<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="../css/sub.css">
+<link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+<script type="text/javascript" charset="utf-8" src="../js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/common.js"></script>
+</head>
+<body>
+<? include("../html/include/header.html"); ?>
+
+<div id="container" class="container">
+	<? include("../html/include/snb.html"); ?>
+
+	<div class="content">
+		<div class="location">
+			<span>HOME</span>
+			<span>상품</span>
+			<span>상품목록</span>
+			<span class="on">상품전체목록</span>
+		</div>
+
+		<div class="inner">
+			<h3 class="tit_h3">table 정의</h3>
+
+			<h3 class="tit_h3">tbl_primary</h3>
+			<table class="tbl_primary">
+				<colgroup>
+					<col style="width:60px;">
+					<col>
+					<col style="width:170px;">
+					<col style="width:150px;">
+					<col style="width:170px;">
+				</colgroup>
+				<thead>
+					<tr>
+						<th>번호</th>
+						<th>쇼핑몰(회원사)명</th>
+						<th>노출 유효일자</th>
+						<th>담당자</th>
+						<th>등록일자</th>
+					</tr>
+				</thead>
+				<tbody class="txtc">
+					<tr>
+						<td>10</td>
+						<td class="txtl">신세계법인몰</td>
+						<td>2017-12-31</td>
+						<td>admin01</td>
+						<td>2017-6-31</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="paging">
+				<a href="#" class="page first">처음페이지</a> <a href="#" class="page prev">이전페이지</a> <a href="#" class="on">1</a> <a href="#">2</a> <a href="#">3</a> <a href="#">4</a> <a href="#">5</a> <a href="#">6</a> <a href="#">7</a> <a href="#">8</a> <a href="#">9</a> <a href="#">10</a> <a href="#" class="page next">다음페이지</a> <a href="#" class="page last">마지막페이지</a>
+			</div>
+			
+			<h3 class="tit_h3">tbl_view</h3>
+			<table class="tbl_view">
+				<colgroup>
+					<col style="width:170px;">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th>쇼핑몰(회원사) 선택</th>
+						<td>
+							<select name="" id="">
+								<option value="">신세계몰</option>
+							</select> 
+							<input type="checkbox" name="" id=""> <label for="">쇼핑몰(회원사) 전체</label>
+						</td>
+					</tr>
+					<tr>
+						<th>노출 유효일자</th>
+						<td>
+							<input type="text" class="datepicker" style="width:160px;"> 까지
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="button_area clear">
+				<div class="left">
+					<button type="button" class="btn_ty4">삭제</button>
+				</div>
+				<div class="right">
+					<button type="button" class="btn_ty1">수정</button>
+					<button type="button" class="btn_ty2">목록</button>
+				</div>
+			</div>
+
+
+			<h3 class="tit_h3">Q&amp;A</h3>
+			<div class="qna">
+				<ul>
+					<li>
+						<dl>
+							<dt><a href="#none" class="on"><span>13</span> <i>[ 수업관련 ] 한솔교육 방문상담은 어떤 건가요?</i></a></dt>
+							<dd style="display:block">
+								<p>[ 수업관련 ] 한솔교육 방문상담은 어떤 건가요?</p>
+								<div class="">
+									안녕하세요. 한솔교육입니다.<br>한솔교육 방문상담은 전문교육을 받은 한솔교육 교사가 고객님이 편한 시간에 연락을 드리고 직접 방문하여 교육상담 또는 1회 무료수업을 해드리는 서비스입니다. 
+								</div>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<dl>
+							<dt><a href="#none"><span>12</span> <i>[ 제품관련 ]  FINDEN ENGLISH STEP2 피쉬톡 음원 다운받기</i></a></dt>
+							<dd>
+								<p>[ 제품관련 ] FINDEN ENGLISH STEP2 피쉬톡 음원 다운받기</p>
+								<div class="">
+									상세내용이 출력됩니다. 제목을 클릭할 경우 상세내용이 출력됩니다. 제목을 클릭할 경우 상세내용이 출력됩니다. 제목을 클릭할 경우 상세내용이 출력됩니다. 제목을 클릭할 경우 상세내용이 출력됩니다. 제목을 클릭할 경우 상세내용이 출력됩니다. 제목을 클릭할 경우 상세내용이 출력됩니다. 제목을 클릭할 경우 상세내용이 출력됩니다. 제목을 클릭할 경우 상세내용이 출력됩니다. 제목을 클릭할 경우 상세내용이 출력됩니다. 상세 내용만큼 확장되어 보여집니다 
+								</div>
+							</dd>
+						</dl>
+					</li>
+				</ul>
+			</div>
+</div><!-- //content -->
+</div><!-- //inner -->
+</div><!-- //container -->
+</div><!-- //wrap -->
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<meta charset="UTF-8">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>발송건수 상세</title>
+<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="../../css/sub.css">
+<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script type="text/javascript" charset="utf-8" src="../../js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/common.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+<? include("../include/header.html"); ?>
+
+<div id="container" class="container">
+	<? include("../include/snb.html"); ?>
+
+	<div class="content">
+		<div class="location">
+			<span>HOME</span>
+			<span>고객센터</span>
+			<span>메세지관리</span>
+			<span>발송내역</span>
+			<span class="on">발송건수 상세</span>
+		</div>
+		<div class="inner">
+			<h3 class="tit_h3">발송건수 상세</h3>
+
+			<table class="tbl_view">
+				<colgroup>
+					<col style="width:200px">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th scope="row">이름/휴대폰번호</th>
+						<td>
+							<input type="text" class="w100">
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">상태</th>
+						<td>
+							<label><input type="radio" name="shdState" checked> 전체</label>
+							<label><input type="radio" name="shdState"> 성공</label>
+							<label><input type="radio" name="shdState"> 실패</label>
+							<label><input type="radio" name="shdState"> 반려</label>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<div class="button_area">
+				<div class="left">
+					<button type="button" class="btn_ty2">목록</button>
+				</div>
+				<button type="button" class="btn_ty1">검색</button>
+			</div>
+
+			<div class="txtr">
+				<select name="sel10" id="sel10" style="width:120px;">
+					<option value="">50</option>
+				</select>
+			</div>
+			
+
+			<div class="tbl_search_list">
+				<div class="tbl_search_list mid">
+					검색 <span class="txt_red">50건</span> | 총 200,000건 중 (성공 15,500건, 실패 : 500건)
+				</div>
+
+				<table class="tbl_primary">
+					<colgroup>
+						<col style="width:60px;">
+						<col>
+						<col>
+						<col>
+						<col>
+						<col>
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="row">번호</th>
+							<th scope="row">이름</th>
+							<th scope="row">휴대폰번호</th>
+							<th scope="row">상태</th>
+							<th scope="row">발송일자</th>
+							<th scope="row">사유</th>
+						</tr>
+					</thead>
+					<tbody class="txtc">
+						<tr>
+							<td>10</td>
+							<td><a href="#">홍**</a></td>
+							<td>010-****-1234</td>
+							<td>성공</td>
+							<td>2021-04-06 11:11:11</td>
+							<td class="txtl"></td>
+						</tr>
+						<tr>
+							<td>10</td>
+							<td><a href="#">홍**</a></td>
+							<td>010-****-1234</td>
+							<td>실패</td>
+							<td>2021-04-06 11:11:11</td>
+							<td class="txtl">[코드번호] 코드번호에 대한 내용이 표기됩니다</td>
+						</tr>
+						<tr>
+							<td>10</td>
+							<td><a href="#">홍**</a></td>
+							<td>010-****-1234</td>
+							<td>성공</td>
+							<td>2021-04-06 11:11:11</td>
+							<td class="txtl"></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div><!-- //content -->
+</div><!-- //container -->
+</div><!-- //wrap -->
+</body>
+</html>

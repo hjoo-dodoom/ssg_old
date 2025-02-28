@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>SHINSEGAE</title>
+<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="../../css/sub.css">
+<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script type="text/javascript" charset="utf-8" src="../../js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/ssg.carousel.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/common.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/jquery.selectbox-0.2.js"></script>
+</head>
+<body>
+<? include("../include/header1.html"); ?>
+
+<div id="container" class="container mypage">
+    <div class="content">
+        <div class="inner clear">
+            <div class="mypage_nw">
+                <div class="mpn_nav">
+                    <div class="linfo">
+                        <div class="cnt">
+                            <span class="tit">마이페이지</span>
+                            <span class="name">관리자님</span>
+                        </div>
+                        <a href="javascript:;" class="mp_all">전체보기</a>
+                        <div class="mp_all_box" style="display:none;">
+                            <ul>
+                                <li>
+                                <a href="javascript:;">주문관리</a>
+                                <ul>
+                                    <li><a href="javascript:;">주문배송조회</a></li>
+                                    <li><a href="javascript:;">취소 상품</a></li>
+                                </ul>
+                                </li>
+                                <li>
+                                <a href="javascript:;">포인트</a>
+                                <ul>
+                                    <li><a href="javascript:;">포인트</a></li>
+                                </ul>
+                                </li>
+                                <li>
+                                <a href="javascript:;">마일리지</a>
+                                <ul>
+                                    <li><a href="javascript:;">마일리지</a></li>
+                                </ul>
+                                </li>
+                                <li>
+                                <a href="javascript:;">쿠폰</a>
+                                <ul>
+                                    <li><a href="javascript:;">쿠폰</a></li>
+                                </ul>
+                                </li>
+                                <li>
+                                <a href="javascript:;">활동관리</a>
+                                <ul>
+                                    <li><a href="javascript:;">상품문의</a></li>
+                                    <li><a href="javascript:;">1:1문의</a></li>
+                                </ul>
+                                </li>
+                                <li>
+                                <a href="javascript:;">정보관리</a>
+                                <ul>
+                                    <li><a href="javascript:;">정보수정</a></li>
+                                    <li><a href="javascript:;">나의 배송지</a></li>
+                                    <li><a href="javascript:;">마케팅 수신 동의</a></li>
+                                </ul>
+                                </li>
+                            </ul>
+                            <a href="javascript:;" class="mp_all_close">닫기</a>
+                        </div>
+                        <script>
+                        $('.mp_all,.mp_all_close').click(function(){
+                        $('.mp_all_box').toggle();
+                        $('.mp_all').toggleClass('active');
+                        });
+                        </script>
+                    </div>
+                    <ul class="list">
+                        <li><a href="javascript:;" class="od">주문배송조회</a></li>
+                        <li><a href="javascript:;" class="fa">상품문의</a></li>
+                        <li><a href="javascript:;" class="qa">1:1문의</a></li>
+                        <li><a href="javascript:;" class="mb">정보수정</a></li>
+                        <li><a href="javascript:;" class="md">나의 배송지</a></li>
+                    </ul>
+                </div>
+
+                <div class="cnt_wrap clear">
+                    <div class="cnt_left">
+                        <div class="lnb">
+                            <ul>
+                                <li>
+                                <a href="#">주문관리</a>
+                                <ul>
+                                    <li><a href="#">주문배송조회</a></li>
+                                    <li><a href="#">취소 상품</a></li>
+                                    <li><a href="#">취소/반품/교환/환불</a></li>
+                                </ul>
+                                </li>
+                                <li><a href="#">포인트</a></li>
+                                <li><a href="#">마일리지</a></li>
+                                <li><a href="#">쿠폰</a></li>
+                                <li>
+                                <a href="#">활동관리</a>
+                                <ul>
+                                    <li><a href="#">상품문의</a></li>
+                                    <li><a href="#">1:1문의</a></li>
+                                </ul>
+                                </li>
+                                <li>
+                                <a href="#">정보관리</a>
+                                <ul>
+                                    <li><a href="#">정보수정</a></li>
+                                    <li><a href="#">나의 배송지</a></li>
+                                    <li><a href="#">마케팅 수신 동의</a></li>
+                                </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="cnt_right">
+
+                        <div class="mypage_cnt">
+                            <h3 class="tit_ty1">거래내역서 팝업</h3>
+
+                            <button type="button" onclick="layerShow('trade_info');">팝업열기</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //inner -->
+    </div>
+    <!-- //content -->
+    <div class="quick_area">
+        <div class="inner">
+            <div class="quick_left_box">
+                <div class="quick_customer">
+                    <div id="" class="qc_banner">
+                        <img src="../../images/common/qc_img.png" alt="" style="width:90px;">
+                    </div>
+                    <div class="qc_box">
+                        <div id="" class="qc_cont">
+                            <span class="number">
+                            023-3333-4444
+                            </span>
+                            <span class="time">평일 오전 10시 ~ 오후 5시 <br>점심시간 12시 ~ 13시</span>
+                            <span class="holiday">(토/일, 공휴일 휴무)</span>
+                        </div>
+                        <button type="button" class="qc_close">고객센터 팝업 닫기</button>
+                    </div>
+                </div>
+                <div id="" class="quick_left_slide_form">
+                    <div class="quick_left_out">
+                        <div class="quick_left slide">
+                            <div>
+                                <a href="#"><img src="../../images/dummy/img_quick_left.png" alt=""></a>
+                            </div>
+                            <div>
+                                <a href="#"><img src="../../images/dummy/img_quick_left.png" alt=""></a>
+                            </div>
+                            <div>
+                                <a href="#"><img src="../../images/dummy/img_quick_left.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="quick_right_box">
+                <!-- 오늘본 상품 -->
+                <div class="quick_right">
+                    <div class="qr_slider_form">
+                        <p class="tit">오늘본상품</p>
+                        <div class="quick_r_out">
+                            <div class="quick_r slide">
+                                <div>
+                                    <a href="#">
+                                    <img src="../../images/dummy/img_quick_right1.png" alt="">
+                                    <div class="qr_txt">
+                                        <span class="qr_name">[k2]남성 가을 바람막이 2종 블루/그레이</span>
+                                        <span class="qr_price">250,000원</span>
+                                    </div>
+                                    </a>
+                                    <a href="#">
+                                    <img src="../../images/dummy/img_quick_right2.png" alt="">
+                                    <div class="qr_txt">
+                                        <span class="qr_name">[k2]남성 가을 바람막이 2종 블루/그레이</span>
+                                        <span class="qr_price">250,000원</span>
+                                    </div>
+                                    </a>
+                                    <a href="#">
+                                    <img src="../../images/dummy/img_quick_right3.png" alt="">
+                                    <div class="qr_txt">
+                                        <span class="qr_name">[k2]남성 가을 바람막이 2종 블루/그레이</span>
+                                        <span class="qr_price">250,000원</span>
+                                    </div>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                    <img src="../../images/dummy/img_quick_right3.png" alt="">
+                                    <div class="qr_txt">
+                                        <span class="qr_name">[k2]남성 가을 바람막이 2종 블루/그레이</span>
+                                        <span class="qr_price">250,000원</span>
+                                    </div>
+                                    </a>
+                                    <a href="#">
+                                    <img src="../../images/dummy/img_quick_right1.png" alt="">
+                                    <div class="qr_txt">
+                                        <span class="qr_name">[k2]남성 가을 바람막이 2종 블루/그레이</span>
+                                        <span class="qr_price">250,000원</span>
+                                    </div>
+                                    </a>
+                                    <a href="#">
+                                    <img src="../../images/dummy/img_quick_right2.png" alt="">
+                                    <div class="qr_txt">
+                                        <span class="qr_name">[k2]남성 가을 바람막이 2종 블루/그레이</span>
+                                        <span class="qr_price">250,000원</span>
+                                    </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#wrap" class="btn_top">TOP </a>
+                    </div>
+                    <!-- 오늘본 상품 끝 -->
+                    <!-- 오른쪽 퀵배너 이미지 -->
+                    <div class="qrb_banner">
+                        <ul>
+                            <li><a href="http://emart24.modetour.co.kr/Main/OnlineCP_E_NEW.aspx"><img src="../../images/dummy/qrb_img.jpg" alt=""></a></li>
+                            <li><a href="http://emart24.modetour.co.kr/Main/OnlineCP_E_NEW.aspx"><img src="../../images/dummy/qrb_img.jpg" alt=""></a></li>
+                        </ul>
+                    </div>
+                    <!-- 오른쪽 퀵배너 이미지 -->
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- //container -->
+
+<!-- 거래내역서 -->
+<div class="fixed_layer layer_form type1 black trade_info">
+    <div class="layer_box" style="max-width:720px;">
+        <div class="layer_title">거래내역서</div>
+        <div class="layer_cnt">
+            <div id="" class="trade_inbox">
+
+                <div class="ti_box">
+                    <p>본 거래내역서는 부가세법 제 32조의 2 제3항에 의한 신용카드매입세액공제를 받을 수가 없으며, 대금결제용으로만 사용 가능합니다</p>
+                    <div id="" class="ti_top_table clear">
+                        <table class="ti_table align_center">
+                        <tbody>
+                        <tr>
+                            <th>주문번호</th>
+                            <td>0000123123</td>
+                            <th>주문일시</th>
+                            <td>2020-06-09</td>
+                            <th>고객명</th>
+                            <td>홍길동</td>
+                        </tr>
+                        </tbody>
+                        </table>
+                        <a href="javascript:;" class="ti_print">인쇄하기</a>
+                    </div>
+                </div>
+
+                <div class="ti_box">
+                    <strong class="ti_title">거래상세내역</strong>
+                    <table class="ti_table">
+                    <thead>
+                    <tr>
+                        <th>상품명</th>
+                        <th>수량</th>
+                        <th>금액</th>
+                        <th>배송비</th>
+                        <th>합계</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td class="align_left">[LG전자]인공지능 에어컨 스탠드 웨딩스노우 17평 56.9m2<br/>ㆍ화이트/XL</td>
+                        <td>1</td>
+                        <td>100,000원</td>
+                        <td>0</td>
+                        <td>100,000원</td>
+                    </tr>
+                    </tbody>
+                    </table>
+                    <div class="tb_line_price align_right">
+                        총 주문금액:<strong>1,400,000원</strong>
+                    </div>
+                </div>
+
+                <div class="ti_box">
+                    <strong class="ti_title">결제/할인정보</strong>
+
+                    <div class="tb_line_price clear">
+                        <div class="left">결제금액</div>
+                        <div class="right"><strong>1,400,000원</strong></div>
+                    </div>
+                    <table class="ti_table">
+                    <tbody>
+                    <tr>
+                        <th rowspan="2">총 주문금액</th>
+                        <td rowspan="2" class="align_right">1,400,000원</td>
+                        <td class="align_left">상품판매가</td>
+                        <td class="align_right">1,400,000원</td>
+                    </tr>
+                    <tr>
+                        <td class="align_left">배송비</td>
+                        <td class="align_right">0원</td>
+                    </tr>
+                    <tr>
+                        <th>할인금액</th>
+                        <td class="align_right">1,400,000원</td>
+                        <td class="align_left">포인트</td>
+                        <td class="align_right">1,400,000원</td>
+                    </tr>
+                    <tr>
+                        <th rowspan="3">신용카드</th>
+                        <td rowspan="3" class="align_right">1,400,000원</td>
+                        <td class="align_left">승인일자</td>
+                        <td class="align_right">2020-06-09</td>
+                    </tr>
+                    <tr>
+                        <td class="align_left">신용카드</td>
+                        <td class="align_right">삼성카드 승인</td>
+                    </tr>
+                    <tr>
+                        <td class="align_left">할부형태</td>
+                        <td class="align_right">-</td>
+                    </tr>
+                    </tbody>
+                    </table>
+                </div>
+
+                <div class="trade_ft clear">
+                    <div class="f_logo" style="background-image:url('../../images/common/h_logo.png');"></div>
+                    <div class="f_info">
+                        <strong>(주)신세계</strong>
+                        <ul class="clear">
+                            <li>서울시 서초구 신반포로 194 고속버스터미널 신관</li>
+                            <li>대표이사 : 차정호</li>
+                            <li>개인정보관리책임자 : 김종수 팀장</li>
+                            <li>사업자등록번호 : 201-81-32195</li>
+                            <li>고객만족센터 : TEL : 02-3406-6909</li>
+                            <li>FAX : 02-3479-1090</li>
+                            <li>운영시간 : 평일 10:00 ~ 17:00</li>
+                        </ul>
+                        <p>Copyright© 2018 SHINSEGAE,. All Rights Reserved.</p>
+                    </div>
+                </div>
+
+                <a href="javascript:;" class="layer_close_in">닫기</a>
+
+            </div>
+            <button type="button" class="layer_close_top" onclick="layerHide('trade_info')">레이어팝업 닫기</button>
+        </div>
+    </div>
+    <span class="layer_align"></span>
+    <a href="javascript:;" class="bg_close" onclick="layerHide('trade_info')">레이어팝업 닫기</a>
+</div>
+<!-- //거래내역서 -->
+
+
+<? include("../include/footer.html"); ?>
+</div>
+<!-- //wrap -->
+</body>
+</html>

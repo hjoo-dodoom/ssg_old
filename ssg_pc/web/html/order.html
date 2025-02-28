@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>SHINSEGAE</title>
+<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="../css/sub.css">
+<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script type="text/javascript" charset="utf-8" src="../js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/ssg.carousel.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/common.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/jquery.selectbox-0.2.js"></script>
+</head>
+<body>
+<? include("include/header.html"); ?>
+
+<div id="container" class="container">
+<div class="content">
+	<div class="inner clear">
+		<div class="cnt_tit_area clear">
+			<h2>결제하기</h2>
+			<div class="step_ty1">
+				<ul>
+					<li class="step1"><b>01</b> <em>장바구니</em><span>&gt;</span></li>
+					<li class="step2 on"><b>02</b> <em>결제하기</em><span>&gt;</span></li>
+					<li class="step3"><b>03</b> <em>주문완료</em></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="cart_list">
+			<table class="tbl_cart type2">
+				<colgroup>
+					<col style="width:20px;">
+					<col>
+					<col style="width:100px;">
+					<col style="width:140px;">
+					<col style="width:100px;">
+					<col style="width:140px;">
+				</colgroup>
+				<thead>
+					<tr>
+						<th></th>
+						<th class="txtl">상품정보</th>
+						<th>수량</th>
+						<th>판매가</th>
+						<th>배송비</th>
+						<th>주문금액</th>
+					</tr>
+				</thead>
+				<tbody class="txtc">
+					<tr>
+						<td></td>
+						<td class="txtl item">
+							<div class="outer">
+								<div class="thum">
+									<img src="../images/dummy/thum_cart_list.png" alt="">
+								</div>
+								<div class="item_txt">
+									<p>엘라스틴 아보카도허니 트린트먼트 1000ml</p>
+									<p class="option">레드 / M / 1개</p>
+									<p class="option">레드 / M / 1개</p>
+								</div>
+							</div>
+						</td>
+						<td class="tblc_option">1개</td>
+						<td class="price"><span class="prc"><b>155,000</b>원</span></td>
+						<td class="price"><span class="free">무료배송</span></td>
+						<!-- <td class="price"><span class="prc"><b>155,000</b>원</span></td> -->
+						<td class="price"><span class="prc"><b>155,000</b>원</span></td>
+					</tr>
+					
+				</tbody>
+			</table>
+			
+			<div class="od_total">
+				총 주문금액 <strong>150,000</strong>원
+			</div>
+
+			<ul class="list_dot mt20">
+				<li>· 주문자/배송지 주소를 정확히 확인 후 입력하시기 바랍니다. 특히 우편번호는 정확히 확인해 주시기 바랍니다.</li>
+				<li>· 배송지 오기입으로 인한 배송 오류는 본사가 책임지지 않습니다.</li>
+				<li>· 취소는 당일만 전체취소 및 부분취소가 가능하며, 이미출고된 상품은 취소가 불가합니다.</li>
+			</ul>
+
+			<div class="info_box">
+				<div class="ib_title">
+					안심번호 서비스 도입 
+					<button type="button" class="info_detail" onclick="$('.info_detail_layer').show()">자세히 보기</button>
+				</div>
+				<div class="ib_cnt">
+					결제완료 후 받는사람의 <strong>핸드폰번호는 1회성 임시번호(0502-XXX-XXXX)로 자동변환</strong>됩니다.<br/>만일에 발생할 수 있는 개인정보 유출을 사전에 차단 할 수 있습니다. (택배상자에 안심번호가 표시됩니다) 
+				</div>
+			</div>
+
+			<!-- 안심번호 서비스 도입  -->
+			<div class="layer_form fixed_layer black type2 info_detail_layer" style="display:none;">
+				<div class="layer_box" style="width:720px;">
+					<h4 class="layer_title mgn sm">안심번호 서비스 도입 </h4>
+					<div class="layer_cnt">
+						<div class="mkt_txt">
+							<div class="txt_style3">
+								안심번호 서비스는 받는사람의 개인정보인 휴대폰번호를<br/>1회성 임시번호(050-XXX-XXXX)로 변경하는 서비스입니다.
+							</div>
+							<p class="txt_style2">협력회사/택배사에게 050 안심번호가 전달되므로 만일에 발생할 수 있는 개인정보 유출을 사전에 차단할 수 있습니다 (택배상자에 안심번호 표시)</p>
+							<p class="txt_style2">본 서비스는 세종텔레콤과 제휴하여 고객님께 무료로 제공됩니다.<br/>부여된 안심번호는 배송완료 또는 주문취소 시 자동으로 해지/소멸됩니다</p>
+							<p class="txt_style2">안심번호는 해지/소멸 후 다른 고객 번호에 연결하여 재사용할 수 있으며, 일부 택배사의 경우 안심번호 서비스 지원이 불가할 수 있습니다</p>
+							<p class="txt_style2">본 서비스 제공 동의를 거부할 권리가 있으나, 동의를 거부하실 경우 서비스 이용이 제한 될 수 있습니다</p>
+						</div>
+					</div>
+					<a href="javascript:;" class="layer_close_top" onclick="layerHide('info_detail_layer')">닫기</a>
+				</div>
+				<span class="layer_align"></span>
+				<span class="bg_close"onclick="layerHide('info_detail_layer')"></span>
+			</div>
+			<!-- //안심번호 서비스 도입 -->
+
+			<div class="tit_area">
+				<h3 class="tit_h3">주문자 정보</h3>
+				<div class="right ref_blue">* 변경하시는 정보는 이번 주문에만 적용되며, 고객님의 회원정보는 변경되지 않습니다.</div>
+			</div>
+			<table class="tbl_view2">
+				<colgroup>
+					<col style="width:200px;">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th>이름(실명)</th>
+						<td><input type="text" name="" placeholder="홍길동" style="width:200px;"></td>
+					</tr>
+					<tr>
+						<th>전화번호</th>
+						<td><input type="text" name="" placeholder="02-1234-5678" style="width:200px;"></td>
+					</tr>
+					<tr>
+						<th>핸드폰</th>
+						<td><input type="text" name="" placeholder="02-1234-5678" style="width:200px;"></td>
+					</tr>
+					<tr>
+						<th>이메일</th>
+						<td><input type="text" name="" placeholder="shinsegae@shinsegae.com" style="width:200px;"></td>
+					</tr>
+					<tr>
+						<th>주소</th>
+						<td class="zip">
+							<div>
+								<input type="text" name="" placeholder="12345" style="width:200px;" readonly><button type="button" class="btn_line_mid_ty3">우편번호로 찾기</button>
+							</div>
+							<div>
+								<input type="text" name="" placeholder="서울시 서초구 사평대로 205" style="width:290px;" readonly>
+								<input type="text" name="" placeholder="CENTRAL CITY 반포천 복개주차장" style="width:290px;">
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<!-- 일반배송일 경우 -->
+			<div class="tit_area">
+				<h3 class="tit_h3">배송지 정보</h3>
+				<input type="checkbox" name="" class="chk_ty1" id="infoSame1"><label class="chk_ty1_label info_same" for="infoSame1">주문자 정보와 동일</label>
+			</div>
+
+			<table class="tbl_view2">
+				<colgroup>
+					<col style="width:200px;">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th>배송지 선택</th>
+						<td>
+							<div class="sel_ty4" style="width:586px;">
+								<select name="" id="">
+									<option value="">등록된 배송지가 없습니다.</option>
+								</select>
+							</div><button type="button" class="btn_line_mid_ty3 ml5">배송지 관리</button>
+						</td>
+					</tr>
+					<tr>
+						<th>이름(실명)</th>
+						<td><input type="text" name="" placeholder="" style="width:200px;"></td>
+					</tr>
+					<tr>
+						<th>전화번호</th>
+						<td><input type="text" name="" placeholder="" style="width:200px;"></td>
+					</tr>
+					<tr>
+						<th>핸드폰</th>
+						<td><input type="text" name="" placeholder="" style="width:200px;"></td>
+					</tr>
+					<tr>
+						<th>주소</th>
+						<td class="zip">
+							<div>
+								<input type="text" name="" placeholder="12345" style="width:200px;"><button type="button" class="btn_line_mid_ty3">우편번호로 찾기</button>
+							</div>
+							<div>
+								<input type="text" name="" placeholder="서울시 서초구 사평대로 205" style="width:290px;">
+								<input type="text" name="" placeholder="CENTRAL CITY 반포천 복개주차장" style="width:290px;">
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th>배송요청사항</th>
+						<td>
+							<div class="sel_ty4 division" style="width:586px;">
+								<select name="" id="">
+									<option value="">겅비실에 맡겨주세요.</option>
+								</select>
+							</div>
+							<div class="division"><input type="text" name="" placeholder="" style="width:586px;"></div>
+							<p class="ref division">* 요청사항이 있으신 경우는 반드시 내용을 정확하게 넣어주세요.</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<!-- 배송정보 1일경우 S -->
+			<div class="tit_area">
+				<h3 class="tit_h3">배송지 정보</h3>
+
+				<div class="right">
+					<span class="ref_blue">* 여러 배송지로 보내기</span>
+					<div class="sel_ty4" style="width:106px;">
+						<select>
+							<option value="1">1군데</option>
+							<option value="2">2군데</option>
+							<option value="3">3군데</option>
+						</select>
+					</div>
+					<button type="button" class="btn_bg_small_ty1">추가</button>
+				</div>
+			</div>
+
+			<table class="tbl_view2">
+				<colgroup>
+					<col style="width:200px;">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th>배송지 선택</th>
+						<td>
+							<div class="sel_ty4" style="width:586px;">
+								<select name="" id="">
+									<option value="">등록된 배송지가 없습니다.</option>
+								</select>
+							</div><button type="button" class="btn_line_mid_ty3 ml5">배송지 관리</button>
+						</td>
+					</tr>
+					<tr>
+						<th>이름(실명)</th>
+						<td><input type="text" name="" placeholder="홍길동" style="width:200px;"></td>
+					</tr>
+					<tr>
+						<th>전화번호</th>
+						<td><input type="text" name="" placeholder="02-1234-5678" style="width:200px;"></td>
+					</tr>
+					<tr>
+						<th>핸드폰</th>
+						<td><input type="text" name="" placeholder="02-1234-5678" style="width:200px;"></td>
+					</tr>
+					<tr>
+						<th>주소</th>
+						<td>기본배송지 [12345], 서울시 서초구 사평대로 205 CENTRAL CITY 반포천 복개주차장</td>
+					</tr>
+					<tr>
+						<th>배송요청사항</th>
+						<td>
+							<div class="sel_ty4 division" style="width:586px;">
+								<select name="" id="">
+									<option value="">겅비실에 맡겨주세요.</option>
+								</select>
+							</div>
+							<div class="division"><input type="text" name="" placeholder="" style="width:586px;"></div>
+							<p class="ref division">* 요청사항이 있으신 경우는 반드시 내용을 정확하게 넣어주세요.</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<!-- 배송정보 1일경우 E -->
+
+			<!-- 복수배송일 경우 S -->
+			<div class="tit_area">
+				<h3 class="tit_h3">배송지 정보</h3>
+
+				<div class="right">
+					<span class="ref_blue">* 여러 배송지로 보내기</span>
+					<div class="sel_ty4" style="width:106px;">
+						<select>
+							<option value="1">2군데</option>
+							<option value="2">3군데</option>
+							<option value="3">4군데</option>
+						</select>
+					</div>
+					<button type="button" class="btn_bg_small_ty1">추가</button>
+				</div>
+			</div>
+
+			<table class="tbl_view2">
+				<colgroup>
+					<col style="width:200px;">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th>배송지 선택</th>
+						<td>
+							<div class="sel_ty4" style="width:586px;">
+								<select name="" id="">
+									<option value="">등록된 배송지가 없습니다.</option>
+								</select>
+							</div><button type="button" class="btn_line_mid_ty3 ml5">배송지 관리</button>
+						</td>
+					</tr>
+					<tr>
+						<th>이름(실명)</th>
+						<td><input type="text" name="" placeholder="홍길동" style="width:200px;"></td>
+					</tr>
+					<tr>
+						<th>전화번호</th>
+						<td><input type="text" name="" placeholder="02-1234-5678" style="width:200px;"></td>
+					</tr>
+					<tr>
+						<th>핸드폰</th>
+						<td><input type="text" name="" placeholder="02-1234-5678" style="width:200px;"></td>
+					</tr>
+					<tr>
+						<th>주소</th>
+						<td>기본배송지 [12345], 서울시 서초구 사평대로 205 CENTRAL CITY 반포천 복개주차장</td>
+					</tr>
+					<tr>
+						<th>배송요청사항</th>
+						<td>
+							<div class="sel_ty4 division" style="width:586px;">
+								<select name="" id="">
+									<option value="">겅비실에 맡겨주세요.</option>
+								</select>
+							</div>
+							<div class="division"><input type="text" name="" placeholder="" style="width:586px;"></div>
+							<p class="ref division">* 요청사항이 있으신 경우는 반드시 내용을 정확하게 넣어주세요.</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="plural">
+				총 주문수량 2개 중
+				<div class="cart_variation">
+					<div class="clear">
+						<button type="button" class="btn_minus">-</button>
+						<input type="text" class="quantity" value="1" placeholder="1">
+						<button type="button" class="btn_plus">+</button>
+					</div>
+					개
+				</div>
+				<div class="right">
+					배송비 : 3,000원
+				</div>
+			</div>
+
+			<table class="tbl_view2">
+				<colgroup>
+					<col style="width:200px;">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th>배송지 선택</th>
+						<td>
+							<div class="sel_ty4" style="width:586px;">
+								<select name="" id="">
+									<option value="">등록된 배송지가 없습니다.</option>
+								</select>
+							</div><button type="button" class="btn_line_mid_ty3 ml5">배송지 관리</button>
+						</td>
+					</tr>
+					<tr>
+						<th>이름(실명)</th>
+						<td><input type="text" name="" placeholder="홍길동" style="width:200px;"></td>
+					</tr>
+					<tr>
+						<th>전화번호</th>
+						<td><input type="text" name="" placeholder="02-1234-5678" style="width:200px;"></td>
+					</tr>
+					<tr>
+						<th>핸드폰</th>
+						<td><input type="text" name="" placeholder="02-1234-5678" style="width:200px;"></td>
+					</tr>
+					<tr>
+						<th>주소</th>
+						<td>기본배송지 [12345], 서울시 서초구 사평대로 205 CENTRAL CITY 반포천 복개주차장</td>
+					</tr>
+					<tr>
+						<th>배송요청사항</th>
+						<td>
+							<div class="sel_ty4 division" style="width:586px;">
+								<select name="" id="">
+									<option value="">겅비실에 맡겨주세요.</option>
+								</select>
+							</div>
+							<div class="division"><input type="text" name="" placeholder="" style="width:586px;"></div>
+							<p class="ref division">* 요청사항이 있으신 경우는 반드시 내용을 정확하게 넣어주세요.</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="plural">
+				총 주문수량 2개 중
+				<div class="cart_variation">
+					<div class="clear">
+						<button type="button" class="btn_minus">-</button>
+						<input type="text" class="quantity" value="1" placeholder="1">
+						<button type="button" class="btn_plus">+</button>
+					</div>
+					개
+				</div>
+				<div class="right">
+					배송비 : 3,000원
+				</div>
+			</div>
+			<!-- 복수배송일 경우 E -->
+
+			<div class="tit_area">
+				<h3 class="tit_h3">결제정보</h3>
+			</div>
+			<table class="tbl_view2">
+				<colgroup>
+					<col style="width:200px;">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th>총 주문금액</th>
+						<td><span  class="total1"><strong>150,000</strong>원</span></td>
+					</tr>
+					<tr>
+						<th>쿠폰 할인금액</th>
+						<td><span class="coupon_val">-2,000원</span><button type="button" class="btn_line_mid_ty3" id="coupon_btn">할인쿠폰 선택</button>
+							
+							<div class="coupon_box" style="display:none;">
+								<strong class="tit">보유쿠폰</strong>
+								<ul>
+									<li><input type="checkbox" class="chk_ty1" id="coupon1"><label for="coupon1" class="chk_ty1_label"> 30,000원 이상 구매 시 2,000원 할인, 일부상품 제회</label></li>
+									<li><input type="checkbox" class="chk_ty1" id="coupon2"><label for="coupon2" class="chk_ty1_label"> 30,000원 이상 구매 시 2,000원 할인, 일부상품 제회</label></li>
+								</ul>
+							</div>
+
+							<div class="coupon_box" style="display:none;">
+								<span class="coupon_empty">
+									보유한 쿠폰이 없습니다.
+								</span>
+							</div>
+							<script>
+
+								$('#coupon_btn').click(function(){
+									if($(this).hasClass('active')){
+										$(this).text('할인쿠폰 선택');
+										$(this).removeClass('active');
+									}else{
+										$(this).text('할인쿠폰 닫기');
+										$(this).addClass('active');
+									}
+									$('.coupon_box').toggle();
+								});
+							</script>
+						</td>
+					</tr>
+					<tr>
+						<th>포인트 사용</th>
+						<td>
+							<div class="ip_group mr10">
+								<input type="text" name=""  style="width:214px;"><button type="button" class="btn_line_mid_ty8 ml0">전체사용</button>
+							</div> 
+							(전여 : 100,000원)</td>
+					</tr>
+					<tr>
+						<th>마일리지 사용</th>
+						<td>
+							<div class="ip_group mr10">
+								<input type="text" name=""  style="width:214px;"><button type="button" class="btn_line_mid_ty8">전체사용</button> 
+							</div>
+							(전여 : 100,000원)
+						</td>
+					</tr>
+					<tr>
+						<th>총 결제금액</th>
+						<td><span  class="total2"><strong>150,000</strong>원</span> *적립예정 금액:510원</td>
+					</tr>
+					<tr>
+						<th>주문방식</th>
+						<td>
+							<input type="radio" name="order_type" id="order_type1" value="1"> <label for="order_type1">일반결제</label>
+							<input type="radio" name="order_type" id="order_type2" value="2"> <label for="order_type2">대량결제</label>
+						</td>
+					</tr>
+					<tr class="pay_type" style="display:none;">
+						<th>결제방법</th>
+						<td>
+							<input type="radio" name="pay_type" id="pay_type1" value="1"> <label for="pay_type1">신용카드</label>
+							<input type="radio" name="pay_type" id="pay_type2" value="2"> <label for="pay_type2">SSG PAY</label>
+							<input type="radio" name="pay_type" id="pay_type3" value="3"> <label for="pay_type3">급여공제</label>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			<script>
+			$('input[name="order_type"]').change(function(){
+				if($('input[name="order_type"]:checked').val() == 2){
+					$('.pay_type').show();
+				}else{
+					$('.pay_type').hide();
+				}
+			});
+
+			$('input[name="pay_type"]').change(function(){
+				if($('input[name="pay_type"]:checked').val() == 3){
+					$('.receipt_toggle').show();
+				}else{
+					$('.receipt_toggle').hide();
+				}
+			});
+			</script>
+			<div class="receipt_txt receipt_toggle" style="display:none;"><strong>현금영수증 발급신청</strong>현금영수증은 고객 신청내역 취합 후 관리자가 일괄 발행합니다</div>
+			<div class="tab_ty3 click receipt_form receipt_toggle" style="display:none;">
+				<div class="tab_tit flex">
+					<ul class="clear">
+						<li class="on"><a href="#none">개인 소득 공제</a></li>
+						<li class="last"><a href="#none">사업자 지출 증빙</a></li>
+					</ul>
+				</div>
+				<div class="tab_cnt1" style="display: block;">
+					<div class="sel_ty4" style="width:180px;">
+						<select name="" id="">
+							<option value="">휴대폰번호</option>
+							<option value="">신용카드</option>
+							<option value="">현금영수증카드</option>
+						</select>
+					</div>
+					<input type="text" style="width:230px;">
+				</div>
+				<div class="tab_cnt2" style="display: none;">
+					<div class="sel_ty4" style="width:180px;">
+						<select name="" id="">
+							<option value="">사업자번호</option>
+						</select>
+					</div>
+					<input type="text" style="width:230px;">
+				</div>
+			</div>
+
+			<div class="buy_agree_area">
+				<p><input type="checkbox" class="chk_ty1" id="odAgree"><label for="odAgree" class="chk_ty1_label">구매동의 및 결제대행서비스, 안심번호 서비스제공에 동의합니다.</label></p>
+				<p class="ml10">- 주문할 상품의 상품명, 상품가격, 배송정보를 모두 확인하였으며, 구매에 동의합니다(전자상거래법 제8조 2항)</p>
+				<p class="ml10">- 받는사람의 휴대폰번호를 1회성 임시번호로 변경하는 서비스 제공에 동의합니다(안심번호 서비스)</p>
+			</div>
+
+			<div class="btn_btm_area txtc">
+				<button type="button" class="btn_bg_mid_ty1">결제하기</button>
+				<button type="button" class="btn_bg_mid_ty2">취소하기</button>
+			</div>
+
+		</div>
+	</div><!-- //inner -->
+</div><!-- //content -->
+
+<div class="quick_area">
+	<div class="inner">
+		<div class="quick_left_box">
+			<div class="quick_customer">
+				<div id="" class="qc_banner">
+					<img src="../images/common/qc_img.png" alt="" style="width:90px;">
+				</div>
+				<div class="qc_box">
+					<div id="" class="qc_cont">
+						<span class="number">
+									023-3333-4444
+						</span>
+						<span class="time">평일 오전 10시 ~ 오후 5시 <br>점심시간 12시 ~ 13시</span>
+						<span class="holiday">(토/일, 공휴일 휴무)</span>
+					</div>
+					<button type="button" class="qc_close">고객센터 팝업 닫기</button>
+				</div>
+			</div>
+			<div id="" class="quick_left_slide_form">
+				<div class="quick_left_out">
+					<div class="quick_left slide">
+						<div>
+							<a href="#"><img src="../images/dummy/img_quick_left.png" alt=""></a>
+						</div>
+						<div>
+							<a href="#"><img src="../images/dummy/img_quick_left.png" alt=""></a>
+						</div>
+						<div>
+							<a href="#"><img src="../images/dummy/img_quick_left.png" alt=""></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="quick_right_box">
+			<!-- 오늘본 상품 -->
+			<div class="quick_right">
+				<div class="qr_slider_form">
+				<p class="tit">오늘본상품</p>
+				<div class="quick_r_out">
+					<div class="quick_r slide">
+						<div>
+							<a href="#">
+								<img src="../images/dummy/img_quick_right1.png" alt="">
+								<div class="qr_txt">
+									<span class="qr_name">[k2]남성 가을 바람막이 2종 블루/그레이</span>
+									<span class="qr_price">250,000원</span>
+								</div>
+							</a>
+							<a href="#">
+								<img src="../images/dummy/img_quick_right2.png" alt="">
+								<div class="qr_txt">
+									<span class="qr_name">[k2]남성 가을 바람막이 2종 블루/그레이</span>
+									<span class="qr_price">250,000원</span>
+								</div>
+							</a>
+							<a href="#">
+								<img src="../images/dummy/img_quick_right3.png" alt="">
+								<div class="qr_txt">
+									<span class="qr_name">[k2]남성 가을 바람막이 2종 블루/그레이</span>
+									<span class="qr_price">250,000원</span>
+								</div>
+							</a>
+						</div>
+						<div>
+							<a href="#">
+								<img src="../images/dummy/img_quick_right3.png" alt="">
+								<div class="qr_txt">
+									<span class="qr_name">[k2]남성 가을 바람막이 2종 블루/그레이</span>
+									<span class="qr_price">250,000원</span>
+								</div>
+							</a>
+							<a href="#">
+								<img src="../images/dummy/img_quick_right1.png" alt="">
+								<div class="qr_txt">
+									<span class="qr_name">[k2]남성 가을 바람막이 2종 블루/그레이</span>
+									<span class="qr_price">250,000원</span>
+								</div>
+							</a>
+							<a href="#">
+								<img src="../images/dummy/img_quick_right2.png" alt="">
+								<div class="qr_txt">
+									<span class="qr_name">[k2]남성 가을 바람막이 2종 블루/그레이</span>
+									<span class="qr_price">250,000원</span>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<a href="#wrap" class="btn_top">TOP </a>
+				</div>
+				<!-- 오늘본 상품 끝 -->
+				<!-- 오른쪽 퀵배너 이미지 -->
+				<div class="qrb_banner">
+					<ul>
+						<li><a href="http://emart24.modetour.co.kr/Main/OnlineCP_E_NEW.aspx"><img src="../images/dummy/qrb_img.jpg" alt=""></a></li>
+						<li><a href="http://emart24.modetour.co.kr/Main/OnlineCP_E_NEW.aspx"><img src="../images/dummy/qrb_img.jpg" alt=""></a></li>
+					</ul>
+				</div>
+				<!-- 오른쪽 퀵배너 이미지 -->
+			</div>
+
+		</div>
+	</div>
+</div>
+
+</div><!-- //container -->
+<? include("include/footer.html"); ?>
+</div><!-- //wrap -->
+</body>
+</html>

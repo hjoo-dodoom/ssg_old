@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>회원검색</title>
+<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="../../css/popup.css">
+<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script type="text/javascript" charset="utf-8" src="../../js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/common.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+<div class="popup">
+    <div class="popup_inner">
+        <h1>회원검색</h1>
+        <div class="clear float mt10">
+			<div class="left" style="width:650px;">
+				<div class="pop_search">
+					<div id="" class="tbl_outer">
+						<table class="tbl_view">
+						<colgroup>
+						<col style="width:110px;">
+						<col>
+						</colgroup>
+						<tbody>
+						<tr>
+							<th>그룹사/고객사</th>
+							<td>
+								<select name="" id="" style="width:150px;">
+									<option value="">선택</option>
+								</select>
+								<select name="" id="" style="width:150px;">
+									<option value="">선택</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<th>회원검색</th>
+							<td>
+								<select name="" id="">
+									<option value="">선택</option>
+									<option value="">이름</option>
+									<option value="">아이디</option>
+									<option value="">휴대폰번호</option>
+								</select>
+								<input type="text" name="" style="width:150px;">
+								<label><input type="checkbox">대량업로드회원 제외</label>
+							</td>
+						</tr>
+						<tr>
+							<th>추가조건</th>
+							<td>
+								<label><input type="checkbox">미주문회원</label>
+								<label><input type="checkbox" id="pointNmb">포인트 미사용회원</label>
+								<input type="text" placeholder="미사용 포인트 입력(입력 포인트 이상 검색)" style="width:270px;" disabled>
+							</td>
+						</tr>
+						<tr>
+							<th>대량업로드 회원</th>
+							 <td>
+								<select name="" id="">
+									<option value="">선택</option>
+								</select>
+							</td>
+						</tr>
+						</tbody>
+						</table>
+					</div>
+					<div class="button_area">
+						<div class="left">
+							<button type="button" class="btn_ty7">전체추가</button>
+							<button type="button" class="btn_ty7">선택추가</button>
+						</div>
+						<button type="button" class="btn_ty1">검색</button>
+					</div>
+				</div>
+
+				 <table class="tbl_primary label_control">
+					<thead>
+					<tr>
+						<th scope="row"><input type="checkbox" class="checkAll"></th>
+						<th scope="row">번호</th>
+						<th scope="row">아이디</th>
+						<th scope="row">이름</th>
+						<th scope="row">휴대폰번호</th>
+						<th scope="row">주문여부</th>
+						<th scope="row">잔여포인트</th>
+						<th scope="row">내역</th>
+					</tr>
+					</thead>
+					<tbody class="txtc">
+					<tr>
+						<td><input type="checkbox"></td>
+						<td>200</td>
+						<td>aaa1234</td>
+						<td>홍**</td>
+						<td>010-****-1111</td>
+						<td>주문완료</td>
+						<td>미지급</td>
+						<td>메모(0)/문자이력(0)</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox"></td>
+						<td>200</td>
+						<td>aaa1234</td>
+						<td>홍**</td>
+						<td>010-****-1111</td>
+						<td>주문완료</td>
+						<td>미지급</td>
+						<td>메모(0)/문자이력(0)</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox"></td>
+						<td>200</td>
+						<td>aaa1234</td>
+						<td>홍**</td>
+						<td>010-****-1111</td>
+						<td>주문완료</td>
+						<td>미지급</td>
+						<td>메모(0)/문자이력(0)</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox"></td>
+						<td>200</td>
+						<td>aaa1234</td>
+						<td>홍**</td>
+						<td>010-****-1111</td>
+						<td>주문완료</td>
+						<td>미지급</td>
+						<td>메모(0)/문자이력(0)</td>
+					</tr>
+					</tbody>
+				</table>
+				<div class="paging">
+					<a href="#none" class="first">처음페이지</a>
+					<a href="#none" class="prev">이전페이지</a>
+					<a href="#none" class="on">1</a>
+					<a href="#none" class="num">2</a>
+					<a href="#none" class="num">3</a>
+					<a href="#none" class="num">4</a>
+					<a href="#none" class="num">5</a>
+					<a href="#none" class="next">다음페이지</a>
+					<a href="#none" class="last">마지막페이지</a>
+				</div>
+			</div>
+
+			<div class="right" style="width:280px;">
+				<div class="pop_search">
+					<div id="" class="tbl_outer">
+						<table class="tbl_view">
+						<thead>
+							<tr>
+								<th class="txtl">선택된 회원 리스트 (0명)</th>
+							</tr>
+						</thead>
+						<tbody>
+						<tr>
+							<td><input type="text" placeholder="아이디 또는 회원명으로 검색해주세요." class="w100"></td>
+						</tr>
+						</tbody>
+						</table>
+					</div>
+					<div class="button_area">
+						<div class="left">
+							<button type="button" class="mid_btn_ty1">전체추가</button>
+							<button type="button" class="mid_btn_ty1">선택추가</button>
+						</div>
+						<button type="button" class="mid_btn_ty1">초기화</button>
+						<button type="button" class="mid_btn_ty1">검색</button>
+					</div>
+				</div>
+
+				 <table class="tbl_primary label_control">
+					<thead>
+					<tr>
+						<th scope="row"><input type="checkbox" class="checkAll"></th>
+						<th scope="row">아이디</th>
+						<th scope="row">이름</th>
+					</tr>
+					</thead>
+					<tbody class="txtc">
+					<tr>
+						<td><input type="checkbox"></td>
+						<td>asdasd1234</td>
+						<td>홍**</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox"></td>
+						<td>asdasd1234</td>
+						<td>홍**</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox"></td>
+						<td>asdasd1234</td>
+						<td>홍**</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox"></td>
+						<td>asdasd1234</td>
+						<td>홍**</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox"></td>
+						<td>asdasd1234</td>
+						<td>홍**</td>
+					</tr>
+					</tbody>
+				</table>
+
+				<div class="button_area">
+					<button type="button" class="mid_btn_ty1">확정</button>
+					<button type="button" class="mid_btn_ty1">닫기</button>
+				</div>
+			</div>
+
+        </div>
+	
+        <!--//popup_inner -->
+    </div>
+    <!--//popup -->
+    </body>
+    </html>

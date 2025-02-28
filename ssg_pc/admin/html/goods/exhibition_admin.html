@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<meta charset="UTF-8">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>등록 상품관리</title>
+<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="../../css/sub.css">
+<script type="text/javascript" charset="utf-8" src="../../js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/common.js"></script>
+</head>
+<body>
+<? include("../include/header.html"); ?>
+
+<div id="container" class="container">
+	<? include("../include/snb.html"); ?>
+
+	<div class="content">
+		<div class="location">
+			<span>HOME</span>
+			<span>상품</span>
+			<span>기획전</span>
+			<span class="on">시크릿스토어</span>
+		</div>
+		<div class="inner">
+			<h3 class="tit_h3">등록 상품관리</h3>
+			
+			<div class="item_box">
+				<a href="#">TANDY(5)</a>
+				<a href="#">AGATHA(5)</a>
+				<a href="#">ELLE(5)</a>
+				<a href="#" class="last">카카오프렌즈(2)</a>
+			</div>
+			
+			<div class="button_area txtr">
+				<button type="button" class="btn_ty3">상품추가</button>
+			</div>
+
+			<div class="ref_area">
+				<ul class="ref">
+					<li>※ 등록된 특별할인코너 : 50건</li>
+				</ul>
+				<div class="right">
+					<select name="sel10" id="sel10" style="width:120px;">
+						<option value="">등록일 역순</option>
+					</select>
+				</div>
+			</div>
+
+			<div class="tbl_search_list">
+				<div class="mid">
+					<button type="button" class="btn_bnr_ty1">마지막상품</button>
+					<button type="button" class="btn_bnr_ty2">다음상품</button>
+					<button type="button" class="btn_bnr_ty3">이전상품</button>
+					<button type="button" class="btn_bnr_ty4">처음상품</button>
+				</div>
+
+				<table class="tbl_primary">
+					<colgroup>
+						<col style="width:30px;">
+						<col style="width:80px;">
+						<col style="width:80px;">
+						<col>
+						<col style="width:100px;">
+						<col>
+						<col style="width:100px;">
+						<col style="width:60px;">
+						<col style="width:130px;">
+						<col style="width:70px;">
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="row"><input type="checkbox" name="chk" id="chkall"></th>
+							<th scope="row">진열순서</th>
+							<th scope="row">카테고리</th>
+							<th scope="row">이미지</th>
+							<th scope="row">상품코드</th>
+							<th scope="row">상품명</th>
+							<th scope="row">판매가</th>
+							<th scope="row">상태</th>
+							<th scope="row">등록일시</th>
+							<th scope="row">삭제</th>
+						</tr>
+					</thead>
+					<tbody class="txtc">
+						<tr>
+							<td><input type="checkbox" name="chk" id="chk1"></td>
+							<td>1</td>
+							<td>리빙/유아</td>
+							<td><a href="#"><img src="../../images/dummy/dummy_item_2.png" alt=""></a></td>
+							<td><a href="#">12345678</a></td>
+							<td class="txtl"><a href="#">[트로이카]LICHT-ALARM 키링 (TOR50/YE)</a></td>
+							<td class="txtr">100,000원</td>
+							<td>게시</td>
+							<td>2017-06-01<br> 23:59:59</td>
+							<td><button type="button" class="mid_btn_ty4">삭제</button></td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="mid">
+					<button type="button" class="btn_bnr_ty1">마지막상품</button>
+					<button type="button" class="btn_bnr_ty2">다음상품</button>
+					<button type="button" class="btn_bnr_ty3">이전상품</button>
+					<button type="button" class="btn_bnr_ty4">처음상품</button>
+				</div>
+			</div>
+			<div class="button_area txtr">
+				<button type="button" class="btn_ty4">상품삭제</button>
+				<button type="button" class="btn_ty2">목록</button>
+			</div>
+			
+		</div>
+	</div><!-- //content -->
+</div><!-- //container -->
+</div><!-- //wrap -->
+</body>
+</html>

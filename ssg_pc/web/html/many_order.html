@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>SHINSEGAE</title>
+<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="../css/sub.css">
+<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script type="text/javascript" charset="utf-8" src="../js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/ssg.carousel.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/common.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/jquery.selectbox-0.2.js"></script>
+</head>
+<body>
+<? include("include/header.html"); ?>
+
+<div id="container" class="container">
+<div class="content">
+	<div class="inner clear">
+		<div class="mirae_mo">
+			<img src="../images/sub/mirae_mo_bg.jpg" alt="">
+			<a href="javascript:;" class="btn1"><img src="../images/sub/mirae_mo_btn1.jpg" alt=""></a>
+			<label class="btn2"><input type="file"><img src="../images/sub/mirae_mo_btn2.jpg" alt=""></label>
+			<a href="javascript:;" class="btn3"><img src="../images/sub/mirae_mo_btn3.jpg" alt=""></a>
+		</div>
+	
+		<script>
+		function popup(url) 
+		{
+		 params  = 'width='+screen.width;
+		 params += ', height='+screen.height;
+		 params += ', top=0, left=0'
+		 params += ', fullscreen=yes';
+
+		 newwin=window.open(url,'windowname4', params);
+		 if (window.focus) {newwin.focus()}
+		 return false;
+		}
+		// -->
+		</script>
+		<a href="javascript:;" onclick="popup('./popup/order_excel.html')"style="background-color:#000;color:#fff;padding:20px 40px;display:inline-block;margin-top:50px;">팝업 임시버튼</a>
+
+		<table class="tbl_list2 mt70">
+			<caption>> 감사카드 수량을 확인하세요</caption>
+			<colgroup>
+				<col style="width:20%;">
+				<col style="width:20%;">
+				<col style="width:20%;">
+				<col style="width:20%;">
+				<col style="width:20%;">
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col">감사카드 한도</th>
+					<th scope="col">미신청</th>
+					<th scope="col">신청완료</th>
+					<th scope="col">주문완료</th>
+					<th scope="col">잔여수량</th>
+				</tr>
+			</thead>
+			<tbody class="txtc">
+				<tr>
+					<td>999</td>
+					<td>999</td>
+					<td>999</td>
+					<td>999</td>
+					<td>999</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<table class="tbl_list2 mt70">
+			<caption>> 엑셀파일 업로드 후 반드시 [주문완료] 신청을 하셔야 합니다</caption>
+			<colgroup>
+				<col>
+				<col style="width:100px;">
+				<col style="width:100px;">
+				<col style="width:100px;">
+				<col style="width:100px;">
+				<col style="width:100px;">
+			</colgroup>
+			<thead>
+				<tr>
+					<th scope="col">등록파일명</th>
+					<th scope="col">등록일</th>
+					<th scope="col">처리상태</th>
+					<th scope="col">주문수량</th>
+					<th scope="col">감사카드</th>
+					<th scope="col">삭제</th>
+				</tr>
+			</thead>
+			<tbody class="txtc">
+				<tr>
+					<td class="subject txtl"><a href="#">2021년 설_주문양식_미래에셋_고객용.xlsx</a></td>
+					<td>2017-05-01</td>
+					<td>주문완료</td>
+					<td>100</td>
+					<td>100</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="subject txtl"><a href="#">2021년 설_주문양식_미래에셋_고객용.xlsx</a></td>
+					<td>2017-05-01</td>
+					<td>주문완료</td>
+					<td>100</td>
+					<td>100</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td class="subject txtl"><a href="#">2021년 설_주문양식_미래에셋_고객용.xlsx</a></td>
+					<td>2017-05-01</td>
+					<td><span class="grey">미신청</span></td>
+					<td>100</td>
+					<td>100</td>
+					<td><a href="javascript:;" class="btn_remove">삭제</a></td>
+				</tr>
+				<tr>
+					<td class="subject txtl"><a href="#">2021년 설_주문양식_미래에셋_고객용.xlsx</a></td>
+					<td>2017-05-01</td>
+					<td><span class="grey">미신청</span></td>
+					<td>100</td>
+					<td>100</td>
+					<td><a href="javascript:;" class="btn_remove">삭제</a></td>
+				</tr>
+			</tbody>
+		</table>
+	</div><!-- //inner -->
+</div><!-- //content -->
+<!-- <div class="quick_area">
+	<div class="inner">
+		<div class="quick_left slide">
+			<div>
+				<a href="#"><img src="../images/dummy/img_quick_left.png" alt="">
+				<span>12% 더블쿠폰<br>+청구할인</span></a>
+			</div>
+			<div>
+				<a href="#"><img src="../images/dummy/img_quick_left.png" alt="">
+				<span>12% 더블쿠폰<br>+청구할인</span></a>
+			</div>
+			<div>
+				<a href="#"><img src="../images/dummy/img_quick_left.png" alt="">
+				<span>12% 더블쿠폰<br>+청구할인</span></a>
+			</div>
+		</div>
+		<div class="quick_right">
+			<p class="tit">오늘본상품</p>
+			<div class="quick_r_out">
+				<div class="quick_r slide">
+					<div>
+						<a href="#"><img src="../images/dummy/img_quick_right1.png" alt=""></a>
+						<a href="#"><img src="../images/dummy/img_quick_right2.png" alt=""></a>
+						<a href="#"><img src="../images/dummy/img_quick_right3.png" alt=""></a>
+					</div>
+					<div>
+						<a href="#"><img src="../images/dummy/img_quick_right1.png" alt=""></a>
+						<a href="#"><img src="../images/dummy/img_quick_right2.png" alt=""></a>
+						<a href="#"><img src="../images/dummy/img_quick_right3.png" alt=""></a>
+					</div>
+				</div>
+			</div>
+			<a href="#container" class="btn_top">TOP </a>
+		</div>
+	</div>
+</div> -->
+</div><!-- //container -->
+<? include("include/footer.html"); ?>
+</div><!-- //wrap -->
+</body>
+</html>

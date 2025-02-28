@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<meta charset="UTF-8">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>협력회사 등록</title>
+<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="../../css/sub.css">
+<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script type="text/javascript" charset="utf-8" src="../../js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/common.js"></script>
+</head>
+<body>
+<? include("../include/header.html"); ?>
+
+<div id="container" class="container">
+	<? include("../include/snb.html"); ?>
+
+	<div class="content">
+		<div class="location">
+			<span>HOME</span>
+			<span>회원 </span>
+			<span>협력회사 관리</span>
+			<span class="on">협력회사 등록</span>
+		</div>
+		<div class="inner">
+			<h3 class="tit_h3">협력회사 등록</h3>
+			<p class="tbl_tit_ty1">※ 비밀번호는 변경하실 경우에만 입력해주세요. (비밀번호는 8~12자 이내로 영문, 숫자를 조합하셔서 작성하시면 됩니다.)</p>
+			<table class="tbl_view">
+				<colgroup>
+					<col style="width:170px;">
+					<col>
+					<col style="width:170px;">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th>판매형태</th>
+						<td>
+							<select name="" id="">
+								<option value="">일반판매</option>
+							</select>
+						</td>
+						<th>지불코드</th>
+						<td><input type="text" name="" style="width:195px;" placeholder=""></td>
+					</tr>
+					<tr>
+						<th>아이디</th>
+						<td>
+							<input type="password" name="" style="width:124px;">
+							<button type="button" class="mid_btn_ty1">중복체크</button>
+						</td>
+						<th>비밀번호</th>
+						<td><input type="password" name="" style="width:195px;"></td>
+					</tr>
+					<tr>
+						<th>회사명</th>
+						<td><input type="text" name="" style="width:195px;" placeholder=""></td>
+						<th>대표자명</th>
+						<td><input type="text" name="" style="width:195px;" placeholder=""></td>
+					</tr>
+					<tr>
+						<th>사업자번호</th>
+						<td>
+							<input type="text" name="" class="txtc" style="width:45px;" placeholder="">
+							<span class="division">-</span>
+							<input type="text" name="" class="txtc" style="width:35px;" placeholder="">
+							<span class="division">-</span>
+							<input type="text" name="" class="txtc" style="width:60px;" placeholder="">
+						</td>
+						<th>법인번호</th>
+						<td>
+							<input type="text" name="" class="txtc" style="width:83px;" placeholder="">
+							<span class="division">-</span>
+							<input type="text" name="" class="txtc" style="width:85px;" placeholder="">
+						</td>
+					</tr>
+					<tr>
+						<th>업태</th>
+						<td><input type="text" name="" style="width:195px;" placeholder=""></td>
+						<th>업종</th>
+						<td><input type="text" name="" style="width:195px;" placeholder=""></td>
+					</tr>
+					<tr>
+						<th>대표전화</th>
+						<td>
+							<input type="text" name="" class="txtc" style="width:40px;" placeholder="">
+							<span class="division">-</span>
+							<input type="text" name="" class="txtc" style="width:50px;" placeholder="">
+							<span class="division">-</span>
+							<input type="text" name="" class="txtc" style="width:50px;" placeholder="">
+						</td>
+						<th>FAX</th>
+						<td>
+							<input type="text" name="" class="txtc" style="width:40px;" placeholder="">
+							<span class="division">-</span>
+							<input type="text" name="" class="txtc" style="width:50px;" placeholder="">
+							<span class="division">-</span>
+							<input type="text" name="" class="txtc" style="width:50px;" placeholder="">
+						</td>
+					</tr>
+					<tr>
+						<th>담당자명</th>
+						<td><input type="text" name="" style="width:195px;" placeholder=""></td>
+						<th>담당자 이메일</th>
+						<td>
+							<input type="text" name="" style="width:100px;" placeholder="">
+							<span class="division">@</span>
+							<input type="text" name="" style="width:100px;" placeholder="">
+							<select name="" id="">
+								<option value="">직접입력</option>
+								<option value="">naver.com</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<th>담당자 전화번호</th>
+						<td>
+							<input type="text" name="" class="txtc" style="width:40px;" placeholder="">
+							<span class="division">-</span>
+							<input type="text" name="" class="txtc" style="width:50px;" placeholder="">
+							<span class="division">-</span>
+							<input type="text" name="" class="txtc" style="width:50px;" placeholder="">
+						</td>
+						<th>담당자 휴대폰</th>
+						<td>
+							<input type="text" name="" class="txtc" style="width:40px;" placeholder="">
+							<span class="division">-</span>
+							<input type="text" name="" class="txtc" style="width:50px;" placeholder="">
+							<span class="division">-</span>
+							<input type="text" name="" class="txtc" style="width:50px;" placeholder="">
+						</td>
+					</tr>
+					<tr>
+						<th>사업장 주소</th>
+						<td colspan="3" class="zip">
+							<p><input type="text" name="" class="txtc" style="width:90px;"> <button type="button" class="mid_btn_ty1">우편번호 찾기</button></p>
+							<p><input type="text" name="" style="width:300px;"> <input type="text" name="" style="width:195px;"></p>
+						</td>
+					</tr>
+					<tr>
+						<th>주력상품</th>
+						<td colspan="3">
+							<input type="text" name="" class="w100" placeholder="">
+						</td>
+					</tr>
+					<tr>
+						<th>소개</th>
+						<td colspan="3"><textarea class="w100" style="height:100px;"></textarea></td>
+					</tr>
+					<tr>
+						<th>택배사선택</th>
+						<td colspan="3">
+							<select name="" id="">
+								<option value="">선택</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<th>배송비설정</th>
+						<td colspan="3">
+							<p>※ 상품등록시 기본배송은 “무료배송”입니다.</p>
+							<p><b>기본 배송비</b> (배송비 부과되는 상품에 적용) <input type="text" name="" style="width:100px"> 원</p>
+							<p><b>무료 배송조건 주문금액</b>은 총 주문금액(상품개별 배송상품제외)  <input type="text" name="" style="width:100px"> 원 이상 주문 시 무료 배송비로 적용</p>
+						</td>
+					</tr>
+					<tr>
+						<th>공지정보</th>
+						<td colspan="3">
+							<ul class="choice">
+								<li>
+									<span><input type="radio" name=""></span>
+									<p><textarea class="w100" style="height:100px;"></textarea></p>
+								</li>
+								<li>
+									<span><input type="radio" name=""></span>
+									<p><input type="file" name=""></p>
+								</li>
+							</ul>
+							<p class="line_top">※ 공지정보는 협력회사 모든 상품에 노출되며, 노출위치는 상품 상세정보 상품고시 하단입니다.</p>
+						</td>
+					</tr>
+					<tr>
+						<th>배송정보</th>
+						<td colspan="3">
+							<ul class="choice">
+								<li>
+									<span><input type="radio" name=""></span>
+									<p><textarea class="w100" style="height:100px;"></textarea></p>
+								</li>
+								<li>
+									<span><input type="radio" name=""></span>
+									<p><input type="file" name=""></p>
+								</li>
+							</ul>
+							<p class="line_top">※ 배송정보는 협력회사 모든 상품에 노출되며, 노출위치는 상품 상세정보 배송정보 탭 입니다.</p>
+						</td>
+					</tr>
+					<tr>
+						<th>교환 및 반품정보</th>
+						<td colspan="3">
+							<ul class="choice">
+								<li>
+									<span><input type="radio" name=""></span>
+									<p><textarea class="w100" style="height:100px;"></textarea></p>
+								</li>
+								<li>
+									<span><input type="radio" name=""></span>
+									<p><input type="file" name=""></p>
+								</li>
+							</ul>
+							<p class="line_top"> ※ 교환 및 반품정보는 협력회사 모든 상품에 노출되며, 노출위치는 상품 상세정보 교환/반품 정보 탭 입니다.</p>
+						</td>
+					</tr>
+					<tr>
+						<th>승인상태</th>
+						<td colspan="3">
+							<select name="" id="">
+								<option value="">선택</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<th>상품 등록이미지</th>
+						<td><input type="checkbox" name="" id="img_upload"> <label for="img_upload">이미지 업로드</label></td>
+						<th>신세계백화점/이마트</th>
+						<td>
+							<input type="checkbox" name="" id="shinsegae"> <label for="shinsegae">신세계백화점</label>
+							<input type="checkbox" name="" id="emart"> <label for="emart">이마트</label>
+						</td>
+					</tr>
+					<tr>
+						<th>공지노출여부</th>
+						<td>
+							<input type="radio" name="" id="yes"> <label for="yes">Y</label>
+							<input type="radio" name="" id="no"> <label for="no">N</label>
+						</td>
+						<th>외부협력회사</th>
+						<td>
+							<input type="radio" name="" id="yes1"> <label for="yes1">Y</label>
+							<input type="radio" name="" id="no1"> <label for="no1">N</label>
+						</td>
+					</tr>
+					<tr>
+						<th>기타정보</th>
+						<td colspan="3">
+							<p>방문횟수 : 3회 / 마지막방문일 : 2017-05-01 23:59:59 / 마지막방문 IP : 111,1,12,111</p>
+							<p>회원가입일 : 2017-05-01 23:59:59</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<div class="button_area clear">
+				<button type="button" class="btn_ty4">삭제</button>
+				<button type="button" class="btn_ty3">등록</button>
+				<button type="button" class="btn_ty2">목록</button>
+			</div>
+		</div><!-- //inner -->
+	</div><!-- //content -->
+</div><!-- //container -->
+</div><!-- //wrap -->
+</body>
+</html>

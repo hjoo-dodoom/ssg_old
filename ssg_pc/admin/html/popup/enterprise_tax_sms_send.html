@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<meta charset="UTF-8">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>업체 세금계산서 요청 SMS 발송</title>
+<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="../../css/popup.css">
+<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script type="text/javascript" charset="utf-8" src="../../js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/common.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+<div class="popup">
+	<div class="popup_inner">
+		<h1>업체 세금계산서 요청 SMS 발송</h1>
+
+		<div class="div_tab_ty1 click">
+			<ul class="tab_tit clear">
+				<li class="on"><a href="#none">장문보내기</a></li>
+				<li class="last"><a href="#none">단문보내기</a></li>
+			</ul>
+
+			<div class="tab_cnt1" style="display: block">
+				<table class="tbl_view">
+					<colgroup>
+						<col style="width:100px;">
+						<col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<th>제목</th>
+							<td><input type="text" name="" class="w100" placeholder="[신세계법인] 미래에셋 OO월 세금계산서 발행요청"></td>
+						</tr>
+						<tr>
+							<th>내용</th>
+							<td>
+								<textarea class="w100" style="height:200px;">
+[신세계법인] 미래에셋몰
+OO월 세금계산서 발행요청
+
+발행일자 : OO월 OO일
+매입액 : OOOO원
+공급액 : OOOO원
+세액 : OOOO원
+
+담당자 NAME EMAIL로 지금 바로 발행해주세요.
+금액 정확히 확인후 발행 바랍니다.
+
+사업자번호 000-00-00000 종사업자 00000
+								</textarea>
+							</td>
+						</tr>
+						<tr>
+							<th>추가메세지</th>
+							<td>
+								<textarea class="w100" style="height:100px;"></textarea>
+								<p class="txtr"><b>230</b> / 2000 byte</p>
+							</td>
+						</tr>
+						<tr>
+							<th>세금계산서 요청일</th>
+							<td><input type="text" name="" class="datepicker"></td>
+						</tr>
+						<tr>
+							<th>발신번호</th>
+							<td>02-1234-1234</td>
+						</tr>
+						<tr>
+							<th>담당자명</th>
+							<td><input type="text" name="" style="width:195px;" placeholder="김담당"></td>
+						</tr>
+						<tr>
+							<th>담당자 이메일</th>
+							<td><input type="text" name="" style="width:195px;" placeholder="admin@shinsegae.com"></td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="button_area">
+					<div class="left">※ 세금계산서요청일과 발신번호를 필히 확인후 보내주시기 바랍니다.</div>
+					<button type="button" class="btn_ty9">확인</button>
+				</div>
+
+				<table class="tbl_primary">
+					<colgroup>
+						<col style="width:40px;">
+						<col>
+						<col style="width:100px;">
+						<col style="width:100px;">
+						<col style="width:100px;">
+						<col style="width:100px;">
+						<col style="width:100px;">
+					</colgroup>
+					<thead>
+						<tr>
+							<th><input type="checkbox" name=""></th>
+							<th>협력회사 명</th>
+							<th>구분</th>
+							<th>매입가</th>
+							<th>공급가</th>
+							<th>세액</th>
+							<th>수신번호</th>
+						</tr>
+					</thead>
+					<tbody class="txtc">
+						<tr>
+							<td><input type="checkbox" name=""></td>
+							<td class="txtl">(주)돋움</td>
+							<td>면세</td>
+							<td class="txtr">30,000</td>
+							<td class="txtr">25,000</td>
+							<td class="txtr">5,000</td>
+							<td>010-1234-1234</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name=""></td>
+							<td class="txtl">(주)돋움</td>
+							<td>면세</td>
+							<td class="txtr">30,000</td>
+							<td class="txtr">25,000</td>
+							<td class="txtr">5,000</td>
+							<td>010-1234-1234</td>
+						</tr>
+					</tbody>
+				</table>
+				<ul class="ref">
+					<li>※ 아래 업체목록중 수신번호가 정상적이지 않을경우 문자가 발송되지 않습니다.</li>
+				</ul>
+			</div>
+
+			<div class="tab_cnt2">
+				<table class="tbl_view">
+					<colgroup>
+						<col style="width:100px;">
+						<col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<th>내용</th>
+							<td>
+								<textarea class="w100" style="height:100px;">
+신세계법인] 미래에셋몰 OO월 
+매입가 : OO 공급가 : OO 세액 : 
+OO 세금계산서요청 – 김담당
+								</textarea>
+							</td>
+						</tr>
+						<tr>
+							<th>발신번호</th>
+							<td>02-1234-1234</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="button_area">
+					<button type="button" class="btn_ty9">확인</button>
+				</div>
+
+				<table class="tbl_primary">
+					<colgroup>
+						<col style="width:40px;">
+						<col>
+						<col style="width:100px;">
+						<col style="width:100px;">
+						<col style="width:100px;">
+						<col style="width:100px;">
+						<col style="width:100px;">
+					</colgroup>
+					<thead>
+						<tr>
+							<th><input type="checkbox" name=""></th>
+							<th>협력회사 명</th>
+							<th>구분</th>
+							<th>매입가</th>
+							<th>공급가</th>
+							<th>세액</th>
+							<th>수신번호</th>
+						</tr>
+					</thead>
+					<tbody class="txtc">
+						<tr>
+							<td><input type="checkbox" name=""></td>
+							<td class="txtl">(주)돋움</td>
+							<td>면세</td>
+							<td class="txtr">30,000</td>
+							<td class="txtr">25,000</td>
+							<td class="txtr">5,000</td>
+							<td>010-1234-1234</td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name=""></td>
+							<td class="txtl">(주)돋움</td>
+							<td>면세</td>
+							<td class="txtr">30,000</td>
+							<td class="txtr">25,000</td>
+							<td class="txtr">5,000</td>
+							<td>010-1234-1234</td>
+						</tr>
+					</tbody>
+				</table>
+				<ul class="ref">
+					<li>※ 아래 업체목록중 수신번호가 정상적이지 않을경우 문자가 발송되지 않습니다.</li>
+				</ul>
+			</div>
+		</div>
+	</div><!--//popup_inner -->
+</div><!--//popup -->
+</body>
+</html>

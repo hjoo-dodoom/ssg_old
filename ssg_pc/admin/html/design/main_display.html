@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<meta charset="UTF-8">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>GOOD PRICE</title>
+<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="../../css/sub.css">
+<script type="text/javascript" charset="utf-8" src="../../js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/common.js"></script>
+</head>
+<body>
+<? include("../include/header.html"); ?>
+
+<div id="container" class="container">
+	<? include("../include/snb.html"); ?>
+
+	<div class="content">
+		<div class="location">
+			<span>HOME</span>
+			<span>디자인</span>
+			<span>메인진열</span>
+			<span class="on">메인진열순서</span>
+		</div>
+		<div class="inner">
+			<h3 class="tit_h3">메인진열순서</h3>
+
+			<div class="tbl_outer">
+				<table class="tbl_view">
+					<colgroup>
+						<col style="width:100px">
+						<col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">고객사</th>
+							<td>
+								<select name="all1" id="all1">
+									<option value="">전체</option>
+								</select>
+								<select name="sel1" id="sel1">
+									<option value="">선택</option>
+								</select>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div class="button_area">
+				<div class="left">
+					<button type="button" class="btn_ty3">GOOD PRICE 추가</button>
+				</div>
+				<button type="button" class="btn_ty1">검색</button>
+			</div>
+
+			<div class="tbl_search_list">
+				<div class="mid">
+					<button type="button" class="btn_bnr_ty1">마지막상품</button>
+					<button type="button" class="btn_bnr_ty2">다음상품</button>
+					<button type="button" class="btn_bnr_ty3">이전상품</button>
+					<button type="button" class="btn_bnr_ty4">처음상품</button>
+					<button type="button" class="mid_btn_ty1">상품 삭제</button>
+				</div>
+
+				<table class="tbl_primary">
+					<colgroup>
+						<col style="width:30px;">
+						<col style="width:80px;">
+						<col>
+						<col style="width:200px;">
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="row"><input type="checkbox" name="chk" id="chkall"></th>
+							<th scope="row">진열순서</th>
+							<th scope="row">진열제목</th>
+							<th scope="row">배경색상</th>
+						</tr>
+					</thead>
+					<tbody class="txtc">
+						<!-- 데잍터 없을 경우 S -->
+						<tr>
+							<td colspan="4">등록된 데이터가 없습니다.</td>
+						</tr>
+						<!-- 데잍터 없을 경우 E -->
+						<!-- 데잍터 있을 경우 S -->
+						<tr>
+							<td><input type="checkbox" name="chk" id="chk1"></td>
+							<td>1</td>
+							<td>GOOD PRICE</td>
+							<td><label class="mr20"><input type="radio" name="">흰색</label> <label><input type="radio" name="">회색</label></td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="chk" id="chk1"></td>
+							<td>2</td>
+							<td>GOOD PRICE</td>
+							<td><label class="mr20"><input type="radio" name="">흰색</label> <label><input type="radio" name="">회색</label></td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="chk" id="chk1"></td>
+							<td>3</td>
+							<td>GOOD PRICE</td>
+							<td><label class="mr20"><input type="radio" name="">흰색</label> <label><input type="radio" name="">회색</label></td>
+						</tr>
+						<tr>
+							<td><input type="checkbox" name="chk" id="chk1"></td>
+							<td>4</td>
+							<td>GOOD PRICE</td>
+							<td><label class="mr20"><input type="radio" name="">흰색</label> <label><input type="radio" name="">회색</label></td>
+						</tr>
+						<!-- 데잍터 있을 경우 E -->
+					</tbody>
+				</table>
+				<div class="mid">
+					<button type="button" class="btn_bnr_ty1">마지막상품</button>
+					<button type="button" class="btn_bnr_ty2">다음상품</button>
+					<button type="button" class="btn_bnr_ty3">이전상품</button>
+					<button type="button" class="btn_bnr_ty4">처음상품</button>
+				</div>
+				<div class="mid">
+					선택한 상품의 진열순위를 <input type="text" name="" class="txtc" style="width:50px;"> 로 <button type="button" class="mid_btn_ty3">변경</button>
+				</div>
+			</div>
+			<div class="paging">
+				<a href="#none" class="first">처음페이지</a>
+				<a href="#none" class="prev">이전페이지</a>
+				<a href="#none" class="on">1</a>
+				<a href="#none" class="num">2</a>
+				<a href="#none" class="num">3</a>
+				<a href="#none" class="num">4</a>
+				<a href="#none" class="num">5</a>
+				<a href="#none" class="num">6</a>
+				<a href="#none" class="num">7</a>
+				<a href="#none" class="num">8</a>
+				<a href="#none" class="num">9</a>
+				<a href="#none" class="num">10</a>
+				<a href="#none" class="next">다음페이지</a>
+				<a href="#none" class="last">마지막페이지</a>
+			</div>
+		</div>
+	</div><!-- //content -->
+</div><!-- //container -->
+</div><!-- //wrap -->
+</body>
+</html>

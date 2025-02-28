@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<meta charset="UTF-8">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>주문상세 정보</title>
+<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="../../css/sub.css">
+<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script type="text/javascript" charset="utf-8" src="../../js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/common.js"></script>
+</head>
+<body>
+<? include("../include/header.html"); ?>
+
+<div id="container" class="container">
+	<? include("../include/snb.html"); ?>
+
+	<div class="content">
+		<div class="location">
+			<span>HOME</span>
+			<span>주문</span>
+			<span>주문목록</span>
+			<span>주문리스트 </span>
+			<span class="on">주문상세 정보</span>
+		</div>
+		<div class="inner">
+			<h3 class="tit_h3">주문상세 정보</h3>
+
+			<table class="tbl_view">
+				<colgroup>
+					<col style="width:100px">
+					<col>
+					<col style="width:100px">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th scope="row">주문번호</th>
+						<td>1234567</td>
+						<th scope="row">주문일시</th>
+						<td>2017-05-01 23:59:59</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<h4 class="tit_h4">주문자 정보</h4>
+			<table class="tbl_view">
+				<colgroup>
+					<col style="width:100px">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th scope="row">아이디(사원번호)</th>
+						<td>A1045ER10541</td>
+					</tr>
+					<tr>
+						<th scope="row">이름(실명)</th>
+						<td><input type="text" name="" style="width:195px;" placeholder="홍길동"></td>
+					</tr>
+					<tr>
+						<th scope="row">전화번호</th>
+						<td>
+							<input type="text" name="" class="txtc" style="width:40px;" placeholder="">
+							<span class="division">-</span>
+							<input type="text" name="" class="txtc" style="width:50px;" placeholder="">
+							<span class="division">-</span>
+							<input type="text" name="" class="txtc" style="width:50px;" placeholder="">
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">휴대폰 번호</th>
+						<td>
+							<input type="text" name="" class="txtc" style="width:40px;" placeholder="">
+							<span class="division">-</span>
+							<input type="text" name="" class="txtc" style="width:50px;" placeholder="">
+							<span class="division">-</span>
+							<input type="text" name="" class="txtc" style="width:50px;" placeholder="">
+							<button type="button" class="mid_btn_ty5">SMS 전송</button>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">이메일</th>
+						<td>
+							<input type="text" name="" style="width:100px;" placeholder="">
+							<span class="division">@</span>
+							<input type="text" name="" style="width:100px;" placeholder="">
+							<select name="" id="">
+								<option value="">직접입력</option>
+								<option value="">naver.com</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<th>주소</th>
+						<td class="zip">
+							<p><input type="text" name="" class="txtc" style="width:90px;"> <button type="button" class="mid_btn_ty1">우편번호 찾기</button></p>
+							<p><input type="text" name="" style="width:300px;"> <input type="text" name="" style="width:195px;"></p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="button_area">
+				<button type="button" class="btn_ty5">수정</button>
+			</div>
+
+			<h4 class="tit_h4">받는사람 정보</h4>
+			<table class="tbl_primary">
+				<colgroup>
+					<col style="width:50px">
+					<col style="width:80px">
+					<col style="width:90px">
+					<col style="width:90px">
+					<col>
+					<col style="width:40px">
+					<col style="width:140px">
+				</colgroup>
+				<thead>
+					<tr>
+						<th>번호</th>
+						<th>이름</th>
+						<th>전화번호</th>
+						<th>휴대폰 번호</th>
+						<th>주소</th>
+						<th>수량</th>
+						<th>송장번호</th>
+					</tr>
+				</thead>
+				<tbody class="txtc">
+					<tr>
+						<td>1</td>
+						<td><a href="#">홍길동</a></td>
+						<td>02-1234-1234</td>
+						<td>010-1234-1314<br/>(안심번호 : 050-1234-1234 )</td>
+						<td class="txtl">1234, 서울시 서초구 사평대로 205 CENTERAL CITY</td>
+						<td>1</td>
+						<td><a href="#">대한통운 / 1234567890</a></td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td><a href="#">홍길동</a></td>
+						<td>02-1234-1234</td>
+						<td>010-1234-1314</td>
+						<td class="txtl">1234, 서울시 서초구 사평대로 205 CENTERAL CITY</td>
+						<td>1</td>
+						<td><a href="#">대한통운 / 1234567890</a></td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td><a href="#">홍길동</a></td>
+						<td>02-1234-1234</td>
+						<td>010-1234-1314</td>
+						<td class="txtl">1234, 서울시 서초구 사평대로 205 CENTERAL CITY</td>
+						<td>1</td>
+						<td><a href="#">대한통운 / 1234567890</a></td>
+					</tr>
+				</tbody>
+			</table>
+
+			<h4 class="tit_h4">받는사람 정보</h4>
+			<table class="tbl_view">
+				<colgroup>
+					<col style="width:100px">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th scope="row">이름(실명)</th>
+						<td><input type="text" name="" style="width:195px;" placeholder="홍길동"></td>
+					</tr>
+					<tr>
+						<th scope="row">전화번호</th>
+						<td>
+							<input type="text" name="" class="txtc" style="width:40px;" placeholder="">
+							<span class="division">-</span>
+							<input type="text" name="" class="txtc" style="width:50px;" placeholder="">
+							<span class="division">-</span>
+							<input type="text" name="" class="txtc" style="width:50px;" placeholder="">
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">휴대폰 번호</th>
+						<td>
+							<input type="text" name="" class="txtc" style="width:40px;" placeholder="">
+							<span class="division">-</span>
+							<input type="text" name="" class="txtc" style="width:50px;" placeholder="">
+							<span class="division">-</span>
+							<input type="text" name="" class="txtc" style="width:50px;" placeholder="">
+							<button type="button" class="mid_btn_ty5">SMS 전송</button>
+							(안심번호 : 050-1234-1234 )
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">이메일</th>
+						<td>
+							<input type="text" name="" style="width:100px;" placeholder="">
+							<span class="division">@</span>
+							<input type="text" name="" style="width:100px;" placeholder="">
+							<select name="" id="">
+								<option value="">직접입력</option>
+								<option value="">naver.com</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<th>주소</th>
+						<td class="zip">
+							<p><input type="text" name="" class="txtc" style="width:90px;"> <button type="button" class="mid_btn_ty1">우편번호 찾기</button></p>
+							<p><input type="text" name="" style="width:195px;"> <input type="text" name="" style="width:195px;"></p>
+						</td>
+					</tr>
+					<tr>
+						<th>요구사항</th>
+						<td>
+							<textarea style="width:500px; height:100px;"></textarea>
+							<button type="button" class="btn_ty10">관리자에게 <br>당부변경</button>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">수량</th>
+						<td><input type="text" name="" placeholder="1" style="width:100px;" class="txtc"> 개</td>
+					</tr>
+					<tr>
+						<th scope="row">감사카드</th>
+						<td><input type="text" name="" placeholder="생일축하해요" class="w100"></td>
+					</tr>
+					<tr>
+						<th scope="row">배송요청일</th>
+						<td><input type="text" name="" class="datepicker"></td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="button_area">
+				<button type="button" class="btn_ty5">수정</button>
+			</div>
+
+			<h4 class="tit_h4">송장 대량 업로드</h4>
+			<table class="tbl_view">
+				<colgroup>
+					<col style="width:100px">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th scope="row">업로드 CSV</th>
+						<td>
+							<p>아래 업로드파일을 다운받아 엑셀에서 송장정보를 작성하세요. (반드시 "<b>2번째 라인</b>" 부터 작성해주세요.)<br>  저장 시 파일 형식은 CVS(쉼표로 분리, *.cvs)로 해주셔야 합니다.</p>
+							<p>
+								<button type="button" class="mid_btn_ty1">회원 복수배송지 업로드 파일 다운로드</button>
+								<button type="button" class="mid_btn_ty1">관리자/업체 복수배송지 업로드 파일 다운로드</button>
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">택배사 선택</th>
+						<td>
+							<p>2. 택배사를 선택해 주세요.</p>
+							<p>
+								<select name="" id="">
+									<option value="">택배사 선택</option>
+								</select>
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">파일업로드</th>
+						<td>
+							<p>3. 작성 완료된 송장 CSV파일을 올리세요.</p>
+							<p><input type="file" name=""></p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="button_area">
+				<button type="button" class="btn_ty3">송장 대량 업로드</button>
+			</div>
+
+			<h4 class="tit_h4">결제 정보</h4>
+			<table class="tbl_view">
+				<colgroup>
+					<col style="width:100px">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th scope="row">총 결제금액</th>
+						<td><input type="text" name="" style="width:100px;" placeholder="820,000" class="txtr"> 원</td>
+					</tr>
+					<tr>
+						<th scope="row">포인트 사용</th>
+						<td>
+							<p>기본 포인트 : <input type="text" name="" style="width:100px;" placeholder="300,000" class="txtr"> point</p>
+							<p>특별 포인트 : <input type="text" name="" style="width:100px;" placeholder="300,000" class="txtr"> point</p>
+							<p> 총 사용 포인트 : <b>800,000</b> Point</p>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">급여공제</th>
+						<td><input type="text" name="" style="width:100px;" placeholder="0" class="txtr"> 원</td>
+					</tr>
+					<tr>
+						<th scope="row">배송비</th>
+						<td><input type="text" name="" style="width:100px;" placeholder="10,000" class="txtr"> 원</td>
+					</tr>
+					<tr>
+						<th scope="row">실제결제액</th>
+						<td><input type="text" name="" style="width:100px;" placeholder="23,000" class="txtr"> 원</td>
+					</tr>
+					<tr>
+						<th scope="row">미결제액</th>
+						<td><input type="text" name="" style="width:100px;" placeholder="">0 원</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="button_area">
+				<button type="button" class="btn_ty5">금액변경</button>
+			</div>
+
+			<h4 class="tit_h4">결제 수단</h4>
+			<table class="tbl_view">
+				<colgroup>
+					<col style="width:100px">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th scope="row">결제방법</th>
+						<td>
+							<select name="" id="">
+								<option value="">신용카드</option>
+							</select>
+							<button type="button" class="mid_btn_ty3">결제수단 변경</button>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">결제메세지</th>
+						<td>[0000]MPI결제 정상</td>
+					</tr>
+					<tr>
+						<th scope="row">가상계좌정보</th>
+						<td></td>
+					</tr>
+				</tbody>
+			</table>
+
+			<h4 class="tit_h4">주문상태 변경</h4>
+			<table class="tbl_view">
+				<colgroup>
+					<col style="width:100px">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th scope="row">주문상태</th>
+						<td>주문취소</td>
+					</tr>
+					<tr>
+						<th scope="row">취소사유</th>
+						<td>단순변심으로 인해 취소합니다.</td>
+					</tr>
+					<tr>
+						<th scope="row">취소시간</th>
+						<td>2017-06-01 23:59:59</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<h4 class="tit_h4">반품/교환/환불</h4>
+			<table class="tbl_view">
+				<colgroup>
+					<col style="width:100px">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th scope="row">상태</th>
+						<td>
+							<select name="" id="">
+								<option value="">선택 </option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">반품/교환/환불<br>메시지</th>
+						<td><textarea class="w100" style="height:100px;"></textarea></td>
+					</tr>
+					<tr>
+						<th scope="row">진행일시</th>
+						<td></td>
+					</tr>
+					<tr>
+						<th scope="row">완료일시</th>
+						<td></td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="button_area">
+				<button type="button" class="btn_ty5">반품/교환/환불</button>
+			</div>
+
+			<h4 class="tit_h4">메모</h4>
+			<table class="tbl_view">
+				<colgroup>
+					<col style="width:100px">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th scope="row">신세계 전용</th>
+						<td><textarea class="w100" style="height:100px;"></textarea></td>
+					</tr>
+					<tr>
+						<th scope="row">협력회사 공유</th>
+						<td><textarea class="w100" style="height:100px;"></textarea></td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="button_area">
+				<button type="button" class="btn_ty5">메모변경</button>
+			</div>
+
+			<h4 class="tit_h4">주문상품 정보</h4>
+			<table class="tbl_primary">
+				<thead>
+					<tr>
+						<th>상품코드</th>
+						<th>상품명</th>
+						<th>옵션</th>
+						<th>판매금액</th>
+						<th>수량</th>
+						<th>배송비</th>
+						<th>총판매금액</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="txtc"><a href="#">123456-1234567890123</a></td>
+						<td>[삼성전자] 삼성 UHD LED TV VR-ER1 1900</td>
+						<td class="txtc">-</td>
+						<td class="txtr">500,000원</td>
+						<td class="txtc">1개</td>
+						<td class="txtr">3,000원</td>
+						<td class="txtr">503,000원</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<h4 class="tit_h4">협력회사 정보</h4>
+			<table class="tbl_view">
+				<colgroup>
+					<col style="width:100px">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th scope="row">업체명</th>
+						<td>㈜돋움</td>
+					</tr>
+					<tr>
+						<th scope="row">담당자</th>
+						<td>김담당</td>
+					</tr>
+					<tr>
+						<th scope="row">전화번호</th>
+						<td>02-1234-1234</td>
+					</tr>
+					<tr>
+						<th scope="row">휴대폰</th>
+						<td>010-7891-7891</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="button_area">
+				<div class="left"><button type="button" class="btn_ty8">삭제</button></div>
+				<button type="button" class="btn_ty2">목록</button>
+			</div>
+
+			<h4 class="tit_h4">주문상태 / 반품,교환,환불 변동내역</h4>
+			<table class="tbl_primary">
+				<thead>
+					<tr>
+						<th>번호</th>
+						<th>주문상태</th>
+						<th>반품/교환 상태</th>
+						<th>내용</th>
+						<th>처리자 아이디</th>
+						<th>협력회사 명</th>
+						<th>수정일시</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td colspan="7" class="txtc">등록된 변동내역이 없습니다.</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="paging">
+				<a href="#none" class="first">처음페이지</a>
+				<a href="#none" class="prev">이전페이지</a>
+				<a href="#none" class="on">1</a>
+				<a href="#none" class="num">2</a>
+				<a href="#none" class="num">3</a>
+				<a href="#none" class="num">4</a>
+				<a href="#none" class="num">5</a>
+				<a href="#none" class="num">6</a>
+				<a href="#none" class="num">7</a>
+				<a href="#none" class="num">8</a>
+				<a href="#none" class="num">9</a>
+				<a href="#none" class="num">10</a>
+				<a href="#none" class="next">다음페이지</a>
+				<a href="#none" class="last">마지막페이지</a>
+			</div>
+		</div>
+	</div><!-- //content -->
+</div><!-- //container -->
+</div><!-- //wrap -->
+</body>
+</html>

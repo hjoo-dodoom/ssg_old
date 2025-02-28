@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<meta charset="UTF-8">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>기간별 포인트 현황</title>
+<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="../../css/sub.css">
+<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script type="text/javascript" charset="utf-8" src="../../js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/common.js"></script>
+</head>
+<body>
+<? include("../include/header.html"); ?>
+
+<div id="container" class="container">
+	<? include("../include/snb.html"); ?>
+
+	<div class="content">
+		<div class="location">
+			<span>HOME</span>
+			<span>회원 </span>
+			<span>고객사 포인트 현황</span>
+			<span class="on">기간별 포인트 현황</span>
+		</div>
+		<div class="inner">
+			<h3 class="tit_h3">기간별 포인트 현황</h3>
+
+			<div class="tbl_outer">
+				<table class="tbl_view">
+					<colgroup>
+						<col style="width:100px">
+						<col>
+						<col style="width:100px">
+						<col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">고객사</th>
+							<td>
+								<select name="all2">
+									<option value="">선택</option>
+								</select>
+								<select name="all2">
+									<option value="">선택</option>
+								</select>
+							</td>
+							<th scope="row">기간</th>
+							<td>
+								<input type="text" name="" class="datepicker">
+								<span class="division">~</span>
+								<input type="text" name="" class="datepicker">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div class="button_area">
+				<div class="left"><button type="button" class="btn_ty7">엑셀다운로드</button></div>
+				<button type="button" class="btn_ty1">검색</button>
+				<button type="button" class="btn_ty2">초기화</button>
+			</div>
+
+			<table class="tbl_primary">
+				<thead>
+					<tr>
+						<th rowspan="2" scope="row">번호</th>
+						<th rowspan="2" scope="row">회원명</th>
+						<th rowspan="2" scope="row">아이디</th>
+						<th rowspan="2" scope="row">사업장</th>
+						<th rowspan="2" scope="row">소속</th>
+						<th rowspan="2" scope="row">부서/직급</th>
+						<th colspan="2" scope="row">소멸포인트</th>
+					</tr>
+					<tr>
+						<th scope="row">기본포인트</th>
+						<th scope="row">특별포인트</th>
+					</tr>
+				</thead>
+				<tbody class="txtc">
+					<tr>
+						<td>100</td>
+						<td>김회원</td>
+						<td>User_01</td>
+						<td>일산지역본부</td>
+						<td>동구지점</td>
+						<td>인사팀</td>
+						<td>100,000</td>
+						<td>90,000</td>
+					</tr>
+					<tr>
+						<td>100</td>
+						<td>김회원</td>
+						<td>User_01</td>
+						<td>일산지역본부</td>
+						<td>동구지점</td>
+						<td>인사팀</td>
+						<td>100,000</td>
+						<td>90,000</td>
+					</tr>
+					<tr>
+						<td>100</td>
+						<td>김회원</td>
+						<td>User_01</td>
+						<td>일산지역본부</td>
+						<td>동구지점</td>
+						<td>인사팀</td>
+						<td>100,000</td>
+						<td>90,000</td>
+					</tr>
+					<tr>
+						<td>100</td>
+						<td>김회원</td>
+						<td>User_01</td>
+						<td>일산지역본부</td>
+						<td>동구지점</td>
+						<td>인사팀</td>
+						<td>100,000</td>
+						<td>90,000</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="paging">
+				<a href="#none" class="first">처음페이지</a>
+				<a href="#none" class="prev">이전페이지</a>
+				<a href="#none" class="on">1</a>
+				<a href="#none" class="num">2</a>
+				<a href="#none" class="num">3</a>
+				<a href="#none" class="num">4</a>
+				<a href="#none" class="num">5</a>
+				<a href="#none" class="num">6</a>
+				<a href="#none" class="num">7</a>
+				<a href="#none" class="num">8</a>
+				<a href="#none" class="num">9</a>
+				<a href="#none" class="num">10</a>
+				<a href="#none" class="next">다음페이지</a>
+				<a href="#none" class="last">마지막페이지</a>
+			</div>
+		</div>
+	</div><!-- //content -->
+</div><!-- //container -->
+</div><!-- //wrap -->
+</body>
+</html>

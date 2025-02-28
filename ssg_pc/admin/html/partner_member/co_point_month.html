@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<meta charset="UTF-8">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>월별 포인트 현황</title>
+<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="../../css/sub.css">
+<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script type="text/javascript" charset="utf-8" src="../../js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/common.js"></script>
+</head>
+<body>
+<? include("../include/header_partner.html"); ?>
+
+<div id="container" class="container">
+	<? include("../include/snb_partner.html"); ?>
+
+	<div class="content">
+		<div class="location">
+			<span>HOME</span>
+			<span>회원 </span>
+			<span>포인트관리</span>
+			<span class="on">월별 포인트 현황</span>
+		</div>
+		<div class="inner">
+			<h3 class="tit_h3">월별 포인트 현황</h3>
+
+			<div class="tbl_outer">
+				<table class="tbl_view">
+					<colgroup>
+						<col style="width:100px">
+						<col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">포인트</th>
+							<td>
+								<input type="radio" name=""> <label for="">기본포인트</label>
+								<input type="radio" name=""> <label for="">특별포인트</label>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">기간</th>
+							<td>
+								<select name="all2">
+									<option value="">2017년</option>
+								</select>
+								<select name="all2">
+									<option value="">선택</option>
+								</select>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div class="button_area">
+				<button type="button" class="btn_ty1">검색</button>
+				<button type="button" class="btn_ty2">초기화</button>
+			</div>
+
+			<table class="tbl_primary">
+				<thead>
+					<tr>
+						<th rowspan="2" scope="row">기존이월잔액</th>
+						<th rowspan="2" scope="row">적립포인트</th>
+						<th colspan="2" scope="row">사용포인트</th>
+						<th rowspan="2" scope="row">차감포인트</th>
+						<th rowspan="2" scope="row">월말소멸<br>예정 포인트</th>
+						<th rowspan="2" scope="row">월말소멸 후<br>최종예상 포인트</th>
+					</tr>
+					<tr>
+						<th scope="row">상품권</th>
+						<th scope="row">상품</th>
+					</tr>
+				</thead>
+				<tbody class="txtr">
+					<tr>
+						<td>100,000</td>
+						<td>100,000</td>
+						<td>100,000</td>
+						<td>100,000</td>
+						<td>0</td>
+						<td>99,000</td>
+						<td>90,000</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div><!-- //content -->
+</div><!-- //container -->
+</div><!-- //wrap -->
+</body>
+</html>

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<meta charset="UTF-8">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>SHINSEGAE</title>
+<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="../../css/atype.css">
+<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script type="text/javascript" charset="utf-8" src="../../js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/ssg.carousel.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/common.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/jquery.selectbox-0.2.js"></script>
+</head>
+<body>
+<? include("../include/atype_header.html"); ?>
+
+<div id="container" class="container">
+<div class="content">
+	<div class="inner clear">
+		<div class="cnt_tit_area clear">
+			<h2>주문/결제</h2>
+			<div class="step_ty1">
+				<ul>
+					<li class="step2 on"><b>01</b> <em>주문/결제</em><span>&gt;</span></li>
+					<li class="step3"><b>02</b> <em>주문완료</em></li>
+				</ul>
+			</div>
+		</div>
+
+		<ul class="list_dot">
+			<li>· 연락처를 정확히 입력해 주시기 바랍니다.</li>
+			<li>· 연락처 오기입으로 인한 타인에게 전송되는 경우, 본사가 책임지지 않습니다.</li>
+		</ul>
+
+		<div class="cart_list">
+			<div class="tit_area">
+				<h3 class="tit_h3">주문상품</h3>
+				<div class="right ref_blue">* 본 상품은 수량 조절이 되지 않습니다.</div>
+			</div>
+			<table class="tbl_cart">
+				<colgroup>
+					<col style="width:20px;">
+					<col>
+					<col style="width:100px;">
+					<col style="width:130px;">
+					<col style="width:130px;">
+				</colgroup>
+				<thead>
+					<tr>
+						<th></th>
+						<th class="txtl">상품정보/옵션</th>
+						<th>수량</th>
+						<th>판매가</th>
+						<th>주문금액</th>
+					</tr>
+				</thead>
+				<tbody class="txtc">
+					<tr>
+						<td></td>
+						<td class="txtl item">
+							<div class="outer">
+								<div class="thum">
+									<img src="../../images/dummy/thum_cart_list.png" alt="">
+								</div>
+								<div class="item_txt">
+									<p>엘라스틴 아보카도허니 트린트먼트 1000ml</p>
+									<p class="linetop option">· 레드 / M /1개</p>
+									<p class="option">· 블랙 / M /1개</p>
+								</div>
+							</div>
+						</td>
+						<td>1개</td>
+						<td class="price"><b>500,000</b>원</td>
+						<td class="price"><b>500,000</b>원</td>
+					</tr>
+				</tbody>
+			</table>
+			<dl class="billing_amount clear">
+				<dt>결제금액</dt>
+				<dd>
+					<span><em>504,000</em>원</span>
+				</dd>
+			</dl>
+
+			<div class="tit_area">
+				<h3 class="tit_h3">주문자 정보</h3>
+				<div class="right ref_blue">* 변경하시는 정보는 이번 주문에만 적용되며, 고객님의 회원정보는 변경되지 않습니다.</div>
+			</div>
+			<table class="tbl_view2">
+				<colgroup>
+					<col style="width:200px;">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th>이름(실명)</th>
+						<td><input type="text" name="" placeholder="홍길동" style="width:200px;"></td>
+					</tr>
+					<tr>
+						<th>전화번호</th>
+						<td>
+							<p><input type="text" name="" placeholder="02-1234-5678" style="width:200px;"></p>
+							<p class="ref_blue">* 보내는 분의 번호를 1004, 1234, 000 등 존재하지 않는 번호로 발송할 경우, 스팸으로 분류될 수 있으니 발송 시 참고바랍니다. </p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<div class="tit_area">
+				<h3 class="tit_h3">받는사람정보</h3>
+			</div>
+			<table class="tbl_view2">
+				<colgroup>
+					<col style="width:200px;">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th>핸드폰</th>
+						<td>
+							<p><input type="text" name="" placeholder="02-1234-5678" style="width:200px;"></p>
+							<p class="ref_blue">* 연락처를 정확히 입력해주시기 바랍니다.<br>* 잘못된 연락처를 입력하여 타인으로 전송되는 경우, 본사는 책임지지 않습니다.</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<h3 class="tit_h3">기프티콘 메시지입력</h3>
+			<table class="tbl_view2 giftcon_mms">
+				<colgroup>
+					<col style="width:200px;">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th>MMS제목</th>
+						<td>
+							<p><input type="text" name="" class="w100"></p>
+							<p>* 영문 24자, 숫자 24자, 한글 12자 (24Byte) 를 초과하여 입력할 수 없습니다. <span class="right">0 / 12byte</span></p>
+						</td>
+					</tr>
+					<tr>
+						<th>메세지 입력 <small>(특별한 메시지를 전달하세요.)</small></th>
+						<td>
+							<p><textarea style="height:100px;" class="w100"></textarea></p>
+							<p>* 총 메세지는 영문 300자, 숫자 300자, 한글 150자 (300Byte)를 초과하여 입력할 수 없습니다.<br>* 일부 단말의 경우 환경에 따라 MMS수신 불가하여 일반 SMS로 발송이 됩니다. <span class="right">0 / 12byte</span></p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<h3 class="tit_h3">보유포인트</h3>
+			<table class="tbl_view2">
+				<colgroup>
+					<col style="width:200px;">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th>보유포인트확인</th>
+						<td>
+							<input type="text" name="" style="width:195px;">
+							<button type="button" class="btn_line_mid_ty7">현재 보유포인트 확인</button>
+							<button type="button" class="btn_line_mid_ty3">Active X 설정안내 보기</button>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<h3 class="tit_h3">결제방법 및 금액</h3>
+			<table class="tbl_view2">
+				<colgroup>
+					<col style="width:200px;">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th>결제방법</th>
+						<td>
+							<input type="radio" name="" id="ra1"> <label for="ra1">씨티카드</label>
+							<input type="radio" name="" id="ra2"> <label for="ra2">씨티카드포인트(부족분은 카드결제)</label>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<div class="total col3">
+				<ul class="tit clear">
+					<li>총 주문금액</li>
+					<li>총 배송비</li>
+					<li class="last">총 결제금액</li>
+				</ul>
+				<ul class="cnt clear">
+					<li><b>500,000</b>원 <div class="operator_ty1">+</div></li>
+					<li><b>4,000</b>원 <div class="operator_ty1">=</div></li>
+					<li class="last"><b>104,000</b>원</li>
+				</ul>
+			</div>
+
+			<ul class="ref_ty1">
+				<li>* 씨티카드포인트로 결제 시 부분 취소는 불가하며 포인트는 실시간 차감이 아닌 매입 시 차감됩니다.(포인트 차감분은 약 2~3일 후 확인 하실 수 있습니다.)</li>
+				<li>* 매입철차에 따른 시간차로 조회하신 포인트와 결제시 차감되는 포인트 금액이 서로 상이할 수 있습니다.</li>
+				<li>* 씨티카드 포인트 결제를 이용하실 경우 씨티카드포인트가 먼저 차감되고 부족한 부분은 씨티카드 결제로 이루어집니다.</li>
+			</ul>
+			<ul class="ref_ty1">
+				<li class="ref_blue">* 기프티콘 구매후 유효기간내에 필히 교환하셔야 합니다. 유효기간 만료후에는 기간 연장이 불가합니다.</li>
+			</ul>
+
+			<div class="buy_agree_area">
+				<p><input type="checkbox" name="" id=""> <label for="">구매동의 및 결제대행서비스 이용약관에 동의합니다.</label></p>
+				<p>- 주문할 상품의 상품명, 상품가격,배송정보를 모두 확인하였으며, 구매에 동의하시겠습니까? (전자상거래법 제 8조 2항)</p>
+			</div>
+
+			<div class="btn_btm_area txtc">
+				<button type="button" class="btn_bg_mid_ty1">결제하기</button>
+				<button type="button" class="btn_bg_mid_ty2">취소하기</button>
+			</div>
+
+		</div>
+	</div><!-- //inner -->
+</div><!-- //content -->
+<div class="quick_area">
+	<div class="inner">
+		<div class="quick_left_box">
+			<div class="quick_left slide">
+				<div>
+					<a href="#"><img src="../../images/dummy/img_quick_left.png" alt="">
+					<span>12% 더블쿠폰<br>+청구할인</span></a>
+				</div>
+				<div>
+					<a href="#"><img src="../../images/dummy/img_quick_left.png" alt="">
+					<span>12% 더블쿠폰<br>+청구할인</span></a>
+				</div>
+				<div>
+					<a href="#"><img src="../../images/dummy/img_quick_left.png" alt="">
+					<span>12% 더블쿠폰<br>+청구할인</span></a>
+				</div>
+			</div>
+		</div>
+		<div class="quick_right_box">
+			<div class="quick_right">
+				<p class="tit">오늘본상품</p>
+				<div class="quick_r_out">
+					<div class="quick_r slide">
+						<div>
+							<a href="#"><img src="../../images/dummy/img_quick_right1.png" alt=""></a>
+							<a href="#"><img src="../../images/dummy/img_quick_right2.png" alt=""></a>
+							<a href="#"><img src="../../images/dummy/img_quick_right3.png" alt=""></a>
+						</div>
+						<div>
+							<a href="#"><img src="../../images/dummy/img_quick_right1.png" alt=""></a>
+							<a href="#"><img src="../../images/dummy/img_quick_right2.png" alt=""></a>
+							<a href="#"><img src="../../images/dummy/img_quick_right3.png" alt=""></a>
+						</div>
+					</div>
+				</div>
+				<a href="#container" class="btn_top">TOP </a>
+			</div>
+		</div>
+	</div>
+</div>
+</div><!-- //container -->
+<? include("../include/footer.html"); ?>
+</div><!-- //wrap -->
+</body>
+</html>

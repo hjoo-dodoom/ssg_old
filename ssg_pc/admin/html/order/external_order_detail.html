@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<meta charset="UTF-8">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>주문상세 정보</title>
+<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="../../css/sub.css">
+<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script type="text/javascript" charset="utf-8" src="../../js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/common.js"></script>
+</head>
+<body>
+<? include("../include/header.html"); ?>
+
+<div id="container" class="container">
+	<? include("../include/snb.html"); ?>
+
+	<div class="content">
+		<div class="location">
+			<span>HOME</span>
+			<span>주문</span>
+			<span>외부몰주문목록</span>
+			<span>외부몰주문리스트 </span>
+			<span class="on">주문상세 정보</span>
+		</div>
+		<div class="inner">
+			<h3 class="tit_h3">주문상세 정보</h3>
+
+			<table class="tbl_view">
+				<colgroup>
+					<col style="width:120px">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th>체결번호</th>
+						<td>1234567</td>
+					</tr>
+					<tr>
+						<th>주문번호</th>
+						<td>1234567</td>
+					</tr>
+					<tr>
+						<th>등록일시</th>
+						<td>2023-06-13 11:11</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<h4 class="tit_h4">받는사람 정보</h4>
+			<table class="tbl_view">
+				<colgroup>
+					<col style="width:120px">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th scope="row">이름(실명)</th>
+						<td><input type="text" name="" style="width:195px;" placeholder="홍길동"></td>
+					</tr>
+					<tr>
+						<th scope="row">휴대폰 번호</th>
+						<td>
+							<input type="text" name="" class="txtc" style="width:40px;" placeholder="">
+							<span class="division">-</span>
+							<input type="text" name="" class="txtc" style="width:50px;" placeholder="">
+							<span class="division">-</span>
+							<input type="text" name="" class="txtc" style="width:50px;" placeholder="">
+						</td>
+					</tr>
+					<tr>
+						<th>주소</th>
+						<td class="zip">
+							<p><input type="text" name="" style="width:100px;"> <button type="button" class="mid_btn_ty1">우편번호 찾기</button></p>
+							<p><input type="text" name="" style="width:195px;"> <input type="text" name="" style="width:195px;"></p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<p class="mt10 txt_red">*수정 시 해당협력회사의 주문자 정보가 일괄적으로 변경됩니다</p>
+			<div class="button_area">
+				<button type="button" class="btn_ty5">수정</button>
+			</div>
+
+			<h4 class="tit_h4">주문정보</h4>
+			<div class="tbl_search_list">
+				<table class="tbl_primary tr_hover">
+					<colgroup>
+						<col style="width:100px;">
+						<col>
+						<col style="width:100px;">
+						<col style="width:100px;">
+						<col style="width:100px;">
+						<col style="width:180px;">
+						<col style="width:150px;">
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="row">상품코드</th>
+							<th scope="row">상품명</th>
+							<th scope="row">수량</th>
+							<th scope="row">판매가</th>
+							<th scope="row">총액</th>
+							<th scope="row">송장번호</th>
+							<th scope="row">주문상태</th>
+						</tr>
+					</thead>
+					<tbody class="txtc">
+						<tr>
+							<td>a123454</td>
+							<td class="txtl">[삼성전자] 삼성 UHD LED TV VRER1 1900</td>
+							<td>1개</td>
+							<td class="txtr">10,000</td>
+							<td class="txtr">20,000</td>
+							<td>
+								<select name="all2" class="w100">
+									<option value="">대한통운</option>
+								</select>
+								<input type="text" name="" class="w100 mt3" value="123123123">
+							</td>
+							<td>
+								<select name="" class="w100">
+									<option value="">주문접수</option>
+									<option value="">발송준비중</option>
+									<option value="">발송완료</option>
+									<option value="">배송중</option>
+									<option value="">배송완료</option>
+									<option value="">주문취소</option>
+								</select>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="button_area">
+				<button type="button" class="btn_ty5">주문정보 변경</button>
+			</div>
+
+			<h4 class="tit_h4">취소/교환/반품/환불</h4>
+			<table class="tbl_view">
+			<colgroup>
+				<col style="width:150px;">
+				<col style=";">
+			</colgroup>
+			<thead>
+				<tr>
+					<th colspan="2" style="text-align:left;padding-left:10px;">
+						<label><input type="radio" name="cancel_return" value="1">취소처리</label>
+						<label class="ml5"><input type="radio" name="cancel_return" value="2">반품/교환/환불 신청</label>
+						<script>
+							$('input[name="cancel_return"]').change(function(){
+								if($('input[name="cancel_return"]:checked').val() == '2'){
+									$('#cancel_return').show();
+								}else{
+									$('#cancel_return').hide();
+								}
+							});
+						</script>
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+					<tr id="cancel_return" style="display:none;">
+						<th>반품/교환</th>
+						<td>
+							<select name="" id="">
+								<option value="">반품접수</option>
+								<option value="">반품완료</option>
+								<option value="">교환접수</option>
+								<option value="">교환완료</option>
+								<option value="">접수 (반품,교환) 취소</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<th>사유</th>
+						<td>
+							<textarea class="textarea_textarea"></textarea>
+							<button type="button" class="btn_ty10 textarea_btn">처리완료</button>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<div class="div_tab_ty1 click mb20 mt30">
+				<ul class="tab_tit clear">
+					<li class="on"><a href="#none">취소정보</a></li>
+					<li class="last"><a href="#none">반품/교환 정보</a></li>
+				</ul>
+				<div class="tab_cnt1" style="display: block;">
+					<table class="tbl_view txtc">
+					<thead>
+					<tr>
+						<th>상태</th>
+						<th>취소사유</th>
+						<th>처리결과(PG)</th>
+						<th>취소일시</th>
+					</tr>
+					</thead>
+					<tbody>
+					<tr>
+						<td colspan="4">취소처리된 상품이 없습니다</td>
+					</tr>
+					</tbody>
+					</table>
+				</div>
+				<div class="tab_cnt2" style="display: none;">
+					<table class="tbl_view txtc">
+					<thead>
+					<tr>
+						<th>상태</th>
+						<th>취소사유</th>
+						<th>신청일시</th>
+						<th>완료일시</th>
+					</tr>
+					</thead>
+					<tbody>
+					<tr>
+						<td>반품접수</td>
+						<td>고객의 요청으로 반품요청</td>
+						<td>2023-06-14 11:11:11</td>
+						<td></td>
+					</tr>
+					</tbody>
+					</table>
+				</div>
+			</div>
+
+			<h4 class="tit_h4 mt">결제 정보</h4>
+			<table class="tbl_view">
+				<colgroup>
+					<col style="width:120px">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th scope="row">총 결제금액</th>
+						<td><input type="text" name="" style="width:100px;" placeholder="820,000" class="txtr"> 원</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<h4 class="tit_h4">협력회사</h4>
+			<table class="tbl_view">
+				<colgroup>
+					<col style="width:120px">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th scope="row">업체명</th>
+						<td>㈜돋움</td>
+					</tr>
+					<tr>
+						<th scope="row">담당자</th>
+						<td>김담당</td>
+					</tr>
+					<tr>
+						<th scope="row">전화번호</th>
+						<td>02-1234-1234</td>
+					</tr>
+					<tr>
+						<th scope="row">휴대폰</th>
+						<td>010-7891-7891</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<h4 class="tit_h4">주문상태 / 반품,교환,환불 변동내역</h4>
+			<table class="tbl_primary">
+				<thead>
+					<tr>
+						<th>주문번호</th>
+						<th>주문상태</th>
+						<th>반품/교환 상태</th>
+						<th>내용</th>
+						<th>처리자 아이디</th>
+						<th>협력회사 명</th>
+						<th>수정일시</th>
+					</tr>
+				</thead>
+				<tbody class="txtc">
+					<tr>
+						<td>2123123</td>
+						<td></td>
+						<td></td>
+						<td>주문상세 열람</td>
+						<td>admin1</td>
+						<td></td>
+						<td>2023-06-14 11:11:11</td>
+					</tr>
+					<tr>
+						<td colspan="7">등록된 변동내역이 없습니다.</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="paging">
+				<a href="#none" class="first">처음페이지</a>
+				<a href="#none" class="prev">이전페이지</a>
+				<a href="#none" class="on">1</a>
+				<a href="#none" class="num">2</a>
+				<a href="#none" class="num">3</a>
+				<a href="#none" class="num">4</a>
+				<a href="#none" class="num">5</a>
+				<a href="#none" class="num">6</a>
+				<a href="#none" class="num">7</a>
+				<a href="#none" class="num">8</a>
+				<a href="#none" class="num">9</a>
+				<a href="#none" class="num">10</a>
+				<a href="#none" class="next">다음페이지</a>
+				<a href="#none" class="last">마지막페이지</a>
+			</div>
+		</div>
+	</div><!-- //content -->
+</div><!-- //container -->
+</div><!-- //wrap -->
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<meta charset="UTF-8">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>외부상품대량등록</title>
+<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="../../css/sub.css">
+<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script type="text/javascript" charset="utf-8" src="../../js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/common.js"></script>
+</head>
+<body>
+<? include("../include/header.html"); ?>
+
+<div id="container" class="container">
+	<? include("../include/snb.html"); ?>
+
+	<div class="content">
+		<div class="location">
+			<span>HOME</span>
+			<span>상품 </span>
+			<span>상품목록</span>
+			<span>외부상품관리</span>
+			<span class="on">외부상품대량등록</span>
+		</div>
+		<div class="inner">
+			<h3 class="tit_h3">외부상품대량등록</h3>
+			<table class="tbl_view">
+				<colgroup>
+					<col style="width:170px;">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th>샘플파일</th>
+						<td>
+							<p><button type="button" class="mid_btn_ty5">샘플파일 다운로드</button></p>
+						</td>
+					</tr>
+					<tr>
+						<th rowspan="2">파일업로드</th>
+						<td>
+							<p>
+								※ 업로드전 아래의 주의사항을 확인해주세요<br/><br/>
+								1. 엑셀파일은 xlsx,xls 형식만 가능합니다.<br/>
+								2. 엑셀파일 내 항목을 임의로 추가하거나 삭제하지 말아주세요<br/>
+								3. 업로드 전 문서보안 해제 상태 및 파일용량을 확인해주세요 (보안해제시 0KB 인 경우가 빈번히 발생합니다)<br/>
+								4. 업로드된 파일은 일정기간 보관 후 파기를 권장합니다
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<p><input type="file" name=""></p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<div class="button_area clear">
+				<button type="button" class="btn_ty3">상품 업로드</button>
+				<button type="button" class="btn_ty2">목록</button>
+			</div>
+
+			<h4 class="tit_h4">보안체크</h4>
+			<table class="tbl_primary">
+				<colgroup>
+				<col style="width:20%;">
+				<col>
+				</colgroup>
+				<thead>
+					<tr>
+						<th>필드명</th>
+						<th>설명</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th>협력회사 아이디</th>
+						<td>법인영업몰에 등록된 협력회사 아이디를 입력합니다</td>
+					</tr>
+					<tr>
+						<th>상품코드</th>
+						<td>주문내역에 표기된 상품코드를 입력합니다</td>
+					</tr>
+				</tbody>
+			</table>
+		</div><!-- //inner -->
+	</div><!-- //content -->
+</div><!-- //container -->
+</div><!-- //wrap -->
+</body>
+</html>

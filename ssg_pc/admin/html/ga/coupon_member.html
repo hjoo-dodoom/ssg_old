@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<meta charset="UTF-8">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>회원 쿠폰현황</title>
+<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="../../css/sub.css">
+<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script type="text/javascript" charset="utf-8" src="../../js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/common.js"></script>
+</head>
+<body>
+<? include("../include/header.html"); ?>
+
+<div id="container" class="container">
+	<? include("../include/snb.html"); ?>
+
+	<div class="content">
+		<div class="location">
+			<span>HOME</span>
+			<span>GA몰</span>
+			<span>쿠폰관리</span>
+			<span class="on">회원 쿠폰현황</span>
+		</div>
+		<div class="inner">
+			<h3 class="tit_h3">회원 쿠폰현황</h3>
+
+			<div class="tbl_outer">
+				<table class="tbl_view">
+					<colgroup>
+						<col style="width:120px">
+						<col>
+						<col style="width:120px">
+						<col>
+					<tbody>
+						<tr>
+							<th scope="row">조직검색</th>
+							<td>
+								<select name="" id="">
+									<option value="">선택</option>
+								</select>
+								<input type="text" name="" style="width:195px;">
+							</td>
+							<th scope="row">FC검색</th>
+							<td>
+								<select name="" id="">
+									<option value="">FC명</option>
+								</select>
+								<input type="text" name="" style="width:195px;">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div class="button_area">
+				<div class="left">
+					<button type="button" class="btn_ty7">엑셀다운로드</button>
+				</div>
+				<button type="button" class="btn_ty1">검색</button>
+				<button type="button" class="btn_ty2">초기화</button>
+			</div>
+
+			<table class="tbl_primary">
+				<colgroup>
+					<col style="width:30px;">
+					<col style="width:60px;">
+					<col>
+					<col>
+					<col>
+					<col>
+					<col>
+					<col style="width:70px;">
+					<col style="width:50px;">
+					<col style="width:50px;">
+					<col style="width:50px;">
+					<col style="width:50px;">
+					<col style="width:50px;">
+					<col style="width:80px;">
+					<col style="width:80px;">
+				</colgroup>
+				<thead>
+					<tr>
+						<th scope="row"><input type="checkbox" name=""></th>
+						<th scope="row">번호</th>
+						<th scope="row">단</th>
+						<th scope="row">지점</th>
+						<th scope="row">GA</th>
+						<th scope="row">지사</th>
+						<th scope="row">FC코드</th>
+						<th scope="row">FC명</th>
+						<th scope="row">적립<br>쿠폰</th>
+						<th scope="row">사용<br>쿠폰</th>
+						<th scope="row">차감<br>쿠폰</th>
+						<th scope="row">소멸<br>쿠폰</th>
+						<th scope="row">잔여<br>쿠폰</th>
+						<th scope="row">지급회수</th>
+						<th scope="row">상세내역</th>
+					</tr>
+				</thead>
+				<tbody class="txtc">
+					<tr>
+						<td><input type="checkbox" name=""></td>
+						<td>10</td>
+						<td>강북</td>
+						<td>GA서면</td>
+						<td>(주)영진대리점</td>
+						<td>(주)영진연제지점</td>
+						<td>0001234567</td>
+						<td>홍**</td>
+						<td class="txtr">10</td>
+						<td class="txtr">5</td>
+						<td class="txtr">1</td>
+						<td class="txtr">1</td>
+						<td class="txtr">3</td>
+						<td><button type="button" class="mid_btn_ty1">지급회수</button></td>
+						<td><button type="button" class="tbl_btn_ty1">상세내역</button></td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" name=""></td>
+						<td>10</td>
+						<td>강북</td>
+						<td>GA서면</td>
+						<td>(주)영진대리점</td>
+						<td>(주)영진연제지점</td>
+						<td>0001234567</td>
+						<td>홍**</td>
+						<td class="txtr">10</td>
+						<td class="txtr">5</td>
+						<td class="txtr">1</td>
+						<td class="txtr">1</td>
+						<td class="txtr">3</td>
+						<td><button type="button" class="mid_btn_ty1">지급회수</button></td>
+						<td><button type="button" class="tbl_btn_ty1">상세내역</button></td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" name=""></td>
+						<td>10</td>
+						<td>강북</td>
+						<td>GA서면</td>
+						<td>(주)영진대리점</td>
+						<td>(주)영진연제지점</td>
+						<td>0001234567</td>
+						<td>홍**</td>
+						<td class="txtr">10</td>
+						<td class="txtr">5</td>
+						<td class="txtr">1</td>
+						<td class="txtr">1</td>
+						<td class="txtr">3</td>
+						<td><button type="button" class="mid_btn_ty1">지급회수</button></td>
+						<td><button type="button" class="tbl_btn_ty1">상세내역</button></td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" name=""></td>
+						<td>10</td>
+						<td>강북</td>
+						<td>GA서면</td>
+						<td>(주)영진대리점</td>
+						<td>(주)영진연제지점</td>
+						<td>0001234567</td>
+						<td>홍**</td>
+						<td class="txtr">10</td>
+						<td class="txtr">5</td>
+						<td class="txtr">1</td>
+						<td class="txtr">1</td>
+						<td class="txtr">3</td>
+						<td><button type="button" class="mid_btn_ty1">지급회수</button></td>
+						<td><button type="button" class="tbl_btn_ty1">상세내역</button></td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" name=""></td>
+						<td>10</td>
+						<td>강북</td>
+						<td>GA서면</td>
+						<td>(주)영진대리점</td>
+						<td>(주)영진연제지점</td>
+						<td>0001234567</td>
+						<td>홍**</td>
+						<td class="txtr">10</td>
+						<td class="txtr">5</td>
+						<td class="txtr">1</td>
+						<td class="txtr">1</td>
+						<td class="txtr">3</td>
+						<td><button type="button" class="mid_btn_ty1">지급회수</button></td>
+						<td><button type="button" class="tbl_btn_ty1">상세내역</button></td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" name=""></td>
+						<td>10</td>
+						<td>강북</td>
+						<td>GA서면</td>
+						<td>(주)영진대리점</td>
+						<td>(주)영진연제지점</td>
+						<td>0001234567</td>
+						<td>홍**</td>
+						<td class="txtr">10</td>
+						<td class="txtr">5</td>
+						<td class="txtr">1</td>
+						<td class="txtr">1</td>
+						<td class="txtr">3</td>
+						<td><button type="button" class="mid_btn_ty1">지급회수</button></td>
+						<td><button type="button" class="tbl_btn_ty1">상세내역</button></td>
+					</tr>
+				</tbody>
+			</table>
+
+			<div class="paging">
+				<a href="#none" class="first">처음페이지</a>
+				<a href="#none" class="prev">이전페이지</a>
+				<a href="#none" class="on">1</a>
+				<a href="#none" class="num">2</a>
+				<a href="#none" class="num">3</a>
+				<a href="#none" class="num">4</a>
+				<a href="#none" class="num">5</a>
+				<a href="#none" class="num">6</a>
+				<a href="#none" class="num">7</a>
+				<a href="#none" class="num">8</a>
+				<a href="#none" class="num">9</a>
+				<a href="#none" class="num">10</a>
+				<a href="#none" class="next">다음페이지</a>
+				<a href="#none" class="last">마지막페이지</a>
+			</div>
+		</div>
+	</div><!-- //content -->
+</div><!-- //container -->
+</div><!-- //wrap -->
+</body>
+</html>

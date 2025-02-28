@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<meta charset="UTF-8">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>SMS/MMS 발송</title>
+<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="../../css/sub.css">
+<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script type="text/javascript" charset="utf-8" src="../../js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/common.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+<? include("../include/header.html"); ?>
+
+<div id="container" class="container">
+	<? include("../include/snb.html"); ?>
+
+	<div class="content">
+		<div class="location">
+			<span>HOME</span>
+			<span>고객센터</span>
+			<span>SMS</span>
+			<span class="on">SMS/MMS 발송</span>
+		</div>
+		<div class="inner">
+			<h3 class="tit_h3">SMS/MMS 발송</h3>
+
+			<div class="div_tab_ty1 click">
+				<ul class="tab_tit clear">
+					<li class="on"><a href="#none">SMS 발송(단문)</a></li>
+					<li class="last"><a href="#none">MMS 발송(장문</a></li>
+				</ul>
+				<div class="tab_cnt1" style="display: block">
+					<table class="tbl_view">
+						<colgroup>
+							<col>
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>내용</th>
+							</tr>
+							<tr>
+								<td>
+									<textarea class="w100" style="height:100px;"></textarea>
+									<p class="txtr">0 / 2000 byte</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<table class="tbl_view">
+						<colgroup>
+							<col style="width:100px">
+							<col>
+						</colgroup>
+						<tbody>
+							<tr>
+								<th scope="row">발신번호</th>
+								<td>02-3406-6915</td>
+							</tr>
+							<tr>
+								<th scope="row">수신번호</th>
+								<td><input type="text" style="width:195px;"></td>
+							</tr>
+						</tbody>
+					</table>
+
+					<div class="button_area">
+						<button type="button" class="btn_ty3">발송</button>
+						<button type="button" class="btn_ty2">목록</button>
+					</div>
+				</div>
+				<div class="tab_cnt2">
+					<table class="tbl_view">
+						<colgroup>
+							<col style="width:100px;">
+							<col>
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>제목</th>
+								<td><input type="text" name="" class="w100"></td>
+							</tr>
+							<tr>
+								<th colspan="2">내용</th>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<textarea class="w100" style="height:100px;"></textarea>
+									<p class="txtr">0 / 2000 byte</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<table class="tbl_view">
+						<colgroup>
+							<col style="width:100px">
+							<col>
+						</colgroup>
+						<tbody>
+							<tr>
+								<th scope="row">담당자명</th>
+								<td><input type="text" style="width:195px;"></td>
+							</tr>
+							<tr>
+								<th scope="row">수신번호</th>
+								<td>02-3406-6915</td>
+							</tr>
+							<tr>
+								<th scope="row">수신자파일</th>
+								<td>
+									<p><input type="file" name=""></p>
+									<p><button type="button" class="mid_btn_ty1">샘플파일 다운로드</button></p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<div class="button_area">
+						<button type="button" class="btn_ty3">발송</button>
+						<button type="button" class="btn_ty2">목록</button>
+					</div>
+
+					<table class="tbl_view">
+						<colgroup>
+							<col style="width:100px">
+							<col>
+							<col style="width:100px">
+							<col>
+						</colgroup>
+						<tbody>
+							<tr>
+								<th scope="row">STAERDATA</th>
+								<td>등기발송일</td>
+								<th scope="row">ENDDATA</th>
+								<td>등기도착일</td>
+							</tr>
+							<tr>
+								<th scope="row">NUMBER</th>
+								<td>등기번호</td>
+								<th scope="row">SEND_NUMBER</th>
+								<td>발신번호</td>
+							</tr>
+							<tr>
+								<th scope="row">SEND_NAME</th>
+								<td>담당자명</td>
+								<th scope="row">MEMBER_NAME</th>
+								<td>고객명</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+
+		</div>
+	</div><!-- //content -->
+</div><!-- //container -->
+</div><!-- //wrap -->
+</body>
+</html>

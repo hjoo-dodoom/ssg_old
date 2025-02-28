@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<meta charset="UTF-8">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>결제실패</title>
+<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="../../css/sub.css">
+<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script type="text/javascript" charset="utf-8" src="../../js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/common.js"></script>
+</head>
+<body>
+<? include("../include/header.html"); ?>
+
+<div id="container" class="container">
+	<? include("../include/snb.html"); ?>
+
+	<div class="content">
+		<div class="location">
+			<span>HOME</span>
+			<span>주문</span>
+			<span>주문목록</span>
+			<span class="on">결제실패</span>
+		</div>
+		<div class="inner">
+			<h3 class="tit_h3">결제실패</h3>
+
+			<table class="tbl_view">
+				<colgroup>
+					<col style="width:100px">
+					<col>
+					<col style="width:100px">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th scope="row">주문일</th>
+						<td colspan="3">
+							<select name="" id="">
+								<option value="">주문일</option>
+							</select>
+							<input type="text" name="" class="datepicker">
+							<span class="division">~</span>
+							<input type="text" name="" class="datepicker">
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">고객사</th>
+						<td colspan="3">
+							<select name="" id="">
+								<option value="">선택 </option>
+							</select>
+							<select name="" id="">
+								<option value="">선택 </option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">협력회사</th>
+						<td colspan="3">
+							<select name="" id="">
+								<option value="">선택</option>
+							</select>
+							<input type="text" name="" style="width:195px;">
+							<input type="checkbox" name="" id=""> <label for="">복수 배송지</label>
+							
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">결제구분</th>
+						<td>
+							<select name="" id="">
+								<option value="">결제구분</option>
+							</select>
+						</td>
+						<th scope="row">처리구분</th>
+						<td>
+							<select name="" id="">
+								<option value="">결제실패</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">반품/교환/환불</th>
+						<td>
+							<select name="" id="">
+								<option value="">반품/교환구분</option>
+							</select>
+						</td>
+						<th scope="row">상품권 구분</th>
+						<td>
+							<select name="" id="">
+								<option value="">상품권 구분</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<th scope="row">검색</th>
+						<td colspan="3">
+							<select name="" id="">
+								<option value="">검색구분</option>
+							</select>
+							<input type="text" name="" style="width:195px;" placeholder="">
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="button_area">
+				<button type="button" class="btn_ty1">검색</button>
+				<button type="button" class="btn_ty2">초기화</button>
+			</div>
+
+			<div class="tbl_search_list">
+				<div class="top">
+					<div class="left">* 전체 : <em>111,592</em>건 / 검색 : <em>50</em>건</div>
+					<div class="right">
+						<select name="sel9" id="sel9" style="width:120px;">
+							<option value="">20개씩 보기</option>
+						</select>
+					</div>
+				</div>
+
+				<table class="tbl_primary tr_hover">
+					<colgroup>
+						<col style="width:40px;">
+						<col style="width:80px;">
+						<col style="width:100px;">
+						<col style="width:60px;">
+						<col>
+						<col>
+						<col style="width:60px;">
+						<col style="width:60px;">
+						<col style="width:60px;">
+						<col style="width:60px;">
+						<col style="width:60px;">
+						<col style="width:60px;">
+						<col style="width:60px;">
+						<col style="width:80px;">
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="row">번호</th>
+							<th scope="row">주문일시<br>(체결번호)</th>
+							<th scope="row">주문번호</th>
+							<th scope="row">쇼핑몰</th>
+							<th scope="row">협력회사</th>
+							<th scope="row">상품명</th>
+							<th scope="row">주문인</th>
+							<th scope="row">수취인</th>
+							<th scope="row">결제방법</th>
+							<th scope="row">포인트</th>
+							<th scope="row">선주문<br>후결제</th>
+							<th scope="row">실<br>결제액</th>
+							<th scope="row">총액</th>
+							<th scope="row">주문<br>처리상태</th>
+						</tr>
+					</thead>
+					<tbody class="txtc">
+						<tr>
+							<td>41</td>
+							<td>2017-06-01<br>(1234567)</td>
+							<td><a href="#">1707133213540001</a></td>
+							<td>신세계몰</td>
+							<td>(주)돋움</td>
+							<td class="txtl">카페머그 5ml</td>
+							<td>박주문</td>
+							<td>김수취</td>
+							<td>신용카드</td>
+							<td>10,000</td>
+							<td>0</td>
+							<td>0</td>
+							<td>10,000</td>
+							<td>주문취소</td>
+						</tr>
+						<tr>
+							<td>41</td>
+							<td>2017-06-01<br>(1234567)</td>
+							<td><a href="#">1707133213540001</a></td>
+							<td>신세계몰</td>
+							<td>(주)돋움</td>
+							<td class="txtl">카페머그 5ml</td>
+							<td>박주문</td>
+							<td>김수취</td>
+							<td>신용카드</td>
+							<td>10,000</td>
+							<td>0</td>
+							<td>0</td>
+							<td>10,000</td>
+							<td>주문취소</td>
+						</tr>
+						<tr>
+							<td>41</td>
+							<td>2017-06-01<br>(1234567)</td>
+							<td><a href="#">1707133213540001</a></td>
+							<td>신세계몰</td>
+							<td>(주)돋움</td>
+							<td class="txtl">카페머그 5ml</td>
+							<td>박주문</td>
+							<td>김수취</td>
+							<td>신용카드</td>
+							<td>10,000</td>
+							<td>0</td>
+							<td>0</td>
+							<td>10,000</td>
+							<td>주문취소</td>
+						</tr>
+						<tr>
+							<td>41</td>
+							<td>2017-06-01<br>(1234567)</td>
+							<td><a href="#">1707133213540001</a></td>
+							<td>신세계몰</td>
+							<td>(주)돋움</td>
+							<td class="txtl">카페머그 5ml</td>
+							<td>박주문</td>
+							<td>김수취</td>
+							<td>신용카드</td>
+							<td>10,000</td>
+							<td>0</td>
+							<td>0</td>
+							<td>10,000</td>
+							<td>주문취소</td>
+						</tr>
+						<tr>
+							<td>41</td>
+							<td>2017-06-01<br>(1234567)</td>
+							<td><a href="#">1707133213540001</a></td>
+							<td>신세계몰</td>
+							<td>(주)돋움</td>
+							<td class="txtl">카페머그 5ml</td>
+							<td>박주문</td>
+							<td>김수취</td>
+							<td>신용카드</td>
+							<td>10,000</td>
+							<td>0</td>
+							<td>0</td>
+							<td>10,000</td>
+							<td>주문취소</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="paging">
+				<a href="#none" class="first">처음페이지</a>
+				<a href="#none" class="prev">이전페이지</a>
+				<a href="#none" class="on">1</a>
+				<a href="#none" class="num">2</a>
+				<a href="#none" class="num">3</a>
+				<a href="#none" class="num">4</a>
+				<a href="#none" class="num">5</a>
+				<a href="#none" class="num">6</a>
+				<a href="#none" class="num">7</a>
+				<a href="#none" class="num">8</a>
+				<a href="#none" class="num">9</a>
+				<a href="#none" class="num">10</a>
+				<a href="#none" class="next">다음페이지</a>
+				<a href="#none" class="last">마지막페이지</a>
+			</div>
+		</div>
+	</div><!-- //content -->
+</div><!-- //container -->
+</div><!-- //wrap -->
+</body>
+</html>

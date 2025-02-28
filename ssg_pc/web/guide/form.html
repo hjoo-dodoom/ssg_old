@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<meta charset="UTF-8">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>Form 스타일 가이드</title>
+<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="../css/sub.css">
+<link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script type="text/javascript" charset="utf-8" src="../js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/jquery.placeholder.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/jquery.selectbox-0.2.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/common.js"></script>
+</head>
+<body>
+<? include("../html/include/header.html"); ?>
+
+<div id="container" class="container">
+<div class="inner clear">
+<div class="content">
+	<h3 class="tit_h3">Form 정의</h3>
+
+	<table class="tbl_primary">
+		<caption>form 정의</caption>
+		<colgroup>
+			<col >
+			<col >
+			<col >
+			<col >
+		</colgroup>
+		<thead>
+			<tr>
+				<th scope="col">요소</th>
+				<th scope="col">normal</th>
+				<th scope="col">readonly</th>
+				<th scope="col">disabled</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th class="txtl">text</th>
+				<td><input type="text" name="text" value="" placeholder="text"></td>
+				<td><input type="text" name="text" value="" placeholder="text" readonly class="readonly"></td>
+				<td><input type="text" name="text" value="" placeholder="text" disabled></td>
+			</tr>
+			<tr>
+				<th class="txtl">search</th>
+				<td><input type="search" name="search" value="" placeholder="search"></td>
+				<td><input type="search" name="search" value="" placeholder="search" readonly class="readonly"></td>
+				<td><input type="search" name="search" value="" placeholder="search" disabled></td>
+			</tr>
+			<tr>
+				<th class="txtl">tel</th>
+				<td><input type="tel" name="tel" value="" placeholder="tel"></td>
+				<td><input type="tel" name="tel" value="" placeholder="tel" readonly class="readonly"></td>
+				<td><input type="tel" name="tel" value="" placeholder="tel" disabled></td>
+			</tr>
+			<tr>
+				<th class="txtl">url</th>
+				<td><input type="url" name="url" value="" placeholder="url"></td>
+				<td><input type="url" name="url" value="" placeholder="url" readonly class="readonly"></td>
+				<td><input type="url" name="url" value="" placeholder="url" disabled></td>
+			</tr>
+			<tr>
+				<th class="txtl">email</th>
+				<td><input type="email" name="email" value="" placeholder="email"></td>
+				<td><input type="email" name="email" value="" placeholder="email" readonly class="readonly"></td>
+				<td><input type="email" name="email" value="" placeholder="email" disabled></td>
+			</tr>
+			<tr>
+				<th class="txtl">password</th>
+				<td><input type="password" name="password" placeholder="password"></td>
+				<td><input type="password" name="password" placeholder="password" readonly class="readonly"></td>
+				<td><input type="password" name="password" placeholder="password" disabled></td>
+			</tr>
+			<tr>
+				<th class="txtl">checkbox</th>
+				<td>
+					<input type="checkbox" id="chk" name="checkbox"><label for="chk">normal</label>
+					<input type="checkbox" id="chk11" name="checkbox" checked="checked"><label for="chk11">normal</label>
+				</td>
+				<td>-</td>
+				<td>
+				<input type="checkbox" id="chk_disabled1" name="checkbox" disabled><label for="chk_disabled1">chk_disabled1</label>
+				<input type="checkbox" id="chk_disabled2" name="checkbox" checked disabled><label for="chk_disabled2">chk_disabled2</label>
+				</td>
+			</tr>
+			<tr>
+				<th class="txtl">radio</th>
+				<td><input type="radio" id="radio" name="radio"><label for="radio">normal</label></td>
+				<td>-</td>
+				<td>
+				<input type="radio" id="radio_disabled1" name="radio" disabled><label for="radio_disabled1">radio_disabled1</label>
+				<input type="radio" id="radio_disabled2" name="radio2" checked disabled><label for="radio_disabled2">radio_disabled2</label>
+				</td>
+			</tr>
+			<tr>
+				<th class="txtl">file</th>
+				<td><input type="file" name="file"></td>
+				<td>-</td>
+				<td><input type="file" name="file" disabled></td>
+			</tr>
+			<tr>
+				<th class="txtl">sel_ty1</th>
+				<td>
+					<div class="sel_ty1">
+						<select>
+							<option value="1">40개씩 </option>
+							<option value="2">60개씩</option>
+							<option value="3">80개씩</option>
+							<option value="4">100개씩</option>
+						</select>
+					</div>
+				</td>
+				<td>-</td>
+				<td>
+				</td>
+			</tr>
+			<tr>
+				<th class="txtl">sel_ty2</th>
+				<td>
+					<div class="sel_ty2" style="width:120px;">
+						<select>
+							<option value="1">생활가전</option>
+							<option value="2">주방가전</option>
+							<option value="3">계절가전</option>
+							<option value="4">영상/음향</option>
+							<option value="5">컴퓨터/통신가전</option>
+							<option value="6">대형가전</option>
+						</select>
+					</div>
+				</td>
+				<td>-</td>
+				<td>
+				</td>
+			</tr>
+			<tr>
+				<th class="txtl">sel_ty3</th>
+				<td>
+					<div class="sel_ty3">
+						<select>
+							<option value="1">블랙(100개) 500,000원</option>
+							<option value="2">레드(100개) 500,000원</option>
+							<option value="3">블루(100개) 500,000원</option>
+							<option value="4">화이트(100개) 500,000원</option>
+							<option value="5">그린(101개) 500,000원</option>
+						</select>
+					</div>
+				</td>
+				<td>-</td>
+				<td>
+				</td>
+			</tr>
+			<tr>
+				<th class="txtl">sel_ty4</th>
+				<td>
+					<div class="sel_ty4">
+						<select>
+							<option value="1">2군데</option>
+							<option value="2">집</option>
+							<option value="3">회사</option>
+						</select>
+					</div>
+				</td>
+				<td>-</td>
+				<td>
+				</td>
+			</tr>
+			<tr>
+				<th class="txtl">textarea</th>
+				<td><textarea cols="10" rows="2" placeholder="한줄10자2줄까지"></textarea></td>
+				<td><textarea cols="10" rows="2" placeholder="한줄10자2줄까지" readonly class="readonly"></textarea></td>
+				<td><textarea cols="10" rows="2" placeholder="한줄10자2줄까지" disabled></textarea></td>
+			</tr>
+			<tr>
+				<th class="txtl">달력</th>
+				<td><input type="text" class="datepicker" style="width:160px;"></td>
+				<td>-</td>
+				<td>-</td>
+			</tr>
+		</tbody>
+	</table>
+</div><!-- //content -->
+</div><!-- //inner -->
+</div><!-- //container -->
+<? include("../html/include/footer.html"); ?>
+</div><!-- //wrap -->
+<script type="text/javascript">
+	$(function () {
+		$(".sel_ty1 select").selectbox();
+		$(".sel_ty2 select").selectbox();
+		$(".sel_ty3 select").selectbox();
+		$(".sel_ty4 select").selectbox();
+
+		$( ".datepicker" ).datepicker({
+			showOn: "button",
+			buttonImage: "../images/btn/btn_datepicker.png",
+			buttonImageOnly: true,
+			buttonText: "Select date"
+		});
+	});
+</script>
+</body>
+</html>

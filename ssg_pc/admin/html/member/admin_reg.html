@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<meta charset="UTF-8">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>관리자 등록</title>
+<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="../../css/sub.css">
+<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script type="text/javascript" charset="utf-8" src="../../js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/common.js"></script>
+</head>
+<body>
+<? include("../include/header.html"); ?>
+
+<div id="container" class="container">
+	<? include("../include/snb.html"); ?>
+	<div class="content">
+		<div class="location">
+			<span>HOME</span>
+			<span>회원 </span>
+			<span>관리자 관리</span>
+			<span class="on">관리자 등록</span>
+		</div>
+		<div class="inner">
+			<h3 class="tit_h3">관리자 등록</h3>
+			<p class="tbl_tit_ty1">※ 아이디 :  4~12자의 영문, 숫자만 가능합니다. / 비밀번호 : 8~12자 이내로 영문, 숫자를 조합하셔서 작성하시면 됩니다.</p>
+			<table class="tbl_view">
+				<colgroup>
+					<col style="width:170px;">
+					<col>
+					<col style="width:170px;">
+					<col>
+				</colgroup>
+				<tbody>
+					<tr>
+						<th>관리등급</th>
+						<td colspan="3">
+							<select name="" id="">
+								<option value="">관리등급</option>
+							</select>
+							<button type="button" class="mid_btn_ty1">접근권한 보기</button>
+						</td>
+					</tr>
+					<tr>
+						<th>팀/파트</th>
+						<td colspan="3">
+							<select name="" id="">
+								<option value="">팀선택 </option>
+							</select>
+							<select name="" id="">
+								<option value="">팀선택 </option>
+							</select>
+							<input type="checkbox" name="" id="mail"> <label for="mail">파트장</label>
+						</td>
+					</tr>
+					<tr>
+						<th>아이디</th>
+						<td>
+							<input type="text" name="" style="width:124px;" placeholder="">
+							<button type="button" class="mid_btn_ty1">중복체크</button>
+						</td>
+						<th>비밀번호</th>
+						<td><input type="password" name="" style="width:195px;"></td>
+					</tr>
+					<tr>
+						<th>관리자명</th>
+						<td><input type="text" name="" style="width:195px;" placeholder=""></td>
+						<th>관리자 이메일</th>
+						<td>
+							<input type="text" name="" style="width:100px;" placeholder="">
+							<span class="division">@</span>
+							<input type="text" name="" style="width:100px;" placeholder="">
+							<select name="" id="">
+								<option value="">직접입력</option>
+								<option value="">naver.com</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<th>관리자 전화번호</th>
+						<td>
+							<input type="text" name="" class="txtc" style="width:40px;" placeholder="">
+							<span class="division">-</span>
+							<input type="text" name="" class="txtc" style="width:50px;" placeholder="">
+							<span class="division">-</span>
+							<input type="text" name="" class="txtc" style="width:50px;" placeholder="">
+						</td>
+						<th>관리자 휴대폰</th>
+						<td>
+							<input type="text" name="" class="txtc" style="width:40px;" placeholder="">
+							<span class="division">-</span>
+							<input type="text" name="" class="txtc" style="width:50px;" placeholder="">
+							<span class="division">-</span>
+							<input type="text" name="" class="txtc" style="width:50px;" placeholder="">
+							<input type="checkbox" name="" id="mail"> <label for="mail">수신여부</label>
+						</td>
+					</tr>
+					<tr>
+						<th>승인상태</th>
+						<td colspan="3">
+							<select name="" id="">
+								<option value="">승인상태</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<th>로그인 잠김여부</th>
+						<td colspan="3">
+							<input type="checkbox" name="" id="mail"> <label for="mail">체크되어있으면 로그인 잠김, 해지 시 체크해지 후 수정하시기 바랍니다.</label>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<div class="button_area clear">
+				<button type="button" class="btn_ty3">등록</button>
+				<button type="button" class="btn_ty4">취소</button>
+			</div>
+		</div><!-- //inner -->
+	</div><!-- //content -->
+</div><!-- //container -->
+</div><!-- //wrap -->
+</body>
+</html>

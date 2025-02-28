@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<meta charset="UTF-8">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>고객사회원</title>
+<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="../../css/sub.css">
+<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script type="text/javascript" charset="utf-8" src="../../js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/common.js"></script>
+</head>
+<body>
+<? include("../include/header.html"); ?>
+
+<div id="container" class="container">
+	<? include("../include/snb.html"); ?>
+
+	<div class="content">
+		<div class="location">
+			<span>HOME</span>
+			<span>프로모션</span>
+			<span>출석체크</span>
+			<span class="on">출석체크 리스트</span>
+		</div>
+		<div class="inner">
+			<h3 class="tit_h3">출석체크 리스트</h3>
+
+			<div class="tbl_outer">
+				<table class="tbl_view">
+					<colgroup>
+						<col style="width:100px">
+						<col>
+						<col style="width:100px">
+						<col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">고객사</th>
+							<td colspan="3">
+								<select name="all1" style="width:110px;">
+									<option value="">정상승인 </option>
+									<option value="">가승인 </option>
+									<option value="">정지 </option>
+									<option value="">만료 </option>
+								</select>
+								<select name="all1" style="width:110px;">
+									<option value="">전체 </option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">기간검색</th>
+							<td>
+								<input type="text" class="datepicker"><span class="division">~</span><input type="text" class="datepicker">
+							</td>
+							<th scope="row">상태</th>
+							<td>
+								<select name="all1" style="width:110px;">
+									<option value="">전체 </option>
+									<option value="">대기 </option>
+									<option value="">진행중 </option>
+									<option value="">종료 </option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">출석형태</th>
+							<td>
+								<select name="all1" style="width:110px;">
+									<option value="">전체 </option>
+									<option value="">누적 </option>
+									<option value="">연속 </option>
+									<option value="">출석할 때 마다 </option>
+								</select>
+							</td>
+							<th scope="row">출석방법</th>
+							<td>
+								<select name="all1" style="width:110px;">
+									<option value="">전체 </option>
+									<option value="">스템프형 </option>
+									<option value="">로그인형 </option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">출석체크명</th>
+							<td colspan="3">
+								<input type="text" class="w100">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div class="button_area">
+				<button type="button" class="btn_ty1">검색</button>
+				<button type="button" class="btn_ty2">초기화</button>
+			</div>
+
+			<table class="tbl_primary label_control">
+				<colgroup>
+					<col style="width:60px;">
+					<col style="width:80px;">
+					<col>
+					<col>
+					<col>
+					<col>
+					<col>
+					<col>
+					<col>
+					<col>
+				</colgroup>
+				<thead>
+					<tr>
+						<th scope="row">번호</th>
+						<th scope="row">고객사</th>
+						<th scope="row">출석체크 명</th>
+						<th scope="row">시작일/종료일</th>
+						<th scope="row">출석방법</th>
+						<th scope="row">달성조건</th>
+						<th scope="row">혜택</th>
+						<th scope="row">참여/달성/적립</th>
+						<th scope="row">상태</th>
+						<th scope="row">등록일자</th>
+					</tr>
+				</thead>
+				<tbody class="txtc">
+					<tr>
+						<td>10</td>
+						<td>시크릿스토어</td>
+						<td><a href="javascript:;" onclick='window.open("../popup/pop_attendance.html", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=100,left=100,width=580,height=563");'>user_01</a></td>
+						<td>2021-03-30<br/>2021-03-30</td>
+						<td>스템프형</td>
+						<td>누적 10회 달성</td>
+						<td>1,000마일리지</td>
+						<td><a href="#">0/0/0</a></td>
+						<td>진행중</td>
+						<td>2021-03-30<br/>11:11:11</td>
+					</tr>
+					<tr>
+						<td>10</td>
+						<td>시크릿스토어</td>
+						<td><a href="javascript:;" onclick='window.open("../popup/pop_attendance.html", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=100,left=100,width=580,height=563");'>user_01</a></td>
+						<td>2021-03-30<br/>2021-03-30</td>
+						<td>스템프형</td>
+						<td>누적 10회 달성</td>
+						<td>1,000마일리지</td>
+						<td><a href="#">0/0/0</a></td>
+						<td>진행중</td>
+						<td>2021-03-30<br/>11:11:11</td>
+					</tr>
+					<tr>
+						<td>10</td>
+						<td>시크릿스토어</td>
+						<td><a href="javascript:;" onclick='window.open("../popup/pop_attendance.html", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=100,left=100,width=580,height=563");'>user_01</a></td>
+						<td>2021-03-30<br/>2021-03-30</td>
+						<td>스템프형</td>
+						<td>누적 10회 달성</td>
+						<td>1,000마일리지</td>
+						<td><a href="#">0/0/0</a></td>
+						<td>진행중</td>
+						<td>2021-03-30<br/>11:11:11</td>
+					</tr>
+					<tr>
+						<td>10</td>
+						<td>시크릿스토어</td>
+						<td><a href="javascript:;" onclick='window.open("../popup/pop_attendance.html", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=100,left=100,width=580,height=563");'>user_01</a></td>
+						<td>2021-03-30<br/>2021-03-30</td>
+						<td>스템프형</td>
+						<td>누적 10회 달성</td>
+						<td>1,000마일리지</td>
+						<td><a href="#">0/0/0</a></td>
+						<td>진행중</td>
+						<td>2021-03-30<br/>11:11:11</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<div class="paging">
+				<a href="#none" class="first">처음페이지</a>
+				<a href="#none" class="prev">이전페이지</a>
+				<a href="#none" class="on">1</a>
+				<a href="#none" class="num">2</a>
+				<a href="#none" class="num">3</a>
+				<a href="#none" class="num">4</a>
+				<a href="#none" class="num">5</a>
+				<a href="#none" class="num">6</a>
+				<a href="#none" class="num">7</a>
+				<a href="#none" class="num">8</a>
+				<a href="#none" class="num">9</a>
+				<a href="#none" class="num">10</a>
+				<a href="#none" class="next">다음페이지</a>
+				<a href="#none" class="last">마지막페이지</a>
+			</div>
+		</div>
+	</div><!-- //content -->
+</div><!-- //container -->
+</div><!-- //wrap -->
+</body>
+</html>
