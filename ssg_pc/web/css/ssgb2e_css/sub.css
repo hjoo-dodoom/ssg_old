@@ -476,7 +476,7 @@ table + .policy_ol{margin-top:10px;}
 .new_policy .policy_list li .top_cnt:before{content:"";width:20px;height:10px;position:absolute;right:22px;top:30px;background-size:20px;transition:all 0.2s;
 background-repeat:no-repeat;background-position:center center;background-image:url('../images/ssgb2e_img/policy_arrow.jpg');}
 .new_policy .policy_list li .top_cnt.active:before{transform:rotate(180deg);}
-.new_policy .policy_list li .bottom_cnt{display:none;border-top:1px solid #e5e5e5;padding:40px;color:#666;font-size:13px;font-weight:600;background-color:#f6f6f6;}
+.new_policy .policy_list li .bottom_cnt{display:none;border-top:1px solid #e5e5e5;padding:40px;color:#666;font-size:13px;font-weight:600;background-color:#f6f6f6;word-break: keep-all;}
 
 .policy_list ol{padding:5px 0 0 0;}
 .policy_list ol li{padding-bottom:10px;line-height: 20px;}
