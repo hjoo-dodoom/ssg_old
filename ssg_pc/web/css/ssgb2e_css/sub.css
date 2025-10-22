@@ -181,12 +181,13 @@
 
 /*오시는길*/
 .map{}
-.map img{}
+.map img{max-width:740px;width:100%;}
  .map_adress{}
 .map_adress div{color:#fff;height:56px;line-height:56px;padding-left:24px;}
 .map_adress div strong{display:inline-block;font-weight:800;}
 .map_adress div p{display:inline-block;letter-spacing:-0.5px;margin-left:5px;}
-.map_adress div p.ads{line-height:20px;margin-left:20px;padding-top:8px;}
+.map_adress div p.ads{margin-left:20px;}
+/* .map_adress div p.ads{line-height:20px;margin-left:20px;padding-top:8px;} */
 .map_adress div div{height:56px;}
 .map_adress div.left{width:580px;background-color:#b7a195;}
 .map_adress div.right{width:160px;background-color:#676361;}
@@ -194,8 +195,10 @@
 .map_car{margin-top:30px;}
 .map_car > div{margin-top:22px;}
 .map_car > div:first-of-type{margin-top:15px;}
+.map_car > div + .bc_tit{margin-top:26px;}
 .map_car > div strong{display:block;border-bottom:1px solid #e5e5e5;padding-bottom:5px;font-weight:800;}
-.map_car > div p{margin-top:10px;}
+.map_car > div p{margin-top:10px;line-height: 1.8;}
+.map_car .strong{color:#F22C2D;}
 
 /*신세계상품권*/
 .gift_list{padding:47px 0 17px 40px;border:2px solid #efefef;margin-top:20px;}
