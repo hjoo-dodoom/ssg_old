@@ -212,9 +212,11 @@
 .gift_use div:first-of-type{margin-top:25px;}
 .gift_use div strong{color:#222;font-size:13px;font-weight:800;display:block;}
 .gift_use ul{}
-.gift_use ul li{text-align:center;float:left;width:140px;height:110px;margin-top:20px;margin-right:10px;}
-.gift_use ul li:nth-child(5n){margin-right:0;}
-.gift_use ul li img{border:1px solid #ececec;}
+/* .gift_use ul li{text-align:center;float:left;width:140px;height:110px;margin-top:20px;margin-right:10px;} */
+/* .gift_use ul li:nth-child(5n){margin-right:0;} */
+.gift_use ul li{text-align:center;float:left;width:177.5px;height:110px;margin-top:20px;margin-right:10px;}
+.gift_use ul li:nth-child(4n){margin-right:0;}
+.gift_use ul li img{width: 100%; border:1px solid #ececec;}
 .gift_use ul li span{color:#333;margin-top:7px;display:block;}
 .gift_use_caution{height:40px;line-height:40px;background-color:#eee;color:#444;padding-left:15px;margin-top:25px;}
 
